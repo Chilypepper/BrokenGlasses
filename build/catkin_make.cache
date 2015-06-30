@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/peter/brokenGlasses/devel -DCMAKE_INSTALL_PREFIX=/home/peter/brokenGlasses/install -G Unix Makefiles

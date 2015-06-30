@@ -1,0 +1,6 @@
+/home/peter/brokenGlasses/build/CMakeFiles/clean_test_results.dir
+/home/peter/brokenGlasses/build/CMakeFiles/doxygen.dir
+/home/peter/brokenGlasses/build/gtest/CMakeFiles/gtest.dir
+/home/peter/brokenGlasses/build/gtest/CMakeFiles/gtest_main.dir
+/home/peter/brokenGlasses/build/CMakeFiles/run_tests.dir
+/home/peter/brokenGlasses/build/CMakeFiles/tests.dir
