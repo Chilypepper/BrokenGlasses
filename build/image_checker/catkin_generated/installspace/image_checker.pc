@@ -1,0 +1,8 @@
+prefix=/home/peter/brokenGlasses/install
+
+Name: image_checker
+Description: Description of image_checker
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/peter/brokenGlasses/install/lib 
+Requires: 

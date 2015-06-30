@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "image_checker")
+set(image_checker_MAINTAINER "peter <peter@todo.todo>")
+set(image_checker_DEPRECATED "")
+set(image_checker_VERSION "0.0.0")
+set(image_checker_BUILD_DEPENDS "roscpp")
+set(image_checker_RUN_DEPENDS "roscpp")
+set(image_checker_BUILDTOOL_DEPENDS "catkin")
