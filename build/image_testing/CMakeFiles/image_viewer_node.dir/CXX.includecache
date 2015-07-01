@@ -17,6 +17,12 @@ opencv/cv.h
 -
 opencv/highgui.h
 -
+opencv2/core/core.hpp
+-
+opencv2/highgui/highgui.hpp
+-
+iostream
+-
 
 /opt/ros/indigo/include/XmlRpcDecl.h
 ros/macros.h
@@ -411,6 +417,10 @@ opencv2/videoio.hpp
 /opt/ros/indigo/include/opencv2/opencv2/videoio.hpp
 opencv2/highgui/highgui_c.h
 /opt/ros/indigo/include/opencv2/opencv2/highgui/highgui_c.h
+
+/opt/ros/indigo/include/opencv2/highgui/highgui.hpp
+opencv2/highgui.hpp
+/opt/ros/indigo/include/opencv2/highgui/opencv2/highgui.hpp
 
 /opt/ros/indigo/include/opencv2/highgui/highgui_c.h
 opencv2/core/core_c.h

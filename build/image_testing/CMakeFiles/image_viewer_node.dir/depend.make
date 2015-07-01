@@ -48,6 +48,7 @@ image_testing/CMakeFiles/image_viewer_node.dir/src/image_viewer_node.cpp.o: /opt
 image_testing/CMakeFiles/image_viewer_node.dir/src/image_viewer_node.cpp.o: /opt/ros/indigo/include/opencv2/hal.hpp
 image_testing/CMakeFiles/image_viewer_node.dir/src/image_viewer_node.cpp.o: /opt/ros/indigo/include/opencv2/hal/defs.h
 image_testing/CMakeFiles/image_viewer_node.dir/src/image_viewer_node.cpp.o: /opt/ros/indigo/include/opencv2/highgui.hpp
+image_testing/CMakeFiles/image_viewer_node.dir/src/image_viewer_node.cpp.o: /opt/ros/indigo/include/opencv2/highgui/highgui.hpp
 image_testing/CMakeFiles/image_viewer_node.dir/src/image_viewer_node.cpp.o: /opt/ros/indigo/include/opencv2/highgui/highgui_c.h
 image_testing/CMakeFiles/image_viewer_node.dir/src/image_viewer_node.cpp.o: /opt/ros/indigo/include/opencv2/imgcodecs.hpp
 image_testing/CMakeFiles/image_viewer_node.dir/src/image_viewer_node.cpp.o: /opt/ros/indigo/include/opencv2/imgcodecs/imgcodecs_c.h

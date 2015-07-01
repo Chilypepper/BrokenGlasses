@@ -3,9 +3,10 @@
 #include <cv_bridge/cv_bridge.h>
 #include <opencv/cv.h>
 #include <opencv/highgui.h>
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <iostream>
 
-
-using namespace cv_bridge;
 using namespace cv;
 class Viewer
 {
@@ -14,11 +15,19 @@ class Viewer
   public:
     Viewer() :nh(){
     	Mat image;
-    	cvLoadImage("frame0000.jpg",CV_LOAD_IMAGE_COLOR);
-    	cvNamedWindow("Disp");
-    	cvWaitKey(0);
-    	cvDestroyWindow("Disp");
-    	ROS_INFO("Looped");
+    	image=imread("mario.png");
+    	ROS_INFO("1");
+    	if(!image.data){
+    		ROS_INFO("Can't open the image");
+    	}
+    	else{
+	    	cvNamedWindow("Disp");
+	    	imshow("Disp",image);
+	    	ROS_INFO("2");
+	    	cvWaitKey(0);
+	    	cvDestroyWindow("Disp");
+	    	ROS_INFO("Looped");
+   		}
     }    
     void loop()
     {
