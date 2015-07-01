@@ -14,9 +14,11 @@ class Viewer
   public:
     Viewer() :nh(){
     	Mat image;
-    	cvLoadImage("~/frame0000.jpg",CV_LOAD_IMAGE_COLOR);
+    	cvLoadImage("frame0000.jpg",CV_LOAD_IMAGE_COLOR);
     	cvNamedWindow("Disp");
     	cvWaitKey(0);
+    	cvDestroyWindow("Disp");
+    	ROS_INFO("Looped");
     }    
     void loop()
     {
