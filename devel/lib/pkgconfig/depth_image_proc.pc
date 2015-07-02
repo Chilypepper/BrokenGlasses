@@ -1,0 +1,8 @@
+prefix=/home/peter/brokenGlasses/devel
+
+Name: depth_image_proc
+Description: Description of depth_image_proc
+Version: 1.12.13
+Cflags: -I/home/peter/brokenGlasses/src/image_pipeline/depth_image_proc/include
+Libs: -L/home/peter/brokenGlasses/devel/lib -ldepth_image_proc
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/peter/brokenGlasses/devel
+
+Name: image_view
+Description: Description of image_view
+Version: 1.12.13
+Cflags: 
+Libs: -L/home/peter/brokenGlasses/devel/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/peter/brokenGlasses/devel
+
+Name: image_proc
+Description: Description of image_proc
+Version: 1.12.13
+Cflags: -I/home/peter/brokenGlasses/devel/include -I/home/peter/brokenGlasses/src/image_pipeline/image_proc/include -I/opt/ros/indigo/include/opencv -I/opt/ros/indigo/include
+Libs: -L/home/peter/brokenGlasses/devel/lib -limage_proc -l:/opt/ros/indigo/lib/libopencv_viz.so.3.0.0 -l:/opt/ros/indigo/lib/libopencv_videostab.so.3.0.0 -l:/opt/ros/indigo/lib/libopencv_videoio.so.3.0.0 -l:/opt/ros/indigo/lib/libopencv_video.so.3.0.0 -l:/opt/ros/indigo/lib/libopencv_superres.so.3.0.0 -l:/opt/ros/indigo/lib/libopencv_stitching.so.3.0.0 -l:/opt/ros/indigo/lib/libopencv_shape.so.3.0.0 -l:/opt/ros/indigo/lib/libopencv_photo.so.3.0.0 -l:/opt/ros/indigo/lib/libopencv_objdetect.so.3.0.0 -l:/opt/ros/indigo/lib/libopencv_ml.so.3.0.0 -l:/opt/ros/indigo/lib/libopencv_imgproc.so.3.0.0 -l:/opt/ros/indigo/lib/libopencv_imgcodecs.so.3.0.0 -l:/opt/ros/indigo/lib/libopencv_highgui.so.3.0.0 /opt/ros/indigo/lib/libopencv_hal.a -l:/opt/ros/indigo/lib/libopencv_flann.so.3.0.0 -l:/opt/ros/indigo/lib/libopencv_features2d.so.3.0.0 -l:/opt/ros/indigo/lib/libopencv_core.so.3.0.0 -l:/opt/ros/indigo/lib/libopencv_calib3d.so.3.0.0
+Requires: image_geometry roscpp sensor_msgs

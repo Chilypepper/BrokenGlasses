@@ -1,0 +1,8 @@
+prefix=/home/peter/brokenGlasses/devel
+
+Name: camera_calibration
+Description: Description of camera_calibration
+Version: 1.12.13
+Cflags: 
+Libs: -L/home/peter/brokenGlasses/devel/lib 
+Requires: 

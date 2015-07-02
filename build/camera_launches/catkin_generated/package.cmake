@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "camera_launches")
+set(camera_launches_MAINTAINER "peter <peter@todo.todo>")
+set(camera_launches_DEPRECATED "")
+set(camera_launches_VERSION "0.0.0")
+set(camera_launches_BUILD_DEPENDS )
+set(camera_launches_RUN_DEPENDS )
+set(camera_launches_BUILDTOOL_DEPENDS "catkin")
