@@ -256,6 +256,52 @@ clean: gtest/CMakeFiles/gtest_main.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory camera_launches
+
+# Convenience name for "all" pass in the directory.
+camera_launches/all:
+.PHONY : camera_launches/all
+
+# Convenience name for "clean" pass in the directory.
+camera_launches/clean: camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : camera_launches/clean
+
+# Convenience name for "preinstall" pass in the directory.
+camera_launches/preinstall:
+.PHONY : camera_launches/preinstall
+
+#=============================================================================
+# Target rules for target camera_launches/CMakeFiles/_catkin_empty_exported_target.dir
+
+# All Build rule for target.
+camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/all:
+	$(MAKE) -f camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/build.make camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/depend
+	$(MAKE) -f camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/build.make camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles 
+	@echo "Built target _catkin_empty_exported_target"
+.PHONY : camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/all
+
+# Build rule for subdir invocation for target.
+camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
+.PHONY : camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/rule
+
+# Convenience name for target.
+_catkin_empty_exported_target: camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/rule
+.PHONY : _catkin_empty_exported_target
+
+# clean rule for target.
+camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/clean:
+	$(MAKE) -f camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/build.make camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/clean
+
+# clean rule for target.
+clean: camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory image_pipeline/image_pipeline
 
 # Convenience name for "all" pass in the directory.
@@ -263,43 +309,12 @@ image_pipeline/image_pipeline/all:
 .PHONY : image_pipeline/image_pipeline/all
 
 # Convenience name for "clean" pass in the directory.
-image_pipeline/image_pipeline/clean: image_pipeline/image_pipeline/CMakeFiles/_catkin_empty_exported_target.dir/clean
+image_pipeline/image_pipeline/clean:
 .PHONY : image_pipeline/image_pipeline/clean
 
 # Convenience name for "preinstall" pass in the directory.
 image_pipeline/image_pipeline/preinstall:
 .PHONY : image_pipeline/image_pipeline/preinstall
-
-#=============================================================================
-# Target rules for target image_pipeline/image_pipeline/CMakeFiles/_catkin_empty_exported_target.dir
-
-# All Build rule for target.
-image_pipeline/image_pipeline/CMakeFiles/_catkin_empty_exported_target.dir/all:
-	$(MAKE) -f image_pipeline/image_pipeline/CMakeFiles/_catkin_empty_exported_target.dir/build.make image_pipeline/image_pipeline/CMakeFiles/_catkin_empty_exported_target.dir/depend
-	$(MAKE) -f image_pipeline/image_pipeline/CMakeFiles/_catkin_empty_exported_target.dir/build.make image_pipeline/image_pipeline/CMakeFiles/_catkin_empty_exported_target.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles 
-	@echo "Built target _catkin_empty_exported_target"
-.PHONY : image_pipeline/image_pipeline/CMakeFiles/_catkin_empty_exported_target.dir/all
-
-# Build rule for subdir invocation for target.
-image_pipeline/image_pipeline/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_pipeline/CMakeFiles/_catkin_empty_exported_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
-.PHONY : image_pipeline/image_pipeline/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-# Convenience name for target.
-_catkin_empty_exported_target: image_pipeline/image_pipeline/CMakeFiles/_catkin_empty_exported_target.dir/rule
-.PHONY : _catkin_empty_exported_target
-
-# clean rule for target.
-image_pipeline/image_pipeline/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	$(MAKE) -f image_pipeline/image_pipeline/CMakeFiles/_catkin_empty_exported_target.dir/build.make image_pipeline/image_pipeline/CMakeFiles/_catkin_empty_exported_target.dir/clean
-.PHONY : image_pipeline/image_pipeline/CMakeFiles/_catkin_empty_exported_target.dir/clean
-
-# clean rule for target.
-clean: image_pipeline/image_pipeline/CMakeFiles/_catkin_empty_exported_target.dir/clean
-.PHONY : clean
 
 #=============================================================================
 # Directory level rules for directory image_pipeline/camera_calibration
@@ -2129,8 +2144,8 @@ clean: image_pipeline/stereo_image_proc/CMakeFiles/stereo_msgs_generate_messages
 # Target rules for target image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir
 
 # All Build rule for target.
-image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/all: image_pipeline/image_proc/CMakeFiles/image_proc.dir/all
 image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/all: image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/all
+image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/all: image_pipeline/image_proc/CMakeFiles/image_proc.dir/all
 	$(MAKE) -f image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/build.make image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/depend
 	$(MAKE) -f image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/build.make image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  39
