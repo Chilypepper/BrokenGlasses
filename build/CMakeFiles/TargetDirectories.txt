@@ -27,6 +27,7 @@
 /home/peter/brokenGlasses/build/image_testing/CMakeFiles/geometry_msgs_generate_messages_py.dir
 /home/peter/brokenGlasses/build/gtest/CMakeFiles/gtest.dir
 /home/peter/brokenGlasses/build/gtest/CMakeFiles/gtest_main.dir
+/home/peter/brokenGlasses/build/image_testing/CMakeFiles/image_converter.dir
 /home/peter/brokenGlasses/build/image_pipeline/image_proc/CMakeFiles/image_proc.dir
 /home/peter/brokenGlasses/build/image_pipeline/image_proc/CMakeFiles/image_proc_exe.dir
 /home/peter/brokenGlasses/build/image_pipeline/image_proc/CMakeFiles/image_proc_gencfg.dir

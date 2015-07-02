@@ -192,6 +192,20 @@ geometry_msgs_generate_messages_py/fast:
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+image_testing/CMakeFiles/image_converter.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/image_converter.dir/rule
+.PHONY : image_testing/CMakeFiles/image_converter.dir/rule
+
+# Convenience name for target.
+image_converter: image_testing/CMakeFiles/image_converter.dir/rule
+.PHONY : image_converter
+
+# fast build rule for target.
+image_converter/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_converter.dir/build.make image_testing/CMakeFiles/image_converter.dir/build
+.PHONY : image_converter/fast
+
+# Convenience name for target.
 image_testing/CMakeFiles/image_viewer_node.dir/rule:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/image_viewer_node.dir/rule
 .PHONY : image_testing/CMakeFiles/image_viewer_node.dir/rule
@@ -387,6 +401,30 @@ video_modder_node/fast:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/video_modder_node.dir/build.make image_testing/CMakeFiles/video_modder_node.dir/build
 .PHONY : video_modder_node/fast
 
+src/image_converter.o: src/image_converter.cpp.o
+.PHONY : src/image_converter.o
+
+# target to build an object file
+src/image_converter.cpp.o:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_converter.dir/build.make image_testing/CMakeFiles/image_converter.dir/src/image_converter.cpp.o
+.PHONY : src/image_converter.cpp.o
+
+src/image_converter.i: src/image_converter.cpp.i
+.PHONY : src/image_converter.i
+
+# target to preprocess a source file
+src/image_converter.cpp.i:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_converter.dir/build.make image_testing/CMakeFiles/image_converter.dir/src/image_converter.cpp.i
+.PHONY : src/image_converter.cpp.i
+
+src/image_converter.s: src/image_converter.cpp.s
+.PHONY : src/image_converter.s
+
+# target to generate assembly for a file
+src/image_converter.cpp.s:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_converter.dir/build.make image_testing/CMakeFiles/image_converter.dir/src/image_converter.cpp.s
+.PHONY : src/image_converter.cpp.s
+
 src/image_viewer_node.o: src/image_viewer_node.cpp.o
 .PHONY : src/image_viewer_node.o
 
@@ -445,6 +483,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... image_converter"
 	@echo "... image_viewer_node"
 	@echo "... install"
 	@echo "... install/local"
@@ -465,6 +504,9 @@ help:
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
 	@echo "... video_modder_node"
+	@echo "... src/image_converter.o"
+	@echo "... src/image_converter.i"
+	@echo "... src/image_converter.s"
 	@echo "... src/image_viewer_node.o"
 	@echo "... src/image_viewer_node.i"
 	@echo "... src/image_viewer_node.s"

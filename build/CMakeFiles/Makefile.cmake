@@ -316,6 +316,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "image_testing/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/geometry_msgs_generate_messages_py.dir/DependInfo.cmake"
+  "image_testing/CMakeFiles/image_converter.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/image_viewer_node.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/roscpp_generate_messages_cpp.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake"
