@@ -106,6 +106,7 @@ include_directories(
 
 ## Declare a cpp executable
 add_executable(image_viewer_node src/image_viewer_node.cpp)
+add_executable(video_modder_node src/video_modder_node.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
@@ -113,6 +114,9 @@ add_executable(image_viewer_node src/image_viewer_node.cpp)
 
 ## Specify libraries to link a library or executable target against
  target_link_libraries(image_viewer_node
+   ${catkin_LIBRARIES}
+ )
+ target_link_libraries(video_modder_node
    ${catkin_LIBRARIES}
  )
 

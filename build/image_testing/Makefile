@@ -373,6 +373,20 @@ std_msgs_generate_messages_py/fast:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/std_msgs_generate_messages_py.dir/build.make image_testing/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
+# Convenience name for target.
+image_testing/CMakeFiles/video_modder_node.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/video_modder_node.dir/rule
+.PHONY : image_testing/CMakeFiles/video_modder_node.dir/rule
+
+# Convenience name for target.
+video_modder_node: image_testing/CMakeFiles/video_modder_node.dir/rule
+.PHONY : video_modder_node
+
+# fast build rule for target.
+video_modder_node/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/video_modder_node.dir/build.make image_testing/CMakeFiles/video_modder_node.dir/build
+.PHONY : video_modder_node/fast
+
 src/image_viewer_node.o: src/image_viewer_node.cpp.o
 .PHONY : src/image_viewer_node.o
 
@@ -396,6 +410,30 @@ src/image_viewer_node.s: src/image_viewer_node.cpp.s
 src/image_viewer_node.cpp.s:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_viewer_node.dir/build.make image_testing/CMakeFiles/image_viewer_node.dir/src/image_viewer_node.cpp.s
 .PHONY : src/image_viewer_node.cpp.s
+
+src/video_modder_node.o: src/video_modder_node.cpp.o
+.PHONY : src/video_modder_node.o
+
+# target to build an object file
+src/video_modder_node.cpp.o:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/video_modder_node.dir/build.make image_testing/CMakeFiles/video_modder_node.dir/src/video_modder_node.cpp.o
+.PHONY : src/video_modder_node.cpp.o
+
+src/video_modder_node.i: src/video_modder_node.cpp.i
+.PHONY : src/video_modder_node.i
+
+# target to preprocess a source file
+src/video_modder_node.cpp.i:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/video_modder_node.dir/build.make image_testing/CMakeFiles/video_modder_node.dir/src/video_modder_node.cpp.i
+.PHONY : src/video_modder_node.cpp.i
+
+src/video_modder_node.s: src/video_modder_node.cpp.s
+.PHONY : src/video_modder_node.s
+
+# target to generate assembly for a file
+src/video_modder_node.cpp.s:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/video_modder_node.dir/build.make image_testing/CMakeFiles/video_modder_node.dir/src/video_modder_node.cpp.s
+.PHONY : src/video_modder_node.cpp.s
 
 # Help Target
 help:
@@ -426,9 +464,13 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
+	@echo "... video_modder_node"
 	@echo "... src/image_viewer_node.o"
 	@echo "... src/image_viewer_node.i"
 	@echo "... src/image_viewer_node.s"
+	@echo "... src/video_modder_node.o"
+	@echo "... src/video_modder_node.i"
+	@echo "... src/video_modder_node.s"
 .PHONY : help
 
 
