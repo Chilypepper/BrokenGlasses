@@ -37,7 +37,6 @@
 /home/peter/brokenGlasses/build/image_pipeline/image_view/CMakeFiles/image_saver.dir
 /home/peter/brokenGlasses/build/image_pipeline/image_view/CMakeFiles/image_view.dir
 /home/peter/brokenGlasses/build/image_pipeline/image_view/CMakeFiles/image_view_exe.dir
-/home/peter/brokenGlasses/build/image_testing/CMakeFiles/image_viewer_node.dir
 /home/peter/brokenGlasses/build/image_pipeline/camera_calibration/CMakeFiles/multi_board_calibration.tar.gz.dir
 /home/peter/brokenGlasses/build/image_pipeline/image_view/CMakeFiles/nodelet_generate_messages_cpp.dir
 /home/peter/brokenGlasses/build/image_pipeline/image_view/CMakeFiles/nodelet_generate_messages_lisp.dir

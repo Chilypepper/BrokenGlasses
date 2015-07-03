@@ -423,19 +423,6 @@ image_converter/fast:
 .PHONY : image_converter/fast
 
 #=============================================================================
-# Target rules for targets named image_viewer_node
-
-# Build rule for target.
-image_viewer_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 image_viewer_node
-.PHONY : image_viewer_node
-
-# fast build rule for target.
-image_viewer_node/fast:
-	$(MAKE) -f image_testing/CMakeFiles/image_viewer_node.dir/build.make image_testing/CMakeFiles/image_viewer_node.dir/build
-.PHONY : image_viewer_node/fast
-
-#=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
 
 # Build rule for target.
@@ -1171,7 +1158,6 @@ help:
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... image_converter"
-	@echo "... image_viewer_node"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"

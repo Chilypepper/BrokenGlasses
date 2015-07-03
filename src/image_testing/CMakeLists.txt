@@ -7,10 +7,13 @@ project(image_testing)
 find_package(catkin REQUIRED COMPONENTS
   cv_bridge
   image_transport
-  OpenCV
   roscpp
   std_msgs
 )
+find_package(OpenCV REQUIRED)
+if (OpenCV_VERSION VERSION_EQUAL "3")
+	add_definitions("-DOPENCV3=1")
+endif()
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -105,7 +108,6 @@ include_directories(
 # )
 
 ## Declare a cpp executable
-add_executable(image_viewer_node src/image_viewer_node.cpp)
 add_executable(video_modder_node src/video_modder_node.cpp)
 add_executable(image_converter src/image_converter.cpp)
 
@@ -114,14 +116,13 @@ add_executable(image_converter src/image_converter.cpp)
 # add_dependencies(image_testing_node image_testing_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
- target_link_libraries(image_viewer_node
-   ${catkin_LIBRARIES}
- )
  target_link_libraries(video_modder_node
    ${catkin_LIBRARIES}
+   ${OpenCV_LIBRARIES}
  )
  target_link_libraries(image_converter
  	${catkin_LIBRARIES}
+ 	${OpenCV_LIBRARIES}
  )
 
 #############

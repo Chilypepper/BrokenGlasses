@@ -21,13 +21,12 @@ public:
     : it_(nh_)
   {
     // Subscrive to input video feed and publish output video feed
-    image_sub_ = it_.subscribe("/camera/image_raw", 1, 
+    image_sub_ = it_.subscribe("/camera/image_color", 1, 
       &ImageConverter::imageCb, this);
     image_pub_ = it_.advertise("/image_converter/output_video", 1);
-
+    ROS_INFO("Step 1");
     namedWindow(OPENCV_WINDOW);
   }
-
   ~ImageConverter()
   {
     destroyWindow(OPENCV_WINDOW);
@@ -36,22 +35,28 @@ public:
   void imageCb(const sensor_msgs::ImageConstPtr& msg)
   {
     CvImagePtr cv_ptr;
+    ROS_INFO("Step2");
+    
     try
     {
-      cv_ptr = toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
+      ROS_INFO("Trying to convert");
+    cv_ptr = toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
+    ROS_INFO("Converted");
+
     }
     catch (cv_bridge::Exception& e)
     {
+      ROS_INFO("Not Converted");
+
       ROS_ERROR("cv_bridge exception: %s", e.what());
       return;
     }
-
+    ROS_INFO("Step 3");
     // Draw an example circle on the video stream
     if (cv_ptr->image.rows > 60 && cv_ptr->image.cols > 60)
       circle(cv_ptr->image, Point(50, 50), 10, CV_RGB(255,0,0));
-
     // Update GUI Window
-    imshow(OPENCV_WINDOW, cv_ptr->image);
+    //imshow(OPENCV_WINDOW, cv_ptr->image);
     waitKey(3);
     
     // Output modified video stream

@@ -206,20 +206,6 @@ image_converter/fast:
 .PHONY : image_converter/fast
 
 # Convenience name for target.
-image_testing/CMakeFiles/image_viewer_node.dir/rule:
-	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/image_viewer_node.dir/rule
-.PHONY : image_testing/CMakeFiles/image_viewer_node.dir/rule
-
-# Convenience name for target.
-image_viewer_node: image_testing/CMakeFiles/image_viewer_node.dir/rule
-.PHONY : image_viewer_node
-
-# fast build rule for target.
-image_viewer_node/fast:
-	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_viewer_node.dir/build.make image_testing/CMakeFiles/image_viewer_node.dir/build
-.PHONY : image_viewer_node/fast
-
-# Convenience name for target.
 image_testing/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : image_testing/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
@@ -425,30 +411,6 @@ src/image_converter.cpp.s:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_converter.dir/build.make image_testing/CMakeFiles/image_converter.dir/src/image_converter.cpp.s
 .PHONY : src/image_converter.cpp.s
 
-src/image_viewer_node.o: src/image_viewer_node.cpp.o
-.PHONY : src/image_viewer_node.o
-
-# target to build an object file
-src/image_viewer_node.cpp.o:
-	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_viewer_node.dir/build.make image_testing/CMakeFiles/image_viewer_node.dir/src/image_viewer_node.cpp.o
-.PHONY : src/image_viewer_node.cpp.o
-
-src/image_viewer_node.i: src/image_viewer_node.cpp.i
-.PHONY : src/image_viewer_node.i
-
-# target to preprocess a source file
-src/image_viewer_node.cpp.i:
-	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_viewer_node.dir/build.make image_testing/CMakeFiles/image_viewer_node.dir/src/image_viewer_node.cpp.i
-.PHONY : src/image_viewer_node.cpp.i
-
-src/image_viewer_node.s: src/image_viewer_node.cpp.s
-.PHONY : src/image_viewer_node.s
-
-# target to generate assembly for a file
-src/image_viewer_node.cpp.s:
-	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_viewer_node.dir/build.make image_testing/CMakeFiles/image_viewer_node.dir/src/image_viewer_node.cpp.s
-.PHONY : src/image_viewer_node.cpp.s
-
 src/video_modder_node.o: src/video_modder_node.cpp.o
 .PHONY : src/video_modder_node.o
 
@@ -484,7 +446,6 @@ help:
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... image_converter"
-	@echo "... image_viewer_node"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
@@ -507,9 +468,6 @@ help:
 	@echo "... src/image_converter.o"
 	@echo "... src/image_converter.i"
 	@echo "... src/image_converter.s"
-	@echo "... src/image_viewer_node.o"
-	@echo "... src/image_viewer_node.i"
-	@echo "... src/image_viewer_node.s"
 	@echo "... src/video_modder_node.o"
 	@echo "... src/video_modder_node.i"
 	@echo "... src/video_modder_node.s"

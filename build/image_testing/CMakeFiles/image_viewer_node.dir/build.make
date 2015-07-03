@@ -106,24 +106,6 @@ image_viewer_node_EXTERNAL_OBJECTS =
 /home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /usr/lib/libPocoFoundation.so
 /home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /usr/lib/x86_64-linux-gnu/libdl.so
 /home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libroslib.so
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_viz.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_videostab.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_videoio.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_video.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_superres.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_stitching.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_shape.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_photo.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_objdetect.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_ml.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_imgproc.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_imgcodecs.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_highgui.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_hal.a
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_flann.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_features2d.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_core.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_calib3d.so.3.0.0
 /home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libroscpp.so
 /home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /usr/lib/x86_64-linux-gnu/libboost_signals.so
 /home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
@@ -141,16 +123,6 @@ image_viewer_node_EXTERNAL_OBJECTS =
 /home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
 /home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_features2d.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_ml.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_highgui.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_videoio.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_imgcodecs.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_flann.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_video.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_imgproc.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_core.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: /opt/ros/indigo/lib/libopencv_hal.a
 /home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node: image_testing/CMakeFiles/image_viewer_node.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable /home/peter/brokenGlasses/devel/lib/image_testing/image_viewer_node"
 	cd /home/peter/brokenGlasses/build/image_testing && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/image_viewer_node.dir/link.txt --verbose=$(VERBOSE)
