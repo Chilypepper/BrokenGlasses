@@ -423,6 +423,19 @@ image_converter/fast:
 .PHONY : image_converter/fast
 
 #=============================================================================
+# Target rules for targets named image_draw
+
+# Build rule for target.
+image_draw: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 image_draw
+.PHONY : image_draw
+
+# fast build rule for target.
+image_draw/fast:
+	$(MAKE) -f image_testing/CMakeFiles/image_draw.dir/build.make image_testing/CMakeFiles/image_draw.dir/build
+.PHONY : image_draw/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
 
 # Build rule for target.
@@ -1132,6 +1145,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... image_converter"
+	@echo "... image_draw"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"

@@ -149,8 +149,8 @@ clean: CMakeFiles/run_tests.dir/clean
 # Target rules for target CMakeFiles/tests.dir
 
 # All Build rule for target.
-CMakeFiles/tests.dir/all: image_pipeline/camera_calibration/CMakeFiles/camera_calibration.tar.gz.dir/all
 CMakeFiles/tests.dir/all: image_pipeline/camera_calibration/CMakeFiles/multi_board_calibration.tar.gz.dir/all
+CMakeFiles/tests.dir/all: image_pipeline/camera_calibration/CMakeFiles/camera_calibration.tar.gz.dir/all
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles 
@@ -407,8 +407,8 @@ clean: image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibratio
 # Target rules for target image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests_test.directed.py.dir
 
 # All Build rule for target.
-image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests_test.directed.py.dir/all: CMakeFiles/tests.dir/all
 image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests_test.directed.py.dir/all: CMakeFiles/clean_test_results.dir/all
+image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests_test.directed.py.dir/all: CMakeFiles/tests.dir/all
 	$(MAKE) -f image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests_test.directed.py.dir/build.make image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests_test.directed.py.dir/depend
 	$(MAKE) -f image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests_test.directed.py.dir/build.make image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests_test.directed.py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles 
@@ -439,8 +439,8 @@ clean: image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibratio
 # Target rules for target image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests_test.multiple_boards.py.dir
 
 # All Build rule for target.
-image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests_test.multiple_boards.py.dir/all: CMakeFiles/tests.dir/all
 image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests_test.multiple_boards.py.dir/all: CMakeFiles/clean_test_results.dir/all
+image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests_test.multiple_boards.py.dir/all: CMakeFiles/tests.dir/all
 	$(MAKE) -f image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests_test.multiple_boards.py.dir/build.make image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests_test.multiple_boards.py.dir/depend
 	$(MAKE) -f image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests_test.multiple_boards.py.dir/build.make image_pipeline/camera_calibration/CMakeFiles/_run_tests_camera_calibration_nosetests_test.multiple_boards.py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles 
@@ -505,7 +505,7 @@ clean: image_pipeline/camera_calibration/CMakeFiles/camera_calibration.tar.gz.di
 image_pipeline/camera_calibration/CMakeFiles/multi_board_calibration.tar.gz.dir/all:
 	$(MAKE) -f image_pipeline/camera_calibration/CMakeFiles/multi_board_calibration.tar.gz.dir/build.make image_pipeline/camera_calibration/CMakeFiles/multi_board_calibration.tar.gz.dir/depend
 	$(MAKE) -f image_pipeline/camera_calibration/CMakeFiles/multi_board_calibration.tar.gz.dir/build.make image_pipeline/camera_calibration/CMakeFiles/multi_board_calibration.tar.gz.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  33
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  34
 	@echo "Built target multi_board_calibration.tar.gz"
 .PHONY : image_pipeline/camera_calibration/CMakeFiles/multi_board_calibration.tar.gz.dir/all
 
@@ -659,6 +659,7 @@ clean: image_pipeline/camera_calibration/CMakeFiles/run_tests_camera_calibration
 
 # Convenience name for "all" pass in the directory.
 image_testing/all: image_testing/CMakeFiles/image_converter.dir/all
+image_testing/all: image_testing/CMakeFiles/image_draw.dir/all
 image_testing/all: image_testing/CMakeFiles/video_modder_node.dir/all
 .PHONY : image_testing/all
 
@@ -667,6 +668,7 @@ image_testing/clean: image_testing/CMakeFiles/geometry_msgs_generate_messages_cp
 image_testing/clean: image_testing/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 image_testing/clean: image_testing/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 image_testing/clean: image_testing/CMakeFiles/image_converter.dir/clean
+image_testing/clean: image_testing/CMakeFiles/image_draw.dir/clean
 image_testing/clean: image_testing/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 image_testing/clean: image_testing/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 image_testing/clean: image_testing/CMakeFiles/roscpp_generate_messages_py.dir/clean
@@ -812,6 +814,41 @@ image_testing/CMakeFiles/image_converter.dir/clean:
 
 # clean rule for target.
 clean: image_testing/CMakeFiles/image_converter.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target image_testing/CMakeFiles/image_draw.dir
+
+# All Build rule for target.
+image_testing/CMakeFiles/image_draw.dir/all:
+	$(MAKE) -f image_testing/CMakeFiles/image_draw.dir/build.make image_testing/CMakeFiles/image_draw.dir/depend
+	$(MAKE) -f image_testing/CMakeFiles/image_draw.dir/build.make image_testing/CMakeFiles/image_draw.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  15
+	@echo "Built target image_draw"
+.PHONY : image_testing/CMakeFiles/image_draw.dir/all
+
+# Include target in all.
+all: image_testing/CMakeFiles/image_draw.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+image_testing/CMakeFiles/image_draw.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/image_draw.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
+.PHONY : image_testing/CMakeFiles/image_draw.dir/rule
+
+# Convenience name for target.
+image_draw: image_testing/CMakeFiles/image_draw.dir/rule
+.PHONY : image_draw
+
+# clean rule for target.
+image_testing/CMakeFiles/image_draw.dir/clean:
+	$(MAKE) -f image_testing/CMakeFiles/image_draw.dir/build.make image_testing/CMakeFiles/image_draw.dir/clean
+.PHONY : image_testing/CMakeFiles/image_draw.dir/clean
+
+# clean rule for target.
+clean: image_testing/CMakeFiles/image_draw.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -1193,7 +1230,7 @@ clean: image_testing/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 image_testing/CMakeFiles/video_modder_node.dir/all:
 	$(MAKE) -f image_testing/CMakeFiles/video_modder_node.dir/build.make image_testing/CMakeFiles/video_modder_node.dir/depend
 	$(MAKE) -f image_testing/CMakeFiles/video_modder_node.dir/build.make image_testing/CMakeFiles/video_modder_node.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  40
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  41
 	@echo "Built target video_modder_node"
 .PHONY : image_testing/CMakeFiles/video_modder_node.dir/all
 
@@ -1424,7 +1461,7 @@ clean: image_pipeline/image_view/CMakeFiles/extract_images.dir/clean
 image_pipeline/image_view/CMakeFiles/image_saver.dir/all:
 	$(MAKE) -f image_pipeline/image_view/CMakeFiles/image_saver.dir/build.make image_pipeline/image_view/CMakeFiles/image_saver.dir/depend
 	$(MAKE) -f image_pipeline/image_view/CMakeFiles/image_saver.dir/build.make image_pipeline/image_view/CMakeFiles/image_saver.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  28
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  29
 	@echo "Built target image_saver"
 .PHONY : image_pipeline/image_view/CMakeFiles/image_saver.dir/all
 
@@ -1459,7 +1496,7 @@ clean: image_pipeline/image_view/CMakeFiles/image_saver.dir/clean
 image_pipeline/image_view/CMakeFiles/image_view.dir/all:
 	$(MAKE) -f image_pipeline/image_view/CMakeFiles/image_view.dir/build.make image_pipeline/image_view/CMakeFiles/image_view.dir/depend
 	$(MAKE) -f image_pipeline/image_view/CMakeFiles/image_view.dir/build.make image_pipeline/image_view/CMakeFiles/image_view.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  29 30 31
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  30 31 32
 	@echo "Built target image_view"
 .PHONY : image_pipeline/image_view/CMakeFiles/image_view.dir/all
 
@@ -1494,7 +1531,7 @@ clean: image_pipeline/image_view/CMakeFiles/image_view.dir/clean
 image_pipeline/image_view/CMakeFiles/image_view_exe.dir/all:
 	$(MAKE) -f image_pipeline/image_view/CMakeFiles/image_view_exe.dir/build.make image_pipeline/image_view/CMakeFiles/image_view_exe.dir/depend
 	$(MAKE) -f image_pipeline/image_view/CMakeFiles/image_view_exe.dir/build.make image_pipeline/image_view/CMakeFiles/image_view_exe.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  32
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  33
 	@echo "Built target image_view_exe"
 .PHONY : image_pipeline/image_view/CMakeFiles/image_view_exe.dir/all
 
@@ -1622,7 +1659,7 @@ clean: image_pipeline/image_view/CMakeFiles/nodelet_generate_messages_py.dir/cle
 image_pipeline/image_view/CMakeFiles/stereo_view.dir/all:
 	$(MAKE) -f image_pipeline/image_view/CMakeFiles/stereo_view.dir/build.make image_pipeline/image_view/CMakeFiles/stereo_view.dir/depend
 	$(MAKE) -f image_pipeline/image_view/CMakeFiles/stereo_view.dir/build.make image_pipeline/image_view/CMakeFiles/stereo_view.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  38
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  39
 	@echo "Built target stereo_view"
 .PHONY : image_pipeline/image_view/CMakeFiles/stereo_view.dir/all
 
@@ -1657,7 +1694,7 @@ clean: image_pipeline/image_view/CMakeFiles/stereo_view.dir/clean
 image_pipeline/image_view/CMakeFiles/video_recorder.dir/all:
 	$(MAKE) -f image_pipeline/image_view/CMakeFiles/video_recorder.dir/build.make image_pipeline/image_view/CMakeFiles/video_recorder.dir/depend
 	$(MAKE) -f image_pipeline/image_view/CMakeFiles/video_recorder.dir/build.make image_pipeline/image_view/CMakeFiles/video_recorder.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  41
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  42
 	@echo "Built target video_recorder"
 .PHONY : image_pipeline/image_view/CMakeFiles/video_recorder.dir/all
 
@@ -1841,7 +1878,7 @@ clean: image_pipeline/image_proc/CMakeFiles/dynamic_reconfigure_generate_message
 image_pipeline/image_proc/CMakeFiles/image_proc.dir/all: image_pipeline/image_proc/CMakeFiles/image_proc_gencfg.dir/all
 	$(MAKE) -f image_pipeline/image_proc/CMakeFiles/image_proc.dir/build.make image_pipeline/image_proc/CMakeFiles/image_proc.dir/depend
 	$(MAKE) -f image_pipeline/image_proc/CMakeFiles/image_proc.dir/build.make image_pipeline/image_proc/CMakeFiles/image_proc.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  15 16 17 18 19 20
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  16 17 18 19 20 21
 	@echo "Built target image_proc"
 .PHONY : image_pipeline/image_proc/CMakeFiles/image_proc.dir/all
 
@@ -1876,7 +1913,7 @@ clean: image_pipeline/image_proc/CMakeFiles/image_proc.dir/clean
 image_pipeline/image_proc/CMakeFiles/image_proc_exe.dir/all: image_pipeline/image_proc/CMakeFiles/image_proc.dir/all
 	$(MAKE) -f image_pipeline/image_proc/CMakeFiles/image_proc_exe.dir/build.make image_pipeline/image_proc/CMakeFiles/image_proc_exe.dir/depend
 	$(MAKE) -f image_pipeline/image_proc/CMakeFiles/image_proc_exe.dir/build.make image_pipeline/image_proc/CMakeFiles/image_proc_exe.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  21
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  22
 	@echo "Built target image_proc_exe"
 .PHONY : image_pipeline/image_proc/CMakeFiles/image_proc_exe.dir/all
 
@@ -1911,7 +1948,7 @@ clean: image_pipeline/image_proc/CMakeFiles/image_proc_exe.dir/clean
 image_pipeline/image_proc/CMakeFiles/image_proc_gencfg.dir/all:
 	$(MAKE) -f image_pipeline/image_proc/CMakeFiles/image_proc_gencfg.dir/build.make image_pipeline/image_proc/CMakeFiles/image_proc_gencfg.dir/depend
 	$(MAKE) -f image_pipeline/image_proc/CMakeFiles/image_proc_gencfg.dir/build.make image_pipeline/image_proc/CMakeFiles/image_proc_gencfg.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  22 23 24
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  23 24 25
 	@echo "Built target image_proc_gencfg"
 .PHONY : image_pipeline/image_proc/CMakeFiles/image_proc_gencfg.dir/all
 
@@ -1984,7 +2021,7 @@ image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/all: image_pip
 image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/all: image_pipeline/image_proc/CMakeFiles/image_proc.dir/all
 	$(MAKE) -f image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/build.make image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/depend
 	$(MAKE) -f image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/build.make image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  34 35 36
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  35 36 37
 	@echo "Built target stereo_image_proc"
 .PHONY : image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/all
 
@@ -2019,7 +2056,7 @@ clean: image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/clean
 image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc_gencfg.dir/all:
 	$(MAKE) -f image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc_gencfg.dir/build.make image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc_gencfg.dir/depend
 	$(MAKE) -f image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc_gencfg.dir/build.make image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc_gencfg.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  37
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  38
 	@echo "Built target stereo_image_proc_gencfg"
 .PHONY : image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc_gencfg.dir/all
 
@@ -2144,11 +2181,11 @@ clean: image_pipeline/stereo_image_proc/CMakeFiles/stereo_msgs_generate_messages
 # Target rules for target image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir
 
 # All Build rule for target.
-image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/all: image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/all
 image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/all: image_pipeline/image_proc/CMakeFiles/image_proc.dir/all
+image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/all: image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc.dir/all
 	$(MAKE) -f image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/build.make image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/depend
 	$(MAKE) -f image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/build.make image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  39
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  40
 	@echo "Built target stereoimageproc_exe"
 .PHONY : image_pipeline/stereo_image_proc/CMakeFiles/stereoimageproc_exe.dir/all
 
@@ -2540,7 +2577,7 @@ image_pipeline/image_rotate/preinstall:
 image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/all: image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg.dir/all
 	$(MAKE) -f image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/build.make image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/depend
 	$(MAKE) -f image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/build.make image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  25
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  26
 	@echo "Built target image_rotate"
 .PHONY : image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/all
 
@@ -2575,7 +2612,7 @@ clean: image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/clean
 image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/all:
 	$(MAKE) -f image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/build.make image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/depend
 	$(MAKE) -f image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/build.make image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  26
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  27
 	@echo "Built target image_rotate_exe"
 .PHONY : image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/all
 
@@ -2610,7 +2647,7 @@ clean: image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/clean
 image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg.dir/all:
 	$(MAKE) -f image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg.dir/build.make image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg.dir/depend
 	$(MAKE) -f image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg.dir/build.make image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  27
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  28
 	@echo "Built target image_rotate_gencfg"
 .PHONY : image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg.dir/all
 

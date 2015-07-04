@@ -10,6 +10,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
 )
+link_directories(/usr/local/lib)
 find_package(OpenCV REQUIRED)
 if (OpenCV_VERSION VERSION_EQUAL "3")
 	add_definitions("-DOPENCV3=1")
@@ -110,6 +111,7 @@ include_directories(
 ## Declare a cpp executable
 add_executable(video_modder_node src/video_modder_node.cpp)
 add_executable(image_converter src/image_converter.cpp)
+add_executable(image_draw src/image_draw.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
@@ -121,6 +123,10 @@ add_executable(image_converter src/image_converter.cpp)
    ${OpenCV_LIBRARIES}
  )
  target_link_libraries(image_converter
+ 	${catkin_LIBRARIES}
+ 	${OpenCV_LIBRARIES}
+ )
+  target_link_libraries(image_draw
  	${catkin_LIBRARIES}
  	${OpenCV_LIBRARIES}
  )
