@@ -28,8 +28,6 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "image_pipeline/stereo_image_proc/catkin_generated/package.cmake"
   "image_testing/catkin_generated/ordered_paths.cmake"
   "image_testing/catkin_generated/package.cmake"
-  "usb_cam/catkin_generated/ordered_paths.cmake"
-  "usb_cam/catkin_generated/package.cmake"
   "/home/peter/brokenGlasses/devel/share/image_proc/cmake/image_procConfig-version.cmake"
   "/home/peter/brokenGlasses/devel/share/image_proc/cmake/image_procConfig.cmake"
   "/home/peter/brokenGlasses/src/CMakeLists.txt"
@@ -53,8 +51,6 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "/home/peter/brokenGlasses/src/image_pipeline/stereo_image_proc/package.xml"
   "/home/peter/brokenGlasses/src/image_testing/CMakeLists.txt"
   "/home/peter/brokenGlasses/src/image_testing/package.xml"
-  "/home/peter/brokenGlasses/src/usb_cam/CMakeLists.txt"
-  "/home/peter/brokenGlasses/src/usb_cam/package.xml"
   "/opt/ros/indigo/share/OpenCV/OpenCVConfig-version.cmake"
   "/opt/ros/indigo/share/OpenCV/OpenCVConfig.cmake"
   "/opt/ros/indigo/share/OpenCV/OpenCVModules-none.cmake"
@@ -73,8 +69,6 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/indigo/share/bondcpp/cmake/bondcppConfig.cmake"
   "/opt/ros/indigo/share/camera_calibration_parsers/cmake/camera_calibration_parsersConfig-version.cmake"
   "/opt/ros/indigo/share/camera_calibration_parsers/cmake/camera_calibration_parsersConfig.cmake"
-  "/opt/ros/indigo/share/camera_info_manager/cmake/camera_info_managerConfig-version.cmake"
-  "/opt/ros/indigo/share/camera_info_manager/cmake/camera_info_managerConfig.cmake"
   "/opt/ros/indigo/share/catkin/cmake/../package.xml"
   "/opt/ros/indigo/share/catkin/cmake/all.cmake"
   "/opt/ros/indigo/share/catkin/cmake/assert.cmake"
@@ -291,7 +285,6 @@ SET(CMAKE_MAKEFILE_PRODUCTS
   "image_pipeline/stereo_image_proc/CMakeFiles/CMakeDirectoryInformation.cmake"
   "image_pipeline/depth_image_proc/CMakeFiles/CMakeDirectoryInformation.cmake"
   "image_pipeline/image_rotate/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "usb_cam/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -369,6 +362,4 @@ SET(CMAKE_DEPEND_INFO_FILES
   "image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/DependInfo.cmake"
   "image_pipeline/image_rotate/CMakeFiles/image_rotate_exe.dir/DependInfo.cmake"
   "image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg.dir/DependInfo.cmake"
-  "usb_cam/CMakeFiles/usb_cam.dir/DependInfo.cmake"
-  "usb_cam/CMakeFiles/usb_cam_node.dir/DependInfo.cmake"
   )

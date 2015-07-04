@@ -134,7 +134,6 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   INCLUDE("/home/peter/brokenGlasses/build/image_pipeline/stereo_image_proc/cmake_install.cmake")
   INCLUDE("/home/peter/brokenGlasses/build/image_pipeline/depth_image_proc/cmake_install.cmake")
   INCLUDE("/home/peter/brokenGlasses/build/image_pipeline/image_rotate/cmake_install.cmake")
-  INCLUDE("/home/peter/brokenGlasses/build/usb_cam/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

@@ -69,7 +69,5 @@
 /home/peter/brokenGlasses/build/image_pipeline/depth_image_proc/CMakeFiles/tf2_msgs_generate_messages_cpp.dir
 /home/peter/brokenGlasses/build/image_pipeline/depth_image_proc/CMakeFiles/tf2_msgs_generate_messages_lisp.dir
 /home/peter/brokenGlasses/build/image_pipeline/depth_image_proc/CMakeFiles/tf2_msgs_generate_messages_py.dir
-/home/peter/brokenGlasses/build/usb_cam/CMakeFiles/usb_cam.dir
-/home/peter/brokenGlasses/build/usb_cam/CMakeFiles/usb_cam_node.dir
 /home/peter/brokenGlasses/build/image_testing/CMakeFiles/video_modder_node.dir
 /home/peter/brokenGlasses/build/image_pipeline/image_view/CMakeFiles/video_recorder.dir

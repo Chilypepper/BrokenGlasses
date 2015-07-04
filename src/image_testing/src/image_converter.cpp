@@ -15,16 +15,18 @@ class ImageConverter
   image_transport::ImageTransport it_;
   image_transport::Subscriber image_sub_;
   image_transport::Publisher image_pub_;
-  
 public:
   ImageConverter()
     : it_(nh_)
   {
     // Subscrive to input video feed and publish output video feed
-    image_sub_ = it_.subscribe("/camera/image_color", 1, 
+    image_sub_ = it_.subscribe("/camera/image_raw", 1, 
       &ImageConverter::imageCb, this);
     image_pub_ = it_.advertise("/image_converter/output_video", 1);
     ROS_INFO("Step 1");
+    
+    ROS_INFO("SETUP");
+
     namedWindow(OPENCV_WINDOW);
   }
   ~ImageConverter()
@@ -35,14 +37,14 @@ public:
   void imageCb(const sensor_msgs::ImageConstPtr& msg)
   {
     CvImagePtr cv_ptr;
+    ROS_INFO("\033[1;31mbold red text\033[0m\n");
     ROS_INFO("Step2");
     
     try
     {
       ROS_INFO("Trying to convert");
-    cv_ptr = toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
-    ROS_INFO("Converted");
-
+      cv_ptr = toCvCopy(msg, sensor_msgs::image_encodings::RGB8);
+      ROS_INFO("Converted");
     }
     catch (cv_bridge::Exception& e)
     {

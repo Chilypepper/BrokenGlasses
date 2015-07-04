@@ -1098,32 +1098,6 @@ image_rotate_gencfg/fast:
 	$(MAKE) -f image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg.dir/build.make image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg.dir/build
 .PHONY : image_rotate_gencfg/fast
 
-#=============================================================================
-# Target rules for targets named usb_cam
-
-# Build rule for target.
-usb_cam: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 usb_cam
-.PHONY : usb_cam
-
-# fast build rule for target.
-usb_cam/fast:
-	$(MAKE) -f usb_cam/CMakeFiles/usb_cam.dir/build.make usb_cam/CMakeFiles/usb_cam.dir/build
-.PHONY : usb_cam/fast
-
-#=============================================================================
-# Target rules for targets named usb_cam_node
-
-# Build rule for target.
-usb_cam_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 usb_cam_node
-.PHONY : usb_cam_node
-
-# fast build rule for target.
-usb_cam_node/fast:
-	$(MAKE) -f usb_cam/CMakeFiles/usb_cam_node.dir/build.make usb_cam/CMakeFiles/usb_cam_node.dir/build
-.PHONY : usb_cam_node/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1210,8 +1184,6 @@ help:
 	@echo "... image_rotate"
 	@echo "... image_rotate_exe"
 	@echo "... image_rotate_gencfg"
-	@echo "... usb_cam"
-	@echo "... usb_cam_node"
 .PHONY : help
 
 

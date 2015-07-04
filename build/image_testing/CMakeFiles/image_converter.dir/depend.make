@@ -14,7 +14,6 @@ image_testing/CMakeFiles/image_converter.dir/src/image_converter.cpp.o: /opt/ros
 image_testing/CMakeFiles/image_converter.dir/src/image_converter.cpp.o: /opt/ros/indigo/include/image_transport/single_subscriber_publisher.h
 image_testing/CMakeFiles/image_converter.dir/src/image_converter.cpp.o: /opt/ros/indigo/include/image_transport/subscriber.h
 image_testing/CMakeFiles/image_converter.dir/src/image_converter.cpp.o: /opt/ros/indigo/include/image_transport/transport_hints.h
-image_testing/CMakeFiles/image_converter.dir/src/image_converter.cpp.o: /opt/ros/indigo/include/opencv/cxcore.h
 image_testing/CMakeFiles/image_converter.dir/src/image_converter.cpp.o: /opt/ros/indigo/include/opencv2/calib3d.hpp
 image_testing/CMakeFiles/image_converter.dir/src/image_converter.cpp.o: /opt/ros/indigo/include/opencv2/calib3d/calib3d_c.h
 image_testing/CMakeFiles/image_converter.dir/src/image_converter.cpp.o: /opt/ros/indigo/include/opencv2/core.hpp
@@ -126,4 +125,5 @@ image_testing/CMakeFiles/image_converter.dir/src/image_converter.cpp.o: /opt/ros
 image_testing/CMakeFiles/image_converter.dir/src/image_converter.cpp.o: /opt/ros/indigo/include/sensor_msgs/RegionOfInterest.h
 image_testing/CMakeFiles/image_converter.dir/src/image_converter.cpp.o: /opt/ros/indigo/include/sensor_msgs/image_encodings.h
 image_testing/CMakeFiles/image_converter.dir/src/image_converter.cpp.o: /opt/ros/indigo/include/std_msgs/Header.h
+image_testing/CMakeFiles/image_converter.dir/src/image_converter.cpp.o: /usr/include/opencv/cxcore.h
 

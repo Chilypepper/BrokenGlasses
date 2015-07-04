@@ -582,7 +582,7 @@ image_view_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libcamera_calibration_
 image_view_SOURCE_DIR:STATIC=/home/peter/brokenGlasses/src/image_pipeline/image_view
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/indigo/lib/libcamera_info_manager.so
+lib:FILEPATH=/opt/ros/indigo/lib/libactionlib.so
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/indigo/share/message_filters/cmake
@@ -793,7 +793,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=13
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=12
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

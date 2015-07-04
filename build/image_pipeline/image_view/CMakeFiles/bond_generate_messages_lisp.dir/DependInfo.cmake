@@ -20,6 +20,7 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/opt/ros/indigo/include"
   "/usr/include/opencv"
+  "/opt/ros/indigo/include/opencv"
   "/usr/include/freetype2"
   "/usr/include/gtk-2.0"
   "/usr/lib/x86_64-linux-gnu/gtk-2.0/include"
@@ -29,7 +30,6 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/usr/include/atk-1.0"
   "/usr/include/glib-2.0"
   "/usr/lib/x86_64-linux-gnu/glib-2.0/include"
-  "/opt/ros/indigo/include/opencv"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
