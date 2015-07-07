@@ -1,6 +1,5 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/multi_board_calibration.tar.gz"
-  "/home/peter/brokenGlasses/devel/share/camera_calibration/tests/multi_board_calibration.tar.gz"
 )
 
 # Per-language clean rules from dependency scanning.

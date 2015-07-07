@@ -5,7 +5,6 @@ SET(CMAKE_DEPENDS_LANGUAGES
 
 # Preprocessor definitions for this target.
 SET(CMAKE_TARGET_DEFINITIONS
-  "OPENCV3=1"
   "ROSCONSOLE_BACKEND_LOG4CXX"
   "ROS_BUILD_SHARED_LIBS=1"
   "ROS_PACKAGE_NAME=\"depth_image_proc\""
@@ -17,9 +16,9 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
+  "/usr/include/opencv"
   "/home/peter/brokenGlasses/src/image_pipeline/depth_image_proc/include"
   "/opt/ros/indigo/include"
-  "/usr/include/opencv"
   "/usr/include/eigen3"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

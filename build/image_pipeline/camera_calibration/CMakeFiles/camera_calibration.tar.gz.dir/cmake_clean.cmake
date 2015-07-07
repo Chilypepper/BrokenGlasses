@@ -1,6 +1,5 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/camera_calibration.tar.gz"
-  "/home/peter/brokenGlasses/devel/share/camera_calibration/tests/camera_calibration.tar.gz"
 )
 
 # Per-language clean rules from dependency scanning.

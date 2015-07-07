@@ -45,15 +45,10 @@ CMAKE_BINARY_DIR = /home/peter/brokenGlasses/build
 # Include the progress variables for this target.
 include image_pipeline/camera_calibration/CMakeFiles/multi_board_calibration.tar.gz.dir/progress.make
 
-image_pipeline/camera_calibration/CMakeFiles/multi_board_calibration.tar.gz: /home/peter/brokenGlasses/devel/share/camera_calibration/tests/multi_board_calibration.tar.gz
-
-/home/peter/brokenGlasses/devel/share/camera_calibration/tests/multi_board_calibration.tar.gz:
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating /home/peter/brokenGlasses/devel/share/camera_calibration/tests/multi_board_calibration.tar.gz"
-	cd /home/peter/brokenGlasses/build/image_pipeline/camera_calibration && /usr/bin/python /opt/ros/indigo/share/catkin/cmake/test/download_checkmd5.py http://download.ros.org/data/camera_calibration/multi_board_calibration.tar.gz /home/peter/brokenGlasses/devel/share/camera_calibration/tests/multi_board_calibration.tar.gz ddc0f69582d140e33f9d3bfb681956bb
+image_pipeline/camera_calibration/CMakeFiles/multi_board_calibration.tar.gz:
+	cd /home/peter/brokenGlasses/build/image_pipeline/camera_calibration && /opt/ros/indigo/share/catkin/cmake/test/download_checkmd5.py http://download.ros.org/data/camera_calibration/multi_board_calibration.tar.gz /home/peter/brokenGlasses/devel/share/camera_calibration/tests/multi_board_calibration.tar.gz ddc0f69582d140e33f9d3bfb681956bb --ignore-error
 
 multi_board_calibration.tar.gz: image_pipeline/camera_calibration/CMakeFiles/multi_board_calibration.tar.gz
-multi_board_calibration.tar.gz: /home/peter/brokenGlasses/devel/share/camera_calibration/tests/multi_board_calibration.tar.gz
 multi_board_calibration.tar.gz: image_pipeline/camera_calibration/CMakeFiles/multi_board_calibration.tar.gz.dir/build.make
 .PHONY : multi_board_calibration.tar.gz
 

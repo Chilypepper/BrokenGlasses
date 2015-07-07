@@ -133,10 +133,9 @@ image_rotate_EXTERNAL_OBJECTS =
 /home/peter/brokenGlasses/devel/lib/libimage_rotate.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
 /home/peter/brokenGlasses/devel/lib/libimage_rotate.so: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/peter/brokenGlasses/devel/lib/libimage_rotate.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/peter/brokenGlasses/devel/lib/libimage_rotate.so: /opt/ros/indigo/lib/libopencv_core.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/libimage_rotate.so: /opt/ros/indigo/lib/libopencv_imgproc.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/libimage_rotate.so: /opt/ros/indigo/lib/libopencv_core.so.3.0.0
-/home/peter/brokenGlasses/devel/lib/libimage_rotate.so: /opt/ros/indigo/lib/libopencv_hal.a
+/home/peter/brokenGlasses/devel/lib/libimage_rotate.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8
+/home/peter/brokenGlasses/devel/lib/libimage_rotate.so: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8
+/home/peter/brokenGlasses/devel/lib/libimage_rotate.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8
 /home/peter/brokenGlasses/devel/lib/libimage_rotate.so: image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library /home/peter/brokenGlasses/devel/lib/libimage_rotate.so"
 	cd /home/peter/brokenGlasses/build/image_pipeline/image_rotate && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/image_rotate.dir/link.txt --verbose=$(VERBOSE)

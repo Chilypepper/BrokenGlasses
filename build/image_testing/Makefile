@@ -206,20 +206,6 @@ image_converter/fast:
 .PHONY : image_converter/fast
 
 # Convenience name for target.
-image_testing/CMakeFiles/image_draw.dir/rule:
-	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/image_draw.dir/rule
-.PHONY : image_testing/CMakeFiles/image_draw.dir/rule
-
-# Convenience name for target.
-image_draw: image_testing/CMakeFiles/image_draw.dir/rule
-.PHONY : image_draw
-
-# fast build rule for target.
-image_draw/fast:
-	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_draw.dir/build.make image_testing/CMakeFiles/image_draw.dir/build
-.PHONY : image_draw/fast
-
-# Convenience name for target.
 image_testing/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : image_testing/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
@@ -425,30 +411,6 @@ src/image_converter.cpp.s:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_converter.dir/build.make image_testing/CMakeFiles/image_converter.dir/src/image_converter.cpp.s
 .PHONY : src/image_converter.cpp.s
 
-src/image_draw.o: src/image_draw.cpp.o
-.PHONY : src/image_draw.o
-
-# target to build an object file
-src/image_draw.cpp.o:
-	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_draw.dir/build.make image_testing/CMakeFiles/image_draw.dir/src/image_draw.cpp.o
-.PHONY : src/image_draw.cpp.o
-
-src/image_draw.i: src/image_draw.cpp.i
-.PHONY : src/image_draw.i
-
-# target to preprocess a source file
-src/image_draw.cpp.i:
-	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_draw.dir/build.make image_testing/CMakeFiles/image_draw.dir/src/image_draw.cpp.i
-.PHONY : src/image_draw.cpp.i
-
-src/image_draw.s: src/image_draw.cpp.s
-.PHONY : src/image_draw.s
-
-# target to generate assembly for a file
-src/image_draw.cpp.s:
-	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_draw.dir/build.make image_testing/CMakeFiles/image_draw.dir/src/image_draw.cpp.s
-.PHONY : src/image_draw.cpp.s
-
 src/video_modder_node.o: src/video_modder_node.cpp.o
 .PHONY : src/video_modder_node.o
 
@@ -484,7 +446,6 @@ help:
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... image_converter"
-	@echo "... image_draw"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
@@ -507,9 +468,6 @@ help:
 	@echo "... src/image_converter.o"
 	@echo "... src/image_converter.i"
 	@echo "... src/image_converter.s"
-	@echo "... src/image_draw.o"
-	@echo "... src/image_draw.i"
-	@echo "... src/image_draw.s"
 	@echo "... src/video_modder_node.o"
 	@echo "... src/video_modder_node.i"
 	@echo "... src/video_modder_node.s"

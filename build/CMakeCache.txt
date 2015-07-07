@@ -374,16 +374,16 @@ LSB_RELEASE_EXECUTABLE:FILEPATH=/usr/bin/lsb_release
 //Path to a program.
 NOSETESTS:FILEPATH=/usr/bin/nosetests-2.7
 
-//Path where debug 3rdparty OpenCV dependencies are located
-OpenCV_3RDPARTY_LIB_DIR_DBG:PATH=/opt/ros/indigo/share/OpenCV/3rdparty/lib
+//Path where debug 3rdpaty OpenCV dependencies are located
+OpenCV_3RDPARTY_LIB_DIR_DBG:PATH=
 
-//Path where release 3rdparty OpenCV dependencies are located
-OpenCV_3RDPARTY_LIB_DIR_OPT:PATH=/opt/ros/indigo/share/OpenCV/3rdparty/lib
+//Path where release 3rdpaty OpenCV dependencies are located
+OpenCV_3RDPARTY_LIB_DIR_OPT:PATH=
 
-OpenCV_CONFIG_PATH:FILEPATH=/opt/ros/indigo/share/OpenCV
+OpenCV_CONFIG_PATH:FILEPATH=/usr/share/OpenCV
 
 //The directory containing a CMake configuration file for OpenCV.
-OpenCV_DIR:PATH=/opt/ros/indigo/share/OpenCV
+OpenCV_DIR:PATH=/usr/share/OpenCV
 
 //Path where debug OpenCV libraries are located
 OpenCV_LIB_DIR_DBG:PATH=
@@ -447,9 +447,6 @@ camera_calibration_SOURCE_DIR:STATIC=/home/peter/brokenGlasses/src/image_pipelin
 
 //The directory containing a CMake configuration file for camera_calibration_parsers.
 camera_calibration_parsers_DIR:PATH=/opt/ros/indigo/share/camera_calibration_parsers/cmake
-
-//The directory containing a CMake configuration file for camera_info_manager.
-camera_info_manager_DIR:PATH=/opt/ros/indigo/share/camera_info_manager/cmake
 
 //Value Computed by CMake
 camera_launches_BINARY_DIR:STATIC=/home/peter/brokenGlasses/build/camera_launches
@@ -527,12 +524,6 @@ gtest_force_shared_crt:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
-//Value Computed by CMake
-image_checker_BINARY_DIR:STATIC=/home/peter/brokenGlasses/build/image_checker
-
-//Value Computed by CMake
-image_checker_SOURCE_DIR:STATIC=/home/peter/brokenGlasses/src/image_checker
-
 //The directory containing a CMake configuration file for image_geometry.
 image_geometry_DIR:PATH=/opt/ros/indigo/share/image_geometry/cmake
 
@@ -549,7 +540,7 @@ image_proc_BINARY_DIR:STATIC=/home/peter/brokenGlasses/build/image_pipeline/imag
 image_proc_DIR:PATH=/home/peter/brokenGlasses/devel/share/image_proc/cmake
 
 //Dependencies for the target
-image_proc_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libcv_bridge.so;general;/opt/ros/indigo/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/indigo/lib/libimage_geometry.so;general;/usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_stitching.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.8;general;/opt/ros/indigo/lib/libimage_transport.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;opencv_viz;general;opencv_videostab;general;opencv_videoio;general;opencv_video;general;opencv_superres;general;opencv_stitching;general;opencv_shape;general;opencv_photo;general;opencv_objdetect;general;opencv_ml;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_highgui;general;opencv_hal;general;opencv_flann;general;opencv_features2d;general;opencv_core;general;opencv_calib3d;
+image_proc_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libcv_bridge.so;general;/opt/ros/indigo/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/indigo/lib/libimage_geometry.so;general;/usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_stitching.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.8;general;/opt/ros/indigo/lib/libimage_transport.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;opencv_videostab;general;opencv_video;general;opencv_superres;general;opencv_stitching;general;opencv_photo;general;opencv_ocl;general;opencv_objdetect;general;opencv_ml;general;opencv_legacy;general;opencv_imgproc;general;opencv_highgui;general;opencv_gpu;general;opencv_flann;general;opencv_features2d;general;opencv_core;general;opencv_contrib;general;opencv_calib3d;
 
 //Value Computed by CMake
 image_proc_SOURCE_DIR:STATIC=/home/peter/brokenGlasses/src/image_pipeline/image_proc
@@ -576,7 +567,7 @@ image_transport_DIR:PATH=/opt/ros/indigo/share/image_transport/cmake
 image_view_BINARY_DIR:STATIC=/home/peter/brokenGlasses/build/image_pipeline/image_view
 
 //Dependencies for the target
-image_view_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libcamera_calibration_parsers.so;general;/opt/ros/indigo/lib/libcv_bridge.so;general;/usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_stitching.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.8;general;/opt/ros/indigo/lib/libimage_transport.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;/usr/lib/x86_64-linux-gnu/libfreetype.so;general;/usr/lib/x86_64-linux-gnu/libgtk-x11-2.0.so;general;/usr/lib/x86_64-linux-gnu/libgdk-x11-2.0.so;general;/usr/lib/x86_64-linux-gnu/libcairo.so;general;/usr/lib/x86_64-linux-gnu/libpango-1.0.so;general;/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so;general;/usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so;general;/usr/lib/x86_64-linux-gnu/libpangoxft-1.0.so;general;/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so;general;/usr/lib/x86_64-linux-gnu/libgthread-2.0.so;general;/usr/lib/x86_64-linux-gnu/libgmodule-2.0.so;general;/usr/lib/x86_64-linux-gnu/libgio-2.0.so;general;/usr/lib/x86_64-linux-gnu/libatk-1.0.so;general;/usr/lib/x86_64-linux-gnu/libgobject-2.0.so;general;/usr/lib/x86_64-linux-gnu/libglib-2.0.so;general;opencv_viz;general;opencv_videostab;general;opencv_videoio;general;opencv_video;general;opencv_superres;general;opencv_stitching;general;opencv_shape;general;opencv_photo;general;opencv_objdetect;general;opencv_ml;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_highgui;general;opencv_hal;general;opencv_flann;general;opencv_features2d;general;opencv_core;general;opencv_calib3d;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;
+image_view_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libcamera_calibration_parsers.so;general;/opt/ros/indigo/lib/libcv_bridge.so;general;/usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_stitching.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.8;general;/opt/ros/indigo/lib/libimage_transport.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;/usr/lib/x86_64-linux-gnu/libfreetype.so;general;/usr/lib/x86_64-linux-gnu/libgtk-x11-2.0.so;general;/usr/lib/x86_64-linux-gnu/libgdk-x11-2.0.so;general;/usr/lib/x86_64-linux-gnu/libcairo.so;general;/usr/lib/x86_64-linux-gnu/libpango-1.0.so;general;/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so;general;/usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so;general;/usr/lib/x86_64-linux-gnu/libpangoxft-1.0.so;general;/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so;general;/usr/lib/x86_64-linux-gnu/libgthread-2.0.so;general;/usr/lib/x86_64-linux-gnu/libgmodule-2.0.so;general;/usr/lib/x86_64-linux-gnu/libgio-2.0.so;general;/usr/lib/x86_64-linux-gnu/libatk-1.0.so;general;/usr/lib/x86_64-linux-gnu/libgobject-2.0.so;general;/usr/lib/x86_64-linux-gnu/libglib-2.0.so;general;opencv_videostab;general;opencv_video;general;opencv_superres;general;opencv_stitching;general;opencv_photo;general;opencv_ocl;general;opencv_objdetect;general;opencv_ml;general;opencv_legacy;general;opencv_imgproc;general;opencv_highgui;general;opencv_gpu;general;opencv_flann;general;opencv_features2d;general;opencv_core;general;opencv_contrib;general;opencv_calib3d;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;
 
 //Value Computed by CMake
 image_view_SOURCE_DIR:STATIC=/home/peter/brokenGlasses/src/image_pipeline/image_view
@@ -595,9 +586,6 @@ message_runtime_DIR:PATH=/opt/ros/indigo/share/message_runtime/cmake
 
 //The directory containing a CMake configuration file for nodelet.
 nodelet_DIR:PATH=/opt/ros/indigo/share/nodelet/cmake
-
-//The directory containing a CMake configuration file for opencv2.
-opencv2_DIR:PATH=opencv2_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/indigo/share/pluginlib/cmake
@@ -642,7 +630,7 @@ std_msgs_DIR:PATH=/opt/ros/indigo/share/std_msgs/cmake
 stereo_image_proc_BINARY_DIR:STATIC=/home/peter/brokenGlasses/build/image_pipeline/stereo_image_proc
 
 //Dependencies for the target
-stereo_image_proc_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libcv_bridge.so;general;/opt/ros/indigo/lib/libdynamic_reconfigure_config_init_mutex.so;general;image_proc;general;/opt/ros/indigo/lib/libopencv_viz.so.3.0.0;general;/opt/ros/indigo/lib/libopencv_videostab.so.3.0.0;general;/opt/ros/indigo/lib/libopencv_videoio.so.3.0.0;general;/opt/ros/indigo/lib/libopencv_video.so.3.0.0;general;/opt/ros/indigo/lib/libopencv_superres.so.3.0.0;general;/opt/ros/indigo/lib/libopencv_stitching.so.3.0.0;general;/opt/ros/indigo/lib/libopencv_shape.so.3.0.0;general;/opt/ros/indigo/lib/libopencv_photo.so.3.0.0;general;/opt/ros/indigo/lib/libopencv_objdetect.so.3.0.0;general;/opt/ros/indigo/lib/libopencv_ml.so.3.0.0;general;/opt/ros/indigo/lib/libopencv_imgproc.so.3.0.0;general;/opt/ros/indigo/lib/libopencv_imgcodecs.so.3.0.0;general;/opt/ros/indigo/lib/libopencv_highgui.so.3.0.0;general;/opt/ros/indigo/lib/libopencv_hal.a;general;/opt/ros/indigo/lib/libopencv_flann.so.3.0.0;general;/opt/ros/indigo/lib/libopencv_features2d.so.3.0.0;general;/opt/ros/indigo/lib/libopencv_core.so.3.0.0;general;/opt/ros/indigo/lib/libopencv_calib3d.so.3.0.0;general;/opt/ros/indigo/lib/libimage_geometry.so;general;/usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_stitching.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.8;general;/opt/ros/indigo/lib/libimage_transport.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;opencv_viz;general;opencv_videostab;general;opencv_videoio;general;opencv_video;general;opencv_superres;general;opencv_stitching;general;opencv_shape;general;opencv_photo;general;opencv_objdetect;general;opencv_ml;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_highgui;general;opencv_hal;general;opencv_flann;general;opencv_features2d;general;opencv_core;general;opencv_calib3d;
+stereo_image_proc_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libcv_bridge.so;general;/opt/ros/indigo/lib/libdynamic_reconfigure_config_init_mutex.so;general;image_proc;general;/opt/ros/indigo/lib/libimage_geometry.so;general;/usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_stitching.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.8;general;/usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.8;general;/opt/ros/indigo/lib/libimage_transport.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;opencv_videostab;general;opencv_video;general;opencv_superres;general;opencv_stitching;general;opencv_photo;general;opencv_ocl;general;opencv_objdetect;general;opencv_ml;general;opencv_legacy;general;opencv_imgproc;general;opencv_highgui;general;opencv_gpu;general;opencv_flann;general;opencv_features2d;general;opencv_core;general;opencv_contrib;general;opencv_calib3d;
 
 //Value Computed by CMake
 stereo_image_proc_SOURCE_DIR:STATIC=/home/peter/brokenGlasses/src/image_pipeline/stereo_image_proc
@@ -664,15 +652,6 @@ tf2_py_DIR:PATH=/opt/ros/indigo/share/tf2_py/cmake
 
 //The directory containing a CMake configuration file for tf2_ros.
 tf2_ros_DIR:PATH=/opt/ros/indigo/share/tf2_ros/cmake
-
-//Value Computed by CMake
-usb_cam_BINARY_DIR:STATIC=/home/peter/brokenGlasses/build/usb_cam
-
-//Dependencies for the target
-usb_cam_LIB_DEPENDS:STATIC=general;avcodec;general;swscale;general;/opt/ros/indigo/lib/libimage_transport.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/libcamera_info_manager.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;
-
-//Value Computed by CMake
-usb_cam_SOURCE_DIR:STATIC=/home/peter/brokenGlasses/src/usb_cam
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/indigo/share/xmlrpcpp/cmake
@@ -1021,74 +1000,4 @@ _PC_FREETYPE_freetype2_PREFIX:INTERNAL=
 _PC_FREETYPE_freetype2_VERSION:INTERNAL=
 __pkg_config_checked_PC_EIGEN:INTERNAL=1
 __pkg_config_checked__PC_FREETYPE:INTERNAL=1
-__pkg_config_checked_avcodec:INTERNAL=1
-__pkg_config_checked_swscale:INTERNAL=1
-avcodec_CFLAGS:INTERNAL=
-avcodec_CFLAGS_I:INTERNAL=
-avcodec_CFLAGS_OTHER:INTERNAL=
-avcodec_FOUND:INTERNAL=1
-avcodec_INCLUDEDIR:INTERNAL=/usr/include
-avcodec_INCLUDE_DIRS:INTERNAL=
-avcodec_LDFLAGS:INTERNAL=-lavcodec
-avcodec_LDFLAGS_OTHER:INTERNAL=
-avcodec_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
-avcodec_LIBRARIES:INTERNAL=avcodec
-avcodec_LIBRARY_DIRS:INTERNAL=
-avcodec_LIBS:INTERNAL=
-avcodec_LIBS_L:INTERNAL=
-avcodec_LIBS_OTHER:INTERNAL=
-avcodec_LIBS_PATHS:INTERNAL=
-avcodec_PREFIX:INTERNAL=/usr
-avcodec_STATIC_CFLAGS:INTERNAL=
-avcodec_STATIC_CFLAGS_I:INTERNAL=
-avcodec_STATIC_CFLAGS_OTHER:INTERNAL=
-avcodec_STATIC_INCLUDE_DIRS:INTERNAL=
-avcodec_STATIC_LDFLAGS:INTERNAL=-pthread;-lavcodec;-ldl;-lXfixes;-lXext;-lX11;-lcdio_paranoia;-lcdio_cdda;-lcdio;-ljack;-lasound;-ldc1394;-lraw1394;-lgcrypt;-lxvidcore;-lx264;-lvpx;-lvorbisenc;-lvorbis;-ltheoraenc;-ltheoradec;-logg;-lspeex;-lschroedinger-1.0;-lrtmp;-lpulse-simple;-lpulse;-lopus;-lopenjpeg;-lmp3lame;-lgsm;-lfreetype;-lgnutls;-lva;-lbz2;-lz;-lavutil;-lm
-avcodec_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
-avcodec_STATIC_LIBDIR:INTERNAL=
-avcodec_STATIC_LIBRARIES:INTERNAL=avcodec;dl;Xfixes;Xext;X11;cdio_paranoia;cdio_cdda;cdio;jack;asound;dc1394;raw1394;gcrypt;xvidcore;x264;vpx;vorbisenc;vorbis;theoraenc;theoradec;ogg;speex;schroedinger-1.0;rtmp;pulse-simple;pulse;opus;openjpeg;mp3lame;gsm;freetype;gnutls;va;bz2;z;avutil;m
-avcodec_STATIC_LIBRARY_DIRS:INTERNAL=
-avcodec_STATIC_LIBS:INTERNAL=
-avcodec_STATIC_LIBS_L:INTERNAL=
-avcodec_STATIC_LIBS_OTHER:INTERNAL=
-avcodec_STATIC_LIBS_PATHS:INTERNAL=
-avcodec_VERSION:INTERNAL=54.35.0
-avcodec_libavcodec_INCLUDEDIR:INTERNAL=
-avcodec_libavcodec_LIBDIR:INTERNAL=
-avcodec_libavcodec_PREFIX:INTERNAL=
-avcodec_libavcodec_VERSION:INTERNAL=
-swscale_CFLAGS:INTERNAL=
-swscale_CFLAGS_I:INTERNAL=
-swscale_CFLAGS_OTHER:INTERNAL=
-swscale_FOUND:INTERNAL=1
-swscale_INCLUDEDIR:INTERNAL=/usr/include
-swscale_INCLUDE_DIRS:INTERNAL=
-swscale_LDFLAGS:INTERNAL=-lswscale
-swscale_LDFLAGS_OTHER:INTERNAL=
-swscale_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
-swscale_LIBRARIES:INTERNAL=swscale
-swscale_LIBRARY_DIRS:INTERNAL=
-swscale_LIBS:INTERNAL=
-swscale_LIBS_L:INTERNAL=
-swscale_LIBS_OTHER:INTERNAL=
-swscale_LIBS_PATHS:INTERNAL=
-swscale_PREFIX:INTERNAL=/usr
-swscale_STATIC_CFLAGS:INTERNAL=
-swscale_STATIC_CFLAGS_I:INTERNAL=
-swscale_STATIC_CFLAGS_OTHER:INTERNAL=
-swscale_STATIC_INCLUDE_DIRS:INTERNAL=
-swscale_STATIC_LDFLAGS:INTERNAL=-lswscale;-lavutil;-lm
-swscale_STATIC_LDFLAGS_OTHER:INTERNAL=
-swscale_STATIC_LIBDIR:INTERNAL=
-swscale_STATIC_LIBRARIES:INTERNAL=swscale;avutil;m
-swscale_STATIC_LIBRARY_DIRS:INTERNAL=
-swscale_STATIC_LIBS:INTERNAL=
-swscale_STATIC_LIBS_L:INTERNAL=
-swscale_STATIC_LIBS_OTHER:INTERNAL=
-swscale_STATIC_LIBS_PATHS:INTERNAL=
-swscale_VERSION:INTERNAL=2.1.1
-swscale_libswscale_INCLUDEDIR:INTERNAL=
-swscale_libswscale_LIBDIR:INTERNAL=
-swscale_libswscale_PREFIX:INTERNAL=
-swscale_libswscale_VERSION:INTERNAL=
 

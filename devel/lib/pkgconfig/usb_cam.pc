@@ -1,8 +1,0 @@
-prefix=/home/peter/brokenGlasses/devel
-
-Name: usb_cam
-Description: Description of usb_cam
-Version: 0.3.3
-Cflags: -I/home/peter/brokenGlasses/src/usb_cam/include
-Libs: -L/home/peter/brokenGlasses/devel/lib -lusb_cam
-Requires: 

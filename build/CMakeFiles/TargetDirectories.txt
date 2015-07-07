@@ -16,6 +16,7 @@
 /home/peter/brokenGlasses/build/CMakeFiles/clean_test_results.dir
 /home/peter/brokenGlasses/build/image_pipeline/depth_image_proc/CMakeFiles/depth_image_proc.dir
 /home/peter/brokenGlasses/build/image_pipeline/image_view/CMakeFiles/disparity_view.dir
+/home/peter/brokenGlasses/build/CMakeFiles/download_extra_data.dir
 /home/peter/brokenGlasses/build/CMakeFiles/doxygen.dir
 /home/peter/brokenGlasses/build/image_pipeline/image_proc/CMakeFiles/dynamic_reconfigure_gencfg.dir
 /home/peter/brokenGlasses/build/image_pipeline/image_proc/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir
@@ -28,7 +29,6 @@
 /home/peter/brokenGlasses/build/gtest/CMakeFiles/gtest.dir
 /home/peter/brokenGlasses/build/gtest/CMakeFiles/gtest_main.dir
 /home/peter/brokenGlasses/build/image_testing/CMakeFiles/image_converter.dir
-/home/peter/brokenGlasses/build/image_testing/CMakeFiles/image_draw.dir
 /home/peter/brokenGlasses/build/image_pipeline/image_proc/CMakeFiles/image_proc.dir
 /home/peter/brokenGlasses/build/image_pipeline/image_proc/CMakeFiles/image_proc_exe.dir
 /home/peter/brokenGlasses/build/image_pipeline/image_proc/CMakeFiles/image_proc_gencfg.dir

@@ -163,6 +163,19 @@ clean_test_results/fast:
 .PHONY : clean_test_results/fast
 
 #=============================================================================
+# Target rules for targets named download_extra_data
+
+# Build rule for target.
+download_extra_data: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 download_extra_data
+.PHONY : download_extra_data
+
+# fast build rule for target.
+download_extra_data/fast:
+	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/build
+.PHONY : download_extra_data/fast
+
+#=============================================================================
 # Target rules for targets named doxygen
 
 # Build rule for target.
@@ -421,19 +434,6 @@ image_converter: cmake_check_build_system
 image_converter/fast:
 	$(MAKE) -f image_testing/CMakeFiles/image_converter.dir/build.make image_testing/CMakeFiles/image_converter.dir/build
 .PHONY : image_converter/fast
-
-#=============================================================================
-# Target rules for targets named image_draw
-
-# Build rule for target.
-image_draw: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 image_draw
-.PHONY : image_draw
-
-# fast build rule for target.
-image_draw/fast:
-	$(MAKE) -f image_testing/CMakeFiles/image_draw.dir/build.make image_testing/CMakeFiles/image_draw.dir/build
-.PHONY : image_draw/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
@@ -1118,6 +1118,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... clean_test_results"
+	@echo "... download_extra_data"
 	@echo "... doxygen"
 	@echo "... edit_cache"
 	@echo "... install"
@@ -1145,7 +1146,6 @@ help:
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... image_converter"
-	@echo "... image_draw"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
