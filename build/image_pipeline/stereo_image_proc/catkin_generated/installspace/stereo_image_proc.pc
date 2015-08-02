@@ -2,7 +2,7 @@ prefix=/home/peter/brokenGlasses/install
 
 Name: stereo_image_proc
 Description: Description of stereo_image_proc
-Version: 1.12.13
+Version: 1.12.14
 Cflags: -I/home/peter/brokenGlasses/install/include
 Libs: -L/home/peter/brokenGlasses/install/lib -lstereo_image_proc
 Requires: image_geometry image_proc sensor_msgs stereo_msgs

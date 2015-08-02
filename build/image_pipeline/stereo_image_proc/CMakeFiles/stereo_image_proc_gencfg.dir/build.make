@@ -49,11 +49,11 @@ image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc_gencfg: /home/pete
 image_pipeline/stereo_image_proc/CMakeFiles/stereo_image_proc_gencfg: /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/stereo_image_proc/cfg/DisparityConfig.py
 
 /home/peter/brokenGlasses/devel/include/stereo_image_proc/DisparityConfig.h: /home/peter/brokenGlasses/src/image_pipeline/stereo_image_proc/cfg/Disparity.cfg
-/home/peter/brokenGlasses/devel/include/stereo_image_proc/DisparityConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.py.template
-/home/peter/brokenGlasses/devel/include/stereo_image_proc/DisparityConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template
+/home/peter/brokenGlasses/devel/include/stereo_image_proc/DisparityConfig.h: /opt/ros/jade/share/dynamic_reconfigure/cmake/../templates/ConfigType.py.template
+/home/peter/brokenGlasses/devel/include/stereo_image_proc/DisparityConfig.h: /opt/ros/jade/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating dynamic reconfigure files from cfg/Disparity.cfg: /home/peter/brokenGlasses/devel/include/stereo_image_proc/DisparityConfig.h /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/stereo_image_proc/cfg/DisparityConfig.py"
-	cd /home/peter/brokenGlasses/build/image_pipeline/stereo_image_proc && ../../catkin_generated/env_cached.sh /home/peter/brokenGlasses/src/image_pipeline/stereo_image_proc/cfg/Disparity.cfg /opt/ros/indigo/share/dynamic_reconfigure/cmake/.. /home/peter/brokenGlasses/devel/share/stereo_image_proc /home/peter/brokenGlasses/devel/include/stereo_image_proc /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/stereo_image_proc
+	cd /home/peter/brokenGlasses/build/image_pipeline/stereo_image_proc && ../../catkin_generated/env_cached.sh /home/peter/brokenGlasses/src/image_pipeline/stereo_image_proc/cfg/Disparity.cfg /opt/ros/jade/share/dynamic_reconfigure/cmake/.. /home/peter/brokenGlasses/devel/share/stereo_image_proc /home/peter/brokenGlasses/devel/include/stereo_image_proc /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/stereo_image_proc
 
 /home/peter/brokenGlasses/devel/share/stereo_image_proc/docs/DisparityConfig.dox: /home/peter/brokenGlasses/devel/include/stereo_image_proc/DisparityConfig.h
 

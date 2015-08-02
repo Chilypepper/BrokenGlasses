@@ -1,5 +1,5 @@
 set(_CATKIN_CURRENT_PACKAGE "image_proc")
-set(image_proc_VERSION "1.12.13")
+set(image_proc_VERSION "1.12.14")
 set(image_proc_MAINTAINER "Vincent Rabaud <vincent.rabaud@gmail.com>")
 set(image_proc_BUILD_DEPENDS "boost" "cv_bridge" "dynamic_reconfigure" "image_geometry" "image_transport" "libopencv-dev" "nodelet" "roscpp" "sensor_msgs")
 set(image_proc_RUN_DEPENDS "cv_bridge" "dynamic_reconfigure" "image_geometry" "image_transport" "libopencv-dev" "nodelet" "roscpp" "sensor_msgs")

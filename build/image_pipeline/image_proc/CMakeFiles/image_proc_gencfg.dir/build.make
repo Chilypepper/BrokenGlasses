@@ -53,11 +53,11 @@ image_pipeline/image_proc/CMakeFiles/image_proc_gencfg: /home/peter/brokenGlasse
 image_pipeline/image_proc/CMakeFiles/image_proc_gencfg: /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/image_proc/cfg/RectifyConfig.py
 
 /home/peter/brokenGlasses/devel/include/image_proc/CropDecimateConfig.h: /home/peter/brokenGlasses/src/image_pipeline/image_proc/cfg/CropDecimate.cfg
-/home/peter/brokenGlasses/devel/include/image_proc/CropDecimateConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.py.template
-/home/peter/brokenGlasses/devel/include/image_proc/CropDecimateConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template
+/home/peter/brokenGlasses/devel/include/image_proc/CropDecimateConfig.h: /opt/ros/jade/share/dynamic_reconfigure/cmake/../templates/ConfigType.py.template
+/home/peter/brokenGlasses/devel/include/image_proc/CropDecimateConfig.h: /opt/ros/jade/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating dynamic reconfigure files from cfg/CropDecimate.cfg: /home/peter/brokenGlasses/devel/include/image_proc/CropDecimateConfig.h /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/image_proc/cfg/CropDecimateConfig.py"
-	cd /home/peter/brokenGlasses/build/image_pipeline/image_proc && ../../catkin_generated/env_cached.sh /home/peter/brokenGlasses/src/image_pipeline/image_proc/cfg/CropDecimate.cfg /opt/ros/indigo/share/dynamic_reconfigure/cmake/.. /home/peter/brokenGlasses/devel/share/image_proc /home/peter/brokenGlasses/devel/include/image_proc /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/image_proc
+	cd /home/peter/brokenGlasses/build/image_pipeline/image_proc && ../../catkin_generated/env_cached.sh /home/peter/brokenGlasses/src/image_pipeline/image_proc/cfg/CropDecimate.cfg /opt/ros/jade/share/dynamic_reconfigure/cmake/.. /home/peter/brokenGlasses/devel/share/image_proc /home/peter/brokenGlasses/devel/include/image_proc /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/image_proc
 
 /home/peter/brokenGlasses/devel/share/image_proc/docs/CropDecimateConfig.dox: /home/peter/brokenGlasses/devel/include/image_proc/CropDecimateConfig.h
 
@@ -68,11 +68,11 @@ image_pipeline/image_proc/CMakeFiles/image_proc_gencfg: /home/peter/brokenGlasse
 /home/peter/brokenGlasses/devel/share/image_proc/docs/CropDecimateConfig.wikidoc: /home/peter/brokenGlasses/devel/include/image_proc/CropDecimateConfig.h
 
 /home/peter/brokenGlasses/devel/include/image_proc/DebayerConfig.h: /home/peter/brokenGlasses/src/image_pipeline/image_proc/cfg/Debayer.cfg
-/home/peter/brokenGlasses/devel/include/image_proc/DebayerConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.py.template
-/home/peter/brokenGlasses/devel/include/image_proc/DebayerConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template
+/home/peter/brokenGlasses/devel/include/image_proc/DebayerConfig.h: /opt/ros/jade/share/dynamic_reconfigure/cmake/../templates/ConfigType.py.template
+/home/peter/brokenGlasses/devel/include/image_proc/DebayerConfig.h: /opt/ros/jade/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating dynamic reconfigure files from cfg/Debayer.cfg: /home/peter/brokenGlasses/devel/include/image_proc/DebayerConfig.h /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/image_proc/cfg/DebayerConfig.py"
-	cd /home/peter/brokenGlasses/build/image_pipeline/image_proc && ../../catkin_generated/env_cached.sh /home/peter/brokenGlasses/src/image_pipeline/image_proc/cfg/Debayer.cfg /opt/ros/indigo/share/dynamic_reconfigure/cmake/.. /home/peter/brokenGlasses/devel/share/image_proc /home/peter/brokenGlasses/devel/include/image_proc /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/image_proc
+	cd /home/peter/brokenGlasses/build/image_pipeline/image_proc && ../../catkin_generated/env_cached.sh /home/peter/brokenGlasses/src/image_pipeline/image_proc/cfg/Debayer.cfg /opt/ros/jade/share/dynamic_reconfigure/cmake/.. /home/peter/brokenGlasses/devel/share/image_proc /home/peter/brokenGlasses/devel/include/image_proc /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/image_proc
 
 /home/peter/brokenGlasses/devel/share/image_proc/docs/DebayerConfig.dox: /home/peter/brokenGlasses/devel/include/image_proc/DebayerConfig.h
 
@@ -83,11 +83,11 @@ image_pipeline/image_proc/CMakeFiles/image_proc_gencfg: /home/peter/brokenGlasse
 /home/peter/brokenGlasses/devel/share/image_proc/docs/DebayerConfig.wikidoc: /home/peter/brokenGlasses/devel/include/image_proc/DebayerConfig.h
 
 /home/peter/brokenGlasses/devel/include/image_proc/RectifyConfig.h: /home/peter/brokenGlasses/src/image_pipeline/image_proc/cfg/Rectify.cfg
-/home/peter/brokenGlasses/devel/include/image_proc/RectifyConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.py.template
-/home/peter/brokenGlasses/devel/include/image_proc/RectifyConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template
+/home/peter/brokenGlasses/devel/include/image_proc/RectifyConfig.h: /opt/ros/jade/share/dynamic_reconfigure/cmake/../templates/ConfigType.py.template
+/home/peter/brokenGlasses/devel/include/image_proc/RectifyConfig.h: /opt/ros/jade/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating dynamic reconfigure files from cfg/Rectify.cfg: /home/peter/brokenGlasses/devel/include/image_proc/RectifyConfig.h /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/image_proc/cfg/RectifyConfig.py"
-	cd /home/peter/brokenGlasses/build/image_pipeline/image_proc && ../../catkin_generated/env_cached.sh /home/peter/brokenGlasses/src/image_pipeline/image_proc/cfg/Rectify.cfg /opt/ros/indigo/share/dynamic_reconfigure/cmake/.. /home/peter/brokenGlasses/devel/share/image_proc /home/peter/brokenGlasses/devel/include/image_proc /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/image_proc
+	cd /home/peter/brokenGlasses/build/image_pipeline/image_proc && ../../catkin_generated/env_cached.sh /home/peter/brokenGlasses/src/image_pipeline/image_proc/cfg/Rectify.cfg /opt/ros/jade/share/dynamic_reconfigure/cmake/.. /home/peter/brokenGlasses/devel/share/image_proc /home/peter/brokenGlasses/devel/include/image_proc /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/image_proc
 
 /home/peter/brokenGlasses/devel/share/image_proc/docs/RectifyConfig.dox: /home/peter/brokenGlasses/devel/include/image_proc/RectifyConfig.h
 

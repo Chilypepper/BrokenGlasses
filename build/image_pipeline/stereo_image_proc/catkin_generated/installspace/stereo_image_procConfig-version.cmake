@@ -1,5 +1,5 @@
 # generated from catkin/cmake/template/pkgConfig-version.cmake.in
-set(PACKAGE_VERSION "1.12.13")
+set(PACKAGE_VERSION "1.12.14")
 
 set(PACKAGE_VERSION_EXACT False)
 set(PACKAGE_VERSION_COMPATIBLE False)

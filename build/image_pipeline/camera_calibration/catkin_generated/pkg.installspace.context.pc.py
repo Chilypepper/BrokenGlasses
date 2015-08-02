@@ -5,4 +5,4 @@ PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "camera_calibration"
 PROJECT_SPACE_DIR = "/home/peter/brokenGlasses/install"
-PROJECT_VERSION = "1.12.13"
+PROJECT_VERSION = "1.12.14"

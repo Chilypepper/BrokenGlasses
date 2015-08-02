@@ -49,11 +49,11 @@ image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg: /home/peter/brokenGl
 image_pipeline/image_rotate/CMakeFiles/image_rotate_gencfg: /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/image_rotate/cfg/ImageRotateConfig.py
 
 /home/peter/brokenGlasses/devel/include/image_rotate/ImageRotateConfig.h: /home/peter/brokenGlasses/src/image_pipeline/image_rotate/cfg/ImageRotate.cfg
-/home/peter/brokenGlasses/devel/include/image_rotate/ImageRotateConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.py.template
-/home/peter/brokenGlasses/devel/include/image_rotate/ImageRotateConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template
+/home/peter/brokenGlasses/devel/include/image_rotate/ImageRotateConfig.h: /opt/ros/jade/share/dynamic_reconfigure/cmake/../templates/ConfigType.py.template
+/home/peter/brokenGlasses/devel/include/image_rotate/ImageRotateConfig.h: /opt/ros/jade/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating dynamic reconfigure files from cfg/ImageRotate.cfg: /home/peter/brokenGlasses/devel/include/image_rotate/ImageRotateConfig.h /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/image_rotate/cfg/ImageRotateConfig.py"
-	cd /home/peter/brokenGlasses/build/image_pipeline/image_rotate && ../../catkin_generated/env_cached.sh /home/peter/brokenGlasses/src/image_pipeline/image_rotate/cfg/ImageRotate.cfg /opt/ros/indigo/share/dynamic_reconfigure/cmake/.. /home/peter/brokenGlasses/devel/share/image_rotate /home/peter/brokenGlasses/devel/include/image_rotate /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/image_rotate
+	cd /home/peter/brokenGlasses/build/image_pipeline/image_rotate && ../../catkin_generated/env_cached.sh /home/peter/brokenGlasses/src/image_pipeline/image_rotate/cfg/ImageRotate.cfg /opt/ros/jade/share/dynamic_reconfigure/cmake/.. /home/peter/brokenGlasses/devel/share/image_rotate /home/peter/brokenGlasses/devel/include/image_rotate /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/image_rotate
 
 /home/peter/brokenGlasses/devel/share/image_rotate/docs/ImageRotateConfig.dox: /home/peter/brokenGlasses/devel/include/image_rotate/ImageRotateConfig.h
 

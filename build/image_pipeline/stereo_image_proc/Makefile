@@ -192,6 +192,20 @@ stereo_msgs_generate_messages_cpp/fast:
 .PHONY : stereo_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
+image_pipeline/stereo_image_proc/CMakeFiles/stereo_msgs_generate_messages_eus.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_pipeline/stereo_image_proc/CMakeFiles/stereo_msgs_generate_messages_eus.dir/rule
+.PHONY : image_pipeline/stereo_image_proc/CMakeFiles/stereo_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+stereo_msgs_generate_messages_eus: image_pipeline/stereo_image_proc/CMakeFiles/stereo_msgs_generate_messages_eus.dir/rule
+.PHONY : stereo_msgs_generate_messages_eus
+
+# fast build rule for target.
+stereo_msgs_generate_messages_eus/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_pipeline/stereo_image_proc/CMakeFiles/stereo_msgs_generate_messages_eus.dir/build.make image_pipeline/stereo_image_proc/CMakeFiles/stereo_msgs_generate_messages_eus.dir/build
+.PHONY : stereo_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
 image_pipeline/stereo_image_proc/CMakeFiles/stereo_msgs_generate_messages_lisp.dir/rule:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_pipeline/stereo_image_proc/CMakeFiles/stereo_msgs_generate_messages_lisp.dir/rule
 .PHONY : image_pipeline/stereo_image_proc/CMakeFiles/stereo_msgs_generate_messages_lisp.dir/rule
@@ -344,6 +358,7 @@ help:
 	@echo "... stereo_image_proc"
 	@echo "... stereo_image_proc_gencfg"
 	@echo "... stereo_msgs_generate_messages_cpp"
+	@echo "... stereo_msgs_generate_messages_eus"
 	@echo "... stereo_msgs_generate_messages_lisp"
 	@echo "... stereo_msgs_generate_messages_py"
 	@echo "... stereoimageproc_exe"

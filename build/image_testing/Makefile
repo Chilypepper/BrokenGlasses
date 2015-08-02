@@ -164,6 +164,20 @@ geometry_msgs_generate_messages_cpp/fast:
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
+image_testing/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+.PHONY : image_testing/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_eus: image_testing/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+.PHONY : geometry_msgs_generate_messages_eus
+
+# fast build rule for target.
+geometry_msgs_generate_messages_eus/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make image_testing/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+.PHONY : geometry_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
 image_testing/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 .PHONY : image_testing/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
@@ -220,6 +234,20 @@ roscpp_generate_messages_cpp/fast:
 .PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
+image_testing/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+.PHONY : image_testing/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_eus: image_testing/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+.PHONY : roscpp_generate_messages_eus
+
+# fast build rule for target.
+roscpp_generate_messages_eus/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/roscpp_generate_messages_eus.dir/build.make image_testing/CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
+
+# Convenience name for target.
 image_testing/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : image_testing/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
@@ -260,6 +288,20 @@ rosgraph_msgs_generate_messages_cpp: image_testing/CMakeFiles/rosgraph_msgs_gene
 rosgraph_msgs_generate_messages_cpp/fast:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make image_testing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+image_testing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : image_testing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_eus: image_testing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make image_testing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 image_testing/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
@@ -304,6 +346,20 @@ sensor_msgs_generate_messages_cpp/fast:
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
+image_testing/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+.PHONY : image_testing/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_eus: image_testing/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+.PHONY : sensor_msgs_generate_messages_eus
+
+# fast build rule for target.
+sensor_msgs_generate_messages_eus/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make image_testing/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+.PHONY : sensor_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
 image_testing/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 .PHONY : image_testing/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
@@ -344,6 +400,20 @@ std_msgs_generate_messages_cpp: image_testing/CMakeFiles/std_msgs_generate_messa
 std_msgs_generate_messages_cpp/fast:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make image_testing/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+image_testing/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+.PHONY : image_testing/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_eus: image_testing/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+.PHONY : std_msgs_generate_messages_eus
+
+# fast build rule for target.
+std_msgs_generate_messages_eus/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make image_testing/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+.PHONY : std_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 image_testing/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
@@ -443,6 +513,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... image_converter"
@@ -452,15 +523,19 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... roscpp_generate_messages_cpp"
+	@echo "... roscpp_generate_messages_eus"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"

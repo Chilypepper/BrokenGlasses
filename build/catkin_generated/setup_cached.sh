@@ -9,9 +9,9 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/peter/brokenGlasses/devel:$CMAKE_PREFIX_PATH"
 export CPATH="/home/peter/brokenGlasses/devel/include:$CPATH"
-export LD_LIBRARY_PATH="/home/peter/brokenGlasses/devel/lib:/home/peter/brokenGlasses/devel/lib/x86_64-linux-gnu:/opt/ros/indigo/lib/x86_64-linux-gnu:/opt/ros/indigo/lib"
+export LD_LIBRARY_PATH="/home/peter/brokenGlasses/devel/lib:/home/peter/brokenGlasses/devel/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH"
 export PATH="/home/peter/brokenGlasses/devel/bin:$PATH"
-export PKG_CONFIG_PATH="/home/peter/brokenGlasses/devel/lib/pkgconfig:/home/peter/brokenGlasses/devel/lib/x86_64-linux-gnu/pkgconfig:/opt/ros/indigo/lib/x86_64-linux-gnu/pkgconfig:/opt/ros/indigo/lib/pkgconfig"
+export PKG_CONFIG_PATH="/home/peter/brokenGlasses/devel/lib/pkgconfig:/home/peter/brokenGlasses/devel/lib/x86_64-linux-gnu/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/peter/brokenGlasses/build"
 export PYTHONPATH="/home/peter/brokenGlasses/devel/lib/python2.7/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/peter/brokenGlasses/devel/share/common-lisp"

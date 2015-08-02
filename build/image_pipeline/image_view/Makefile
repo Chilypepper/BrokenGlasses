@@ -164,6 +164,20 @@ bond_generate_messages_cpp/fast:
 .PHONY : bond_generate_messages_cpp/fast
 
 # Convenience name for target.
+image_pipeline/image_view/CMakeFiles/bond_generate_messages_eus.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_view/CMakeFiles/bond_generate_messages_eus.dir/rule
+.PHONY : image_pipeline/image_view/CMakeFiles/bond_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_eus: image_pipeline/image_view/CMakeFiles/bond_generate_messages_eus.dir/rule
+.PHONY : bond_generate_messages_eus
+
+# fast build rule for target.
+bond_generate_messages_eus/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_pipeline/image_view/CMakeFiles/bond_generate_messages_eus.dir/build.make image_pipeline/image_view/CMakeFiles/bond_generate_messages_eus.dir/build
+.PHONY : bond_generate_messages_eus/fast
+
+# Convenience name for target.
 image_pipeline/image_view/CMakeFiles/bond_generate_messages_lisp.dir/rule:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_view/CMakeFiles/bond_generate_messages_lisp.dir/rule
 .PHONY : image_pipeline/image_view/CMakeFiles/bond_generate_messages_lisp.dir/rule
@@ -274,6 +288,20 @@ nodelet_generate_messages_cpp: image_pipeline/image_view/CMakeFiles/nodelet_gene
 nodelet_generate_messages_cpp/fast:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_pipeline/image_view/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make image_pipeline/image_view/CMakeFiles/nodelet_generate_messages_cpp.dir/build
 .PHONY : nodelet_generate_messages_cpp/fast
+
+# Convenience name for target.
+image_pipeline/image_view/CMakeFiles/nodelet_generate_messages_eus.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_view/CMakeFiles/nodelet_generate_messages_eus.dir/rule
+.PHONY : image_pipeline/image_view/CMakeFiles/nodelet_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_eus: image_pipeline/image_view/CMakeFiles/nodelet_generate_messages_eus.dir/rule
+.PHONY : nodelet_generate_messages_eus
+
+# fast build rule for target.
+nodelet_generate_messages_eus/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_pipeline/image_view/CMakeFiles/nodelet_generate_messages_eus.dir/build.make image_pipeline/image_view/CMakeFiles/nodelet_generate_messages_eus.dir/build
+.PHONY : nodelet_generate_messages_eus/fast
 
 # Convenience name for target.
 image_pipeline/image_view/CMakeFiles/nodelet_generate_messages_lisp.dir/rule:
@@ -554,6 +582,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... bond_generate_messages_cpp"
+	@echo "... bond_generate_messages_eus"
 	@echo "... bond_generate_messages_lisp"
 	@echo "... bond_generate_messages_py"
 	@echo "... disparity_view"
@@ -567,6 +596,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... nodelet_generate_messages_cpp"
+	@echo "... nodelet_generate_messages_eus"
 	@echo "... nodelet_generate_messages_lisp"
 	@echo "... nodelet_generate_messages_py"
 	@echo "... rebuild_cache"

@@ -397,6 +397,19 @@ geometry_msgs_generate_messages_cpp/fast:
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_eus
+
+# Build rule for target.
+geometry_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_eus
+.PHONY : geometry_msgs_generate_messages_eus
+
+# fast build rule for target.
+geometry_msgs_generate_messages_eus/fast:
+	$(MAKE) -f image_testing/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make image_testing/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+.PHONY : geometry_msgs_generate_messages_eus/fast
+
+#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_lisp
 
 # Build rule for target.
@@ -449,6 +462,19 @@ roscpp_generate_messages_cpp/fast:
 .PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named roscpp_generate_messages_eus
+
+# Build rule for target.
+roscpp_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_eus
+.PHONY : roscpp_generate_messages_eus
+
+# fast build rule for target.
+roscpp_generate_messages_eus/fast:
+	$(MAKE) -f image_testing/CMakeFiles/roscpp_generate_messages_eus.dir/build.make image_testing/CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_lisp
 
 # Build rule for target.
@@ -486,6 +512,19 @@ rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
 rosgraph_msgs_generate_messages_cpp/fast:
 	$(MAKE) -f image_testing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make image_testing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_eus
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	$(MAKE) -f image_testing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make image_testing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_lisp
@@ -527,6 +566,19 @@ sensor_msgs_generate_messages_cpp/fast:
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_eus
+
+# Build rule for target.
+sensor_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_eus
+.PHONY : sensor_msgs_generate_messages_eus
+
+# fast build rule for target.
+sensor_msgs_generate_messages_eus/fast:
+	$(MAKE) -f image_testing/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make image_testing/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+.PHONY : sensor_msgs_generate_messages_eus/fast
+
+#=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_lisp
 
 # Build rule for target.
@@ -564,6 +616,19 @@ std_msgs_generate_messages_cpp: cmake_check_build_system
 std_msgs_generate_messages_cpp/fast:
 	$(MAKE) -f image_testing/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make image_testing/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_eus
+
+# Build rule for target.
+std_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
+.PHONY : std_msgs_generate_messages_eus
+
+# fast build rule for target.
+std_msgs_generate_messages_eus/fast:
+	$(MAKE) -f image_testing/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make image_testing/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+.PHONY : std_msgs_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_lisp
@@ -616,6 +681,19 @@ bond_generate_messages_cpp: cmake_check_build_system
 bond_generate_messages_cpp/fast:
 	$(MAKE) -f image_pipeline/image_view/CMakeFiles/bond_generate_messages_cpp.dir/build.make image_pipeline/image_view/CMakeFiles/bond_generate_messages_cpp.dir/build
 .PHONY : bond_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named bond_generate_messages_eus
+
+# Build rule for target.
+bond_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_eus
+.PHONY : bond_generate_messages_eus
+
+# fast build rule for target.
+bond_generate_messages_eus/fast:
+	$(MAKE) -f image_pipeline/image_view/CMakeFiles/bond_generate_messages_eus.dir/build.make image_pipeline/image_view/CMakeFiles/bond_generate_messages_eus.dir/build
+.PHONY : bond_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named bond_generate_messages_lisp
@@ -722,6 +800,19 @@ nodelet_generate_messages_cpp/fast:
 .PHONY : nodelet_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named nodelet_generate_messages_eus
+
+# Build rule for target.
+nodelet_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_eus
+.PHONY : nodelet_generate_messages_eus
+
+# fast build rule for target.
+nodelet_generate_messages_eus/fast:
+	$(MAKE) -f image_pipeline/image_view/CMakeFiles/nodelet_generate_messages_eus.dir/build.make image_pipeline/image_view/CMakeFiles/nodelet_generate_messages_eus.dir/build
+.PHONY : nodelet_generate_messages_eus/fast
+
+#=============================================================================
 # Target rules for targets named nodelet_generate_messages_lisp
 
 # Build rule for target.
@@ -798,6 +889,19 @@ dynamic_reconfigure_generate_messages_cpp: cmake_check_build_system
 dynamic_reconfigure_generate_messages_cpp/fast:
 	$(MAKE) -f image_pipeline/image_proc/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make image_pipeline/image_proc/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named dynamic_reconfigure_generate_messages_eus
+
+# Build rule for target.
+dynamic_reconfigure_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_eus
+.PHONY : dynamic_reconfigure_generate_messages_eus
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_eus/fast:
+	$(MAKE) -f image_pipeline/image_proc/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make image_pipeline/image_proc/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named dynamic_reconfigure_generate_messages_lisp
@@ -904,6 +1008,19 @@ stereo_msgs_generate_messages_cpp/fast:
 .PHONY : stereo_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named stereo_msgs_generate_messages_eus
+
+# Build rule for target.
+stereo_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 stereo_msgs_generate_messages_eus
+.PHONY : stereo_msgs_generate_messages_eus
+
+# fast build rule for target.
+stereo_msgs_generate_messages_eus/fast:
+	$(MAKE) -f image_pipeline/stereo_image_proc/CMakeFiles/stereo_msgs_generate_messages_eus.dir/build.make image_pipeline/stereo_image_proc/CMakeFiles/stereo_msgs_generate_messages_eus.dir/build
+.PHONY : stereo_msgs_generate_messages_eus/fast
+
+#=============================================================================
 # Target rules for targets named stereo_msgs_generate_messages_lisp
 
 # Build rule for target.
@@ -956,6 +1073,19 @@ actionlib_generate_messages_cpp/fast:
 .PHONY : actionlib_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named actionlib_generate_messages_eus
+
+# Build rule for target.
+actionlib_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_eus
+.PHONY : actionlib_generate_messages_eus
+
+# fast build rule for target.
+actionlib_generate_messages_eus/fast:
+	$(MAKE) -f image_pipeline/depth_image_proc/CMakeFiles/actionlib_generate_messages_eus.dir/build.make image_pipeline/depth_image_proc/CMakeFiles/actionlib_generate_messages_eus.dir/build
+.PHONY : actionlib_generate_messages_eus/fast
+
+#=============================================================================
 # Target rules for targets named actionlib_generate_messages_lisp
 
 # Build rule for target.
@@ -993,6 +1123,19 @@ actionlib_msgs_generate_messages_cpp: cmake_check_build_system
 actionlib_msgs_generate_messages_cpp/fast:
 	$(MAKE) -f image_pipeline/depth_image_proc/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make image_pipeline/depth_image_proc/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
 .PHONY : actionlib_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_eus
+
+# Build rule for target.
+actionlib_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_eus
+.PHONY : actionlib_msgs_generate_messages_eus
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_eus/fast:
+	$(MAKE) -f image_pipeline/depth_image_proc/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make image_pipeline/depth_image_proc/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+.PHONY : actionlib_msgs_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named actionlib_msgs_generate_messages_lisp
@@ -1045,6 +1188,19 @@ tf2_msgs_generate_messages_cpp: cmake_check_build_system
 tf2_msgs_generate_messages_cpp/fast:
 	$(MAKE) -f image_pipeline/depth_image_proc/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make image_pipeline/depth_image_proc/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
 .PHONY : tf2_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_eus
+
+# Build rule for target.
+tf2_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_eus
+.PHONY : tf2_msgs_generate_messages_eus
+
+# fast build rule for target.
+tf2_msgs_generate_messages_eus/fast:
+	$(MAKE) -f image_pipeline/depth_image_proc/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make image_pipeline/depth_image_proc/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
+.PHONY : tf2_msgs_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named tf2_msgs_generate_messages_lisp
@@ -1143,23 +1299,29 @@ help:
 	@echo "... run_tests_camera_calibration_nosetests_test.directed.py"
 	@echo "... run_tests_camera_calibration_nosetests_test.multiple_boards.py"
 	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... image_converter"
 	@echo "... roscpp_generate_messages_cpp"
+	@echo "... roscpp_generate_messages_eus"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... video_modder_node"
 	@echo "... bond_generate_messages_cpp"
+	@echo "... bond_generate_messages_eus"
 	@echo "... bond_generate_messages_lisp"
 	@echo "... bond_generate_messages_py"
 	@echo "... disparity_view"
@@ -1168,12 +1330,14 @@ help:
 	@echo "... image_view"
 	@echo "... image_view_exe"
 	@echo "... nodelet_generate_messages_cpp"
+	@echo "... nodelet_generate_messages_eus"
 	@echo "... nodelet_generate_messages_lisp"
 	@echo "... nodelet_generate_messages_py"
 	@echo "... stereo_view"
 	@echo "... video_recorder"
 	@echo "... dynamic_reconfigure_gencfg"
 	@echo "... dynamic_reconfigure_generate_messages_cpp"
+	@echo "... dynamic_reconfigure_generate_messages_eus"
 	@echo "... dynamic_reconfigure_generate_messages_lisp"
 	@echo "... dynamic_reconfigure_generate_messages_py"
 	@echo "... image_proc"
@@ -1182,17 +1346,21 @@ help:
 	@echo "... stereo_image_proc"
 	@echo "... stereo_image_proc_gencfg"
 	@echo "... stereo_msgs_generate_messages_cpp"
+	@echo "... stereo_msgs_generate_messages_eus"
 	@echo "... stereo_msgs_generate_messages_lisp"
 	@echo "... stereo_msgs_generate_messages_py"
 	@echo "... stereoimageproc_exe"
 	@echo "... actionlib_generate_messages_cpp"
+	@echo "... actionlib_generate_messages_eus"
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_cpp"
+	@echo "... actionlib_msgs_generate_messages_eus"
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... depth_image_proc"
 	@echo "... tf2_msgs_generate_messages_cpp"
+	@echo "... tf2_msgs_generate_messages_eus"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... image_rotate"

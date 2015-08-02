@@ -46,7 +46,7 @@ CMAKE_BINARY_DIR = /home/peter/brokenGlasses/build
 include image_pipeline/camera_calibration/CMakeFiles/camera_calibration.tar.gz.dir/progress.make
 
 image_pipeline/camera_calibration/CMakeFiles/camera_calibration.tar.gz:
-	cd /home/peter/brokenGlasses/build/image_pipeline/camera_calibration && /opt/ros/indigo/share/catkin/cmake/test/download_checkmd5.py http://download.ros.org/data/camera_calibration/camera_calibration.tar.gz /home/peter/brokenGlasses/devel/share/camera_calibration/tests/camera_calibration.tar.gz 6da43ea314640a4c15dd7a90cbc3aee0 --ignore-error
+	cd /home/peter/brokenGlasses/build/image_pipeline/camera_calibration && /opt/ros/jade/share/catkin/cmake/test/download_checkmd5.py http://download.ros.org/data/camera_calibration/camera_calibration.tar.gz /home/peter/brokenGlasses/devel/share/camera_calibration/tests/camera_calibration.tar.gz 6da43ea314640a4c15dd7a90cbc3aee0 --ignore-error
 
 camera_calibration.tar.gz: image_pipeline/camera_calibration/CMakeFiles/camera_calibration.tar.gz
 camera_calibration.tar.gz: image_pipeline/camera_calibration/CMakeFiles/camera_calibration.tar.gz.dir/build.make

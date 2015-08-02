@@ -5,4 +5,4 @@ PROJECT_CATKIN_DEPENDS = "image_geometry;image_proc;sensor_msgs;stereo_msgs".rep
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lstereo_image_proc".split(';') if "-lstereo_image_proc" != "" else []
 PROJECT_NAME = "stereo_image_proc"
 PROJECT_SPACE_DIR = "/home/peter/brokenGlasses/devel"
-PROJECT_VERSION = "1.12.13"
+PROJECT_VERSION = "1.12.14"

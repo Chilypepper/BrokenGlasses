@@ -20,7 +20,7 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/peter/brokenGlasses/src/image_pipeline/stereo_image_proc/include"
   "/usr/include/opencv"
   "/home/peter/brokenGlasses/src/image_pipeline/image_proc/include"
-  "/opt/ros/indigo/include"
+  "/opt/ros/jade/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

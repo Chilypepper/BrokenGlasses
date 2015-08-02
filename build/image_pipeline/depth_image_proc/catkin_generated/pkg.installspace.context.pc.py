@@ -5,4 +5,4 @@ PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-ldepth_image_proc".split(';') if "-ldepth_image_proc" != "" else []
 PROJECT_NAME = "depth_image_proc"
 PROJECT_SPACE_DIR = "/home/peter/brokenGlasses/install"
-PROJECT_VERSION = "1.12.13"
+PROJECT_VERSION = "1.12.14"

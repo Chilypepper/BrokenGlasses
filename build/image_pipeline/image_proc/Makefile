@@ -178,6 +178,20 @@ dynamic_reconfigure_generate_messages_cpp/fast:
 .PHONY : dynamic_reconfigure_generate_messages_cpp/fast
 
 # Convenience name for target.
+image_pipeline/image_proc/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_proc/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+.PHONY : image_pipeline/image_proc/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_eus: image_pipeline/image_proc/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+.PHONY : dynamic_reconfigure_generate_messages_eus
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_eus/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_pipeline/image_proc/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make image_pipeline/image_proc/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_eus/fast
+
+# Convenience name for target.
 image_pipeline/image_proc/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_pipeline/image_proc/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
 .PHONY : image_pipeline/image_proc/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
@@ -423,6 +437,7 @@ help:
 	@echo "... depend"
 	@echo "... dynamic_reconfigure_gencfg"
 	@echo "... dynamic_reconfigure_generate_messages_cpp"
+	@echo "... dynamic_reconfigure_generate_messages_eus"
 	@echo "... dynamic_reconfigure_generate_messages_lisp"
 	@echo "... dynamic_reconfigure_generate_messages_py"
 	@echo "... edit_cache"

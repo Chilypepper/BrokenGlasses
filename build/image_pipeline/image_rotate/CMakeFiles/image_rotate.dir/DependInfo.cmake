@@ -23,7 +23,7 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/peter/brokenGlasses/devel/include"
   "/usr/include/opencv"
-  "/opt/ros/indigo/include"
+  "/opt/ros/jade/include"
   "/usr/include/eigen3"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

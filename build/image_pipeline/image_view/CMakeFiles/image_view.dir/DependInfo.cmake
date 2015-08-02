@@ -25,7 +25,7 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/usr/include/opencv"
-  "/opt/ros/indigo/include"
+  "/opt/ros/jade/include"
   "/usr/include/freetype2"
   "/usr/include/gtk-2.0"
   "/usr/lib/x86_64-linux-gnu/gtk-2.0/include"
