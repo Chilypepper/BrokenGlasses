@@ -1,8 +1,0 @@
-prefix=/home/peter/brokenGlasses/devel
-
-Name: stereo_image_proc
-Description: Description of stereo_image_proc
-Version: 1.12.14
-Cflags: -I/home/peter/brokenGlasses/devel/include -I/home/peter/brokenGlasses/src/image_pipeline/stereo_image_proc/include
-Libs: -L/home/peter/brokenGlasses/devel/lib -lstereo_image_proc
-Requires: image_geometry image_proc sensor_msgs stereo_msgs

@@ -1,2 +1,2 @@
-camera_launches:image_pipeline/camera_calibration:image_pipeline/depth_image_proc:image_pipeline/image_pipeline:image_pipeline/image_proc:image_pipeline/image_rotate:image_pipeline/image_view:image_pipeline/stereo_image_proc:image_testing
+camera_launches:image_testing
 -DCATKIN_DEVEL_PREFIX=/home/peter/brokenGlasses/devel -DCMAKE_INSTALL_PREFIX=/home/peter/brokenGlasses/install -G Unix Makefiles

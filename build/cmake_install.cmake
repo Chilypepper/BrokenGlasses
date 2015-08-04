@@ -118,14 +118,7 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/peter/brokenGlasses/build/gtest/cmake_install.cmake")
   INCLUDE("/home/peter/brokenGlasses/build/camera_launches/cmake_install.cmake")
-  INCLUDE("/home/peter/brokenGlasses/build/image_pipeline/image_pipeline/cmake_install.cmake")
-  INCLUDE("/home/peter/brokenGlasses/build/image_pipeline/camera_calibration/cmake_install.cmake")
   INCLUDE("/home/peter/brokenGlasses/build/image_testing/cmake_install.cmake")
-  INCLUDE("/home/peter/brokenGlasses/build/image_pipeline/image_view/cmake_install.cmake")
-  INCLUDE("/home/peter/brokenGlasses/build/image_pipeline/image_proc/cmake_install.cmake")
-  INCLUDE("/home/peter/brokenGlasses/build/image_pipeline/stereo_image_proc/cmake_install.cmake")
-  INCLUDE("/home/peter/brokenGlasses/build/image_pipeline/depth_image_proc/cmake_install.cmake")
-  INCLUDE("/home/peter/brokenGlasses/build/image_pipeline/image_rotate/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

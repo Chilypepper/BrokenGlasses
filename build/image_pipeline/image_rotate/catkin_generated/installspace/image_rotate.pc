@@ -1,8 +1,0 @@
-prefix=/home/peter/brokenGlasses/install
-
-Name: image_rotate
-Description: Description of image_rotate
-Version: 1.12.14
-Cflags: -I/home/peter/brokenGlasses/install/include
-Libs: -L/home/peter/brokenGlasses/install/lib 
-Requires: 
