@@ -7,4 +7,6 @@
 # new environment variables
 
 # modified environment variables
+export LD_LIBRARY_PATH="/home/peter/brokenGlasses/devel/lib/x86_64-linux-gnu:/opt/ros/jade/lib/x86_64-linux-gnu:/home/peter/brokenGlasses/devel/lib:/opt/ros/jade/lib"
+export PKG_CONFIG_PATH="/home/peter/brokenGlasses/devel/lib/x86_64-linux-gnu/pkgconfig:/opt/ros/jade/lib/x86_64-linux-gnu/pkgconfig:/home/peter/brokenGlasses/devel/lib/pkgconfig:/opt/ros/jade/lib/pkgconfig"
 export PWD="/home/peter/brokenGlasses/build"

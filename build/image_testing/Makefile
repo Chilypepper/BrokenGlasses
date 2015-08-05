@@ -150,6 +150,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+image_testing/CMakeFiles/cv_modder.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/cv_modder.dir/rule
+.PHONY : image_testing/CMakeFiles/cv_modder.dir/rule
+
+# Convenience name for target.
+cv_modder: image_testing/CMakeFiles/cv_modder.dir/rule
+.PHONY : cv_modder
+
+# fast build rule for target.
+cv_modder/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/cv_modder.dir/build.make image_testing/CMakeFiles/cv_modder.dir/build
+.PHONY : cv_modder/fast
+
+# Convenience name for target.
 image_testing/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 .PHONY : image_testing/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
@@ -443,6 +457,30 @@ std_msgs_generate_messages_py/fast:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/std_msgs_generate_messages_py.dir/build.make image_testing/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
+src/cv_modder.o: src/cv_modder.cpp.o
+.PHONY : src/cv_modder.o
+
+# target to build an object file
+src/cv_modder.cpp.o:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/cv_modder.dir/build.make image_testing/CMakeFiles/cv_modder.dir/src/cv_modder.cpp.o
+.PHONY : src/cv_modder.cpp.o
+
+src/cv_modder.i: src/cv_modder.cpp.i
+.PHONY : src/cv_modder.i
+
+# target to preprocess a source file
+src/cv_modder.cpp.i:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/cv_modder.dir/build.make image_testing/CMakeFiles/cv_modder.dir/src/cv_modder.cpp.i
+.PHONY : src/cv_modder.cpp.i
+
+src/cv_modder.s: src/cv_modder.cpp.s
+.PHONY : src/cv_modder.s
+
+# target to generate assembly for a file
+src/cv_modder.cpp.s:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/cv_modder.dir/build.make image_testing/CMakeFiles/cv_modder.dir/src/cv_modder.cpp.s
+.PHONY : src/cv_modder.cpp.s
+
 src/image_converter.o: src/image_converter.cpp.o
 .PHONY : src/image_converter.o
 
@@ -473,6 +511,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... cv_modder"
 	@echo "... edit_cache"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_eus"
@@ -501,6 +540,9 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
+	@echo "... src/cv_modder.o"
+	@echo "... src/cv_modder.i"
+	@echo "... src/cv_modder.s"
 	@echo "... src/image_converter.o"
 	@echo "... src/image_converter.i"
 	@echo "... src/image_converter.s"
