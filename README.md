@@ -11,5 +11,8 @@ Instructions:
 
 2. $ ROS_NAMESPACE=camera rosrun image_proc image_proc
    ***Must be done with a pre-calibrated camera*** 
+3. $ rosrun image_testing cv_modder
 
-3. Subscribe your node to the topic "/camera/image_rect_color" for a rectified, colored image in a good form usable with OpenCV
+4. $ rosrun image_view image_view image:=/image_converter/output_video
+
+/ 5. Subscribe your node to the topic "/camera/image_rect_color" for a rectified, colored image in a good form usable with OpenCV
