@@ -254,6 +254,19 @@ _catkin_empty_exported_target/fast:
 .PHONY : _catkin_empty_exported_target/fast
 
 #=============================================================================
+# Target rules for targets named circle_finder
+
+# Build rule for target.
+circle_finder: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 circle_finder
+.PHONY : circle_finder
+
+# fast build rule for target.
+circle_finder/fast:
+	$(MAKE) -f image_testing/CMakeFiles/circle_finder.dir/build.make image_testing/CMakeFiles/circle_finder.dir/build
+.PHONY : circle_finder/fast
+
+#=============================================================================
 # Target rules for targets named cv_modder
 
 # Build rule for target.
@@ -330,6 +343,19 @@ image_converter: cmake_check_build_system
 image_converter/fast:
 	$(MAKE) -f image_testing/CMakeFiles/image_converter.dir/build.make image_testing/CMakeFiles/image_converter.dir/build
 .PHONY : image_converter/fast
+
+#=============================================================================
+# Target rules for targets named rect_finder
+
+# Build rule for target.
+rect_finder: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rect_finder
+.PHONY : rect_finder
+
+# fast build rule for target.
+rect_finder/fast:
+	$(MAKE) -f image_testing/CMakeFiles/rect_finder.dir/build.make image_testing/CMakeFiles/rect_finder.dir/build
+.PHONY : rect_finder/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
@@ -560,12 +586,14 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... _catkin_empty_exported_target"
+	@echo "... circle_finder"
 	@echo "... cv_modder"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... image_converter"
+	@echo "... rect_finder"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... roscpp_generate_messages_lisp"

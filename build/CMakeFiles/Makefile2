@@ -230,7 +230,7 @@ gtest/preinstall:
 gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  3
 	@echo "Built target gtest"
 .PHONY : gtest/CMakeFiles/gtest.dir/all
 
@@ -261,7 +261,7 @@ clean: gtest/CMakeFiles/gtest.dir/clean
 gtest/CMakeFiles/gtest_main.dir/all: gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  4
 	@echo "Built target gtest_main"
 .PHONY : gtest/CMakeFiles/gtest_main.dir/all
 
@@ -335,17 +335,21 @@ clean: camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/clean
 # Directory level rules for directory image_testing
 
 # Convenience name for "all" pass in the directory.
+image_testing/all: image_testing/CMakeFiles/circle_finder.dir/all
 image_testing/all: image_testing/CMakeFiles/cv_modder.dir/all
 image_testing/all: image_testing/CMakeFiles/image_converter.dir/all
+image_testing/all: image_testing/CMakeFiles/rect_finder.dir/all
 .PHONY : image_testing/all
 
 # Convenience name for "clean" pass in the directory.
+image_testing/clean: image_testing/CMakeFiles/circle_finder.dir/clean
 image_testing/clean: image_testing/CMakeFiles/cv_modder.dir/clean
 image_testing/clean: image_testing/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 image_testing/clean: image_testing/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
 image_testing/clean: image_testing/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 image_testing/clean: image_testing/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 image_testing/clean: image_testing/CMakeFiles/image_converter.dir/clean
+image_testing/clean: image_testing/CMakeFiles/rect_finder.dir/clean
 image_testing/clean: image_testing/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 image_testing/clean: image_testing/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 image_testing/clean: image_testing/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
@@ -369,13 +373,48 @@ image_testing/preinstall:
 .PHONY : image_testing/preinstall
 
 #=============================================================================
+# Target rules for target image_testing/CMakeFiles/circle_finder.dir
+
+# All Build rule for target.
+image_testing/CMakeFiles/circle_finder.dir/all:
+	$(MAKE) -f image_testing/CMakeFiles/circle_finder.dir/build.make image_testing/CMakeFiles/circle_finder.dir/depend
+	$(MAKE) -f image_testing/CMakeFiles/circle_finder.dir/build.make image_testing/CMakeFiles/circle_finder.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  1
+	@echo "Built target circle_finder"
+.PHONY : image_testing/CMakeFiles/circle_finder.dir/all
+
+# Include target in all.
+all: image_testing/CMakeFiles/circle_finder.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+image_testing/CMakeFiles/circle_finder.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/circle_finder.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
+.PHONY : image_testing/CMakeFiles/circle_finder.dir/rule
+
+# Convenience name for target.
+circle_finder: image_testing/CMakeFiles/circle_finder.dir/rule
+.PHONY : circle_finder
+
+# clean rule for target.
+image_testing/CMakeFiles/circle_finder.dir/clean:
+	$(MAKE) -f image_testing/CMakeFiles/circle_finder.dir/build.make image_testing/CMakeFiles/circle_finder.dir/clean
+.PHONY : image_testing/CMakeFiles/circle_finder.dir/clean
+
+# clean rule for target.
+clean: image_testing/CMakeFiles/circle_finder.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target image_testing/CMakeFiles/cv_modder.dir
 
 # All Build rule for target.
 image_testing/CMakeFiles/cv_modder.dir/all:
 	$(MAKE) -f image_testing/CMakeFiles/cv_modder.dir/build.make image_testing/CMakeFiles/cv_modder.dir/depend
 	$(MAKE) -f image_testing/CMakeFiles/cv_modder.dir/build.make image_testing/CMakeFiles/cv_modder.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  2
 	@echo "Built target cv_modder"
 .PHONY : image_testing/CMakeFiles/cv_modder.dir/all
 
@@ -534,7 +573,7 @@ clean: image_testing/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 image_testing/CMakeFiles/image_converter.dir/all:
 	$(MAKE) -f image_testing/CMakeFiles/image_converter.dir/build.make image_testing/CMakeFiles/image_converter.dir/depend
 	$(MAKE) -f image_testing/CMakeFiles/image_converter.dir/build.make image_testing/CMakeFiles/image_converter.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  4
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  5
 	@echo "Built target image_converter"
 .PHONY : image_testing/CMakeFiles/image_converter.dir/all
 
@@ -560,6 +599,41 @@ image_testing/CMakeFiles/image_converter.dir/clean:
 
 # clean rule for target.
 clean: image_testing/CMakeFiles/image_converter.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target image_testing/CMakeFiles/rect_finder.dir
+
+# All Build rule for target.
+image_testing/CMakeFiles/rect_finder.dir/all:
+	$(MAKE) -f image_testing/CMakeFiles/rect_finder.dir/build.make image_testing/CMakeFiles/rect_finder.dir/depend
+	$(MAKE) -f image_testing/CMakeFiles/rect_finder.dir/build.make image_testing/CMakeFiles/rect_finder.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  6
+	@echo "Built target rect_finder"
+.PHONY : image_testing/CMakeFiles/rect_finder.dir/all
+
+# Include target in all.
+all: image_testing/CMakeFiles/rect_finder.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+image_testing/CMakeFiles/rect_finder.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/rect_finder.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
+.PHONY : image_testing/CMakeFiles/rect_finder.dir/rule
+
+# Convenience name for target.
+rect_finder: image_testing/CMakeFiles/rect_finder.dir/rule
+.PHONY : rect_finder
+
+# clean rule for target.
+image_testing/CMakeFiles/rect_finder.dir/clean:
+	$(MAKE) -f image_testing/CMakeFiles/rect_finder.dir/build.make image_testing/CMakeFiles/rect_finder.dir/clean
+.PHONY : image_testing/CMakeFiles/rect_finder.dir/clean
+
+# clean rule for target.
+clean: image_testing/CMakeFiles/rect_finder.dir/clean
 .PHONY : clean
 
 #=============================================================================

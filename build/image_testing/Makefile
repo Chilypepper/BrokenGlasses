@@ -150,6 +150,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+image_testing/CMakeFiles/circle_finder.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/circle_finder.dir/rule
+.PHONY : image_testing/CMakeFiles/circle_finder.dir/rule
+
+# Convenience name for target.
+circle_finder: image_testing/CMakeFiles/circle_finder.dir/rule
+.PHONY : circle_finder
+
+# fast build rule for target.
+circle_finder/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/circle_finder.dir/build.make image_testing/CMakeFiles/circle_finder.dir/build
+.PHONY : circle_finder/fast
+
+# Convenience name for target.
 image_testing/CMakeFiles/cv_modder.dir/rule:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/cv_modder.dir/rule
 .PHONY : image_testing/CMakeFiles/cv_modder.dir/rule
@@ -232,6 +246,20 @@ image_converter: image_testing/CMakeFiles/image_converter.dir/rule
 image_converter/fast:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_converter.dir/build.make image_testing/CMakeFiles/image_converter.dir/build
 .PHONY : image_converter/fast
+
+# Convenience name for target.
+image_testing/CMakeFiles/rect_finder.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/rect_finder.dir/rule
+.PHONY : image_testing/CMakeFiles/rect_finder.dir/rule
+
+# Convenience name for target.
+rect_finder: image_testing/CMakeFiles/rect_finder.dir/rule
+.PHONY : rect_finder
+
+# fast build rule for target.
+rect_finder/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/rect_finder.dir/build.make image_testing/CMakeFiles/rect_finder.dir/build
+.PHONY : rect_finder/fast
 
 # Convenience name for target.
 image_testing/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
@@ -457,6 +485,30 @@ std_msgs_generate_messages_py/fast:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/std_msgs_generate_messages_py.dir/build.make image_testing/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
+src/circle_finder.o: src/circle_finder.cpp.o
+.PHONY : src/circle_finder.o
+
+# target to build an object file
+src/circle_finder.cpp.o:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/circle_finder.dir/build.make image_testing/CMakeFiles/circle_finder.dir/src/circle_finder.cpp.o
+.PHONY : src/circle_finder.cpp.o
+
+src/circle_finder.i: src/circle_finder.cpp.i
+.PHONY : src/circle_finder.i
+
+# target to preprocess a source file
+src/circle_finder.cpp.i:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/circle_finder.dir/build.make image_testing/CMakeFiles/circle_finder.dir/src/circle_finder.cpp.i
+.PHONY : src/circle_finder.cpp.i
+
+src/circle_finder.s: src/circle_finder.cpp.s
+.PHONY : src/circle_finder.s
+
+# target to generate assembly for a file
+src/circle_finder.cpp.s:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/circle_finder.dir/build.make image_testing/CMakeFiles/circle_finder.dir/src/circle_finder.cpp.s
+.PHONY : src/circle_finder.cpp.s
+
 src/cv_modder.o: src/cv_modder.cpp.o
 .PHONY : src/cv_modder.o
 
@@ -505,12 +557,37 @@ src/image_converter.cpp.s:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_converter.dir/build.make image_testing/CMakeFiles/image_converter.dir/src/image_converter.cpp.s
 .PHONY : src/image_converter.cpp.s
 
+src/rect_finder.o: src/rect_finder.cpp.o
+.PHONY : src/rect_finder.o
+
+# target to build an object file
+src/rect_finder.cpp.o:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/rect_finder.dir/build.make image_testing/CMakeFiles/rect_finder.dir/src/rect_finder.cpp.o
+.PHONY : src/rect_finder.cpp.o
+
+src/rect_finder.i: src/rect_finder.cpp.i
+.PHONY : src/rect_finder.i
+
+# target to preprocess a source file
+src/rect_finder.cpp.i:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/rect_finder.dir/build.make image_testing/CMakeFiles/rect_finder.dir/src/rect_finder.cpp.i
+.PHONY : src/rect_finder.cpp.i
+
+src/rect_finder.s: src/rect_finder.cpp.s
+.PHONY : src/rect_finder.s
+
+# target to generate assembly for a file
+src/rect_finder.cpp.s:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/rect_finder.dir/build.make image_testing/CMakeFiles/rect_finder.dir/src/rect_finder.cpp.s
+.PHONY : src/rect_finder.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... circle_finder"
 	@echo "... cv_modder"
 	@echo "... edit_cache"
 	@echo "... geometry_msgs_generate_messages_cpp"
@@ -523,6 +600,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... rect_finder"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... roscpp_generate_messages_lisp"
@@ -540,12 +618,18 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
+	@echo "... src/circle_finder.o"
+	@echo "... src/circle_finder.i"
+	@echo "... src/circle_finder.s"
 	@echo "... src/cv_modder.o"
 	@echo "... src/cv_modder.i"
 	@echo "... src/cv_modder.s"
 	@echo "... src/image_converter.o"
 	@echo "... src/image_converter.i"
 	@echo "... src/image_converter.s"
+	@echo "... src/rect_finder.o"
+	@echo "... src/rect_finder.i"
+	@echo "... src/rect_finder.s"
 .PHONY : help
 
 
