@@ -18,7 +18,9 @@ value="file://$(env HOME)/.ros/camera_info/$(arg camera_serial).yaml" />
 args="load image_proc/debayer camera_nodelet_manager">
 </node>
 
-<remap from="image" to="/camera/image_color"/>
+<node pkg="image_testing" type="cv_modder" name="cv_modder"/>
+<node pkg="image_proc" type="image_proc" name="image_proc"/>
+<remap from="image" to="/image_converter/output_video"/>
 <node pkg="image_view" type="image_view" name="image_view"/>
 </group>
 </launch>

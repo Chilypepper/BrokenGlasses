@@ -66,12 +66,12 @@ public:
     for(double cols = cv_ptr->image.cols; pointx < cols; pointx+=cols/accuracy){
       pointy=0;
       for(double rows = cv_ptr->image.rows; pointy < rows; pointy+=rows/accuracy){
-        if(cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[0] > 0  &&
-           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[0] < 15 &&
-           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[1] > 20  &&
-           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[1] < 70 &&
+        if(cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[0] > 110  &&
+           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[0] > 115 &&
+           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[1] > 100  &&
+           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[1] > 100 &&
            cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[2] > 40  &&
-           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[2] < 15){
+           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[2] > 115){
             #ifdef findPoint
               circle(cv_ptr->image,Point(pointx,pointy),0,colorScalar_BLUE,1);
             #endif
