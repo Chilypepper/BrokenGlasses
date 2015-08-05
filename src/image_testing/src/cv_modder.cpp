@@ -33,7 +33,7 @@ public:
   {
     image_sub = it.subscribe("/camera/image_rect_color", 1, 
       &ImageConverter::imageCb, this);
-    image_pub = it.advertise("/image_converter/output_video", 1);
+    image_pub = it.advertise("/camera/output_video", 1);
   }
 
   ~ImageConverter()
