@@ -6,6 +6,7 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <iostream>
 #include <ctime>
+
 #define debug
 
 using namespace cv;

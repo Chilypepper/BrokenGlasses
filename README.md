@@ -10,3 +10,13 @@ Instructions:
 1. Run pg.launch as a super user inside the camera_launches folder
 
   -- Done!
+
+** Both cameras not working at the same time?
+
+$ subl /etc/defalt/grub
+
+change GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+
+to
+
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash usbcore.usbfs_memory_mb=1000"
