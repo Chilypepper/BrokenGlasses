@@ -20,3 +20,7 @@ change GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
 to
 
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash usbcore.usbfs_memory_mb=1000"
+
+**Answer to the superuser issue
+
+http://askubuntu.com/questions/41402/how-do-i-get-opencv-and-firefly-mv-working
