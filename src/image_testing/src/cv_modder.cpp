@@ -56,22 +56,24 @@ public:
     int j=0;
     int columns = cv_ptr->image.cols;
     int rows = cv_ptr->image.rows;
+    int centPointx = columns/2;
+    int centPointy = rows/2;
 
     circle(cv_ptr->image,Point(columns/2,rows/2),2,colorScalar_BLUE,1);
-    int outRed = cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[0];
-    int outGreen = cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[1];
-    int outBlue = cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[2];
+    int outRed = cv_ptr->image.at<Vec3b>(Point(centPointx,centPointy))[0];
+    int outGreen = cv_ptr->image.at<Vec3b>(Point(centPointx,centPointy))[1];
+    int outBlue = cv_ptr->image.at<Vec3b>(Point(centPointx,centPointy))[2];
     ROS_INFO("R: %i G: %i B: %i",outRed,outGreen,outBlue);
     //BGR
     for(double cols = cv_ptr->image.cols; pointx < cols; pointx+=cols/accuracy){
       pointy=0;
       for(double rows = cv_ptr->image.rows; pointy < rows; pointy+=rows/accuracy){
-        if(cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[0] > 110  &&
-           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[0] > 115 &&
-           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[1] > 100  &&
-           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[1] > 100 &&
-           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[2] > 40  &&
-           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[2] > 115){
+        if(cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[0] > 50  &&
+           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[0] < 60 &&
+           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[1] > 80  &&
+           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[1] < 90 &&
+           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[2] < 70  &&
+           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[2] > 50){
             #ifdef findPoint
               circle(cv_ptr->image,Point(pointx,pointy),0,colorScalar_BLUE,1);
             #endif
