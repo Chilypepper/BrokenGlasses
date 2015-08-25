@@ -336,19 +336,21 @@ clean: camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 # Convenience name for "all" pass in the directory.
 image_testing/all: image_testing/CMakeFiles/circle_finder.dir/all
-image_testing/all: image_testing/CMakeFiles/cv_modder.dir/all
+image_testing/all: image_testing/CMakeFiles/green_finder.dir/all
 image_testing/all: image_testing/CMakeFiles/image_converter.dir/all
+image_testing/all: image_testing/CMakeFiles/orange_finder.dir/all
 image_testing/all: image_testing/CMakeFiles/rect_finder.dir/all
 .PHONY : image_testing/all
 
 # Convenience name for "clean" pass in the directory.
 image_testing/clean: image_testing/CMakeFiles/circle_finder.dir/clean
-image_testing/clean: image_testing/CMakeFiles/cv_modder.dir/clean
 image_testing/clean: image_testing/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 image_testing/clean: image_testing/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
 image_testing/clean: image_testing/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 image_testing/clean: image_testing/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+image_testing/clean: image_testing/CMakeFiles/green_finder.dir/clean
 image_testing/clean: image_testing/CMakeFiles/image_converter.dir/clean
+image_testing/clean: image_testing/CMakeFiles/orange_finder.dir/clean
 image_testing/clean: image_testing/CMakeFiles/rect_finder.dir/clean
 image_testing/clean: image_testing/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 image_testing/clean: image_testing/CMakeFiles/roscpp_generate_messages_eus.dir/clean
@@ -405,41 +407,6 @@ image_testing/CMakeFiles/circle_finder.dir/clean:
 
 # clean rule for target.
 clean: image_testing/CMakeFiles/circle_finder.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target image_testing/CMakeFiles/cv_modder.dir
-
-# All Build rule for target.
-image_testing/CMakeFiles/cv_modder.dir/all:
-	$(MAKE) -f image_testing/CMakeFiles/cv_modder.dir/build.make image_testing/CMakeFiles/cv_modder.dir/depend
-	$(MAKE) -f image_testing/CMakeFiles/cv_modder.dir/build.make image_testing/CMakeFiles/cv_modder.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  2
-	@echo "Built target cv_modder"
-.PHONY : image_testing/CMakeFiles/cv_modder.dir/all
-
-# Include target in all.
-all: image_testing/CMakeFiles/cv_modder.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-image_testing/CMakeFiles/cv_modder.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/cv_modder.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
-.PHONY : image_testing/CMakeFiles/cv_modder.dir/rule
-
-# Convenience name for target.
-cv_modder: image_testing/CMakeFiles/cv_modder.dir/rule
-.PHONY : cv_modder
-
-# clean rule for target.
-image_testing/CMakeFiles/cv_modder.dir/clean:
-	$(MAKE) -f image_testing/CMakeFiles/cv_modder.dir/build.make image_testing/CMakeFiles/cv_modder.dir/clean
-.PHONY : image_testing/CMakeFiles/cv_modder.dir/clean
-
-# clean rule for target.
-clean: image_testing/CMakeFiles/cv_modder.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -567,6 +534,41 @@ clean: image_testing/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target image_testing/CMakeFiles/green_finder.dir
+
+# All Build rule for target.
+image_testing/CMakeFiles/green_finder.dir/all:
+	$(MAKE) -f image_testing/CMakeFiles/green_finder.dir/build.make image_testing/CMakeFiles/green_finder.dir/depend
+	$(MAKE) -f image_testing/CMakeFiles/green_finder.dir/build.make image_testing/CMakeFiles/green_finder.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  2
+	@echo "Built target green_finder"
+.PHONY : image_testing/CMakeFiles/green_finder.dir/all
+
+# Include target in all.
+all: image_testing/CMakeFiles/green_finder.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+image_testing/CMakeFiles/green_finder.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/green_finder.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
+.PHONY : image_testing/CMakeFiles/green_finder.dir/rule
+
+# Convenience name for target.
+green_finder: image_testing/CMakeFiles/green_finder.dir/rule
+.PHONY : green_finder
+
+# clean rule for target.
+image_testing/CMakeFiles/green_finder.dir/clean:
+	$(MAKE) -f image_testing/CMakeFiles/green_finder.dir/build.make image_testing/CMakeFiles/green_finder.dir/clean
+.PHONY : image_testing/CMakeFiles/green_finder.dir/clean
+
+# clean rule for target.
+clean: image_testing/CMakeFiles/green_finder.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target image_testing/CMakeFiles/image_converter.dir
 
 # All Build rule for target.
@@ -602,13 +604,48 @@ clean: image_testing/CMakeFiles/image_converter.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target image_testing/CMakeFiles/orange_finder.dir
+
+# All Build rule for target.
+image_testing/CMakeFiles/orange_finder.dir/all:
+	$(MAKE) -f image_testing/CMakeFiles/orange_finder.dir/build.make image_testing/CMakeFiles/orange_finder.dir/depend
+	$(MAKE) -f image_testing/CMakeFiles/orange_finder.dir/build.make image_testing/CMakeFiles/orange_finder.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  6
+	@echo "Built target orange_finder"
+.PHONY : image_testing/CMakeFiles/orange_finder.dir/all
+
+# Include target in all.
+all: image_testing/CMakeFiles/orange_finder.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+image_testing/CMakeFiles/orange_finder.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/orange_finder.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
+.PHONY : image_testing/CMakeFiles/orange_finder.dir/rule
+
+# Convenience name for target.
+orange_finder: image_testing/CMakeFiles/orange_finder.dir/rule
+.PHONY : orange_finder
+
+# clean rule for target.
+image_testing/CMakeFiles/orange_finder.dir/clean:
+	$(MAKE) -f image_testing/CMakeFiles/orange_finder.dir/build.make image_testing/CMakeFiles/orange_finder.dir/clean
+.PHONY : image_testing/CMakeFiles/orange_finder.dir/clean
+
+# clean rule for target.
+clean: image_testing/CMakeFiles/orange_finder.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target image_testing/CMakeFiles/rect_finder.dir
 
 # All Build rule for target.
 image_testing/CMakeFiles/rect_finder.dir/all:
 	$(MAKE) -f image_testing/CMakeFiles/rect_finder.dir/build.make image_testing/CMakeFiles/rect_finder.dir/depend
 	$(MAKE) -f image_testing/CMakeFiles/rect_finder.dir/build.make image_testing/CMakeFiles/rect_finder.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  6
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  7
 	@echo "Built target rect_finder"
 .PHONY : image_testing/CMakeFiles/rect_finder.dir/all
 

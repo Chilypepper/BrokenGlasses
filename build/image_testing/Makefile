@@ -164,20 +164,6 @@ circle_finder/fast:
 .PHONY : circle_finder/fast
 
 # Convenience name for target.
-image_testing/CMakeFiles/cv_modder.dir/rule:
-	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/cv_modder.dir/rule
-.PHONY : image_testing/CMakeFiles/cv_modder.dir/rule
-
-# Convenience name for target.
-cv_modder: image_testing/CMakeFiles/cv_modder.dir/rule
-.PHONY : cv_modder
-
-# fast build rule for target.
-cv_modder/fast:
-	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/cv_modder.dir/build.make image_testing/CMakeFiles/cv_modder.dir/build
-.PHONY : cv_modder/fast
-
-# Convenience name for target.
 image_testing/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 .PHONY : image_testing/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
@@ -234,6 +220,20 @@ geometry_msgs_generate_messages_py/fast:
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+image_testing/CMakeFiles/green_finder.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/green_finder.dir/rule
+.PHONY : image_testing/CMakeFiles/green_finder.dir/rule
+
+# Convenience name for target.
+green_finder: image_testing/CMakeFiles/green_finder.dir/rule
+.PHONY : green_finder
+
+# fast build rule for target.
+green_finder/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/green_finder.dir/build.make image_testing/CMakeFiles/green_finder.dir/build
+.PHONY : green_finder/fast
+
+# Convenience name for target.
 image_testing/CMakeFiles/image_converter.dir/rule:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/image_converter.dir/rule
 .PHONY : image_testing/CMakeFiles/image_converter.dir/rule
@@ -246,6 +246,20 @@ image_converter: image_testing/CMakeFiles/image_converter.dir/rule
 image_converter/fast:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_converter.dir/build.make image_testing/CMakeFiles/image_converter.dir/build
 .PHONY : image_converter/fast
+
+# Convenience name for target.
+image_testing/CMakeFiles/orange_finder.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/orange_finder.dir/rule
+.PHONY : image_testing/CMakeFiles/orange_finder.dir/rule
+
+# Convenience name for target.
+orange_finder: image_testing/CMakeFiles/orange_finder.dir/rule
+.PHONY : orange_finder
+
+# fast build rule for target.
+orange_finder/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/orange_finder.dir/build.make image_testing/CMakeFiles/orange_finder.dir/build
+.PHONY : orange_finder/fast
 
 # Convenience name for target.
 image_testing/CMakeFiles/rect_finder.dir/rule:
@@ -514,7 +528,7 @@ src/cv_modder.o: src/cv_modder.cpp.o
 
 # target to build an object file
 src/cv_modder.cpp.o:
-	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/cv_modder.dir/build.make image_testing/CMakeFiles/cv_modder.dir/src/cv_modder.cpp.o
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/green_finder.dir/build.make image_testing/CMakeFiles/green_finder.dir/src/cv_modder.cpp.o
 .PHONY : src/cv_modder.cpp.o
 
 src/cv_modder.i: src/cv_modder.cpp.i
@@ -522,7 +536,7 @@ src/cv_modder.i: src/cv_modder.cpp.i
 
 # target to preprocess a source file
 src/cv_modder.cpp.i:
-	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/cv_modder.dir/build.make image_testing/CMakeFiles/cv_modder.dir/src/cv_modder.cpp.i
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/green_finder.dir/build.make image_testing/CMakeFiles/green_finder.dir/src/cv_modder.cpp.i
 .PHONY : src/cv_modder.cpp.i
 
 src/cv_modder.s: src/cv_modder.cpp.s
@@ -530,7 +544,7 @@ src/cv_modder.s: src/cv_modder.cpp.s
 
 # target to generate assembly for a file
 src/cv_modder.cpp.s:
-	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/cv_modder.dir/build.make image_testing/CMakeFiles/cv_modder.dir/src/cv_modder.cpp.s
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/green_finder.dir/build.make image_testing/CMakeFiles/green_finder.dir/src/cv_modder.cpp.s
 .PHONY : src/cv_modder.cpp.s
 
 src/image_converter.o: src/image_converter.cpp.o
@@ -556,6 +570,30 @@ src/image_converter.s: src/image_converter.cpp.s
 src/image_converter.cpp.s:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_converter.dir/build.make image_testing/CMakeFiles/image_converter.dir/src/image_converter.cpp.s
 .PHONY : src/image_converter.cpp.s
+
+src/orange_finder.o: src/orange_finder.cpp.o
+.PHONY : src/orange_finder.o
+
+# target to build an object file
+src/orange_finder.cpp.o:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/orange_finder.dir/build.make image_testing/CMakeFiles/orange_finder.dir/src/orange_finder.cpp.o
+.PHONY : src/orange_finder.cpp.o
+
+src/orange_finder.i: src/orange_finder.cpp.i
+.PHONY : src/orange_finder.i
+
+# target to preprocess a source file
+src/orange_finder.cpp.i:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/orange_finder.dir/build.make image_testing/CMakeFiles/orange_finder.dir/src/orange_finder.cpp.i
+.PHONY : src/orange_finder.cpp.i
+
+src/orange_finder.s: src/orange_finder.cpp.s
+.PHONY : src/orange_finder.s
+
+# target to generate assembly for a file
+src/orange_finder.cpp.s:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/orange_finder.dir/build.make image_testing/CMakeFiles/orange_finder.dir/src/orange_finder.cpp.s
+.PHONY : src/orange_finder.cpp.s
 
 src/rect_finder.o: src/rect_finder.cpp.o
 .PHONY : src/rect_finder.o
@@ -588,17 +626,18 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... circle_finder"
-	@echo "... cv_modder"
 	@echo "... edit_cache"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... green_finder"
 	@echo "... image_converter"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... orange_finder"
 	@echo "... rebuild_cache"
 	@echo "... rect_finder"
 	@echo "... roscpp_generate_messages_cpp"
@@ -627,6 +666,9 @@ help:
 	@echo "... src/image_converter.o"
 	@echo "... src/image_converter.i"
 	@echo "... src/image_converter.s"
+	@echo "... src/orange_finder.o"
+	@echo "... src/orange_finder.i"
+	@echo "... src/orange_finder.s"
 	@echo "... src/rect_finder.o"
 	@echo "... src/rect_finder.i"
 	@echo "... src/rect_finder.s"

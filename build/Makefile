@@ -267,19 +267,6 @@ circle_finder/fast:
 .PHONY : circle_finder/fast
 
 #=============================================================================
-# Target rules for targets named cv_modder
-
-# Build rule for target.
-cv_modder: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cv_modder
-.PHONY : cv_modder
-
-# fast build rule for target.
-cv_modder/fast:
-	$(MAKE) -f image_testing/CMakeFiles/cv_modder.dir/build.make image_testing/CMakeFiles/cv_modder.dir/build
-.PHONY : cv_modder/fast
-
-#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -332,6 +319,19 @@ geometry_msgs_generate_messages_py/fast:
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named green_finder
+
+# Build rule for target.
+green_finder: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 green_finder
+.PHONY : green_finder
+
+# fast build rule for target.
+green_finder/fast:
+	$(MAKE) -f image_testing/CMakeFiles/green_finder.dir/build.make image_testing/CMakeFiles/green_finder.dir/build
+.PHONY : green_finder/fast
+
+#=============================================================================
 # Target rules for targets named image_converter
 
 # Build rule for target.
@@ -343,6 +343,19 @@ image_converter: cmake_check_build_system
 image_converter/fast:
 	$(MAKE) -f image_testing/CMakeFiles/image_converter.dir/build.make image_testing/CMakeFiles/image_converter.dir/build
 .PHONY : image_converter/fast
+
+#=============================================================================
+# Target rules for targets named orange_finder
+
+# Build rule for target.
+orange_finder: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 orange_finder
+.PHONY : orange_finder
+
+# fast build rule for target.
+orange_finder/fast:
+	$(MAKE) -f image_testing/CMakeFiles/orange_finder.dir/build.make image_testing/CMakeFiles/orange_finder.dir/build
+.PHONY : orange_finder/fast
 
 #=============================================================================
 # Target rules for targets named rect_finder
@@ -587,12 +600,13 @@ help:
 	@echo "... gtest_main"
 	@echo "... _catkin_empty_exported_target"
 	@echo "... circle_finder"
-	@echo "... cv_modder"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... green_finder"
 	@echo "... image_converter"
+	@echo "... orange_finder"
 	@echo "... rect_finder"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
