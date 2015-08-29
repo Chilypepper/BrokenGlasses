@@ -19,8 +19,10 @@ add_executable(green_finder src/cv_modder.cpp)
 add_executable(circle_finder src/circle_finder.cpp)
 add_executable(rect_finder src/rect_finder.cpp)
 add_executable(orange_finder src/orange_finder.cpp)
+add_executable(hsv_converter src/hsv_converter.cpp)
 
 
+target_link_libraries(hsv_converter ${catkin_LIBRARIES} ${OpenCV_LIBS} ${OpenCV_LIBRARIES} ${Eigen_LIBRARIES} ${QT_LIBRARIES} ${ROS_LIBRARIES} ${catkin_LIBRARIES})
 
 target_link_libraries(rect_finder ${catkin_LIBRARIES} ${OpenCV_LIBS} ${OpenCV_LIBRARIES} ${Eigen_LIBRARIES} ${QT_LIBRARIES} ${ROS_LIBRARIES} ${catkin_LIBRARIES})
 

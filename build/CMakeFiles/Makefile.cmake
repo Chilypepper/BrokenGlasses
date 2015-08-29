@@ -189,6 +189,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "image_testing/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/geometry_msgs_generate_messages_py.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/green_finder.dir/DependInfo.cmake"
+  "image_testing/CMakeFiles/hsv_converter.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/image_converter.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/orange_finder.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/rect_finder.dir/DependInfo.cmake"

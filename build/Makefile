@@ -332,6 +332,19 @@ green_finder/fast:
 .PHONY : green_finder/fast
 
 #=============================================================================
+# Target rules for targets named hsv_converter
+
+# Build rule for target.
+hsv_converter: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hsv_converter
+.PHONY : hsv_converter
+
+# fast build rule for target.
+hsv_converter/fast:
+	$(MAKE) -f image_testing/CMakeFiles/hsv_converter.dir/build.make image_testing/CMakeFiles/hsv_converter.dir/build
+.PHONY : hsv_converter/fast
+
+#=============================================================================
 # Target rules for targets named image_converter
 
 # Build rule for target.
@@ -605,6 +618,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... green_finder"
+	@echo "... hsv_converter"
 	@echo "... image_converter"
 	@echo "... orange_finder"
 	@echo "... rect_finder"

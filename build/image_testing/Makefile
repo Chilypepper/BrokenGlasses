@@ -234,6 +234,20 @@ green_finder/fast:
 .PHONY : green_finder/fast
 
 # Convenience name for target.
+image_testing/CMakeFiles/hsv_converter.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/hsv_converter.dir/rule
+.PHONY : image_testing/CMakeFiles/hsv_converter.dir/rule
+
+# Convenience name for target.
+hsv_converter: image_testing/CMakeFiles/hsv_converter.dir/rule
+.PHONY : hsv_converter
+
+# fast build rule for target.
+hsv_converter/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/hsv_converter.dir/build.make image_testing/CMakeFiles/hsv_converter.dir/build
+.PHONY : hsv_converter/fast
+
+# Convenience name for target.
 image_testing/CMakeFiles/image_converter.dir/rule:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/image_converter.dir/rule
 .PHONY : image_testing/CMakeFiles/image_converter.dir/rule
@@ -547,6 +561,30 @@ src/cv_modder.cpp.s:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/green_finder.dir/build.make image_testing/CMakeFiles/green_finder.dir/src/cv_modder.cpp.s
 .PHONY : src/cv_modder.cpp.s
 
+src/hsv_converter.o: src/hsv_converter.cpp.o
+.PHONY : src/hsv_converter.o
+
+# target to build an object file
+src/hsv_converter.cpp.o:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/hsv_converter.dir/build.make image_testing/CMakeFiles/hsv_converter.dir/src/hsv_converter.cpp.o
+.PHONY : src/hsv_converter.cpp.o
+
+src/hsv_converter.i: src/hsv_converter.cpp.i
+.PHONY : src/hsv_converter.i
+
+# target to preprocess a source file
+src/hsv_converter.cpp.i:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/hsv_converter.dir/build.make image_testing/CMakeFiles/hsv_converter.dir/src/hsv_converter.cpp.i
+.PHONY : src/hsv_converter.cpp.i
+
+src/hsv_converter.s: src/hsv_converter.cpp.s
+.PHONY : src/hsv_converter.s
+
+# target to generate assembly for a file
+src/hsv_converter.cpp.s:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/hsv_converter.dir/build.make image_testing/CMakeFiles/hsv_converter.dir/src/hsv_converter.cpp.s
+.PHONY : src/hsv_converter.cpp.s
+
 src/image_converter.o: src/image_converter.cpp.o
 .PHONY : src/image_converter.o
 
@@ -632,6 +670,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... green_finder"
+	@echo "... hsv_converter"
 	@echo "... image_converter"
 	@echo "... install"
 	@echo "... install/local"
@@ -663,6 +702,9 @@ help:
 	@echo "... src/cv_modder.o"
 	@echo "... src/cv_modder.i"
 	@echo "... src/cv_modder.s"
+	@echo "... src/hsv_converter.o"
+	@echo "... src/hsv_converter.i"
+	@echo "... src/hsv_converter.s"
 	@echo "... src/image_converter.o"
 	@echo "... src/image_converter.i"
 	@echo "... src/image_converter.s"
