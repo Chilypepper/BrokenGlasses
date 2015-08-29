@@ -164,6 +164,20 @@ circle_finder/fast:
 .PHONY : circle_finder/fast
 
 # Convenience name for target.
+image_testing/CMakeFiles/color_finder_average.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/color_finder_average.dir/rule
+.PHONY : image_testing/CMakeFiles/color_finder_average.dir/rule
+
+# Convenience name for target.
+color_finder_average: image_testing/CMakeFiles/color_finder_average.dir/rule
+.PHONY : color_finder_average
+
+# fast build rule for target.
+color_finder_average/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/color_finder_average.dir/build.make image_testing/CMakeFiles/color_finder_average.dir/build
+.PHONY : color_finder_average/fast
+
+# Convenience name for target.
 image_testing/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 .PHONY : image_testing/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
@@ -537,6 +551,30 @@ src/circle_finder.cpp.s:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/circle_finder.dir/build.make image_testing/CMakeFiles/circle_finder.dir/src/circle_finder.cpp.s
 .PHONY : src/circle_finder.cpp.s
 
+src/color_finder_average.o: src/color_finder_average.cpp.o
+.PHONY : src/color_finder_average.o
+
+# target to build an object file
+src/color_finder_average.cpp.o:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/color_finder_average.dir/build.make image_testing/CMakeFiles/color_finder_average.dir/src/color_finder_average.cpp.o
+.PHONY : src/color_finder_average.cpp.o
+
+src/color_finder_average.i: src/color_finder_average.cpp.i
+.PHONY : src/color_finder_average.i
+
+# target to preprocess a source file
+src/color_finder_average.cpp.i:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/color_finder_average.dir/build.make image_testing/CMakeFiles/color_finder_average.dir/src/color_finder_average.cpp.i
+.PHONY : src/color_finder_average.cpp.i
+
+src/color_finder_average.s: src/color_finder_average.cpp.s
+.PHONY : src/color_finder_average.s
+
+# target to generate assembly for a file
+src/color_finder_average.cpp.s:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/color_finder_average.dir/build.make image_testing/CMakeFiles/color_finder_average.dir/src/color_finder_average.cpp.s
+.PHONY : src/color_finder_average.cpp.s
+
 src/cv_modder.o: src/cv_modder.cpp.o
 .PHONY : src/cv_modder.o
 
@@ -664,6 +702,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... circle_finder"
+	@echo "... color_finder_average"
 	@echo "... edit_cache"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_eus"
@@ -699,6 +738,9 @@ help:
 	@echo "... src/circle_finder.o"
 	@echo "... src/circle_finder.i"
 	@echo "... src/circle_finder.s"
+	@echo "... src/color_finder_average.o"
+	@echo "... src/color_finder_average.i"
+	@echo "... src/color_finder_average.s"
 	@echo "... src/cv_modder.o"
 	@echo "... src/cv_modder.i"
 	@echo "... src/cv_modder.s"

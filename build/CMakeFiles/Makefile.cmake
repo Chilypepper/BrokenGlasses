@@ -184,6 +184,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   "camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/circle_finder.dir/DependInfo.cmake"
+  "image_testing/CMakeFiles/color_finder_average.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/geometry_msgs_generate_messages_eus.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/DependInfo.cmake"

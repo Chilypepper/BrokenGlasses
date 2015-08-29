@@ -20,7 +20,10 @@ add_executable(circle_finder src/circle_finder.cpp)
 add_executable(rect_finder src/rect_finder.cpp)
 add_executable(orange_finder src/orange_finder.cpp)
 add_executable(hsv_converter src/hsv_converter.cpp)
+add_executable(color_finder_average src/color_finder_average.cpp)
 
+
+target_link_libraries(color_finder_average ${catkin_LIBRARIES} ${OpenCV_LIBS} ${OpenCV_LIBRARIES} ${Eigen_LIBRARIES} ${QT_LIBRARIES} ${ROS_LIBRARIES} ${catkin_LIBRARIES})
 
 target_link_libraries(hsv_converter ${catkin_LIBRARIES} ${OpenCV_LIBS} ${OpenCV_LIBRARIES} ${Eigen_LIBRARIES} ${QT_LIBRARIES} ${ROS_LIBRARIES} ${catkin_LIBRARIES})
 

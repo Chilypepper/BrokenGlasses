@@ -267,6 +267,19 @@ circle_finder/fast:
 .PHONY : circle_finder/fast
 
 #=============================================================================
+# Target rules for targets named color_finder_average
+
+# Build rule for target.
+color_finder_average: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 color_finder_average
+.PHONY : color_finder_average
+
+# fast build rule for target.
+color_finder_average/fast:
+	$(MAKE) -f image_testing/CMakeFiles/color_finder_average.dir/build.make image_testing/CMakeFiles/color_finder_average.dir/build
+.PHONY : color_finder_average/fast
+
+#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -613,6 +626,7 @@ help:
 	@echo "... gtest_main"
 	@echo "... _catkin_empty_exported_target"
 	@echo "... circle_finder"
+	@echo "... color_finder_average"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_lisp"

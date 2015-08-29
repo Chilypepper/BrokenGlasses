@@ -57,9 +57,7 @@ public:
       return;
     }
     split(cv_ptr->image,channels);
-    Mat result_red(cv_ptr->image.rows, cv_ptr->image.cols, CV_8UC3);
-    Mat in3[] = { empty_channel, empty_channel, spl[2]};
-    
+    Mat result_red(cv_ptr->image.rows, cv_ptr->image.cols, CV_8UC3);    
 
 
     //Rimg=cvCreateImage(cvSize(cv_ptr->image.cols,cv_ptr->image.rows),
