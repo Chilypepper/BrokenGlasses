@@ -58,6 +58,7 @@ public:
     nh.setParam("/colorranges/greenUpperBound", greenUpperBound);
     nh.setParam("/colorranges/redLowerBound", redLowerBound);
     nh.setParam("/colorranges/redUpperBound", redUpperBound);
+
   }
 
   ~ImageConverter()
@@ -96,6 +97,13 @@ public:
     nh.getParam("/colorranges/greenUpperBound",greenUpper);
     nh.getParam("/colorranges/redLowerBound",redLower);
     nh.getParam("/colorranges/redUpperBound",redUpper);
+
+    if(blueLower > blueUpper ||
+      greenLower > greenUpper ||
+      redLower > redUpper){
+      ROS_INFO("Color Range failure, lower bound > upper bound");
+      ros::shutdown();
+    }
 
     circle(cv_ptr->image,Point(columns/2,rows/2),2,colorScalar_BLUE,1);
     int outRed = cv_ptr->image.at<Vec3b>(Point(centPointx,centPointy))[0];
