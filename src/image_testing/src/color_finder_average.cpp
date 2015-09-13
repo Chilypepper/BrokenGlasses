@@ -17,6 +17,8 @@ const int accuracy = 200;
 
 //good set for medium blue: 100/140/80/110/35/55
 //good set for bright orange: 0/25/35/50/110/125
+
+/* DEFAULT VALUES */
 const int blueLowerBound = 100;
 const int blueUpperBound = 140;
 const int greenLowerBound = 80;
