@@ -23,4 +23,8 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet splash usbcore.usbfs_memory_mb=1000"
 
 **Answer to the superuser issue
 
-http://askubuntu.com/questions/41402/how-do-i-get-opencv-and-firefly-mv-working
+ $subl /etc/udev/rules.d/10-pointgrey.rules
+
+ type in:
+
+ SUBSYSTEM=="usb", ATTRS{idVendor}=="1e10", ATTRS{idProduct}=="3300", GROUP="plugdev", SYMLINK+="blackfly", MODE:="0666"
