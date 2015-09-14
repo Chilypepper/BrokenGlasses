@@ -276,6 +276,20 @@ image_converter/fast:
 .PHONY : image_converter/fast
 
 # Convenience name for target.
+image_testing/CMakeFiles/image_flipper.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/image_flipper.dir/rule
+.PHONY : image_testing/CMakeFiles/image_flipper.dir/rule
+
+# Convenience name for target.
+image_flipper: image_testing/CMakeFiles/image_flipper.dir/rule
+.PHONY : image_flipper
+
+# fast build rule for target.
+image_flipper/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_flipper.dir/build.make image_testing/CMakeFiles/image_flipper.dir/build
+.PHONY : image_flipper/fast
+
+# Convenience name for target.
 image_testing/CMakeFiles/orange_finder.dir/rule:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/orange_finder.dir/rule
 .PHONY : image_testing/CMakeFiles/orange_finder.dir/rule
@@ -647,6 +661,30 @@ src/image_converter.cpp.s:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_converter.dir/build.make image_testing/CMakeFiles/image_converter.dir/src/image_converter.cpp.s
 .PHONY : src/image_converter.cpp.s
 
+src/image_flipper.o: src/image_flipper.cpp.o
+.PHONY : src/image_flipper.o
+
+# target to build an object file
+src/image_flipper.cpp.o:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_flipper.dir/build.make image_testing/CMakeFiles/image_flipper.dir/src/image_flipper.cpp.o
+.PHONY : src/image_flipper.cpp.o
+
+src/image_flipper.i: src/image_flipper.cpp.i
+.PHONY : src/image_flipper.i
+
+# target to preprocess a source file
+src/image_flipper.cpp.i:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_flipper.dir/build.make image_testing/CMakeFiles/image_flipper.dir/src/image_flipper.cpp.i
+.PHONY : src/image_flipper.cpp.i
+
+src/image_flipper.s: src/image_flipper.cpp.s
+.PHONY : src/image_flipper.s
+
+# target to generate assembly for a file
+src/image_flipper.cpp.s:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_flipper.dir/build.make image_testing/CMakeFiles/image_flipper.dir/src/image_flipper.cpp.s
+.PHONY : src/image_flipper.cpp.s
+
 src/orange_finder.o: src/orange_finder.cpp.o
 .PHONY : src/orange_finder.o
 
@@ -711,6 +749,7 @@ help:
 	@echo "... green_finder"
 	@echo "... hsv_converter"
 	@echo "... image_converter"
+	@echo "... image_flipper"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
@@ -750,6 +789,9 @@ help:
 	@echo "... src/image_converter.o"
 	@echo "... src/image_converter.i"
 	@echo "... src/image_converter.s"
+	@echo "... src/image_flipper.o"
+	@echo "... src/image_flipper.i"
+	@echo "... src/image_flipper.s"
 	@echo "... src/orange_finder.o"
 	@echo "... src/orange_finder.i"
 	@echo "... src/orange_finder.s"

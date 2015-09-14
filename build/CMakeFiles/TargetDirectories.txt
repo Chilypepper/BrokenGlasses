@@ -13,6 +13,7 @@
 /home/peter/brokenGlasses/build/gtest/CMakeFiles/gtest_main.dir
 /home/peter/brokenGlasses/build/image_testing/CMakeFiles/hsv_converter.dir
 /home/peter/brokenGlasses/build/image_testing/CMakeFiles/image_converter.dir
+/home/peter/brokenGlasses/build/image_testing/CMakeFiles/image_flipper.dir
 /home/peter/brokenGlasses/build/image_testing/CMakeFiles/orange_finder.dir
 /home/peter/brokenGlasses/build/image_testing/CMakeFiles/rect_finder.dir
 /home/peter/brokenGlasses/build/image_testing/CMakeFiles/roscpp_generate_messages_cpp.dir

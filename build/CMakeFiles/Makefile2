@@ -340,6 +340,7 @@ image_testing/all: image_testing/CMakeFiles/color_finder_average.dir/all
 image_testing/all: image_testing/CMakeFiles/green_finder.dir/all
 image_testing/all: image_testing/CMakeFiles/hsv_converter.dir/all
 image_testing/all: image_testing/CMakeFiles/image_converter.dir/all
+image_testing/all: image_testing/CMakeFiles/image_flipper.dir/all
 image_testing/all: image_testing/CMakeFiles/orange_finder.dir/all
 image_testing/all: image_testing/CMakeFiles/rect_finder.dir/all
 .PHONY : image_testing/all
@@ -354,6 +355,7 @@ image_testing/clean: image_testing/CMakeFiles/geometry_msgs_generate_messages_py
 image_testing/clean: image_testing/CMakeFiles/green_finder.dir/clean
 image_testing/clean: image_testing/CMakeFiles/hsv_converter.dir/clean
 image_testing/clean: image_testing/CMakeFiles/image_converter.dir/clean
+image_testing/clean: image_testing/CMakeFiles/image_flipper.dir/clean
 image_testing/clean: image_testing/CMakeFiles/orange_finder.dir/clean
 image_testing/clean: image_testing/CMakeFiles/rect_finder.dir/clean
 image_testing/clean: image_testing/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
@@ -678,13 +680,48 @@ clean: image_testing/CMakeFiles/image_converter.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target image_testing/CMakeFiles/image_flipper.dir
+
+# All Build rule for target.
+image_testing/CMakeFiles/image_flipper.dir/all:
+	$(MAKE) -f image_testing/CMakeFiles/image_flipper.dir/build.make image_testing/CMakeFiles/image_flipper.dir/depend
+	$(MAKE) -f image_testing/CMakeFiles/image_flipper.dir/build.make image_testing/CMakeFiles/image_flipper.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  8
+	@echo "Built target image_flipper"
+.PHONY : image_testing/CMakeFiles/image_flipper.dir/all
+
+# Include target in all.
+all: image_testing/CMakeFiles/image_flipper.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+image_testing/CMakeFiles/image_flipper.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/image_flipper.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
+.PHONY : image_testing/CMakeFiles/image_flipper.dir/rule
+
+# Convenience name for target.
+image_flipper: image_testing/CMakeFiles/image_flipper.dir/rule
+.PHONY : image_flipper
+
+# clean rule for target.
+image_testing/CMakeFiles/image_flipper.dir/clean:
+	$(MAKE) -f image_testing/CMakeFiles/image_flipper.dir/build.make image_testing/CMakeFiles/image_flipper.dir/clean
+.PHONY : image_testing/CMakeFiles/image_flipper.dir/clean
+
+# clean rule for target.
+clean: image_testing/CMakeFiles/image_flipper.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target image_testing/CMakeFiles/orange_finder.dir
 
 # All Build rule for target.
 image_testing/CMakeFiles/orange_finder.dir/all:
 	$(MAKE) -f image_testing/CMakeFiles/orange_finder.dir/build.make image_testing/CMakeFiles/orange_finder.dir/depend
 	$(MAKE) -f image_testing/CMakeFiles/orange_finder.dir/build.make image_testing/CMakeFiles/orange_finder.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  8
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  9
 	@echo "Built target orange_finder"
 .PHONY : image_testing/CMakeFiles/orange_finder.dir/all
 
@@ -719,7 +756,7 @@ clean: image_testing/CMakeFiles/orange_finder.dir/clean
 image_testing/CMakeFiles/rect_finder.dir/all:
 	$(MAKE) -f image_testing/CMakeFiles/rect_finder.dir/build.make image_testing/CMakeFiles/rect_finder.dir/depend
 	$(MAKE) -f image_testing/CMakeFiles/rect_finder.dir/build.make image_testing/CMakeFiles/rect_finder.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  9
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  10
 	@echo "Built target rect_finder"
 .PHONY : image_testing/CMakeFiles/rect_finder.dir/all
 

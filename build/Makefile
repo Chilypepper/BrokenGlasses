@@ -371,6 +371,19 @@ image_converter/fast:
 .PHONY : image_converter/fast
 
 #=============================================================================
+# Target rules for targets named image_flipper
+
+# Build rule for target.
+image_flipper: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 image_flipper
+.PHONY : image_flipper
+
+# fast build rule for target.
+image_flipper/fast:
+	$(MAKE) -f image_testing/CMakeFiles/image_flipper.dir/build.make image_testing/CMakeFiles/image_flipper.dir/build
+.PHONY : image_flipper/fast
+
+#=============================================================================
 # Target rules for targets named orange_finder
 
 # Build rule for target.
@@ -634,6 +647,7 @@ help:
 	@echo "... green_finder"
 	@echo "... hsv_converter"
 	@echo "... image_converter"
+	@echo "... image_flipper"
 	@echo "... orange_finder"
 	@echo "... rect_finder"
 	@echo "... roscpp_generate_messages_cpp"
