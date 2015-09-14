@@ -17,18 +17,18 @@ const int accuracy = 200;
 
 //good set for medium blue: 100/140/80/110/35/55
 //good set for bright orange: 0/25/35/50/110/125
-
+//yellow balloon 160/190/140/170/30/60
 /* DEFAULT VALUES */
-const int blueLowerBound = 100;
-const int blueUpperBound = 140;
-const int greenLowerBound = 80;
-const int greenUpperBound = 110;
-const int redLowerBound = 35;
-const int redUpperBound = 55;
+const int blueLowerBound = 30;
+const int blueUpperBound = 60;
+const int greenLowerBound = 140;
+const int greenUpperBound = 170;
+const int redLowerBound = 160;
+const int redUpperBound = 190;
 
 Scalar colorScalar_BLUE = Scalar(255,255,0);
 Scalar colorScalar_GREEN = Scalar(0,255,0);
-Scalar colorScalar_RED = Scalar(255,0,0);
+Scalar colorScalar_RED = Scalar(0,0,255);
 
 Scalar colorScalar = Scalar(0,255,0);
 
@@ -48,7 +48,7 @@ public:
   ImageConverter()
     : it(nh)
   {
-    image_sub = it.subscribe("/camera/image_rect_color", 1, 
+    image_sub = it.subscribe("/camera/image_raw", 1, 
       &ImageConverter::imageCb, this);
     image_pub = it.advertise("/camera/output_video", 1);
 
@@ -106,10 +106,10 @@ public:
     }
 
     circle(cv_ptr->image,Point(columns/2,rows/2),2,colorScalar_BLUE,1);
-    int outRed = cv_ptr->image.at<Vec3b>(Point(centPointx,centPointy))[0];
+    int outBlue = cv_ptr->image.at<Vec3b>(Point(centPointx,centPointy))[0];
     int outGreen = cv_ptr->image.at<Vec3b>(Point(centPointx,centPointy))[1];
-    int outBlue = cv_ptr->image.at<Vec3b>(Point(centPointx,centPointy))[2];
-    ROS_INFO("R: %i G: %i B: %i",outRed,outGreen,outBlue);
+    int outRed = cv_ptr->image.at<Vec3b>(Point(centPointx,centPointy))[2];
+    ROS_INFO("B: %i G: %i R: %i",outBlue,outGreen,outRed);
     //BGR
     for(double cols = cv_ptr->image.cols; pointx < cols; pointx+=cols/accuracy){
       pointy=0;
@@ -157,10 +157,13 @@ public:
       int yCentPt = yTotal / listSize;
       circle(cv_ptr->image,Point(xCentPt,yCentPt),3,colorScalar_GREEN,1);
       circle(cv_ptr->image,Point(xCentPt,yCentPt),2,colorScalar_RED,1);
+      line(cv_ptr->image,Point(columns/2,rows/2-50),Point(xCentPt,yCentPt),colorScalar_RED,2);
+      putText(cv_ptr->image,"Target Located",Point(columns/2+10,rows/2-60), 2, 0.7, colorScalar_RED,2);
     } 
-    
+    else{
+      putText(cv_ptr->image,"Locating Target...",Point(columns/2+10,rows/2-60), 2, 0.7, colorScalar_RED,2);
 
-
+    }
     image_pub.publish(cv_ptr->toImageMsg());
   }
 };
