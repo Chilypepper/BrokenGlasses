@@ -10,55 +10,19 @@
 using namespace cv;
 using namespace std;
 
-const int testPointX=200;
-const int testPointY=100;
-
-const int accuracy = 200;
-
-//good set for medium blue: 100/140/80/110/35/55
-//good set for bright orange: 0/25/35/50/110/125
-
-/* DEFAULT VALUES */
-const int blueLowerBound = 100;
-const int blueUpperBound = 140;
-const int greenLowerBound = 80;
-const int greenUpperBound = 110;
-const int redLowerBound = 35;
-const int redUpperBound = 55;
-
-Scalar colorScalar_BLUE = Scalar(255,255,0);
-Scalar colorScalar_GREEN = Scalar(0,255,0);
-Scalar colorScalar_RED = Scalar(255,0,0);
-
-Scalar colorScalar = Scalar(0,255,0);
-
-vector<int> listX;
-vector<int> listY;
-
 class ImageConverter
 {
   ros::NodeHandle nh;
   image_transport::ImageTransport it;
   image_transport::Subscriber image_sub;
   image_transport::Publisher image_pub;
-
-  
-
 public:
   ImageConverter()
     : it(nh)
   {
     image_sub = it.subscribe("/camera/image_rect_color", 1, 
       &ImageConverter::imageCb, this);
-    image_pub = it.advertise("/camera/output_video", 1);
-
-    nh.setParam("/colorranges/blueLowerBound", blueLowerBound);
-    nh.setParam("/colorranges/blueUpperBound", blueUpperBound);
-    nh.setParam("/colorranges/greenLowerBound", greenLowerBound);
-    nh.setParam("/colorranges/greenUpperBound", greenUpperBound);
-    nh.setParam("/colorranges/redLowerBound", redLowerBound);
-    nh.setParam("/colorranges/redUpperBound", redUpperBound);
-
+    image_pub = it.advertise("/camera/output_video_flipped", 1);
   }
 
   ~ImageConverter()
