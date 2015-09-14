@@ -41,6 +41,9 @@ public:
     }
     //flip code 0 corresponds to vertical "flippage"
     flip(cv_ptr->image,cv_ptr->image,0);
+    //have to also flip horizontally to maintain left right "natural" orientation
+    flip(cv_ptr->image,cv_ptr->image,1);
+
 
     image_pub.publish(cv_ptr->toImageMsg());
   }
