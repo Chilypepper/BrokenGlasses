@@ -19,12 +19,12 @@ const int accuracy = 200;
 //good set for bright orange: 0/25/35/50/110/125
 //yellow balloon 160/190/140/170/30/60
 /* DEFAULT VALUES */
-const int blueLowerBound = 30;
-const int blueUpperBound = 60;
-const int greenLowerBound = 140;
-const int greenUpperBound = 170;
-const int redLowerBound = 160;
-const int redUpperBound = 190;
+const int blueLowerBound = 20;
+const int blueUpperBound = 50;
+const int greenLowerBound = 100;
+const int greenUpperBound = 130;
+const int redLowerBound = 100;
+const int redUpperBound = 130;
 
 Scalar colorScalar_BLUE = Scalar(255,255,0);
 Scalar colorScalar_GREEN = Scalar(0,255,0);
@@ -157,13 +157,13 @@ public:
       int yCentPt = yTotal / listSize;
       circle(cv_ptr->image,Point(xCentPt,yCentPt),3,colorScalar_GREEN,1);
       circle(cv_ptr->image,Point(xCentPt,yCentPt),2,colorScalar_RED,1);
-      line(cv_ptr->image,Point(columns/2,rows/2-50),Point(xCentPt,yCentPt),colorScalar_RED,2);
-      putText(cv_ptr->image,"Target Located",Point(columns/2+10,rows/2-60), 2, 0.7, colorScalar_RED,2);
+      line(cv_ptr->image,Point(10+118,10+27),Point(xCentPt,yCentPt),colorScalar_RED,2);
+      Mat rect = cv_ptr->image(Rect(10,10,118,27));
+      Mat color(rect.size(), CV_8UC3, Scalar(0,0,255));
+      double alpha = 0.85;
+      addWeighted(color,alpha,rect,1.0-alpha,0.0,rect);
+      putText(rect,"Target Located",Point(5,17),2,0.45,Scalar(255,255,255),1);
     } 
-    else{
-      putText(cv_ptr->image,"Locating Target...",Point(columns/2+10,rows/2-60), 2, 0.7, colorScalar_RED,2);
-
-    }
     image_pub.publish(cv_ptr->toImageMsg());
   }
 };
