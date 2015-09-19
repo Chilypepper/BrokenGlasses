@@ -267,6 +267,19 @@ circle_finder/fast:
 .PHONY : circle_finder/fast
 
 #=============================================================================
+# Target rules for targets named colorSpaces
+
+# Build rule for target.
+colorSpaces: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 colorSpaces
+.PHONY : colorSpaces
+
+# fast build rule for target.
+colorSpaces/fast:
+	$(MAKE) -f image_testing/CMakeFiles/colorSpaces.dir/build.make image_testing/CMakeFiles/colorSpaces.dir/build
+.PHONY : colorSpaces/fast
+
+#=============================================================================
 # Target rules for targets named color_finder_average
 
 # Build rule for target.
@@ -639,6 +652,7 @@ help:
 	@echo "... gtest_main"
 	@echo "... _catkin_empty_exported_target"
 	@echo "... circle_finder"
+	@echo "... colorSpaces"
 	@echo "... color_finder_average"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_eus"

@@ -164,6 +164,20 @@ circle_finder/fast:
 .PHONY : circle_finder/fast
 
 # Convenience name for target.
+image_testing/CMakeFiles/colorSpaces.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/colorSpaces.dir/rule
+.PHONY : image_testing/CMakeFiles/colorSpaces.dir/rule
+
+# Convenience name for target.
+colorSpaces: image_testing/CMakeFiles/colorSpaces.dir/rule
+.PHONY : colorSpaces
+
+# fast build rule for target.
+colorSpaces/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/colorSpaces.dir/build.make image_testing/CMakeFiles/colorSpaces.dir/build
+.PHONY : colorSpaces/fast
+
+# Convenience name for target.
 image_testing/CMakeFiles/color_finder_average.dir/rule:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/color_finder_average.dir/rule
 .PHONY : image_testing/CMakeFiles/color_finder_average.dir/rule
@@ -589,6 +603,30 @@ src/color_finder_average.cpp.s:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/color_finder_average.dir/build.make image_testing/CMakeFiles/color_finder_average.dir/src/color_finder_average.cpp.s
 .PHONY : src/color_finder_average.cpp.s
 
+src/colorspaces.o: src/colorspaces.cpp.o
+.PHONY : src/colorspaces.o
+
+# target to build an object file
+src/colorspaces.cpp.o:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/colorSpaces.dir/build.make image_testing/CMakeFiles/colorSpaces.dir/src/colorspaces.cpp.o
+.PHONY : src/colorspaces.cpp.o
+
+src/colorspaces.i: src/colorspaces.cpp.i
+.PHONY : src/colorspaces.i
+
+# target to preprocess a source file
+src/colorspaces.cpp.i:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/colorSpaces.dir/build.make image_testing/CMakeFiles/colorSpaces.dir/src/colorspaces.cpp.i
+.PHONY : src/colorspaces.cpp.i
+
+src/colorspaces.s: src/colorspaces.cpp.s
+.PHONY : src/colorspaces.s
+
+# target to generate assembly for a file
+src/colorspaces.cpp.s:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/colorSpaces.dir/build.make image_testing/CMakeFiles/colorSpaces.dir/src/colorspaces.cpp.s
+.PHONY : src/colorspaces.cpp.s
+
 src/cv_modder.o: src/cv_modder.cpp.o
 .PHONY : src/cv_modder.o
 
@@ -740,6 +778,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... circle_finder"
+	@echo "... colorSpaces"
 	@echo "... color_finder_average"
 	@echo "... edit_cache"
 	@echo "... geometry_msgs_generate_messages_cpp"
@@ -780,6 +819,9 @@ help:
 	@echo "... src/color_finder_average.o"
 	@echo "... src/color_finder_average.i"
 	@echo "... src/color_finder_average.s"
+	@echo "... src/colorspaces.o"
+	@echo "... src/colorspaces.i"
+	@echo "... src/colorspaces.s"
 	@echo "... src/cv_modder.o"
 	@echo "... src/cv_modder.i"
 	@echo "... src/cv_modder.s"

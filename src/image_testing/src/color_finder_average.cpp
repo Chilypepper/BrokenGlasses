@@ -7,13 +7,15 @@
 #include <iostream>
 #include <ctime>
 
+#define timing
+
 using namespace cv;
 using namespace std;
 
 const int testPointX=200;
 const int testPointY=100;
 
-const int accuracy = 200;
+const int accuracy = 800;
 
 //good set for medium blue: 100/140/80/110/35/55
 //good set for bright orange: 0/25/35/50/110/125
@@ -48,7 +50,7 @@ public:
   ImageConverter()
     : it(nh)
   {
-    image_sub = it.subscribe("/camera/image_raw", 1, 
+    image_sub = it.subscribe("/camera/image_rect_color", 1,
       &ImageConverter::imageCb, this);
     image_pub = it.advertise("/camera/output_video", 1);
 
@@ -75,6 +77,8 @@ public:
       ROS_ERROR("cv_bridge exception: %s", e.what());
       return;
     }
+    clock_t start = clock();
+
     int pointx = 0;
     int pointy = 0;
     int i=0;
@@ -109,17 +113,21 @@ public:
     int outBlue = cv_ptr->image.at<Vec3b>(Point(centPointx,centPointy))[0];
     int outGreen = cv_ptr->image.at<Vec3b>(Point(centPointx,centPointy))[1];
     int outRed = cv_ptr->image.at<Vec3b>(Point(centPointx,centPointy))[2];
-    ROS_INFO("B: %i G: %i R: %i",outBlue,outGreen,outRed);
+    #ifdef ptInfo
+      circle(cv_ptr->image,Point(columns/2,rows/2),2,colorScalar_BLUE,1);
+      ROS_INFO("B: %i G: %i R: %i",outBlue,outGreen,outRed);
+    #endif
+
     //BGR
     for(double cols = cv_ptr->image.cols; pointx < cols; pointx+=cols/accuracy){
       pointy=0;
       for(double rows = cv_ptr->image.rows; pointy < rows; pointy+=rows/accuracy){
-        if(cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[0] > blueLower  &&
-           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[0] < blueUpper &&
-           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[1] > greenLower  &&
-           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[1] < greenUpper &&
-           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[2] > redLower &&
-           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[2] < redUpper){
+        if(cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[0] > blueLowerBound  &&
+           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[0] < blueUpperBound &&
+           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[1] > greenLowerBound  &&
+           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[1] < greenUpperBound &&
+           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[2] > redLowerBound &&
+           cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[2] < redUpperBound){
             #ifdef findPoint
               circle(cv_ptr->image,Point(pointx,pointy),0,colorScalar_BLUE,1);
             #endif
@@ -163,7 +171,11 @@ public:
       double alpha = 0.85;
       addWeighted(color,alpha,rect,1.0-alpha,0.0,rect);
       putText(rect,"Target Located",Point(5,17),2,0.45,Scalar(255,255,255),1);
-    } 
+
+    }
+#ifdef timing
+    ROS_INFO("Completed frame operations in %f ms", (double)(clock()-start)/CLOCKS_PER_SEC);
+#endif
     image_pub.publish(cv_ptr->toImageMsg());
   }
 };

@@ -230,7 +230,7 @@ gtest/preinstall:
 gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  4
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  5
 	@echo "Built target gtest"
 .PHONY : gtest/CMakeFiles/gtest.dir/all
 
@@ -261,7 +261,7 @@ clean: gtest/CMakeFiles/gtest.dir/clean
 gtest/CMakeFiles/gtest_main.dir/all: gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  5
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  6
 	@echo "Built target gtest_main"
 .PHONY : gtest/CMakeFiles/gtest_main.dir/all
 
@@ -336,6 +336,7 @@ clean: camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 # Convenience name for "all" pass in the directory.
 image_testing/all: image_testing/CMakeFiles/circle_finder.dir/all
+image_testing/all: image_testing/CMakeFiles/colorSpaces.dir/all
 image_testing/all: image_testing/CMakeFiles/color_finder_average.dir/all
 image_testing/all: image_testing/CMakeFiles/green_finder.dir/all
 image_testing/all: image_testing/CMakeFiles/hsv_converter.dir/all
@@ -347,6 +348,7 @@ image_testing/all: image_testing/CMakeFiles/rect_finder.dir/all
 
 # Convenience name for "clean" pass in the directory.
 image_testing/clean: image_testing/CMakeFiles/circle_finder.dir/clean
+image_testing/clean: image_testing/CMakeFiles/colorSpaces.dir/clean
 image_testing/clean: image_testing/CMakeFiles/color_finder_average.dir/clean
 image_testing/clean: image_testing/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 image_testing/clean: image_testing/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
@@ -416,13 +418,48 @@ clean: image_testing/CMakeFiles/circle_finder.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target image_testing/CMakeFiles/colorSpaces.dir
+
+# All Build rule for target.
+image_testing/CMakeFiles/colorSpaces.dir/all:
+	$(MAKE) -f image_testing/CMakeFiles/colorSpaces.dir/build.make image_testing/CMakeFiles/colorSpaces.dir/depend
+	$(MAKE) -f image_testing/CMakeFiles/colorSpaces.dir/build.make image_testing/CMakeFiles/colorSpaces.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  2
+	@echo "Built target colorSpaces"
+.PHONY : image_testing/CMakeFiles/colorSpaces.dir/all
+
+# Include target in all.
+all: image_testing/CMakeFiles/colorSpaces.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+image_testing/CMakeFiles/colorSpaces.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/colorSpaces.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
+.PHONY : image_testing/CMakeFiles/colorSpaces.dir/rule
+
+# Convenience name for target.
+colorSpaces: image_testing/CMakeFiles/colorSpaces.dir/rule
+.PHONY : colorSpaces
+
+# clean rule for target.
+image_testing/CMakeFiles/colorSpaces.dir/clean:
+	$(MAKE) -f image_testing/CMakeFiles/colorSpaces.dir/build.make image_testing/CMakeFiles/colorSpaces.dir/clean
+.PHONY : image_testing/CMakeFiles/colorSpaces.dir/clean
+
+# clean rule for target.
+clean: image_testing/CMakeFiles/colorSpaces.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target image_testing/CMakeFiles/color_finder_average.dir
 
 # All Build rule for target.
 image_testing/CMakeFiles/color_finder_average.dir/all:
 	$(MAKE) -f image_testing/CMakeFiles/color_finder_average.dir/build.make image_testing/CMakeFiles/color_finder_average.dir/depend
 	$(MAKE) -f image_testing/CMakeFiles/color_finder_average.dir/build.make image_testing/CMakeFiles/color_finder_average.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  3
 	@echo "Built target color_finder_average"
 .PHONY : image_testing/CMakeFiles/color_finder_average.dir/all
 
@@ -581,7 +618,7 @@ clean: image_testing/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 image_testing/CMakeFiles/green_finder.dir/all:
 	$(MAKE) -f image_testing/CMakeFiles/green_finder.dir/build.make image_testing/CMakeFiles/green_finder.dir/depend
 	$(MAKE) -f image_testing/CMakeFiles/green_finder.dir/build.make image_testing/CMakeFiles/green_finder.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  4
 	@echo "Built target green_finder"
 .PHONY : image_testing/CMakeFiles/green_finder.dir/all
 
@@ -616,7 +653,7 @@ clean: image_testing/CMakeFiles/green_finder.dir/clean
 image_testing/CMakeFiles/hsv_converter.dir/all:
 	$(MAKE) -f image_testing/CMakeFiles/hsv_converter.dir/build.make image_testing/CMakeFiles/hsv_converter.dir/depend
 	$(MAKE) -f image_testing/CMakeFiles/hsv_converter.dir/build.make image_testing/CMakeFiles/hsv_converter.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  6
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  7
 	@echo "Built target hsv_converter"
 .PHONY : image_testing/CMakeFiles/hsv_converter.dir/all
 
@@ -651,7 +688,7 @@ clean: image_testing/CMakeFiles/hsv_converter.dir/clean
 image_testing/CMakeFiles/image_converter.dir/all:
 	$(MAKE) -f image_testing/CMakeFiles/image_converter.dir/build.make image_testing/CMakeFiles/image_converter.dir/depend
 	$(MAKE) -f image_testing/CMakeFiles/image_converter.dir/build.make image_testing/CMakeFiles/image_converter.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  7
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  8
 	@echo "Built target image_converter"
 .PHONY : image_testing/CMakeFiles/image_converter.dir/all
 
@@ -686,7 +723,7 @@ clean: image_testing/CMakeFiles/image_converter.dir/clean
 image_testing/CMakeFiles/image_flipper.dir/all:
 	$(MAKE) -f image_testing/CMakeFiles/image_flipper.dir/build.make image_testing/CMakeFiles/image_flipper.dir/depend
 	$(MAKE) -f image_testing/CMakeFiles/image_flipper.dir/build.make image_testing/CMakeFiles/image_flipper.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  8
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  9
 	@echo "Built target image_flipper"
 .PHONY : image_testing/CMakeFiles/image_flipper.dir/all
 
@@ -721,7 +758,7 @@ clean: image_testing/CMakeFiles/image_flipper.dir/clean
 image_testing/CMakeFiles/orange_finder.dir/all:
 	$(MAKE) -f image_testing/CMakeFiles/orange_finder.dir/build.make image_testing/CMakeFiles/orange_finder.dir/depend
 	$(MAKE) -f image_testing/CMakeFiles/orange_finder.dir/build.make image_testing/CMakeFiles/orange_finder.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  9
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  10
 	@echo "Built target orange_finder"
 .PHONY : image_testing/CMakeFiles/orange_finder.dir/all
 
@@ -756,7 +793,7 @@ clean: image_testing/CMakeFiles/orange_finder.dir/clean
 image_testing/CMakeFiles/rect_finder.dir/all:
 	$(MAKE) -f image_testing/CMakeFiles/rect_finder.dir/build.make image_testing/CMakeFiles/rect_finder.dir/depend
 	$(MAKE) -f image_testing/CMakeFiles/rect_finder.dir/build.make image_testing/CMakeFiles/rect_finder.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  10
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  11
 	@echo "Built target rect_finder"
 .PHONY : image_testing/CMakeFiles/rect_finder.dir/all
 
