@@ -15,7 +15,7 @@ using namespace std;
 const int testPointX=200;
 const int testPointY=100;
 
-const int accuracy = 200;
+const int accuracy = 500;
 
 //good set for medium blue: 100/140/80/110/35/55
 //good set for bright orange: 0/25/35/50/110/125
@@ -109,11 +109,11 @@ public:
             pointy=0;
             for(double rows = cv_ptr->image.rows; pointy < rows; pointy+=rows/accuracy){
                 if(cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[0] > 20  &&
-                   cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[0] < 38 &&
-                   cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[1] > 170  &&
-                   cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[1] < 210 &&
+                   cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[0] < 30 &&
+                   cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[1] > 140  &&
+                   cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[1] < 255 &&
                    cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[2] > 90 &&
-                   cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[2] < 200){
+                   cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[2] < 255){
 #ifdef findPoint
                     circle(cv_ptr->image,Point(pointx,pointy),0,colorScalar_BLUE,1);
 #endif
@@ -152,7 +152,7 @@ public:
             int yCentPt = yTotal / listSize;
             circle(cv_ptr->image,Point(xCentPt,yCentPt),3,colorScalar_GREEN,1);
             circle(cv_ptr->image,Point(xCentPt,yCentPt),2,colorScalar_RED,1);
-            line(cv_ptr->image,Point(10+118,10+27),Point(xCentPt,yCentPt),colorScalar_RED,2);
+            //line(cv_ptr->image,Point(10+118,10+27),Point(xCentPt,yCentPt),colorScalar_RED,2);
             Mat rect = cv_ptr->image(Rect(10,10,118,27));
             Mat color(rect.size(), CV_8UC3, Scalar(0,0,255));
             double alpha = 0.85;
