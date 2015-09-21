@@ -23,58 +23,68 @@ Scalar colorScalar = Scalar(0,255,0);
 vector<Point> pointList;
 vector<Point> pointList2;
 
+Mat colorImage;
+
+vector<Vec3f> circles;
+
+
 bool foundEdge=false;
 
 class ImageConverter
 {
-  ros::NodeHandle nh;
-  image_transport::ImageTransport it;
-  image_transport::Subscriber image_sub;
-  image_transport::Publisher image_pub;
-  
-public:
-  ImageConverter()
-    : it(nh)
-  {
-    image_sub = it.subscribe("/camera/image_mono", 1,
-      &ImageConverter::imageCb, this);
-    image_pub = it.advertise("/camera/output_video", 1);
-  }
+    ros::NodeHandle nh;
+    image_transport::ImageTransport it;
+    image_transport::Subscriber image_sub;
+    image_transport::Publisher image_pub;
+    image_transport::Subscriber image_sub_color;
 
-  ~ImageConverter()
-  {}
-  void imageCb(const sensor_msgs::ImageConstPtr& msg)
-  {
-    cv_bridge::CvImagePtr cv_ptr;
-    try
+public:
+    ImageConverter()
+            : it(nh)
     {
-      cv_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::MONO8);
+      image_sub = it.subscribe("/camera/image_raw", 1,
+                               &ImageConverter::imageCb, this);
+      image_sub_color = it.subscribe("/camera/image_raw", 1,
+                                     &ImageConverter::imageCb, this);
+      image_pub = it.advertise("/camera/output_video", 1);
     }
-    catch (cv_bridge::Exception& e)
+
+    ~ImageConverter()
+    {}
+    void imageCb(const sensor_msgs::ImageConstPtr& msg)
     {
-      ROS_ERROR("cv_bridge exception: %s", e.what());
-      return;
+      cv_bridge::CvImagePtr cv_ptr;
+      try
+      {
+        cv_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::MONO8);
+      }
+      catch (cv_bridge::Exception& e)
+      {
+        ROS_ERROR("cv_bridge exception: %s", e.what());
+        return;
+      }
+      circles.clear();
+      Mat im_gray;
+      //cvtColor( cv_ptr->image, im_gray, CV_BGR2GRAY);
+      GaussianBlur(cv_ptr->image, im_gray, Size(9, 9), 2, 2 );
+
+      HoughCircles( im_gray, circles, CV_HOUGH_GRADIENT, 1.50, 200, 120, 80, 0, 0 );
+      ROS_INFO("%3f",circles.size());
+
+      for( size_t i = 0; i < circles.size(); i++ )
+      {
+        Point center(cvRound(circles[i][0]), cvRound(circles[i][1]));
+        int radius = cvRound(circles[i][2]);
+        // circle center
+        circle( cv_ptr->image, center, 3, Scalar(0,255,0), -1, 8, 0 );
+        // circle outline
+        circle( cv_ptr->image, center, radius, Scalar(0,0,255), 3, 8, 0 );
+        ROS_INFO("Made circle!");
+      }
+
+      image_pub.publish(cv_ptr->toImageMsg());
+
     }
-    Mat im_gray;
-    //cvtColor( cv_ptr->image, im_gray, CV_BGR2GRAY );
-    GaussianBlur(cv_ptr->image, cv_ptr->image, Size(9, 9), 2, 2 );
-    vector<Vec3f> circles;
-    //###############Add code between here############################
-    HoughCircles( cv_ptr->image, circles, CV_HOUGH_GRADIENT, 1, cv_ptr->image.rows/20, 200, 100, 0, 0 );
-    //########## AND HERE #######################
-    for( size_t i = 0; i < circles.size(); i++ )
-    {
-      Point center(cvRound(circles[i][0]), cvRound(circles[i][1]));
-      int radius = cvRound(circles[i][2]);
-      // circle center
-      circle( cv_ptr->image, center, 3, Scalar(0,255,0), -1, 8, 0 );
-      // circle outline
-      circle( cv_ptr->image, center, radius, Scalar(0,0,255), 3, 8, 0 );
-      ROS_INFO("Made circle!");
-    }
-    cv_ptr->image = im_gray;
-    image_pub.publish(cv_ptr->toImageMsg());
-  }
 };
 
 int main(int argc, char** argv)

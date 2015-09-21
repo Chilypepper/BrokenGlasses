@@ -14,9 +14,7 @@
     <list default="true" id="38672e1e-26e2-4867-bc1e-c93864e44309" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/circle_finder.dir/src/circle_finder.cpp.o" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/circle_finder.dir/src/circle_finder.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devel/lib/image_testing/circle_finder" afterPath="$PROJECT_DIR$/devel/lib/image_testing/circle_finder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/circle_finder.dir/CXX.includecache" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/circle_finder.dir/CXX.includecache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp" afterPath="$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camera_launches/pg_single.launch" afterPath="$PROJECT_DIR$/src/camera_launches/pg_single.launch" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="brokenGlasses.iws" />
@@ -44,7 +42,7 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="112" column="72" selection-start-line="112" selection-start-column="72" selection-end-line="112" selection-end-column="72" />
               <folding>
-                <element signature="e#4043#4107#0" expanded="true" />
+                <element signature="e#4043#4107#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -53,8 +51,8 @@
       <file leaf-file-name="circle_finder.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39385065">
-              <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.47437775">
+              <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -304,9 +302,46 @@
     <entry file="file://$PROJECT_DIR$/src/image_testing/src/colorspaces.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="112" column="72" selection-start-line="112" selection-start-column="72" selection-end-line="112" selection-end-column="72" />
+          <folding>
+            <element signature="e#4043#4107#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camera_launches/pg_single.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/image_testing/src/color_finder_average.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
+          <folding>
+            <element signature="e#3251#3379#0" expanded="true" />
+            <element signature="e#4106#4170#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/image_testing/src/colorspaces.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4043#4107#0" expanded="true" />
+            <element signature="e#4043#4107#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -327,7 +362,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4043#4107#0" expanded="true" />
+            <element signature="e#4043#4107#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -380,7 +415,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="112" column="72" selection-start-line="112" selection-start-column="72" selection-end-line="112" selection-end-column="72" />
           <folding>
-            <element signature="e#4043#4107#0" expanded="true" />
+            <element signature="e#4043#4107#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -395,8 +430,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39385065">
-          <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.47437775">
+          <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
           <folding />
         </state>
       </provider>
