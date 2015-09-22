@@ -68,7 +68,7 @@ public:
       //cvtColor( cv_ptr->image, im_gray, CV_BGR2GRAY);
       GaussianBlur(cv_ptr->image, im_gray, Size(9, 9), 2, 2 );
 
-      HoughCircles( im_gray, circles, CV_HOUGH_GRADIENT, 1.50, 200, 120, 80, 0, 0 );
+      HoughCircles( im_gray, circles, CV_HOUGH_GRADIENT, 1.80, 100, 100, 90, 0, 0 );
       ROS_INFO("%3f",circles.size());
 
       for( size_t i = 0; i < circles.size(); i++ )
