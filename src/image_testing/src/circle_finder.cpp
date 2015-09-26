@@ -6,6 +6,7 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <iostream>
 #include <ctime>
+#include <point_message/pointMsg.h>
 
 using namespace cv;
 using namespace std;
@@ -37,6 +38,8 @@ class ImageConverter
     image_transport::Subscriber image_sub;
     image_transport::Publisher image_pub;
     image_transport::Subscriber image_sub_color;
+    ros::Publisher pointPub;
+    point_message::pointMsg circlePoint;
 
 public:
     ImageConverter()
@@ -47,6 +50,7 @@ public:
       image_sub_color = it.subscribe("/camera/image_raw", 1,
                                      &ImageConverter::imageCb, this);
       image_pub = it.advertise("/camera/output_video", 1);
+      pointPub = nh.advertise<point_message::pointMsg>("circlePoint",1);
     }
 
     ~ImageConverter()
@@ -82,6 +86,9 @@ public:
         ROS_INFO("Made circle!");
       }
 
+      circlePoint.xCoor = circles[0][0];
+      circlePoint.yCoor = circles[0][1];
+      pointPub.publish(circlePoint);
       image_pub.publish(cv_ptr->toImageMsg());
 
     }

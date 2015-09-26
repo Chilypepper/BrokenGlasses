@@ -6,4 +6,5 @@
 # testing this directory and lists subdirectories to be tested as well.
 SUBDIRS(gtest)
 SUBDIRS(camera_launches)
+SUBDIRS(point_message)
 SUBDIRS(image_testing)

@@ -499,62 +499,6 @@ sensor_msgs_generate_messages_py/fast:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make image_testing/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
-# Convenience name for target.
-image_testing/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : image_testing/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: image_testing/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make image_testing/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-image_testing/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : image_testing/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: image_testing/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make image_testing/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-image_testing/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : image_testing/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: image_testing/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make image_testing/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-image_testing/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : image_testing/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: image_testing/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/std_msgs_generate_messages_py.dir/build.make image_testing/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
 src/circle_finder.o: src/circle_finder.cpp.o
 .PHONY : src/circle_finder.o
 
@@ -808,10 +752,6 @@ help:
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_eus"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
 	@echo "... src/circle_finder.o"
 	@echo "... src/circle_finder.i"

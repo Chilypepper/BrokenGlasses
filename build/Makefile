@@ -254,6 +254,188 @@ _catkin_empty_exported_target/fast:
 .PHONY : _catkin_empty_exported_target/fast
 
 #=============================================================================
+# Target rules for targets named _point_message_generate_messages_check_deps_pointMsg
+
+# Build rule for target.
+_point_message_generate_messages_check_deps_pointMsg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _point_message_generate_messages_check_deps_pointMsg
+.PHONY : _point_message_generate_messages_check_deps_pointMsg
+
+# fast build rule for target.
+_point_message_generate_messages_check_deps_pointMsg/fast:
+	$(MAKE) -f point_message/CMakeFiles/_point_message_generate_messages_check_deps_pointMsg.dir/build.make point_message/CMakeFiles/_point_message_generate_messages_check_deps_pointMsg.dir/build
+.PHONY : _point_message_generate_messages_check_deps_pointMsg/fast
+
+#=============================================================================
+# Target rules for targets named point_message_gencpp
+
+# Build rule for target.
+point_message_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 point_message_gencpp
+.PHONY : point_message_gencpp
+
+# fast build rule for target.
+point_message_gencpp/fast:
+	$(MAKE) -f point_message/CMakeFiles/point_message_gencpp.dir/build.make point_message/CMakeFiles/point_message_gencpp.dir/build
+.PHONY : point_message_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named point_message_generate_messages
+
+# Build rule for target.
+point_message_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 point_message_generate_messages
+.PHONY : point_message_generate_messages
+
+# fast build rule for target.
+point_message_generate_messages/fast:
+	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages.dir/build.make point_message/CMakeFiles/point_message_generate_messages.dir/build
+.PHONY : point_message_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named point_message_generate_messages_cpp
+
+# Build rule for target.
+point_message_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 point_message_generate_messages_cpp
+.PHONY : point_message_generate_messages_cpp
+
+# fast build rule for target.
+point_message_generate_messages_cpp/fast:
+	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages_cpp.dir/build.make point_message/CMakeFiles/point_message_generate_messages_cpp.dir/build
+.PHONY : point_message_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named point_message_generate_messages_eus
+
+# Build rule for target.
+point_message_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 point_message_generate_messages_eus
+.PHONY : point_message_generate_messages_eus
+
+# fast build rule for target.
+point_message_generate_messages_eus/fast:
+	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages_eus.dir/build.make point_message/CMakeFiles/point_message_generate_messages_eus.dir/build
+.PHONY : point_message_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named point_message_generate_messages_lisp
+
+# Build rule for target.
+point_message_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 point_message_generate_messages_lisp
+.PHONY : point_message_generate_messages_lisp
+
+# fast build rule for target.
+point_message_generate_messages_lisp/fast:
+	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages_lisp.dir/build.make point_message/CMakeFiles/point_message_generate_messages_lisp.dir/build
+.PHONY : point_message_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named point_message_generate_messages_py
+
+# Build rule for target.
+point_message_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 point_message_generate_messages_py
+.PHONY : point_message_generate_messages_py
+
+# fast build rule for target.
+point_message_generate_messages_py/fast:
+	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages_py.dir/build.make point_message/CMakeFiles/point_message_generate_messages_py.dir/build
+.PHONY : point_message_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named point_message_geneus
+
+# Build rule for target.
+point_message_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 point_message_geneus
+.PHONY : point_message_geneus
+
+# fast build rule for target.
+point_message_geneus/fast:
+	$(MAKE) -f point_message/CMakeFiles/point_message_geneus.dir/build.make point_message/CMakeFiles/point_message_geneus.dir/build
+.PHONY : point_message_geneus/fast
+
+#=============================================================================
+# Target rules for targets named point_message_genlisp
+
+# Build rule for target.
+point_message_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 point_message_genlisp
+.PHONY : point_message_genlisp
+
+# fast build rule for target.
+point_message_genlisp/fast:
+	$(MAKE) -f point_message/CMakeFiles/point_message_genlisp.dir/build.make point_message/CMakeFiles/point_message_genlisp.dir/build
+.PHONY : point_message_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named point_message_genpy
+
+# Build rule for target.
+point_message_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 point_message_genpy
+.PHONY : point_message_genpy
+
+# fast build rule for target.
+point_message_genpy/fast:
+	$(MAKE) -f point_message/CMakeFiles/point_message_genpy.dir/build.make point_message/CMakeFiles/point_message_genpy.dir/build
+.PHONY : point_message_genpy/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_cpp
+
+# Build rule for target.
+std_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
+.PHONY : std_msgs_generate_messages_cpp
+
+# fast build rule for target.
+std_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f point_message/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make point_message/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+.PHONY : std_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_eus
+
+# Build rule for target.
+std_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
+.PHONY : std_msgs_generate_messages_eus
+
+# fast build rule for target.
+std_msgs_generate_messages_eus/fast:
+	$(MAKE) -f point_message/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make point_message/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+.PHONY : std_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_lisp
+
+# Build rule for target.
+std_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f point_message/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make point_message/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_py
+
+# Build rule for target.
+std_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
+.PHONY : std_msgs_generate_messages_py
+
+# fast build rule for target.
+std_msgs_generate_messages_py/fast:
+	$(MAKE) -f point_message/CMakeFiles/std_msgs_generate_messages_py.dir/build.make point_message/CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
+
+#=============================================================================
 # Target rules for targets named circle_finder
 
 # Build rule for target.
@@ -578,58 +760,6 @@ sensor_msgs_generate_messages_py/fast:
 	$(MAKE) -f image_testing/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make image_testing/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_cpp
-
-# Build rule for target.
-std_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f image_testing/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make image_testing/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_eus
-
-# Build rule for target.
-std_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	$(MAKE) -f image_testing/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make image_testing/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_lisp
-
-# Build rule for target.
-std_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f image_testing/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make image_testing/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_py
-
-# Build rule for target.
-std_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	$(MAKE) -f image_testing/CMakeFiles/std_msgs_generate_messages_py.dir/build.make image_testing/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -651,6 +781,20 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... _catkin_empty_exported_target"
+	@echo "... _point_message_generate_messages_check_deps_pointMsg"
+	@echo "... point_message_gencpp"
+	@echo "... point_message_generate_messages"
+	@echo "... point_message_generate_messages_cpp"
+	@echo "... point_message_generate_messages_eus"
+	@echo "... point_message_generate_messages_lisp"
+	@echo "... point_message_generate_messages_py"
+	@echo "... point_message_geneus"
+	@echo "... point_message_genlisp"
+	@echo "... point_message_genpy"
+	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... std_msgs_generate_messages_eus"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... std_msgs_generate_messages_py"
 	@echo "... circle_finder"
 	@echo "... colorSpaces"
 	@echo "... color_finder_average"
@@ -676,10 +820,6 @@ help:
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_eus"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_py"
 .PHONY : help
 
 

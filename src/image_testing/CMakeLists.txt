@@ -9,6 +9,7 @@ image_transport
 cv_bridge
 rosconsole
 sensor_msgs
+point_message
 )
 
 catkin_package()

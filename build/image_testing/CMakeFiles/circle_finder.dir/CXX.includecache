@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/home/peter/brokenGlasses/devel/include/point_message/pointMsg.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /home/peter/brokenGlasses/src/image_testing/src/circle_finder.cpp
 ros/ros.h
 -
@@ -22,6 +38,8 @@ opencv2/highgui/highgui.hpp
 iostream
 -
 ctime
+-
+point_message/pointMsg.h
 -
 image_transport/image_transport.h
 -
