@@ -192,6 +192,20 @@ color_finder_average/fast:
 .PHONY : color_finder_average/fast
 
 # Convenience name for target.
+image_testing/CMakeFiles/draw_gui.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/draw_gui.dir/rule
+.PHONY : image_testing/CMakeFiles/draw_gui.dir/rule
+
+# Convenience name for target.
+draw_gui: image_testing/CMakeFiles/draw_gui.dir/rule
+.PHONY : draw_gui
+
+# fast build rule for target.
+draw_gui/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/draw_gui.dir/build.make image_testing/CMakeFiles/draw_gui.dir/build
+.PHONY : draw_gui/fast
+
+# Convenience name for target.
 image_testing/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 .PHONY : image_testing/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
@@ -595,6 +609,30 @@ src/cv_modder.cpp.s:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/green_finder.dir/build.make image_testing/CMakeFiles/green_finder.dir/src/cv_modder.cpp.s
 .PHONY : src/cv_modder.cpp.s
 
+src/draw_gui.o: src/draw_gui.cpp.o
+.PHONY : src/draw_gui.o
+
+# target to build an object file
+src/draw_gui.cpp.o:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/draw_gui.dir/build.make image_testing/CMakeFiles/draw_gui.dir/src/draw_gui.cpp.o
+.PHONY : src/draw_gui.cpp.o
+
+src/draw_gui.i: src/draw_gui.cpp.i
+.PHONY : src/draw_gui.i
+
+# target to preprocess a source file
+src/draw_gui.cpp.i:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/draw_gui.dir/build.make image_testing/CMakeFiles/draw_gui.dir/src/draw_gui.cpp.i
+.PHONY : src/draw_gui.cpp.i
+
+src/draw_gui.s: src/draw_gui.cpp.s
+.PHONY : src/draw_gui.s
+
+# target to generate assembly for a file
+src/draw_gui.cpp.s:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/draw_gui.dir/build.make image_testing/CMakeFiles/draw_gui.dir/src/draw_gui.cpp.s
+.PHONY : src/draw_gui.cpp.s
+
 src/hsv_converter.o: src/hsv_converter.cpp.o
 .PHONY : src/hsv_converter.o
 
@@ -724,6 +762,7 @@ help:
 	@echo "... circle_finder"
 	@echo "... colorSpaces"
 	@echo "... color_finder_average"
+	@echo "... draw_gui"
 	@echo "... edit_cache"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_eus"
@@ -765,6 +804,9 @@ help:
 	@echo "... src/cv_modder.o"
 	@echo "... src/cv_modder.i"
 	@echo "... src/cv_modder.s"
+	@echo "... src/draw_gui.o"
+	@echo "... src/draw_gui.i"
+	@echo "... src/draw_gui.s"
 	@echo "... src/hsv_converter.o"
 	@echo "... src/hsv_converter.i"
 	@echo "... src/hsv_converter.s"

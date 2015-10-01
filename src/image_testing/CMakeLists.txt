@@ -24,6 +24,9 @@ add_executable(hsv_converter src/hsv_converter.cpp)
 add_executable(color_finder_average src/color_finder_average.cpp)
 add_executable(image_flipper src/image_flipper.cpp)
 add_executable(colorSpaces src/colorspaces.cpp)
+add_executable(draw_gui src/draw_gui.cpp)
+
+target_link_libraries(draw_gui ${catkin_LIBRARIES} ${OpenCV_LIBS} ${OpenCV_LIBRARIES} ${Eigen_LIBRARIES} ${QT_LIBRARIES} ${ROS_LIBRARIES} ${catkin_LIBRARIES})
 
 target_link_libraries(colorSpaces ${catkin_LIBRARIES} ${OpenCV_LIBS} ${OpenCV_LIBRARIES} ${Eigen_LIBRARIES} ${QT_LIBRARIES} ${ROS_LIBRARIES} ${catkin_LIBRARIES})
 

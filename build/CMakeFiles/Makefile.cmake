@@ -235,6 +235,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "image_testing/CMakeFiles/circle_finder.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/colorSpaces.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/color_finder_average.dir/DependInfo.cmake"
+  "image_testing/CMakeFiles/draw_gui.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/geometry_msgs_generate_messages_eus.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/DependInfo.cmake"

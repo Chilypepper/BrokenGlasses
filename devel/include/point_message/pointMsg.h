@@ -25,11 +25,13 @@ struct pointMsg_
 
   pointMsg_()
     : xCoor(0)
-    , yCoor(0)  {
+    , yCoor(0)
+    , radius(0)  {
     }
   pointMsg_(const ContainerAllocator& _alloc)
     : xCoor(0)
-    , yCoor(0)  {
+    , yCoor(0)
+    , radius(0)  {
     }
 
 
@@ -39,6 +41,9 @@ struct pointMsg_
 
    typedef int32_t _yCoor_type;
   _yCoor_type yCoor;
+
+   typedef int32_t _radius_type;
+  _radius_type radius;
 
 
 
@@ -117,12 +122,12 @@ struct MD5Sum< ::point_message::pointMsg_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "1a6880393b764025d762728ed326e7f7";
+    return "ee65d36311fdfaf03b60b9402901b990";
   }
 
   static const char* value(const ::point_message::pointMsg_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x1a6880393b764025ULL;
-  static const uint64_t static_value2 = 0xd762728ed326e7f7ULL;
+  static const uint64_t static_value1 = 0xee65d36311fdfaf0ULL;
+  static const uint64_t static_value2 = 0x3b60b9402901b990ULL;
 };
 
 template<class ContainerAllocator>
@@ -143,6 +148,7 @@ struct Definition< ::point_message::pointMsg_<ContainerAllocator> >
   {
     return "int32 xCoor\n\
 int32 yCoor\n\
+int32 radius\n\
 ";
   }
 
@@ -163,6 +169,7 @@ namespace serialization
     {
       stream.next(m.xCoor);
       stream.next(m.yCoor);
+      stream.next(m.radius);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER;
@@ -185,6 +192,8 @@ struct Printer< ::point_message::pointMsg_<ContainerAllocator> >
     Printer<int32_t>::stream(s, indent + "  ", v.xCoor);
     s << indent << "yCoor: ";
     Printer<int32_t>::stream(s, indent + "  ", v.yCoor);
+    s << indent << "radius: ";
+    Printer<int32_t>::stream(s, indent + "  ", v.radius);
   }
 };
 

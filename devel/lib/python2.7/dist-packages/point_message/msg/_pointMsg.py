@@ -6,14 +6,15 @@ import struct
 
 
 class pointMsg(genpy.Message):
-  _md5sum = "1a6880393b764025d762728ed326e7f7"
+  _md5sum = "ee65d36311fdfaf03b60b9402901b990"
   _type = "point_message/pointMsg"
   _has_header = False #flag to mark the presence of a Header object
   _full_text = """int32 xCoor
 int32 yCoor
+int32 radius
 """
-  __slots__ = ['xCoor','yCoor']
-  _slot_types = ['int32','int32']
+  __slots__ = ['xCoor','yCoor','radius']
+  _slot_types = ['int32','int32','int32']
 
   def __init__(self, *args, **kwds):
     """
@@ -23,7 +24,7 @@ int32 yCoor
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       xCoor,yCoor
+       xCoor,yCoor,radius
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -36,9 +37,12 @@ int32 yCoor
         self.xCoor = 0
       if self.yCoor is None:
         self.yCoor = 0
+      if self.radius is None:
+        self.radius = 0
     else:
       self.xCoor = 0
       self.yCoor = 0
+      self.radius = 0
 
   def _get_types(self):
     """
@@ -53,7 +57,7 @@ int32 yCoor
     """
     try:
       _x = self
-      buff.write(_struct_2i.pack(_x.xCoor, _x.yCoor))
+      buff.write(_struct_3i.pack(_x.xCoor, _x.yCoor, _x.radius))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(_x))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(_x))))
 
@@ -66,8 +70,8 @@ int32 yCoor
       end = 0
       _x = self
       start = end
-      end += 8
-      (_x.xCoor, _x.yCoor,) = _struct_2i.unpack(str[start:end])
+      end += 12
+      (_x.xCoor, _x.yCoor, _x.radius,) = _struct_3i.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -81,7 +85,7 @@ int32 yCoor
     """
     try:
       _x = self
-      buff.write(_struct_2i.pack(_x.xCoor, _x.yCoor))
+      buff.write(_struct_3i.pack(_x.xCoor, _x.yCoor, _x.radius))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(_x))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(_x))))
 
@@ -95,11 +99,11 @@ int32 yCoor
       end = 0
       _x = self
       start = end
-      end += 8
-      (_x.xCoor, _x.yCoor,) = _struct_2i.unpack(str[start:end])
+      end += 12
+      (_x.xCoor, _x.yCoor, _x.radius,) = _struct_3i.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
-_struct_2i = struct.Struct("<2i")
+_struct_3i = struct.Struct("<3i")

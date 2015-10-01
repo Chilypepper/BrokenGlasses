@@ -16,6 +16,11 @@
     :reader yCoor
     :initarg :yCoor
     :type cl:integer
+    :initform 0)
+   (radius
+    :reader radius
+    :initarg :radius
+    :type cl:integer
     :initform 0))
 )
 
@@ -36,6 +41,11 @@
 (cl:defmethod yCoor-val ((m <pointMsg>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader point_message-msg:yCoor-val is deprecated.  Use point_message-msg:yCoor instead.")
   (yCoor m))
+
+(cl:ensure-generic-function 'radius-val :lambda-list '(m))
+(cl:defmethod radius-val ((m <pointMsg>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader point_message-msg:radius-val is deprecated.  Use point_message-msg:radius instead.")
+  (radius m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <pointMsg>) ostream)
   "Serializes a message object of type '<pointMsg>"
   (cl:let* ((signed (cl:slot-value msg 'xCoor)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 4294967296) signed)))
@@ -45,6 +55,12 @@
     (cl:write-byte (cl:ldb (cl:byte 8 24) unsigned) ostream)
     )
   (cl:let* ((signed (cl:slot-value msg 'yCoor)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 4294967296) signed)))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) unsigned) ostream)
+    )
+  (cl:let* ((signed (cl:slot-value msg 'radius)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 4294967296) signed)))
     (cl:write-byte (cl:ldb (cl:byte 8 0) unsigned) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 8) unsigned) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 16) unsigned) ostream)
@@ -65,6 +81,12 @@
       (cl:setf (cl:ldb (cl:byte 8 16) unsigned) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 24) unsigned) (cl:read-byte istream))
       (cl:setf (cl:slot-value msg 'yCoor) (cl:if (cl:< unsigned 2147483648) unsigned (cl:- unsigned 4294967296))))
+    (cl:let ((unsigned 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:slot-value msg 'radius) (cl:if (cl:< unsigned 2147483648) unsigned (cl:- unsigned 4294967296))))
   msg
 )
 (cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<pointMsg>)))
@@ -75,18 +97,19 @@
   "point_message/pointMsg")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<pointMsg>)))
   "Returns md5sum for a message object of type '<pointMsg>"
-  "1a6880393b764025d762728ed326e7f7")
+  "ee65d36311fdfaf03b60b9402901b990")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'pointMsg)))
   "Returns md5sum for a message object of type 'pointMsg"
-  "1a6880393b764025d762728ed326e7f7")
+  "ee65d36311fdfaf03b60b9402901b990")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<pointMsg>)))
   "Returns full string definition for message of type '<pointMsg>"
-  (cl:format cl:nil "int32 xCoor~%int32 yCoor~%~%"))
+  (cl:format cl:nil "int32 xCoor~%int32 yCoor~%int32 radius~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'pointMsg)))
   "Returns full string definition for message of type 'pointMsg"
-  (cl:format cl:nil "int32 xCoor~%int32 yCoor~%~%"))
+  (cl:format cl:nil "int32 xCoor~%int32 yCoor~%int32 radius~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <pointMsg>))
   (cl:+ 0
+     4
      4
      4
 ))
@@ -95,4 +118,5 @@
   (cl:list 'pointMsg
     (cl:cons ':xCoor (xCoor msg))
     (cl:cons ':yCoor (yCoor msg))
+    (cl:cons ':radius (radius msg))
 ))

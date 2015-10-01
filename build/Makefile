@@ -475,6 +475,19 @@ color_finder_average/fast:
 .PHONY : color_finder_average/fast
 
 #=============================================================================
+# Target rules for targets named draw_gui
+
+# Build rule for target.
+draw_gui: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 draw_gui
+.PHONY : draw_gui
+
+# fast build rule for target.
+draw_gui/fast:
+	$(MAKE) -f image_testing/CMakeFiles/draw_gui.dir/build.make image_testing/CMakeFiles/draw_gui.dir/build
+.PHONY : draw_gui/fast
+
+#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -798,6 +811,7 @@ help:
 	@echo "... circle_finder"
 	@echo "... colorSpaces"
 	@echo "... color_finder_average"
+	@echo "... draw_gui"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_lisp"

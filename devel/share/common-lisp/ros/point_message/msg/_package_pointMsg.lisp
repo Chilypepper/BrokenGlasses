@@ -3,4 +3,6 @@
           XCOOR
           YCOOR-VAL
           YCOOR
+          RADIUS-VAL
+          RADIUS
 ))

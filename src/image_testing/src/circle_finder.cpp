@@ -38,8 +38,8 @@ class ImageConverter
     image_transport::Subscriber image_sub;
     image_transport::Publisher image_pub;
     image_transport::Subscriber image_sub_color;
-    ros::Publisher pointPub;
-    point_message::pointMsg circlePoint;
+    ros::Publisher circInf;
+    point_message::pointMsg circleInfo;
 
 public:
     ImageConverter()
@@ -49,8 +49,8 @@ public:
                                &ImageConverter::imageCb, this);
       image_sub_color = it.subscribe("/camera/image_raw", 1,
                                      &ImageConverter::imageCb, this);
-      image_pub = it.advertise("/camera/output_video", 1);
-      pointPub = nh.advertise<point_message::pointMsg>("circlePoint",1);
+      //image_pub = it.advertise("/camera/output_video", 1);
+      circInf = nh.advertise<point_message::pointMsg>("circleInfo",1);
     }
 
     ~ImageConverter()
@@ -73,7 +73,7 @@ public:
       GaussianBlur(cv_ptr->image, im_gray, Size(9, 9), 2, 2 );
 
       HoughCircles( im_gray, circles, CV_HOUGH_GRADIENT, 1.80, 100, 100, 90, 0, 0 );
-      ROS_INFO("%3f",circles.size());
+      //ROS_INFO("%3f",circles.size());
 
       for( size_t i = 0; i < circles.size(); i++ )
       {
@@ -86,10 +86,12 @@ public:
         ROS_INFO("Made circle!");
       }
 
-      circlePoint.xCoor = circles[0][0];
-      circlePoint.yCoor = circles[0][1];
-      pointPub.publish(circlePoint);
-      image_pub.publish(cv_ptr->toImageMsg());
+      circleInfo.xCoor = circles[0][0];
+      circleInfo.yCoor = circles[0][1];
+      circleInfo.radius = circles[0][2];
+
+      circInf.publish(circleInfo);
+      //image_pub.publish(cv_ptr->toImageMsg());
 
     }
 };
