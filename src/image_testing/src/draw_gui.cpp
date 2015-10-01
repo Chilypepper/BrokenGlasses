@@ -43,10 +43,10 @@ int detectedCircleR = 0;
 
 bool foundEdge=false;
 
-void clear(int &detectedCircleR, int  &detectedCircleX, int &detectedCircleY){
-    detectedCircleR = 100;
-    detectedCircleX = 500;
-    detectedCircleY = 800;
+void clear(Mat &raw, int &detectedCircleR, int  &detectedCircleX, int &detectedCircleY){
+    detectedCircleR = 0;
+    detectedCircleX = raw.cols/2;
+    detectedCircleY = raw.rows/2;
 }
 void drawGrid(Mat &raw){
     int rawRows = raw.rows;
@@ -135,7 +135,7 @@ public:
         double b = 1.0 - a;
         addWeighted(raw,a,drawing,b,0.0,raw);
 
-        clear(detectedCircleR, detectedCircleX, detectedCircleY);
+        //clear(raw, detectedCircleR, detectedCircleX, detectedCircleY);
         image_pub.publish(cv_ptr->toImageMsg());
     }
     void updateCircleInfo(const point_message::pointMsg circArr){

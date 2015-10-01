@@ -72,9 +72,9 @@ public:
       //cvtColor( cv_ptr->image, im_gray, CV_BGR2GRAY);
       GaussianBlur(cv_ptr->image, im_gray, Size(9, 9), 2, 2 );
 
-      HoughCircles( im_gray, circles, CV_HOUGH_GRADIENT, 1.80, 100, 100, 90, 0, 0 );
+      HoughCircles( im_gray, circles, CV_HOUGH_GRADIENT, 1.56, 90, 160, 70, 50, 0 );
       //ROS_INFO("%3f",circles.size());
-
+        /*
       for( size_t i = 0; i < circles.size(); i++ )
       {
         Point center(cvRound(circles[i][0]), cvRound(circles[i][1]));
@@ -83,8 +83,9 @@ public:
         circle( cv_ptr->image, center, 3, Scalar(0,255,0), -1, 8, 0 );
         // circle outline
         circle( cv_ptr->image, center, radius, Scalar(0,0,255), 3, 8, 0 );
-        ROS_INFO("Made circle!");
+        //ROS_INFO("Made circle!");
       }
+         */
 
       circleInfo.xCoor = circles[0][0];
       circleInfo.yCoor = circles[0][1];
@@ -98,7 +99,7 @@ public:
 
 int main(int argc, char** argv)
 {
-  ros::init(argc, argv, "image_converter");
+  ros::init(argc, argv, "draw_gui");
   ImageConverter ic;
   ros::spin();
   return 0;
