@@ -149,17 +149,14 @@ public:
     int listSize = listX.size();
 
     if(listSize > 0){
-      while(listX.size()>0){
-        currX=listX.back();
-        currY=listY.back();
+      for(int iterator = 0; iterator < listSize; iterator++){
+        currX=listX[iterator];
+        currY=listY[iterator];
 
         xTotal += currX;
         yTotal += currY;
 
-
-        listX.pop_back();
-        listY.pop_back();
-        i++;
+        iterator++;
       }
       int xCentPt = xTotal / listSize;
       int yCentPt = yTotal / listSize;
