@@ -11,6 +11,8 @@
 #include <iostream>
 #include <ctime>
 #include <point_message/pointMsg.h>
+#include <point_message/statsMsg.h>
+
 
 #undef drawCircle
 
@@ -32,6 +34,8 @@ int edgeCount= 0;
 //RGB
 Scalar RED = Scalar(255,0,0);
 Scalar NEON_GREEN = Scalar(0,255,0);
+Scalar NEON_BLUE = Scalar(0,0,255);
+
 Scalar colorScalar = Scalar(0,255,0);
 
 vector<Vec3f> circles;
@@ -39,6 +43,9 @@ vector<Vec3f> circles;
 int detectedCircleX = 0;
 int detectedCircleY = 0;
 int detectedCircleR = 0;
+
+int objectColorX = 0;
+int objectColorY = 0;
 
 
 bool foundEdge=false;
@@ -97,6 +104,8 @@ class ImageConverter
     image_transport::Publisher image_pub;
     ros::Subscriber circleSub;
     point_message::pointMsg circlePoint;
+    point_message::pointMsg objectColorInfo;
+    ros::Subscriber objectColorSub;
 
 public:
     ImageConverter()
@@ -106,6 +115,10 @@ public:
                                  &ImageConverter::imageCb, this);
         image_pub = it.advertise("/camera/output_video_gui", 1);
         circleSub = nh.subscribe<point_message::pointMsg>("circleInfo",1, &ImageConverter::updateCircleInfo, this);
+        objectColorSub = nh.subscribe<point_message::statsMsg>("objectColorInfo",
+                                                               1,
+                                                               &ImageConverter::updateColorInfo,
+                                                               this);
     }
 
     ~ImageConverter()
@@ -130,6 +143,8 @@ public:
 
         circle(drawing,Point(detectedCircleX,detectedCircleY),detectedCircleR,RED);
         circle(drawing,Point(detectedCircleX,detectedCircleY),5, NEON_GREEN, -1);
+        circle(drawing,Point(objectColorX,objectColorY),5,NEON_BLUE,-1);
+
         drawXYBars(drawing);
         double a =0.2;
         double b = 1.0 - a;
@@ -142,6 +157,9 @@ public:
         detectedCircleX = circArr.xCoor;
         detectedCircleY = circArr.yCoor;
         detectedCircleR = circArr.radius;
+    }
+    void updateColorInfo(const point_message::statsMsg objectColorInfo){
+
     }
 };
 

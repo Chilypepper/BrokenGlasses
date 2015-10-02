@@ -22,6 +22,22 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
+/home/peter/brokenGlasses/devel/include/point_message/statsMsg.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /home/peter/brokenGlasses/src/image_testing/src/draw_gui.cpp
 ros/ros.h
 -
@@ -40,6 +56,8 @@ iostream
 ctime
 -
 point_message/pointMsg.h
+-
+point_message/statsMsg.h
 -
 
 /opt/ros/jade/include/XmlRpcDecl.h

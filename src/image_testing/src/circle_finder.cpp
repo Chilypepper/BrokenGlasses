@@ -104,7 +104,11 @@ public:
         //ROS_INFO("Made circle!");
       }
          */
-
+        /*
+        circleInfo.xCoor = circles[0][0] + region_corner.x;
+        circleInfo.yCoor = circles[0][1] + region_corner.y;
+        circleInfo.radius = circles[0][2];
+         */
         circleInfo.xCoor = circles[0][0];
         circleInfo.yCoor = circles[0][1];
         circleInfo.radius = circles[0][2];

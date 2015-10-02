@@ -3,6 +3,7 @@
 
 image_testing/CMakeFiles/draw_gui.dir/src/draw_gui.cpp.o
  /home/peter/brokenGlasses/devel/include/point_message/pointMsg.h
+ /home/peter/brokenGlasses/devel/include/point_message/statsMsg.h
  /home/peter/brokenGlasses/src/image_testing/src/draw_gui.cpp
  /opt/ros/jade/include/XmlRpcDecl.h
  /opt/ros/jade/include/XmlRpcValue.h
