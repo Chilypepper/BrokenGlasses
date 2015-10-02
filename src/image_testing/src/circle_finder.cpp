@@ -57,7 +57,7 @@ public:
         image_sub = it.subscribe("/camera/image_raw", 1,
                                  &ImageConverter::imageCb, this);
 
-        //image_pub = it.advertise("/camera/output_video", 1);
+        image_pub = it.advertise("/camera/search_region", 1);
         circInf = nh.advertise<point_message::pointMsg>("circleInfo",1);
         regionInfo = nh.subscribe<point_message::statsMsg>("objectColorInfo",1, &ImageConverter::regionInfoCb, this);
     }
@@ -90,7 +90,10 @@ public:
         im_gray = cv_ptr->image(Rect(region_corner.x,region_corner.y,
                                 region_width,
                                 region_height));
-        HoughCircles( im_gray, circles, CV_HOUGH_GRADIENT, 1.56, 90, 160, 70, 50, 0 );
+
+        Mat search_region;
+        im_gray.copyTo(search_region);
+        HoughCircles( search_region, circles, CV_HOUGH_GRADIENT, 1.56, 90, 160, 70, 50, 0 );
         //ROS_INFO("%3f",circles.size());
         /*
       for( size_t i = 0; i < circles.size(); i++ )
@@ -114,7 +117,9 @@ public:
         circleInfo.radius = circles[0][2];
 
         circInf.publish(circleInfo);
-        //image_pub.publish(cv_ptr->toImageMsg());
+
+        cv_ptr->image = search_region;
+        image_pub.publish(cv_ptr->toImageMsg());
 
     }
 };
