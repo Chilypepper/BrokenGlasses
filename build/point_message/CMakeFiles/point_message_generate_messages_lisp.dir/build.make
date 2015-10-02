@@ -46,6 +46,7 @@ CMAKE_BINARY_DIR = /home/peter/brokenGlasses/build
 include point_message/CMakeFiles/point_message_generate_messages_lisp.dir/progress.make
 
 point_message/CMakeFiles/point_message_generate_messages_lisp: /home/peter/brokenGlasses/devel/share/common-lisp/ros/point_message/msg/pointMsg.lisp
+point_message/CMakeFiles/point_message_generate_messages_lisp: /home/peter/brokenGlasses/devel/share/common-lisp/ros/point_message/msg/statsMsg.lisp
 
 /home/peter/brokenGlasses/devel/share/common-lisp/ros/point_message/msg/pointMsg.lisp: /opt/ros/jade/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/peter/brokenGlasses/devel/share/common-lisp/ros/point_message/msg/pointMsg.lisp: /home/peter/brokenGlasses/src/point_message/msg/pointMsg.msg
@@ -53,8 +54,15 @@ point_message/CMakeFiles/point_message_generate_messages_lisp: /home/peter/broke
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from point_message/pointMsg.msg"
 	cd /home/peter/brokenGlasses/build/point_message && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/jade/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/peter/brokenGlasses/src/point_message/msg/pointMsg.msg -Ipoint_message:/home/peter/brokenGlasses/src/point_message/msg -Istd_msgs:/opt/ros/jade/share/std_msgs/cmake/../msg -p point_message -o /home/peter/brokenGlasses/devel/share/common-lisp/ros/point_message/msg
 
+/home/peter/brokenGlasses/devel/share/common-lisp/ros/point_message/msg/statsMsg.lisp: /opt/ros/jade/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/peter/brokenGlasses/devel/share/common-lisp/ros/point_message/msg/statsMsg.lisp: /home/peter/brokenGlasses/src/point_message/msg/statsMsg.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from point_message/statsMsg.msg"
+	cd /home/peter/brokenGlasses/build/point_message && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/jade/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/peter/brokenGlasses/src/point_message/msg/statsMsg.msg -Ipoint_message:/home/peter/brokenGlasses/src/point_message/msg -Istd_msgs:/opt/ros/jade/share/std_msgs/cmake/../msg -p point_message -o /home/peter/brokenGlasses/devel/share/common-lisp/ros/point_message/msg
+
 point_message_generate_messages_lisp: point_message/CMakeFiles/point_message_generate_messages_lisp
 point_message_generate_messages_lisp: /home/peter/brokenGlasses/devel/share/common-lisp/ros/point_message/msg/pointMsg.lisp
+point_message_generate_messages_lisp: /home/peter/brokenGlasses/devel/share/common-lisp/ros/point_message/msg/statsMsg.lisp
 point_message_generate_messages_lisp: point_message/CMakeFiles/point_message_generate_messages_lisp.dir/build.make
 .PHONY : point_message_generate_messages_lisp
 

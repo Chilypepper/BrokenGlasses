@@ -46,6 +46,7 @@ CMAKE_BINARY_DIR = /home/peter/brokenGlasses/build
 include point_message/CMakeFiles/point_message_generate_messages_py.dir/progress.make
 
 point_message/CMakeFiles/point_message_generate_messages_py: /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg/_pointMsg.py
+point_message/CMakeFiles/point_message_generate_messages_py: /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg/_statsMsg.py
 point_message/CMakeFiles/point_message_generate_messages_py: /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg/__init__.py
 
 /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg/_pointMsg.py: /opt/ros/jade/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
@@ -54,14 +55,22 @@ point_message/CMakeFiles/point_message_generate_messages_py: /home/peter/brokenG
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG point_message/pointMsg"
 	cd /home/peter/brokenGlasses/build/point_message && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/jade/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/peter/brokenGlasses/src/point_message/msg/pointMsg.msg -Ipoint_message:/home/peter/brokenGlasses/src/point_message/msg -Istd_msgs:/opt/ros/jade/share/std_msgs/cmake/../msg -p point_message -o /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg
 
+/home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg/_statsMsg.py: /opt/ros/jade/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg/_statsMsg.py: /home/peter/brokenGlasses/src/point_message/msg/statsMsg.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG point_message/statsMsg"
+	cd /home/peter/brokenGlasses/build/point_message && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/jade/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/peter/brokenGlasses/src/point_message/msg/statsMsg.msg -Ipoint_message:/home/peter/brokenGlasses/src/point_message/msg -Istd_msgs:/opt/ros/jade/share/std_msgs/cmake/../msg -p point_message -o /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg
+
 /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg/__init__.py: /opt/ros/jade/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
 /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg/__init__.py: /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg/_pointMsg.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles $(CMAKE_PROGRESS_2)
+/home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg/__init__.py: /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg/_statsMsg.py
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python msg __init__.py for point_message"
 	cd /home/peter/brokenGlasses/build/point_message && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/jade/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg --initpy
 
 point_message_generate_messages_py: point_message/CMakeFiles/point_message_generate_messages_py
 point_message_generate_messages_py: /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg/_pointMsg.py
+point_message_generate_messages_py: /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg/_statsMsg.py
 point_message_generate_messages_py: /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg/__init__.py
 point_message_generate_messages_py: point_message/CMakeFiles/point_message_generate_messages_py.dir/build.make
 .PHONY : point_message_generate_messages_py

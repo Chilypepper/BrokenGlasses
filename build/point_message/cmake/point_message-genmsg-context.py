@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/peter/brokenGlasses/src/point_message/msg/pointMsg.msg"
+messages_str = "/home/peter/brokenGlasses/src/point_message/msg/pointMsg.msg;/home/peter/brokenGlasses/src/point_message/msg/statsMsg.msg"
 services_str = ""
 pkg_name = "point_message"
 dependencies_str = "std_msgs"

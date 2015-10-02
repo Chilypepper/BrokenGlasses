@@ -1,5 +1,6 @@
 /home/peter/brokenGlasses/build/camera_launches/CMakeFiles/_catkin_empty_exported_target.dir
 /home/peter/brokenGlasses/build/point_message/CMakeFiles/_point_message_generate_messages_check_deps_pointMsg.dir
+/home/peter/brokenGlasses/build/point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir
 /home/peter/brokenGlasses/build/image_testing/CMakeFiles/circle_finder.dir
 /home/peter/brokenGlasses/build/CMakeFiles/clean_test_results.dir
 /home/peter/brokenGlasses/build/image_testing/CMakeFiles/colorSpaces.dir

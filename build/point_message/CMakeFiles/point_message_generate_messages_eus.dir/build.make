@@ -46,6 +46,7 @@ CMAKE_BINARY_DIR = /home/peter/brokenGlasses/build
 include point_message/CMakeFiles/point_message_generate_messages_eus.dir/progress.make
 
 point_message/CMakeFiles/point_message_generate_messages_eus: /home/peter/brokenGlasses/devel/share/roseus/ros/point_message/msg/pointMsg.l
+point_message/CMakeFiles/point_message_generate_messages_eus: /home/peter/brokenGlasses/devel/share/roseus/ros/point_message/msg/statsMsg.l
 point_message/CMakeFiles/point_message_generate_messages_eus: /home/peter/brokenGlasses/devel/share/roseus/ros/point_message/manifest.l
 
 /home/peter/brokenGlasses/devel/share/roseus/ros/point_message/msg/pointMsg.l: /opt/ros/jade/share/geneus/cmake/../../../lib/geneus/gen_eus.py
@@ -54,13 +55,20 @@ point_message/CMakeFiles/point_message_generate_messages_eus: /home/peter/broken
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating EusLisp code from point_message/pointMsg.msg"
 	cd /home/peter/brokenGlasses/build/point_message && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/jade/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/peter/brokenGlasses/src/point_message/msg/pointMsg.msg -Ipoint_message:/home/peter/brokenGlasses/src/point_message/msg -Istd_msgs:/opt/ros/jade/share/std_msgs/cmake/../msg -p point_message -o /home/peter/brokenGlasses/devel/share/roseus/ros/point_message/msg
 
-/home/peter/brokenGlasses/devel/share/roseus/ros/point_message/manifest.l: /opt/ros/jade/share/geneus/cmake/../../../lib/geneus/gen_eus.py
+/home/peter/brokenGlasses/devel/share/roseus/ros/point_message/msg/statsMsg.l: /opt/ros/jade/share/geneus/cmake/../../../lib/geneus/gen_eus.py
+/home/peter/brokenGlasses/devel/share/roseus/ros/point_message/msg/statsMsg.l: /home/peter/brokenGlasses/src/point_message/msg/statsMsg.msg
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating EusLisp code from point_message/statsMsg.msg"
+	cd /home/peter/brokenGlasses/build/point_message && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/jade/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/peter/brokenGlasses/src/point_message/msg/statsMsg.msg -Ipoint_message:/home/peter/brokenGlasses/src/point_message/msg -Istd_msgs:/opt/ros/jade/share/std_msgs/cmake/../msg -p point_message -o /home/peter/brokenGlasses/devel/share/roseus/ros/point_message/msg
+
+/home/peter/brokenGlasses/devel/share/roseus/ros/point_message/manifest.l: /opt/ros/jade/share/geneus/cmake/../../../lib/geneus/gen_eus.py
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating EusLisp manifest code for point_message"
 	cd /home/peter/brokenGlasses/build/point_message && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/jade/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/peter/brokenGlasses/devel/share/roseus/ros/point_message point_message std_msgs
 
 point_message_generate_messages_eus: point_message/CMakeFiles/point_message_generate_messages_eus
 point_message_generate_messages_eus: /home/peter/brokenGlasses/devel/share/roseus/ros/point_message/msg/pointMsg.l
+point_message_generate_messages_eus: /home/peter/brokenGlasses/devel/share/roseus/ros/point_message/msg/statsMsg.l
 point_message_generate_messages_eus: /home/peter/brokenGlasses/devel/share/roseus/ros/point_message/manifest.l
 point_message_generate_messages_eus: point_message/CMakeFiles/point_message_generate_messages_eus.dir/build.make
 .PHONY : point_message_generate_messages_eus

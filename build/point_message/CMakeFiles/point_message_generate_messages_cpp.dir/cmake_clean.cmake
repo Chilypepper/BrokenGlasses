@@ -1,6 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/point_message_generate_messages_cpp"
   "/home/peter/brokenGlasses/devel/include/point_message/pointMsg.h"
+  "/home/peter/brokenGlasses/devel/include/point_message/statsMsg.h"
 )
 
 # Per-language clean rules from dependency scanning.

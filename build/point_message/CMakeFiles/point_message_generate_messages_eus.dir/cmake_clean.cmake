@@ -1,6 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/point_message_generate_messages_eus"
   "/home/peter/brokenGlasses/devel/share/roseus/ros/point_message/msg/pointMsg.l"
+  "/home/peter/brokenGlasses/devel/share/roseus/ros/point_message/msg/statsMsg.l"
   "/home/peter/brokenGlasses/devel/share/roseus/ros/point_message/manifest.l"
 )
 

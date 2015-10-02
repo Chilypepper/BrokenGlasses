@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "point_message: 1 messages, 0 services")
+message(STATUS "point_message: 2 messages, 0 services")
 
 set(MSG_I_FLAGS "-Ipoint_message:/home/peter/brokenGlasses/src/point_message/msg;-Istd_msgs:/opt/ros/jade/share/std_msgs/cmake/../msg")
 
@@ -21,6 +21,11 @@ add_custom_target(_point_message_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "point_message" "/home/peter/brokenGlasses/src/point_message/msg/pointMsg.msg" ""
 )
 
+get_filename_component(_filename "/home/peter/brokenGlasses/src/point_message/msg/statsMsg.msg" NAME_WE)
+add_custom_target(_point_message_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "point_message" "/home/peter/brokenGlasses/src/point_message/msg/statsMsg.msg" ""
+)
+
 #
 #  langs = gencpp;geneus;genlisp;genpy
 #
@@ -29,6 +34,12 @@ add_custom_target(_point_message_generate_messages_check_deps_${_filename}
 ### Generating Messages
 _generate_msg_cpp(point_message
   "/home/peter/brokenGlasses/src/point_message/msg/pointMsg.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/point_message
+)
+_generate_msg_cpp(point_message
+  "/home/peter/brokenGlasses/src/point_message/msg/statsMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/point_message
@@ -50,6 +61,8 @@ add_dependencies(point_message_generate_messages point_message_generate_messages
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/peter/brokenGlasses/src/point_message/msg/pointMsg.msg" NAME_WE)
 add_dependencies(point_message_generate_messages_cpp _point_message_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/peter/brokenGlasses/src/point_message/msg/statsMsg.msg" NAME_WE)
+add_dependencies(point_message_generate_messages_cpp _point_message_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(point_message_gencpp)
@@ -62,6 +75,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS point_message_generate_messages_cpp
 ### Generating Messages
 _generate_msg_eus(point_message
   "/home/peter/brokenGlasses/src/point_message/msg/pointMsg.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/point_message
+)
+_generate_msg_eus(point_message
+  "/home/peter/brokenGlasses/src/point_message/msg/statsMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/point_message
@@ -83,6 +102,8 @@ add_dependencies(point_message_generate_messages point_message_generate_messages
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/peter/brokenGlasses/src/point_message/msg/pointMsg.msg" NAME_WE)
 add_dependencies(point_message_generate_messages_eus _point_message_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/peter/brokenGlasses/src/point_message/msg/statsMsg.msg" NAME_WE)
+add_dependencies(point_message_generate_messages_eus _point_message_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(point_message_geneus)
@@ -95,6 +116,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS point_message_generate_messages_eus
 ### Generating Messages
 _generate_msg_lisp(point_message
   "/home/peter/brokenGlasses/src/point_message/msg/pointMsg.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/point_message
+)
+_generate_msg_lisp(point_message
+  "/home/peter/brokenGlasses/src/point_message/msg/statsMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/point_message
@@ -116,6 +143,8 @@ add_dependencies(point_message_generate_messages point_message_generate_messages
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/peter/brokenGlasses/src/point_message/msg/pointMsg.msg" NAME_WE)
 add_dependencies(point_message_generate_messages_lisp _point_message_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/peter/brokenGlasses/src/point_message/msg/statsMsg.msg" NAME_WE)
+add_dependencies(point_message_generate_messages_lisp _point_message_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(point_message_genlisp)
@@ -128,6 +157,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS point_message_generate_messages_lis
 ### Generating Messages
 _generate_msg_py(point_message
   "/home/peter/brokenGlasses/src/point_message/msg/pointMsg.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/point_message
+)
+_generate_msg_py(point_message
+  "/home/peter/brokenGlasses/src/point_message/msg/statsMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/point_message
@@ -148,6 +183,8 @@ add_dependencies(point_message_generate_messages point_message_generate_messages
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/peter/brokenGlasses/src/point_message/msg/pointMsg.msg" NAME_WE)
+add_dependencies(point_message_generate_messages_py _point_message_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/peter/brokenGlasses/src/point_message/msg/statsMsg.msg" NAME_WE)
 add_dependencies(point_message_generate_messages_py _point_message_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

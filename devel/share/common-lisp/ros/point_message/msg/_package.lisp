@@ -3,5 +3,7 @@
   (:export
    "<POINTMSG>"
    "POINTMSG"
+   "<STATSMSG>"
+   "STATSMSG"
   ))
 

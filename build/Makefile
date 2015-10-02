@@ -267,6 +267,19 @@ _point_message_generate_messages_check_deps_pointMsg/fast:
 .PHONY : _point_message_generate_messages_check_deps_pointMsg/fast
 
 #=============================================================================
+# Target rules for targets named _point_message_generate_messages_check_deps_statsMsg
+
+# Build rule for target.
+_point_message_generate_messages_check_deps_statsMsg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _point_message_generate_messages_check_deps_statsMsg
+.PHONY : _point_message_generate_messages_check_deps_statsMsg
+
+# fast build rule for target.
+_point_message_generate_messages_check_deps_statsMsg/fast:
+	$(MAKE) -f point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/build.make point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/build
+.PHONY : _point_message_generate_messages_check_deps_statsMsg/fast
+
+#=============================================================================
 # Target rules for targets named point_message_gencpp
 
 # Build rule for target.
@@ -795,6 +808,7 @@ help:
 	@echo "... gtest_main"
 	@echo "... _catkin_empty_exported_target"
 	@echo "... _point_message_generate_messages_check_deps_pointMsg"
+	@echo "... _point_message_generate_messages_check_deps_statsMsg"
 	@echo "... point_message_gencpp"
 	@echo "... point_message_generate_messages"
 	@echo "... point_message_generate_messages_cpp"

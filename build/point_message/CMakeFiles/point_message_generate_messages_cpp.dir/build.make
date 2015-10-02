@@ -46,6 +46,7 @@ CMAKE_BINARY_DIR = /home/peter/brokenGlasses/build
 include point_message/CMakeFiles/point_message_generate_messages_cpp.dir/progress.make
 
 point_message/CMakeFiles/point_message_generate_messages_cpp: /home/peter/brokenGlasses/devel/include/point_message/pointMsg.h
+point_message/CMakeFiles/point_message_generate_messages_cpp: /home/peter/brokenGlasses/devel/include/point_message/statsMsg.h
 
 /home/peter/brokenGlasses/devel/include/point_message/pointMsg.h: /opt/ros/jade/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
 /home/peter/brokenGlasses/devel/include/point_message/pointMsg.h: /home/peter/brokenGlasses/src/point_message/msg/pointMsg.msg
@@ -54,8 +55,16 @@ point_message/CMakeFiles/point_message_generate_messages_cpp: /home/peter/broken
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from point_message/pointMsg.msg"
 	cd /home/peter/brokenGlasses/build/point_message && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/jade/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/peter/brokenGlasses/src/point_message/msg/pointMsg.msg -Ipoint_message:/home/peter/brokenGlasses/src/point_message/msg -Istd_msgs:/opt/ros/jade/share/std_msgs/cmake/../msg -p point_message -o /home/peter/brokenGlasses/devel/include/point_message -e /opt/ros/jade/share/gencpp/cmake/..
 
+/home/peter/brokenGlasses/devel/include/point_message/statsMsg.h: /opt/ros/jade/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/peter/brokenGlasses/devel/include/point_message/statsMsg.h: /home/peter/brokenGlasses/src/point_message/msg/statsMsg.msg
+/home/peter/brokenGlasses/devel/include/point_message/statsMsg.h: /opt/ros/jade/share/gencpp/cmake/../msg.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from point_message/statsMsg.msg"
+	cd /home/peter/brokenGlasses/build/point_message && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/jade/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/peter/brokenGlasses/src/point_message/msg/statsMsg.msg -Ipoint_message:/home/peter/brokenGlasses/src/point_message/msg -Istd_msgs:/opt/ros/jade/share/std_msgs/cmake/../msg -p point_message -o /home/peter/brokenGlasses/devel/include/point_message -e /opt/ros/jade/share/gencpp/cmake/..
+
 point_message_generate_messages_cpp: point_message/CMakeFiles/point_message_generate_messages_cpp
 point_message_generate_messages_cpp: /home/peter/brokenGlasses/devel/include/point_message/pointMsg.h
+point_message_generate_messages_cpp: /home/peter/brokenGlasses/devel/include/point_message/statsMsg.h
 point_message_generate_messages_cpp: point_message/CMakeFiles/point_message_generate_messages_cpp.dir/build.make
 .PHONY : point_message_generate_messages_cpp
 

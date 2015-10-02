@@ -340,6 +340,7 @@ point_message/all: point_message/CMakeFiles/point_message_generate_messages.dir/
 
 # Convenience name for "clean" pass in the directory.
 point_message/clean: point_message/CMakeFiles/_point_message_generate_messages_check_deps_pointMsg.dir/clean
+point_message/clean: point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/clean
 point_message/clean: point_message/CMakeFiles/point_message_gencpp.dir/clean
 point_message/clean: point_message/CMakeFiles/point_message_generate_messages.dir/clean
 point_message/clean: point_message/CMakeFiles/point_message_generate_messages_cpp.dir/clean
@@ -391,6 +392,37 @@ clean: point_message/CMakeFiles/_point_message_generate_messages_check_deps_poin
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir
+
+# All Build rule for target.
+point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/all:
+	$(MAKE) -f point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/build.make point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/depend
+	$(MAKE) -f point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/build.make point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles 
+	@echo "Built target _point_message_generate_messages_check_deps_statsMsg"
+.PHONY : point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/all
+
+# Build rule for subdir invocation for target.
+point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
+.PHONY : point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/rule
+
+# Convenience name for target.
+_point_message_generate_messages_check_deps_statsMsg: point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/rule
+.PHONY : _point_message_generate_messages_check_deps_statsMsg
+
+# clean rule for target.
+point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/clean:
+	$(MAKE) -f point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/build.make point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/clean
+.PHONY : point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/clean
+
+# clean rule for target.
+clean: point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target point_message/CMakeFiles/point_message_gencpp.dir
 
 # All Build rule for target.
@@ -403,7 +435,7 @@ point_message/CMakeFiles/point_message_gencpp.dir/all: point_message/CMakeFiles/
 
 # Build rule for subdir invocation for target.
 point_message/CMakeFiles/point_message_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 point_message/CMakeFiles/point_message_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
 .PHONY : point_message/CMakeFiles/point_message_gencpp.dir/rule
@@ -425,10 +457,10 @@ clean: point_message/CMakeFiles/point_message_gencpp.dir/clean
 # Target rules for target point_message/CMakeFiles/point_message_generate_messages.dir
 
 # All Build rule for target.
+point_message/CMakeFiles/point_message_generate_messages.dir/all: point_message/CMakeFiles/point_message_generate_messages_eus.dir/all
+point_message/CMakeFiles/point_message_generate_messages.dir/all: point_message/CMakeFiles/point_message_generate_messages_py.dir/all
 point_message/CMakeFiles/point_message_generate_messages.dir/all: point_message/CMakeFiles/point_message_generate_messages_lisp.dir/all
 point_message/CMakeFiles/point_message_generate_messages.dir/all: point_message/CMakeFiles/point_message_generate_messages_cpp.dir/all
-point_message/CMakeFiles/point_message_generate_messages.dir/all: point_message/CMakeFiles/point_message_generate_messages_py.dir/all
-point_message/CMakeFiles/point_message_generate_messages.dir/all: point_message/CMakeFiles/point_message_generate_messages_eus.dir/all
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages.dir/build.make point_message/CMakeFiles/point_message_generate_messages.dir/depend
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages.dir/build.make point_message/CMakeFiles/point_message_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles 
@@ -441,7 +473,7 @@ all: point_message/CMakeFiles/point_message_generate_messages.dir/all
 
 # Build rule for subdir invocation for target.
 point_message/CMakeFiles/point_message_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 point_message/CMakeFiles/point_message_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
 .PHONY : point_message/CMakeFiles/point_message_generate_messages.dir/rule
@@ -463,17 +495,18 @@ clean: point_message/CMakeFiles/point_message_generate_messages.dir/clean
 # Target rules for target point_message/CMakeFiles/point_message_generate_messages_cpp.dir
 
 # All Build rule for target.
-point_message/CMakeFiles/point_message_generate_messages_cpp.dir/all: point_message/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+point_message/CMakeFiles/point_message_generate_messages_cpp.dir/all: point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/all
 point_message/CMakeFiles/point_message_generate_messages_cpp.dir/all: point_message/CMakeFiles/_point_message_generate_messages_check_deps_pointMsg.dir/all
+point_message/CMakeFiles/point_message_generate_messages_cpp.dir/all: point_message/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages_cpp.dir/build.make point_message/CMakeFiles/point_message_generate_messages_cpp.dir/depend
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages_cpp.dir/build.make point_message/CMakeFiles/point_message_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  12
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  12 13
 	@echo "Built target point_message_generate_messages_cpp"
 .PHONY : point_message/CMakeFiles/point_message_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 point_message/CMakeFiles/point_message_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 point_message/CMakeFiles/point_message_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
 .PHONY : point_message/CMakeFiles/point_message_generate_messages_cpp.dir/rule
@@ -495,17 +528,18 @@ clean: point_message/CMakeFiles/point_message_generate_messages_cpp.dir/clean
 # Target rules for target point_message/CMakeFiles/point_message_generate_messages_eus.dir
 
 # All Build rule for target.
+point_message/CMakeFiles/point_message_generate_messages_eus.dir/all: point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/all
 point_message/CMakeFiles/point_message_generate_messages_eus.dir/all: point_message/CMakeFiles/_point_message_generate_messages_check_deps_pointMsg.dir/all
 point_message/CMakeFiles/point_message_generate_messages_eus.dir/all: point_message/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages_eus.dir/build.make point_message/CMakeFiles/point_message_generate_messages_eus.dir/depend
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages_eus.dir/build.make point_message/CMakeFiles/point_message_generate_messages_eus.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  13 14
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  14 15 16
 	@echo "Built target point_message_generate_messages_eus"
 .PHONY : point_message/CMakeFiles/point_message_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 point_message/CMakeFiles/point_message_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 point_message/CMakeFiles/point_message_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
 .PHONY : point_message/CMakeFiles/point_message_generate_messages_eus.dir/rule
@@ -527,17 +561,18 @@ clean: point_message/CMakeFiles/point_message_generate_messages_eus.dir/clean
 # Target rules for target point_message/CMakeFiles/point_message_generate_messages_lisp.dir
 
 # All Build rule for target.
+point_message/CMakeFiles/point_message_generate_messages_lisp.dir/all: point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/all
 point_message/CMakeFiles/point_message_generate_messages_lisp.dir/all: point_message/CMakeFiles/_point_message_generate_messages_check_deps_pointMsg.dir/all
 point_message/CMakeFiles/point_message_generate_messages_lisp.dir/all: point_message/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages_lisp.dir/build.make point_message/CMakeFiles/point_message_generate_messages_lisp.dir/depend
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages_lisp.dir/build.make point_message/CMakeFiles/point_message_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  15
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  17 18
 	@echo "Built target point_message_generate_messages_lisp"
 .PHONY : point_message/CMakeFiles/point_message_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 point_message/CMakeFiles/point_message_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 point_message/CMakeFiles/point_message_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
 .PHONY : point_message/CMakeFiles/point_message_generate_messages_lisp.dir/rule
@@ -559,17 +594,18 @@ clean: point_message/CMakeFiles/point_message_generate_messages_lisp.dir/clean
 # Target rules for target point_message/CMakeFiles/point_message_generate_messages_py.dir
 
 # All Build rule for target.
-point_message/CMakeFiles/point_message_generate_messages_py.dir/all: point_message/CMakeFiles/std_msgs_generate_messages_py.dir/all
+point_message/CMakeFiles/point_message_generate_messages_py.dir/all: point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/all
 point_message/CMakeFiles/point_message_generate_messages_py.dir/all: point_message/CMakeFiles/_point_message_generate_messages_check_deps_pointMsg.dir/all
+point_message/CMakeFiles/point_message_generate_messages_py.dir/all: point_message/CMakeFiles/std_msgs_generate_messages_py.dir/all
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages_py.dir/build.make point_message/CMakeFiles/point_message_generate_messages_py.dir/depend
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages_py.dir/build.make point_message/CMakeFiles/point_message_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  16 17
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  19 20 21
 	@echo "Built target point_message_generate_messages_py"
 .PHONY : point_message/CMakeFiles/point_message_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 point_message/CMakeFiles/point_message_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 point_message/CMakeFiles/point_message_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
 .PHONY : point_message/CMakeFiles/point_message_generate_messages_py.dir/rule
@@ -600,7 +636,7 @@ point_message/CMakeFiles/point_message_geneus.dir/all: point_message/CMakeFiles/
 
 # Build rule for subdir invocation for target.
 point_message/CMakeFiles/point_message_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 point_message/CMakeFiles/point_message_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
 .PHONY : point_message/CMakeFiles/point_message_geneus.dir/rule
@@ -631,7 +667,7 @@ point_message/CMakeFiles/point_message_genlisp.dir/all: point_message/CMakeFiles
 
 # Build rule for subdir invocation for target.
 point_message/CMakeFiles/point_message_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 point_message/CMakeFiles/point_message_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
 .PHONY : point_message/CMakeFiles/point_message_genlisp.dir/rule
@@ -662,7 +698,7 @@ point_message/CMakeFiles/point_message_genpy.dir/all: point_message/CMakeFiles/p
 
 # Build rule for subdir invocation for target.
 point_message/CMakeFiles/point_message_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 point_message/CMakeFiles/point_message_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
 .PHONY : point_message/CMakeFiles/point_message_genpy.dir/rule
@@ -1299,7 +1335,7 @@ clean: image_testing/CMakeFiles/orange_finder.dir/clean
 image_testing/CMakeFiles/rect_finder.dir/all:
 	$(MAKE) -f image_testing/CMakeFiles/rect_finder.dir/build.make image_testing/CMakeFiles/rect_finder.dir/depend
 	$(MAKE) -f image_testing/CMakeFiles/rect_finder.dir/build.make image_testing/CMakeFiles/rect_finder.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  18
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  22
 	@echo "Built target rect_finder"
 .PHONY : image_testing/CMakeFiles/rect_finder.dir/all
 

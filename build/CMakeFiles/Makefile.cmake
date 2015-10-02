@@ -219,6 +219,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   "camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake"
   "point_message/CMakeFiles/_point_message_generate_messages_check_deps_pointMsg.dir/DependInfo.cmake"
+  "point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/DependInfo.cmake"
   "point_message/CMakeFiles/point_message_gencpp.dir/DependInfo.cmake"
   "point_message/CMakeFiles/point_message_generate_messages.dir/DependInfo.cmake"
   "point_message/CMakeFiles/point_message_generate_messages_cpp.dir/DependInfo.cmake"

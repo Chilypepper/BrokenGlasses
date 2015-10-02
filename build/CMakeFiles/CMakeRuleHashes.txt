@@ -1,10 +1,14 @@
 # Hashes of file build rules.
 68dd8c81ec31b193f71c44267807909d /home/peter/brokenGlasses/devel/include/point_message/pointMsg.h
+3a9b4bf8baa059c686ae41fa5323f1a0 /home/peter/brokenGlasses/devel/include/point_message/statsMsg.h
 df8edabb5a69262f82d6704eaf9e1ff2 /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg/__init__.py
 3e08906b5f7f03eb30c7bd3fa6cdf7e3 /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg/_pointMsg.py
+0dcda4e6e0ce68475f3cd64e0641a9f9 /home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg/_statsMsg.py
 009245f0b7b7702c96d1d74e53d3c56f /home/peter/brokenGlasses/devel/share/common-lisp/ros/point_message/msg/pointMsg.lisp
+12e3e733b4e4714da7b18840f4499487 /home/peter/brokenGlasses/devel/share/common-lisp/ros/point_message/msg/statsMsg.lisp
 9bc7bb647858f216a1b02d98771a7819 /home/peter/brokenGlasses/devel/share/roseus/ros/point_message/manifest.l
 6692901cd5e557db42b1c4b8f1841455 /home/peter/brokenGlasses/devel/share/roseus/ros/point_message/msg/pointMsg.l
+7ab4b4074829c886718d8d207f37fe74 /home/peter/brokenGlasses/devel/share/roseus/ros/point_message/msg/statsMsg.l
 7426b75c3663eab9ec12957c405464d6 CMakeFiles/clean_test_results
 5902fb007a8e2e032d7e980875630df5 CMakeFiles/download_extra_data
 5902fb007a8e2e032d7e980875630df5 CMakeFiles/doxygen
@@ -28,6 +32,7 @@ ef006078e9d0400dfdeaee1e4757d2ca image_testing/CMakeFiles/sensor_msgs_generate_m
 ef006078e9d0400dfdeaee1e4757d2ca image_testing/CMakeFiles/sensor_msgs_generate_messages_lisp
 ef006078e9d0400dfdeaee1e4757d2ca image_testing/CMakeFiles/sensor_msgs_generate_messages_py
 fe9ecea254c7fa2f6bb892743ef4e8bd point_message/CMakeFiles/_point_message_generate_messages_check_deps_pointMsg
+97211801aafa9c914f4ac9847ebe3517 point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg
 3cbda493a18289437e528365883bf734 point_message/CMakeFiles/point_message_gencpp
 3cbda493a18289437e528365883bf734 point_message/CMakeFiles/point_message_generate_messages
 3cbda493a18289437e528365883bf734 point_message/CMakeFiles/point_message_generate_messages_cpp

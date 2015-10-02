@@ -164,6 +164,20 @@ _point_message_generate_messages_check_deps_pointMsg/fast:
 .PHONY : _point_message_generate_messages_check_deps_pointMsg/fast
 
 # Convenience name for target.
+point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/rule
+.PHONY : point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/rule
+
+# Convenience name for target.
+_point_message_generate_messages_check_deps_statsMsg: point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/rule
+.PHONY : _point_message_generate_messages_check_deps_statsMsg
+
+# fast build rule for target.
+_point_message_generate_messages_check_deps_statsMsg/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/build.make point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/build
+.PHONY : _point_message_generate_messages_check_deps_statsMsg/fast
+
+# Convenience name for target.
 point_message/CMakeFiles/point_message_gencpp.dir/rule:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 point_message/CMakeFiles/point_message_gencpp.dir/rule
 .PHONY : point_message/CMakeFiles/point_message_gencpp.dir/rule
@@ -352,6 +366,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... _point_message_generate_messages_check_deps_pointMsg"
+	@echo "... _point_message_generate_messages_check_deps_statsMsg"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
