@@ -159,7 +159,8 @@ public:
         detectedCircleR = circArr.radius;
     }
     void updateColorInfo(const point_message::statsMsg objectColorInfo){
-
+        objectColorX = objectColorInfo.xCent;
+        objectColorY = objectColorInfo.yCent;
     }
 };
 
