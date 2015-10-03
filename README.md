@@ -1,11 +1,16 @@
 # brokenGlasses
 Vision that works, but isn't perfect. 
 
+#demonstrations
+
+[Youtube Playlist](https://www.youtube.com/playlist?list=PLQ0ycVCnyxkOUgsCWnqUbodC5smeDxTLY)
+
+#description
 A first attempt at vision processing using ROS and the OpenCV library.
 
 [Friendly script to set up everything](https://github.com/Chilypepper/ros-opencv-setup)
 
-Instructions:
+#instructions:
 
 1. Run pg.launch as a super user inside the camera_launches folder
 
