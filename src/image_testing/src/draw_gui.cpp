@@ -68,16 +68,26 @@ void drawGrid(Mat &raw){
     line(raw, topCent, bottomCent, RED, THICKNESS);
     //draw x-axis markers
     int xInc = rawCols / MARKER_NUM_X;
-    for(int i = 1; i < MARKER_NUM_X ; i++){
-        Point low = Point(i * xInc, rawRows/2 - MARKER_HEIGHT);
-        Point high = Point(i * xInc, rawRows/2 + MARKER_HEIGHT);
+    for(int i = 1; i < MARKER_NUM_X /2 ; i++){
+        Point low = Point(i * xInc + raw.cols/2, rawRows/2 - MARKER_HEIGHT);
+        Point high = Point(i * xInc + raw.cols/2, rawRows/2 + MARKER_HEIGHT);
+        line(raw, low, high, RED, THICKNESS);
+    }
+    for(int i = -1; i > -1 * MARKER_NUM_X /2 ; i--){
+        Point low = Point(i * xInc + raw.cols/2, rawRows/2 - MARKER_HEIGHT);
+        Point high = Point(i * xInc + raw.cols/2, rawRows/2 + MARKER_HEIGHT);
         line(raw, low, high, RED, THICKNESS);
     }
     //draw y axis markers
     int yInc = rawRows / MARKER_NUM_Y;
-    for(int i = 1; i < MARKER_NUM_X ; i++){
-        Point low = Point(rawCols/2 - MARKER_HEIGHT, i * yInc);
-        Point high = Point(rawCols/2 + MARKER_HEIGHT, i * yInc);
+    for(int i = 1; i < MARKER_NUM_X /2; i++){
+        Point low = Point(rawCols/2 - MARKER_HEIGHT, i * yInc + raw.rows/2);
+        Point high = Point(rawCols/2 + MARKER_HEIGHT, i * yInc + raw.rows/2);
+        line(raw, low, high, RED, THICKNESS);
+    }
+    for(int i = -1; i > -1 * MARKER_NUM_X /2; i--){
+        Point low = Point(rawCols/2 - MARKER_HEIGHT, i * yInc + raw.rows/2);
+        Point high = Point(rawCols/2 + MARKER_HEIGHT, i * yInc + raw.rows/2);
         line(raw, low, high, RED, THICKNESS);
     }
 }
@@ -142,12 +152,15 @@ public:
 
         Mat drawing;
         cv_ptr->image.copyTo(drawing);
+        if(abs(detectedCircleX - objectColorX) < 100) {
+            circle(drawing, Point(detectedCircleX, detectedCircleY), detectedCircleR, RED);
+            circle(drawing, Point(detectedCircleX, detectedCircleY), 5, NEON_GREEN, -1);
+            circle(drawing, Point(objectColorX, objectColorY), 5, NEON_BLUE, -1);
+            drawXYBars(drawing);
+        }
 
-        circle(drawing,Point(detectedCircleX,detectedCircleY),detectedCircleR,RED);
-        circle(drawing,Point(detectedCircleX,detectedCircleY),5, NEON_GREEN, -1);
-        circle(drawing,Point(objectColorX,objectColorY),5,NEON_BLUE,-1);
 
-        drawXYBars(drawing);
+
         drawGrid(drawing);
         double a =0.2;
         double b = 1.0 - a;

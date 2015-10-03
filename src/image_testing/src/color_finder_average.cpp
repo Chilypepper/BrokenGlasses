@@ -30,7 +30,7 @@ const int blueUpperBound = 50;
 const int greenLowerBound = 90;
 const int greenUpperBound = 255;
 const int redLowerBound = 50;
-const int redUpperBound = 200;
+const int redUpperBound = 255;
 
 Scalar colorScalar_BLUE = Scalar(255,255,0);
 Scalar colorScalar_GREEN = Scalar(0,255,0);
