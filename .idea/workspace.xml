@@ -12,17 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38672e1e-26e2-4867-bc1e-c93864e44309" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/camera_launches/gui-circle-color.launch" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/circle_finder.dir/src/circle_finder.cpp.o" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/circle_finder.dir/src/circle_finder.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devel/lib/image_testing/circle_finder" afterPath="$PROJECT_DIR$/devel/lib/image_testing/circle_finder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/color_finder_average.dir/src/color_finder_average.cpp.o" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/color_finder_average.dir/src/color_finder_average.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devel/lib/image_testing/color_finder_average" afterPath="$PROJECT_DIR$/devel/lib/image_testing/color_finder_average" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/draw_gui.dir/src/draw_gui.cpp.o" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/draw_gui.dir/src/draw_gui.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devel/lib/image_testing/draw_gui" afterPath="$PROJECT_DIR$/devel/lib/image_testing/draw_gui" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp" afterPath="$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/image_testing/src/color_finder_average.cpp" afterPath="$PROJECT_DIR$/src/image_testing/src/color_finder_average.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/image_testing/src/draw_gui.cpp" afterPath="$PROJECT_DIR$/src/image_testing/src/draw_gui.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camera_launches/pg_single.launch" afterPath="$PROJECT_DIR$/src/camera_launches/pg_single.launch" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="brokenGlasses.iws" />
@@ -54,20 +44,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="circle_finder.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp">
+      <file leaf-file-name="cv_modder.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/image_testing/src/cv_modder.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24492557">
-              <caret line="166" column="8" selection-start-line="166" selection-start-column="8" selection-end-line="166" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="draw_gui.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/image_testing/src/draw_gui.cpp">
+      <file leaf-file-name="circle_finder.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
+              <caret line="191" column="1" selection-start-line="191" selection-start-column="1" selection-end-line="191" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="draw_gui.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/image_testing/src/draw_gui.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5615697">
               <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
               <folding />
             </state>
@@ -89,16 +89,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/point_message/package.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -432,14 +422,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/point_message/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/image_testing/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -780,14 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/image_testing/src/colorspaces.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="112" column="72" selection-start-line="112" selection-start-column="72" selection-end-line="112" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/point_message/package.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -836,6 +810,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="191" column="1" selection-start-line="191" selection-start-column="1" selection-end-line="191" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/image_testing/src/color_finder_average.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -848,18 +830,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/image_testing/src/draw_gui.cpp">
+    <entry file="file://$PROJECT_DIR$/src/image_testing/src/colorspaces.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+          <caret line="112" column="72" selection-start-line="112" selection-start-column="72" selection-end-line="112" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp">
+    <entry file="file://$PROJECT_DIR$/src/image_testing/src/cv_modder.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24492557">
-          <caret line="166" column="8" selection-start-line="166" selection-start-column="8" selection-end-line="166" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/image_testing/src/draw_gui.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5615697">
+          <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
           <folding />
         </state>
       </provider>

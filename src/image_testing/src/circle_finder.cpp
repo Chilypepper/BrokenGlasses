@@ -164,7 +164,7 @@ public:
         //ROS_INFO("%3f",circles.size());
 
 
-        
+
         if(circles.size() > 0) {
             circleInfo.xCoor = region_corner.x + circles[0][0];
             circleInfo.yCoor = region_corner.y + circles[0][1];
