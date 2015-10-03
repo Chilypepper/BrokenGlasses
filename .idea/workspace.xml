@@ -12,7 +12,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38672e1e-26e2-4867-bc1e-c93864e44309" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/circle_finder.dir/src/circle_finder.cpp.o" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/circle_finder.dir/src/circle_finder.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devel/lib/image_testing/circle_finder" afterPath="$PROJECT_DIR$/devel/lib/image_testing/circle_finder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/color_finder_average.dir/src/color_finder_average.cpp.o" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/color_finder_average.dir/src/color_finder_average.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devel/lib/image_testing/color_finder_average" afterPath="$PROJECT_DIR$/devel/lib/image_testing/color_finder_average" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/draw_gui.dir/src/draw_gui.cpp.o" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/draw_gui.dir/src/draw_gui.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devel/lib/image_testing/draw_gui" afterPath="$PROJECT_DIR$/devel/lib/image_testing/draw_gui" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/hsv_converter.dir/src/hsv_converter.cpp.o" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/hsv_converter.dir/src/hsv_converter.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devel/lib/image_testing/hsv_converter" afterPath="$PROJECT_DIR$/devel/lib/image_testing/hsv_converter" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/hsv_converter.dir/CXX.includecache" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/hsv_converter.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp" afterPath="$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/image_testing/src/color_finder_average.cpp" afterPath="$PROJECT_DIR$/src/image_testing/src/color_finder_average.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/image_testing/src/draw_gui.cpp" afterPath="$PROJECT_DIR$/src/image_testing/src/draw_gui.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/image_testing/src/hsv_converter.cpp" afterPath="$PROJECT_DIR$/src/image_testing/src/hsv_converter.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="brokenGlasses.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,18 +59,18 @@
       <file leaf-file-name="circle_finder.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.935484">
-              <caret line="108" column="11" selection-start-line="108" selection-start-column="11" selection-end-line="108" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="89" column="71" selection-start-line="89" selection-start-column="71" selection-end-line="89" selection-end-column="71" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="draw_gui.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="draw_gui.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/image_testing/src/draw_gui.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8114754">
-              <caret line="162" column="45" selection-start-line="162" selection-start-column="45" selection-end-line="162" selection-end-column="45" />
+            <state vertical-scroll-proportion="-4.2580647">
+              <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -113,25 +126,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/image_testing/package.xml">
+      <file leaf-file-name="color_finder_average.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/image_testing/src/color_finder_average.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-              <folding />
+            <state vertical-scroll-proportion="0.52719665">
+              <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+              <folding>
+                <element signature="e#5874#5938#0" expanded="true" />
+                <element signature="e#7186#7274#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="color_finder_average.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/image_testing/src/color_finder_average.cpp">
+      <file leaf-file-name="hsv_converter.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/image_testing/src/hsv_converter.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-              <folding>
-                <element signature="e#4828#4956#0" expanded="true" />
-                <element signature="e#5741#5805#0" expanded="true" />
-              </folding>
+              <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="56" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -154,9 +167,10 @@
         <option value="$PROJECT_DIR$/src/image_testing/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/point_message/msg/statsMsg.msg" />
         <option value="$PROJECT_DIR$/src/point_message/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/image_testing/src/color_finder_average.cpp" />
-        <option value="$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp" />
         <option value="$PROJECT_DIR$/src/image_testing/src/draw_gui.cpp" />
+        <option value="$PROJECT_DIR$/src/image_testing/src/hsv_converter.cpp" />
+        <option value="$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp" />
+        <option value="$PROJECT_DIR$/src/image_testing/src/color_finder_average.cpp" />
       </list>
     </option>
   </component>
@@ -168,9 +182,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="992" />
+    <option name="x" value="234" />
     <option name="y" value="52" />
-    <option name="width" value="927" />
+    <option name="width" value="897" />
     <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -357,12 +371,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="992" y="52" width="927" height="1028" extended-state="4" />
+    <frame x="234" y="52" width="897" height="1028" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2437972" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2419175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16963351" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18534032" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -395,6 +409,49 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/point_message/package.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/point_message/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/image_testing/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/image_testing/package.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/image_testing/src/color_finder_average.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+          <folding>
+            <element signature="e#5874#5938#0" expanded="true" />
+            <element signature="e#7186#7274#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/image_testing/src/colorspaces.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -463,7 +520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -472,8 +528,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="129" column="12" selection-start-line="129" selection-start-column="12" selection-end-line="129" selection-end-column="12" />
           <folding>
-            <element signature="e#4828#4956#0" expanded="true" />
-            <element signature="e#5741#5805#0" expanded="true" />
+            <element signature="e#5874#5938#0" expanded="true" />
+            <element signature="e#7186#7274#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -538,7 +594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -554,8 +609,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
           <folding>
-            <element signature="e#4828#4956#0" expanded="true" />
-            <element signature="e#5741#5805#0" expanded="true" />
+            <element signature="e#5874#5938#0" expanded="true" />
+            <element signature="e#7186#7274#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -588,8 +643,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
           <folding>
-            <element signature="e#4828#4956#0" expanded="true" />
-            <element signature="e#5741#5805#0" expanded="true" />
+            <element signature="e#5874#5938#0" expanded="true" />
+            <element signature="e#7186#7274#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -622,8 +677,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
           <folding>
-            <element signature="e#4828#4956#0" expanded="true" />
-            <element signature="e#5741#5805#0" expanded="true" />
+            <element signature="e#5874#5938#0" expanded="true" />
+            <element signature="e#7186#7274#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -641,8 +696,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
           <folding>
-            <element signature="e#4828#4956#0" expanded="true" />
-            <element signature="e#5741#5805#0" expanded="true" />
+            <element signature="e#5874#5938#0" expanded="true" />
+            <element signature="e#7186#7274#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -660,8 +715,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
           <folding>
-            <element signature="e#4828#4956#0" expanded="true" />
-            <element signature="e#5741#5805#0" expanded="true" />
+            <element signature="e#5874#5938#0" expanded="true" />
+            <element signature="e#7186#7274#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -684,7 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -736,17 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/image_testing/src/color_finder_average.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-          <folding>
-            <element signature="e#4828#4956#0" expanded="true" />
-            <element signature="e#5741#5805#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/point_message/msg/pointMsg.msg">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -755,19 +798,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp">
+    <entry file="file://$PROJECT_DIR$/src/image_testing/src/draw_gui.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.935484">
-          <caret line="108" column="11" selection-start-line="108" selection-start-column="11" selection-end-line="108" selection-end-column="11" />
+        <state vertical-scroll-proportion="-4.2580647">
+          <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/image_testing/src/draw_gui.cpp">
+    <entry file="file://$PROJECT_DIR$/src/image_testing/src/hsv_converter.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8114754">
-          <caret line="162" column="45" selection-start-line="162" selection-start-column="45" selection-end-line="162" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="56" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="89" column="71" selection-start-line="89" selection-start-column="71" selection-end-line="89" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/image_testing/src/color_finder_average.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52719665">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="e#5874#5938#0" expanded="true" />
+            <element signature="e#7186#7274#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -136,16 +136,19 @@ public:
             return;
         }
         Mat &raw = cv_ptr->image;
-        Mat drawing(raw.rows,raw.cols,CV_8UC3, Scalar(0,0,0));
+        //100 is transarency
+        //Mat drawing(raw.rows,raw.cols,CV_8UC3, Scalar(255,255,255,255));
 
 
-        drawGrid(drawing);
+        Mat drawing;
+        cv_ptr->image.copyTo(drawing);
 
         circle(drawing,Point(detectedCircleX,detectedCircleY),detectedCircleR,RED);
         circle(drawing,Point(detectedCircleX,detectedCircleY),5, NEON_GREEN, -1);
         circle(drawing,Point(objectColorX,objectColorY),5,NEON_BLUE,-1);
 
         drawXYBars(drawing);
+        drawGrid(drawing);
         double a =0.2;
         double b = 1.0 - a;
         addWeighted(raw,a,drawing,b,0.0,raw);
@@ -166,7 +169,7 @@ public:
 
 int main(int argc, char** argv)
 {
-    ros::init(argc, argv, "image_converter");
+    ros::init(argc, argv, "draw_gui");
     ImageConverter ic;
     ros::spin();
     return 0;

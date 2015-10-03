@@ -10,7 +10,8 @@
 #include <point_message/statsMsg.h>
 
 
-#define timing
+#undef timing
+#define ptInfo
 
 using namespace cv;
 using namespace std;
@@ -18,7 +19,7 @@ using namespace std;
 const int testPointX=200;
 const int testPointY=100;
 
-const int accuracy = 800;
+const int accuracy = 500;
 
 //good set for medium blue: 100/140/80/110/35/55
 //good set for bright orange: 0/25/35/50/110/125
@@ -26,10 +27,10 @@ const int accuracy = 800;
 /* DEFAULT VALUES */
 const int blueLowerBound = 20;
 const int blueUpperBound = 50;
-const int greenLowerBound = 100;
-const int greenUpperBound = 130;
-const int redLowerBound = 100;
-const int redUpperBound = 130;
+const int greenLowerBound = 90;
+const int greenUpperBound = 255;
+const int redLowerBound = 50;
+const int redUpperBound = 200;
 
 Scalar colorScalar_BLUE = Scalar(255,255,0);
 Scalar colorScalar_GREEN = Scalar(0,255,0);
@@ -57,8 +58,6 @@ void getCircInfo(vector<int> listX,
 
         xTotal += currX;
         yTotal += currY;
-
-        iterator++;
     }
 
     int xCentPt = xTotal / listSize;
@@ -71,9 +70,6 @@ void getCircInfo(vector<int> listX,
 
         varianceX += (currX - xCentPt)^2;
         varianceY += (currY - yCentPt)^2;
-
-
-        iterator++;
     }
     varianceX /= listSize;
     varianceY /= listSize;
@@ -85,6 +81,8 @@ void getCircInfo(vector<int> listX,
     objectColorInfo.ySD = stdDevY;
     objectColorInfo.xCent = xCentPt;
     objectColorInfo.yCent = yCentPt;
+    listX.clear();
+    listY.clear();
 }
 
 class ImageConverter
@@ -100,7 +98,7 @@ public:
     ImageConverter()
             : it(nh)
     {
-        image_sub = it.subscribe("/camera/image_rect_color", 1,
+        image_sub = it.subscribe("/camera/image_raw", 1,
                                  &ImageConverter::imageCb, this);
         image_pub = it.advertise("/camera/output_video", 1);
         objectColorInfo_pub = nh.advertise<point_message::statsMsg>("objectColorInfo",1);
@@ -129,7 +127,8 @@ public:
             return;
         }
         clock_t start = clock();
-
+        listX.clear();
+        listY.clear();
         int pointx = 0;
         int pointy = 0;
         int i=0;
@@ -168,17 +167,19 @@ public:
         circle(cv_ptr->image,Point(columns/2,rows/2),2,colorScalar_BLUE,1);
       ROS_INFO("B: %i G: %i R: %i",outBlue,outGreen,outRed);
 #endif
+        Mat image_raw_hsv;
+        cvtColor(cv_ptr->image,image_raw_hsv,COLOR_BGR2HSV);
 
         //BGR
         for(double cols = cv_ptr->image.cols; pointx < cols; pointx+=cols/accuracy){
             pointy=0;
             for(double rows = cv_ptr->image.rows; pointy < rows; pointy+=rows/accuracy){
-                if(cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[0] > blueLowerBound  &&
-                   cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[0] < blueUpperBound &&
-                   cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[1] > greenLowerBound  &&
-                   cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[1] < greenUpperBound &&
-                   cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[2] > redLowerBound &&
-                   cv_ptr->image.at<Vec3b>(Point(pointx,pointy))[2] < redUpperBound){
+                if(image_raw_hsv.at<Vec3b>(Point(pointx,pointy))[0] > blueLowerBound  &&
+                   image_raw_hsv.at<Vec3b>(Point(pointx,pointy))[0] < blueUpperBound &&
+                   image_raw_hsv.at<Vec3b>(Point(pointx,pointy))[1] > greenLowerBound  &&
+                   image_raw_hsv.at<Vec3b>(Point(pointx,pointy))[1] < greenUpperBound &&
+                   image_raw_hsv.at<Vec3b>(Point(pointx,pointy))[2] > redLowerBound &&
+                   image_raw_hsv.at<Vec3b>(Point(pointx,pointy))[2] < redUpperBound){
 #ifdef findPoint
                     circle(cv_ptr->image,Point(pointx,pointy),0,colorScalar_BLUE,1);
 #endif
@@ -201,7 +202,7 @@ public:
         int xCentPt = 0;
         int yCentPt = 0;
 
-        if(listSize > 0){
+        if(listSize > 100){
             getCircInfo(listX, listY, objectColorInfo);
             xCentPt = objectColorInfo.xCent;
             yCentPt = objectColorInfo.yCent;
@@ -225,7 +226,7 @@ public:
 
 int main(int argc, char** argv)
 {
-    ros::init(argc, argv, "image_converter");
+    ros::init(argc, argv, "color_finder");
     ImageConverter ic;
     ros::spin();
     return 0;

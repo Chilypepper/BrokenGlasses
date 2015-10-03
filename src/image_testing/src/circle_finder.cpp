@@ -87,13 +87,13 @@ public:
         Mat im_gray;
         //cvtColor( cv_ptr->image, im_gray, CV_BGR2GRAY);
         GaussianBlur(cv_ptr->image, im_gray, Size(9, 9), 2, 2 );
-        im_gray = cv_ptr->image(Rect(region_corner.x,region_corner.y,
+        /*im_gray = cv_ptr->image(Rect(region_corner.x,region_corner.y,
                                 region_width,
                                 region_height));
-
+    */
         Mat search_region;
         im_gray.copyTo(search_region);
-        HoughCircles( search_region, circles, CV_HOUGH_GRADIENT, 1.56, 90, 160, 70, 50, 0 );
+        HoughCircles( im_gray, circles, CV_HOUGH_GRADIENT, 2.50, 90, 120, 70, 50, 0 );
         //ROS_INFO("%3f",circles.size());
         /*
       for( size_t i = 0; i < circles.size(); i++ )
@@ -112,9 +112,12 @@ public:
         circleInfo.yCoor = circles[0][1] + region_corner.y;
         circleInfo.radius = circles[0][2];
          */
-        circleInfo.xCoor = circles[0][0];
-        circleInfo.yCoor = circles[0][1];
-        circleInfo.radius = circles[0][2];
+        if(circles.size() > 0) {
+            circleInfo.xCoor = circles[0][0];
+            circleInfo.yCoor = circles[0][1];
+            circleInfo.radius = circles[0][2];
+        }
+
 
         circInf.publish(circleInfo);
 
@@ -126,7 +129,7 @@ public:
 
 int main(int argc, char** argv)
 {
-    ros::init(argc, argv, "draw_gui");
+    ros::init(argc, argv, "circle_finder");
     ImageConverter ic;
     ros::spin();
     return 0;
