@@ -12,12 +12,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38672e1e-26e2-4867-bc1e-c93864e44309" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/camera_launches/gui-circle-color.launch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/circle_finder.dir/src/circle_finder.cpp.o" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/circle_finder.dir/src/circle_finder.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devel/lib/image_testing/circle_finder" afterPath="$PROJECT_DIR$/devel/lib/image_testing/circle_finder" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/color_finder_average.dir/src/color_finder_average.cpp.o" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/color_finder_average.dir/src/color_finder_average.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devel/lib/image_testing/color_finder_average" afterPath="$PROJECT_DIR$/devel/lib/image_testing/color_finder_average" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/draw_gui.dir/src/draw_gui.cpp.o" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/draw_gui.dir/src/draw_gui.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devel/lib/image_testing/draw_gui" afterPath="$PROJECT_DIR$/devel/lib/image_testing/draw_gui" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp" afterPath="$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/image_testing/src/color_finder_average.cpp" afterPath="$PROJECT_DIR$/src/image_testing/src/color_finder_average.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/image_testing/src/draw_gui.cpp" afterPath="$PROJECT_DIR$/src/image_testing/src/draw_gui.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camera_launches/pg_single.launch" afterPath="$PROJECT_DIR$/src/camera_launches/pg_single.launch" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="brokenGlasses.iws" />
@@ -52,8 +57,8 @@
       <file leaf-file-name="circle_finder.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3542781">
-              <caret line="90" column="31" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.24492557">
+              <caret line="166" column="8" selection-start-line="166" selection-start-column="8" selection-end-line="166" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -62,8 +67,8 @@
       <file leaf-file-name="draw_gui.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/image_testing/src/draw_gui.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.774194">
-              <caret line="70" column="46" selection-start-line="70" selection-start-column="46" selection-end-line="70" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -109,25 +114,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/image_testing/CMakeLists.txt">
+      <file leaf-file-name="color_finder_average.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/image_testing/src/color_finder_average.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-              <folding />
+              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+              <folding>
+                <element signature="e#4908#5036#0" expanded="true" />
+                <element signature="e#5909#5973#0" expanded="true" />
+                <element signature="e#7221#7309#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="color_finder_average.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/image_testing/src/color_finder_average.cpp">
+      <file leaf-file-name="pg_single.launch" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/camera_launches/pg_single.launch">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.967742">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding>
-                <element signature="e#5874#5938#0" expanded="true" />
-                <element signature="e#7186#7274#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -161,9 +167,10 @@
         <option value="$PROJECT_DIR$/src/point_message/msg/statsMsg.msg" />
         <option value="$PROJECT_DIR$/src/point_message/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/image_testing/src/hsv_converter.cpp" />
-        <option value="$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp" />
+        <option value="$PROJECT_DIR$/src/camera_launches/pg_single_bare.launch" />
         <option value="$PROJECT_DIR$/src/image_testing/src/color_finder_average.cpp" />
         <option value="$PROJECT_DIR$/src/image_testing/src/draw_gui.cpp" />
+        <option value="$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp" />
       </list>
     </option>
   </component>
@@ -175,9 +182,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="234" />
+    <option name="x" value="70" />
     <option name="y" value="52" />
-    <option name="width" value="897" />
+    <option name="width" value="887" />
     <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -315,6 +322,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="brokenGlasses" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="brokenGlasses" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camera_launches" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -322,6 +347,11 @@
   <component name="PropertiesComponent">
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/camera_launches" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Build All">
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="Image_testing" TARGET_NAME="Image_testing" CONFIG_NAME="Debug">
@@ -364,26 +394,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="234" y="52" width="897" height="1028" extended-state="4" />
+    <frame x="70" y="52" width="887" height="1028" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2419175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24126269" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18534032" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19476439" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -402,14 +432,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/point_message/package.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/point_message/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -439,8 +461,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
           <folding>
-            <element signature="e#5874#5938#0" expanded="true" />
-            <element signature="e#7186#7274#0" expanded="true" />
+            <element signature="e#4908#5036#0" expanded="true" />
+            <element signature="e#5909#5973#0" expanded="true" />
+            <element signature="e#7221#7309#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -521,8 +544,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="129" column="12" selection-start-line="129" selection-start-column="12" selection-end-line="129" selection-end-column="12" />
           <folding>
-            <element signature="e#5874#5938#0" expanded="true" />
-            <element signature="e#7186#7274#0" expanded="true" />
+            <element signature="e#4908#5036#0" expanded="true" />
+            <element signature="e#5909#5973#0" expanded="true" />
+            <element signature="e#7221#7309#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -590,7 +614,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/camera_launches/pg_single.launch">
+    <entry file="file://$PROJECT_DIR$/src/camera_launches/gui-circle-color.launch">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
@@ -602,8 +626,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
           <folding>
-            <element signature="e#5874#5938#0" expanded="true" />
-            <element signature="e#7186#7274#0" expanded="true" />
+            <element signature="e#4908#5036#0" expanded="true" />
+            <element signature="e#5909#5973#0" expanded="true" />
+            <element signature="e#7221#7309#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -624,7 +649,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/camera_launches/pg_single.launch">
+    <entry file="file://$PROJECT_DIR$/src/camera_launches/gui-circle-color.launch">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
@@ -636,8 +661,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
           <folding>
-            <element signature="e#5874#5938#0" expanded="true" />
-            <element signature="e#7186#7274#0" expanded="true" />
+            <element signature="e#4908#5036#0" expanded="true" />
+            <element signature="e#5909#5973#0" expanded="true" />
+            <element signature="e#7221#7309#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -658,7 +684,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/camera_launches/pg_single.launch">
+    <entry file="file://$PROJECT_DIR$/src/camera_launches/gui-circle-color.launch">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
@@ -670,8 +696,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
           <folding>
-            <element signature="e#5874#5938#0" expanded="true" />
-            <element signature="e#7186#7274#0" expanded="true" />
+            <element signature="e#4908#5036#0" expanded="true" />
+            <element signature="e#5909#5973#0" expanded="true" />
+            <element signature="e#7221#7309#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -689,8 +716,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
           <folding>
-            <element signature="e#5874#5938#0" expanded="true" />
-            <element signature="e#7186#7274#0" expanded="true" />
+            <element signature="e#4908#5036#0" expanded="true" />
+            <element signature="e#5909#5973#0" expanded="true" />
+            <element signature="e#7221#7309#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -708,8 +736,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
           <folding>
-            <element signature="e#5874#5938#0" expanded="true" />
-            <element signature="e#7186#7274#0" expanded="true" />
+            <element signature="e#4908#5036#0" expanded="true" />
+            <element signature="e#5909#5973#0" expanded="true" />
+            <element signature="e#7221#7309#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -721,7 +750,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/camera_launches/pg_single.launch">
+    <entry file="file://$PROJECT_DIR$/src/camera_launches/gui-circle-color.launch">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
@@ -799,29 +828,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/image_testing/src/draw_gui.cpp">
+    <entry file="file://$PROJECT_DIR$/src/camera_launches/pg_single.launch">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.774194">
-          <caret line="70" column="46" selection-start-line="70" selection-start-column="46" selection-end-line="70" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/image_testing/src/color_finder_average.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.967742">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
           <folding>
-            <element signature="e#5874#5938#0" expanded="true" />
-            <element signature="e#7186#7274#0" expanded="true" />
+            <element signature="e#4908#5036#0" expanded="true" />
+            <element signature="e#5909#5973#0" expanded="true" />
+            <element signature="e#7221#7309#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/image_testing/src/draw_gui.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3542781">
-          <caret line="90" column="31" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.24492557">
+          <caret line="166" column="8" selection-start-line="166" selection-start-column="8" selection-end-line="166" selection-end-column="8" />
           <folding />
         </state>
       </provider>

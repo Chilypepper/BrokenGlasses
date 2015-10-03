@@ -29,6 +29,8 @@ const int THICKNESS = 2;
 const int vertexYAdjust = 60;
 const int verteX = 70;
 
+int objectRadius_color = 0;
+
 
 int edgeCount= 0;
 //RGB
@@ -101,9 +103,9 @@ void drawXYBars(Mat &raw){
     rectangle(raw,recCorn3, vertex, RED);
     //draw y coordinate
     Point midY = Point(25,raw.rows/2);
-    rectangle(raw, midY, Point(vertex.x,detectedCircleY), RED,-1);
+    rectangle(raw, midY, Point(vertex.x,(detectedCircleY + objectColorY) /2), RED,-1);
     Point midX = Point(raw.cols/2, raw.rows - 25);
-    rectangle(raw, midX, Point(detectedCircleX, raw.rows-vertexYAdjust), RED,-1);
+    rectangle(raw, midX, Point((detectedCircleX + objectColorX) /2, raw.rows-vertexYAdjust), RED,-1);
 }
 
 class ImageConverter
@@ -152,14 +154,19 @@ public:
 
         Mat drawing;
         cv_ptr->image.copyTo(drawing);
+
+        circle(drawing, Point(objectColorX, objectColorY), 5, NEON_BLUE, -1);
+        circle(drawing, Point(objectColorX, objectColorY), objectRadius_color, NEON_BLUE);
+
+        circle(drawing, Point(detectedCircleX, detectedCircleY), detectedCircleR, NEON_GREEN);
+        circle(drawing, Point(detectedCircleX, detectedCircleY), 5, NEON_GREEN, -1);
+
         if(abs(detectedCircleX - objectColorX) < 100) {
-            circle(drawing, Point(detectedCircleX, detectedCircleY), detectedCircleR, RED);
-            circle(drawing, Point(detectedCircleX, detectedCircleY), 5, NEON_GREEN, -1);
-            circle(drawing, Point(objectColorX, objectColorY), 5, NEON_BLUE, -1);
+
+
+
             drawXYBars(drawing);
         }
-
-
 
         drawGrid(drawing);
         double a =0.2;
@@ -177,6 +184,7 @@ public:
     void updateColorInfo(const point_message::statsMsg objectColorInfo){
         objectColorX = objectColorInfo.xCent;
         objectColorY = objectColorInfo.yCent;
+        objectRadius_color = 2 * objectColorInfo.xSD;
     }
 };
 

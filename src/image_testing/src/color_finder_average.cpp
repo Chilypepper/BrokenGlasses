@@ -11,7 +11,7 @@
 
 
 #undef timing
-#define ptInfo
+#undef ptInfo
 
 using namespace cv;
 using namespace std;
@@ -68,8 +68,8 @@ void getCircInfo(vector<int> listX,
         currX=listX[iterator];
         currY=listY[iterator];
 
-        varianceX += (currX - xCentPt)^2;
-        varianceY += (currY - yCentPt)^2;
+        varianceX += (currX - xCentPt) * (currX - xCentPt);
+        varianceY += (currY - yCentPt) * (currY - yCentPt);
     }
     varianceX /= listSize;
     varianceY /= listSize;

@@ -22,7 +22,7 @@ int edgeCount= 0;
 Scalar colorScalar_RED = Scalar(0,0,255);
 Scalar colorScalar = Scalar(0,255,0);
 
-int window_scalar = 5;
+int window_scalar = 3;
 vector<Point> pointList;
 vector<Point> pointList2;
 
@@ -35,6 +35,7 @@ int region_width =0;
 int region_height = 0;
 
 bool foundEdge=false;
+bool hasNewVals = false;
 
 
 
@@ -69,6 +70,7 @@ public:
                               regionInfo.yCent - window_scalar * regionInfo.ySD);
         region_width = 2 * window_scalar * regionInfo.xSD;
         region_height = 2 * window_scalar * regionInfo.ySD;
+        hasNewVals = true;
     }
     void imageCb(const sensor_msgs::ImageConstPtr& msg)
     {
@@ -90,38 +92,92 @@ public:
         /*im_gray = cv_ptr->image(Rect(region_corner.x,region_corner.y,
                                 region_width,
                                 region_height));
-    */
-        Mat search_region;
-        im_gray.copyTo(search_region);
-        HoughCircles( im_gray, circles, CV_HOUGH_GRADIENT, 2.50, 90, 120, 70, 50, 0 );
+
+    */  Mat search_region2;
+        bool hasRegion = false;
+        int xUpperRange = 0;
+        int yUpperRange = 0;
+        if(hasNewVals) {
+            int xUpperRange = region_width;
+            int yUpperRange = region_height;
+            /*
+            ROS_INFO("%3i height", im_gray.rows);
+            ROS_INFO("%3i wiedth", im_gray.cols);
+            ROS_INFO("%3i x corner", region_corner.x);
+            ROS_INFO("%3i y corner", region_corner.y);
+            ROS_INFO("%3i x Upper", xUpperRange);
+            ROS_INFO("%3i y Upper", yUpperRange);
+            ROS_INFO("%3i y combo", yUpperRange + region_corner.y);
+            ROS_INFO("%3i x combo", xUpperRange + region_corner.x);
+            ROS_INFO("%s","AFTER");
+             */
+
+            if (region_corner.x < 0) {
+                region_corner.x = 1;
+            }
+            if (region_corner.y < 0) {
+                region_corner.y = 1;
+            }
+            if (region_corner.x > im_gray.cols) {
+                region_corner.x = im_gray.cols - 1;
+            }
+            if (region_corner.y > im_gray.rows) {
+                region_corner.y = im_gray.rows - 1;
+            }
+            if (region_corner.x + xUpperRange > im_gray.cols) {
+                xUpperRange = im_gray.cols - region_corner.x - 1;
+            }
+            /*else {
+                xUpperRange = region_corner.x + xUpperRange;
+            }*/
+            if (region_corner.y + yUpperRange > im_gray.rows) {
+                yUpperRange = im_gray.rows - region_corner.y - 1;
+            }
+            /*else {
+                yUpperRange = region_corner.y + yUpperRange;
+            }
+
+            ROS_INFO("%3i height", im_gray.rows);
+            ROS_INFO("%3i wiedth", im_gray.cols);
+            ROS_INFO("%3i x corner", region_corner.x);
+            ROS_INFO("%3i y corner", region_corner.y);
+            ROS_INFO("%3i x Upper", xUpperRange);
+            ROS_INFO("%3i y Upper", yUpperRange);
+            ROS_INFO("%3i y combo", yUpperRange + region_corner.y);
+            ROS_INFO("%3i x combo", xUpperRange + region_corner.x);
+             */
+
+            Mat search_region(im_gray, Rect(region_corner.x,
+                                            region_corner.y,
+                                            xUpperRange,
+                                            yUpperRange));
+            search_region.copyTo(search_region2);
+            hasRegion = true;
+        }
+        if(hasRegion) {
+            HoughCircles(search_region2, circles, CV_HOUGH_GRADIENT, 2.50, search_region2.rows/2, 200, 90, 80, 0);
+
+        }
+        else {
+            HoughCircles(im_gray, circles, CV_HOUGH_GRADIENT, 1.60, 90, 120, 70, 50, 0);
+        }
         //ROS_INFO("%3f",circles.size());
-        /*
-      for( size_t i = 0; i < circles.size(); i++ )
-      {
-        Point center(cvRound(circles[i][0]), cvRound(circles[i][1]));
-        int radius = cvRound(circles[i][2]);
-        // circle center
-        circle( cv_ptr->image, center, 3, Scalar(0,255,0), -1, 8, 0 );
-        // circle outline
-        circle( cv_ptr->image, center, radius, Scalar(0,0,255), 3, 8, 0 );
-        //ROS_INFO("Made circle!");
-      }
-         */
-        /*
-        circleInfo.xCoor = circles[0][0] + region_corner.x;
-        circleInfo.yCoor = circles[0][1] + region_corner.y;
-        circleInfo.radius = circles[0][2];
-         */
+
+
+        
         if(circles.size() > 0) {
-            circleInfo.xCoor = circles[0][0];
-            circleInfo.yCoor = circles[0][1];
+            circleInfo.xCoor = region_corner.x + circles[0][0];
+            circleInfo.yCoor = region_corner.y + circles[0][1];
             circleInfo.radius = circles[0][2];
         }
+
+        //ROS_INFO("%3i",circles.size());
 
 
         circInf.publish(circleInfo);
 
-        cv_ptr->image = search_region;
+        cv_ptr->image = search_region2;
+        hasNewVals = false;
         image_pub.publish(cv_ptr->toImageMsg());
 
     }
