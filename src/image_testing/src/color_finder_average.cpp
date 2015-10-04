@@ -12,6 +12,7 @@
 
 #undef timing
 #undef ptInfo
+#define findPoint
 
 using namespace cv;
 using namespace std;
@@ -25,9 +26,11 @@ const int accuracy = 500;
 //good set for bright orange: 0/25/35/50/110/125
 //yellow balloon 160/190/140/170/30/60
 /* DEFAULT VALUES */
-const int blueLowerBound = 20;
-const int blueUpperBound = 50;
-const int greenLowerBound = 90;
+// yellow balloons: 20/50/120/255/50/255
+// red buoy:
+const int blueLowerBound = 0;
+const int blueUpperBound = 20;
+const int greenLowerBound = 120;
 const int greenUpperBound = 255;
 const int redLowerBound = 50;
 const int redUpperBound = 255;

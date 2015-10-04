@@ -35,9 +35,10 @@ int region_width =0;
 int region_height = 0;
 
 bool foundEdge=false;
-bool hasNewVals = false;
+bool hasNewVals = true;
 
-
+Mat search_region2;
+Mat im_gray;
 
 
 class ImageConverter
@@ -86,17 +87,16 @@ public:
         }
 
         circles.clear();
-        Mat im_gray;
         //cvtColor( cv_ptr->image, im_gray, CV_BGR2GRAY);
         GaussianBlur(cv_ptr->image, im_gray, Size(9, 9), 2, 2 );
         /*im_gray = cv_ptr->image(Rect(region_corner.x,region_corner.y,
                                 region_width,
                                 region_height));
 
-    */  Mat search_region2;
-        bool hasRegion = false;
-        int xUpperRange = 0;
-        int yUpperRange = 0;
+    */
+        bool hasRegion = true;
+        int xUpperRange = 1;
+        int yUpperRange = 1;
         if(hasNewVals) {
             int xUpperRange = region_width;
             int yUpperRange = region_height;
@@ -154,12 +154,17 @@ public:
             search_region.copyTo(search_region2);
             hasRegion = true;
         }
-        if(hasRegion) {
-            HoughCircles(search_region2, circles, CV_HOUGH_GRADIENT, 2.50, search_region2.rows/2, 200, 90, 80, 0);
+        if(search_region2.rows > 0) {
+            //ROS_INFO("%s","Fails @ circle");
+            //ROS_INFO("%3i",search_region2.rows);
+            HoughCircles(search_region2, circles, CV_HOUGH_GRADIENT, 2.10, 1, 88, 80, 30, 0);
+            //ROS_INFO("%s","Fails past circle");
+            ROS_INFO("%3i",circles.size());
+
 
         }
         else {
-            HoughCircles(im_gray, circles, CV_HOUGH_GRADIENT, 1.60, 90, 120, 70, 50, 0);
+            HoughCircles(im_gray, circles, CV_HOUGH_GRADIENT, 1.60, 90, 120, 70, 0, 0);
         }
         //ROS_INFO("%3f",circles.size());
 
@@ -171,13 +176,12 @@ public:
             circleInfo.radius = circles[0][2];
         }
 
-        //ROS_INFO("%3i",circles.size());
 
 
         circInf.publish(circleInfo);
 
         cv_ptr->image = search_region2;
-        hasNewVals = false;
+        hasNewVals = true;
         image_pub.publish(cv_ptr->toImageMsg());
 
     }
