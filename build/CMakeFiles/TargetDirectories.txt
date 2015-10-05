@@ -28,6 +28,7 @@
 /home/peter/brokenGlasses/build/point_message/CMakeFiles/point_message_geneus.dir
 /home/peter/brokenGlasses/build/point_message/CMakeFiles/point_message_genlisp.dir
 /home/peter/brokenGlasses/build/point_message/CMakeFiles/point_message_genpy.dir
+/home/peter/brokenGlasses/build/image_testing/CMakeFiles/quad_image.dir
 /home/peter/brokenGlasses/build/image_testing/CMakeFiles/rect_finder.dir
 /home/peter/brokenGlasses/build/image_testing/CMakeFiles/roscpp_generate_messages_cpp.dir
 /home/peter/brokenGlasses/build/image_testing/CMakeFiles/roscpp_generate_messages_eus.dir

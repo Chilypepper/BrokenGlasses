@@ -56,7 +56,7 @@ public:
     ImageConverter()
             : it(nh)
     {
-        image_sub = it.subscribe("/camera/image_raw", 1,
+        image_sub = it.subscribe("/camera/output_video", 1,
                                  &ImageConverter::imageCb, this);
 
         image_pub = it.advertise("/camera/search_region", 1);
@@ -157,7 +157,7 @@ public:
         if(search_region2.rows > 0) {
             //ROS_INFO("%s","Fails @ circle");
             //ROS_INFO("%3i",search_region2.rows);
-            HoughCircles(search_region2, circles, CV_HOUGH_GRADIENT, 2.10, 1, 88, 80, 30, 0);
+            HoughCircles(search_region2, circles, CV_HOUGH_GRADIENT, 2.10, 1, 200, 80, 30, 0);
             //ROS_INFO("%s","Fails past circle");
             ROS_INFO("%3i",circles.size());
 

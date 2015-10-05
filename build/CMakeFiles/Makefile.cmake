@@ -246,6 +246,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "image_testing/CMakeFiles/image_converter.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/image_flipper.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/orange_finder.dir/DependInfo.cmake"
+  "image_testing/CMakeFiles/quad_image.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/rect_finder.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/roscpp_generate_messages_cpp.dir/DependInfo.cmake"
   "image_testing/CMakeFiles/roscpp_generate_messages_eus.dir/DependInfo.cmake"

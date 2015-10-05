@@ -332,6 +332,20 @@ orange_finder/fast:
 .PHONY : orange_finder/fast
 
 # Convenience name for target.
+image_testing/CMakeFiles/quad_image.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/quad_image.dir/rule
+.PHONY : image_testing/CMakeFiles/quad_image.dir/rule
+
+# Convenience name for target.
+quad_image: image_testing/CMakeFiles/quad_image.dir/rule
+.PHONY : quad_image
+
+# fast build rule for target.
+quad_image/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/quad_image.dir/build.make image_testing/CMakeFiles/quad_image.dir/build
+.PHONY : quad_image/fast
+
+# Convenience name for target.
 image_testing/CMakeFiles/rect_finder.dir/rule:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/rect_finder.dir/rule
 .PHONY : image_testing/CMakeFiles/rect_finder.dir/rule
@@ -729,6 +743,30 @@ src/orange_finder.cpp.s:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/orange_finder.dir/build.make image_testing/CMakeFiles/orange_finder.dir/src/orange_finder.cpp.s
 .PHONY : src/orange_finder.cpp.s
 
+src/quad_image.o: src/quad_image.cpp.o
+.PHONY : src/quad_image.o
+
+# target to build an object file
+src/quad_image.cpp.o:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/quad_image.dir/build.make image_testing/CMakeFiles/quad_image.dir/src/quad_image.cpp.o
+.PHONY : src/quad_image.cpp.o
+
+src/quad_image.i: src/quad_image.cpp.i
+.PHONY : src/quad_image.i
+
+# target to preprocess a source file
+src/quad_image.cpp.i:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/quad_image.dir/build.make image_testing/CMakeFiles/quad_image.dir/src/quad_image.cpp.i
+.PHONY : src/quad_image.cpp.i
+
+src/quad_image.s: src/quad_image.cpp.s
+.PHONY : src/quad_image.s
+
+# target to generate assembly for a file
+src/quad_image.cpp.s:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/quad_image.dir/build.make image_testing/CMakeFiles/quad_image.dir/src/quad_image.cpp.s
+.PHONY : src/quad_image.cpp.s
+
 src/rect_finder.o: src/rect_finder.cpp.o
 .PHONY : src/rect_finder.o
 
@@ -777,6 +815,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... orange_finder"
+	@echo "... quad_image"
 	@echo "... rebuild_cache"
 	@echo "... rect_finder"
 	@echo "... roscpp_generate_messages_cpp"
@@ -819,6 +858,9 @@ help:
 	@echo "... src/orange_finder.o"
 	@echo "... src/orange_finder.i"
 	@echo "... src/orange_finder.s"
+	@echo "... src/quad_image.o"
+	@echo "... src/quad_image.i"
+	@echo "... src/quad_image.s"
 	@echo "... src/rect_finder.o"
 	@echo "... src/rect_finder.i"
 	@echo "... src/rect_finder.s"

@@ -27,9 +27,9 @@ const int accuracy = 500;
 //yellow balloon 160/190/140/170/30/60
 /* DEFAULT VALUES */
 // yellow balloons: 20/50/120/255/50/255
-// red buoy:
-const int blueLowerBound = 0;
-const int blueUpperBound = 20;
+// red buoy: 0/20/120/255/50/255
+const int blueLowerBound = 20;
+const int blueUpperBound = 50;
 const int greenLowerBound = 120;
 const int greenUpperBound = 255;
 const int redLowerBound = 50;
@@ -38,6 +38,7 @@ const int redUpperBound = 255;
 Scalar colorScalar_BLUE = Scalar(255,255,0);
 Scalar colorScalar_GREEN = Scalar(0,255,0);
 Scalar colorScalar_RED = Scalar(0,0,255);
+Scalar colorScalar_WHITE = Scalar(255,255,255);
 
 Scalar colorScalar = Scalar(0,255,0);
 
@@ -171,6 +172,8 @@ public:
       ROS_INFO("B: %i G: %i R: %i",outBlue,outGreen,outRed);
 #endif
         Mat image_raw_hsv;
+        Mat blacknwhite(cv_ptr->image, Rect(0,0,cv_ptr->image.cols-1,cv_ptr->image.rows-1));
+        blacknwhite = Mat::zeros(blacknwhite.rows,blacknwhite.cols,CV_64F);
         cvtColor(cv_ptr->image,image_raw_hsv,COLOR_BGR2HSV);
 
         //BGR
@@ -186,6 +189,10 @@ public:
 #ifdef findPoint
                     circle(cv_ptr->image,Point(pointx,pointy),0,colorScalar_BLUE,1);
 #endif
+                    blacknwhite.at<Vec3b>(Point(pointx,pointy))[0] = 255;
+                    blacknwhite.at<Vec3b>(Point(pointx,pointy))[1] = 255;
+                    blacknwhite.at<Vec3b>(Point(pointx,pointy))[2] = 255;
+
                     listX.push_back(pointx);
                     listY.push_back(pointy);
                     j++;
@@ -222,6 +229,7 @@ public:
 #ifdef timing
         ROS_INFO("Completed frame operations in %f ms", (double)(clock()-start)/CLOCKS_PER_SEC);
 #endif
+        cv_ptr->image = blacknwhite;
         image_pub.publish(cv_ptr->toImageMsg());
         objectColorInfo_pub.publish(objectColorInfo);
     }

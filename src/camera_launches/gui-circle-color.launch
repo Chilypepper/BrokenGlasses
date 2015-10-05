@@ -22,6 +22,7 @@
     <node pkg="image_testing" type="color_finder_average" name="color_finder_average"/>
     <node pkg="image_testing" type="circle_finder" name="circle_finder"/>
     <node pkg="image_testing" type="draw_gui" name="draw_gui"/>
-    <remap from="image" to="/camera/output_video_gui"/>
+    <node pkg="image_testing" type="quad_image" name="quad_image"/>
+    <remap from="image" to="/camera/stitched"/>
     <node pkg="image_view" type="image_view" name="image_view"/>
 </launch>

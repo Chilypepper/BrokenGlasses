@@ -618,6 +618,19 @@ orange_finder/fast:
 .PHONY : orange_finder/fast
 
 #=============================================================================
+# Target rules for targets named quad_image
+
+# Build rule for target.
+quad_image: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 quad_image
+.PHONY : quad_image
+
+# fast build rule for target.
+quad_image/fast:
+	$(MAKE) -f image_testing/CMakeFiles/quad_image.dir/build.make image_testing/CMakeFiles/quad_image.dir/build
+.PHONY : quad_image/fast
+
+#=============================================================================
 # Target rules for targets named rect_finder
 
 # Build rule for target.
@@ -835,6 +848,7 @@ help:
 	@echo "... image_converter"
 	@echo "... image_flipper"
 	@echo "... orange_finder"
+	@echo "... quad_image"
 	@echo "... rect_finder"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"

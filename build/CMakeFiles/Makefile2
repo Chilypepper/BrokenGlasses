@@ -457,10 +457,10 @@ clean: point_message/CMakeFiles/point_message_gencpp.dir/clean
 # Target rules for target point_message/CMakeFiles/point_message_generate_messages.dir
 
 # All Build rule for target.
+point_message/CMakeFiles/point_message_generate_messages.dir/all: point_message/CMakeFiles/point_message_generate_messages_cpp.dir/all
+point_message/CMakeFiles/point_message_generate_messages.dir/all: point_message/CMakeFiles/point_message_generate_messages_lisp.dir/all
 point_message/CMakeFiles/point_message_generate_messages.dir/all: point_message/CMakeFiles/point_message_generate_messages_eus.dir/all
 point_message/CMakeFiles/point_message_generate_messages.dir/all: point_message/CMakeFiles/point_message_generate_messages_py.dir/all
-point_message/CMakeFiles/point_message_generate_messages.dir/all: point_message/CMakeFiles/point_message_generate_messages_lisp.dir/all
-point_message/CMakeFiles/point_message_generate_messages.dir/all: point_message/CMakeFiles/point_message_generate_messages_cpp.dir/all
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages.dir/build.make point_message/CMakeFiles/point_message_generate_messages.dir/depend
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages.dir/build.make point_message/CMakeFiles/point_message_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles 
@@ -495,9 +495,9 @@ clean: point_message/CMakeFiles/point_message_generate_messages.dir/clean
 # Target rules for target point_message/CMakeFiles/point_message_generate_messages_cpp.dir
 
 # All Build rule for target.
+point_message/CMakeFiles/point_message_generate_messages_cpp.dir/all: point_message/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 point_message/CMakeFiles/point_message_generate_messages_cpp.dir/all: point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/all
 point_message/CMakeFiles/point_message_generate_messages_cpp.dir/all: point_message/CMakeFiles/_point_message_generate_messages_check_deps_pointMsg.dir/all
-point_message/CMakeFiles/point_message_generate_messages_cpp.dir/all: point_message/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages_cpp.dir/build.make point_message/CMakeFiles/point_message_generate_messages_cpp.dir/depend
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages_cpp.dir/build.make point_message/CMakeFiles/point_message_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  12 13
@@ -594,9 +594,9 @@ clean: point_message/CMakeFiles/point_message_generate_messages_lisp.dir/clean
 # Target rules for target point_message/CMakeFiles/point_message_generate_messages_py.dir
 
 # All Build rule for target.
+point_message/CMakeFiles/point_message_generate_messages_py.dir/all: point_message/CMakeFiles/std_msgs_generate_messages_py.dir/all
 point_message/CMakeFiles/point_message_generate_messages_py.dir/all: point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/all
 point_message/CMakeFiles/point_message_generate_messages_py.dir/all: point_message/CMakeFiles/_point_message_generate_messages_check_deps_pointMsg.dir/all
-point_message/CMakeFiles/point_message_generate_messages_py.dir/all: point_message/CMakeFiles/std_msgs_generate_messages_py.dir/all
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages_py.dir/build.make point_message/CMakeFiles/point_message_generate_messages_py.dir/depend
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages_py.dir/build.make point_message/CMakeFiles/point_message_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  19 20 21
@@ -853,6 +853,7 @@ image_testing/all: image_testing/CMakeFiles/hsv_converter.dir/all
 image_testing/all: image_testing/CMakeFiles/image_converter.dir/all
 image_testing/all: image_testing/CMakeFiles/image_flipper.dir/all
 image_testing/all: image_testing/CMakeFiles/orange_finder.dir/all
+image_testing/all: image_testing/CMakeFiles/quad_image.dir/all
 image_testing/all: image_testing/CMakeFiles/rect_finder.dir/all
 .PHONY : image_testing/all
 
@@ -870,6 +871,7 @@ image_testing/clean: image_testing/CMakeFiles/hsv_converter.dir/clean
 image_testing/clean: image_testing/CMakeFiles/image_converter.dir/clean
 image_testing/clean: image_testing/CMakeFiles/image_flipper.dir/clean
 image_testing/clean: image_testing/CMakeFiles/orange_finder.dir/clean
+image_testing/clean: image_testing/CMakeFiles/quad_image.dir/clean
 image_testing/clean: image_testing/CMakeFiles/rect_finder.dir/clean
 image_testing/clean: image_testing/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 image_testing/clean: image_testing/CMakeFiles/roscpp_generate_messages_eus.dir/clean
@@ -1329,13 +1331,48 @@ clean: image_testing/CMakeFiles/orange_finder.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target image_testing/CMakeFiles/quad_image.dir
+
+# All Build rule for target.
+image_testing/CMakeFiles/quad_image.dir/all:
+	$(MAKE) -f image_testing/CMakeFiles/quad_image.dir/build.make image_testing/CMakeFiles/quad_image.dir/depend
+	$(MAKE) -f image_testing/CMakeFiles/quad_image.dir/build.make image_testing/CMakeFiles/quad_image.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  22
+	@echo "Built target quad_image"
+.PHONY : image_testing/CMakeFiles/quad_image.dir/all
+
+# Include target in all.
+all: image_testing/CMakeFiles/quad_image.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+image_testing/CMakeFiles/quad_image.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/quad_image.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
+.PHONY : image_testing/CMakeFiles/quad_image.dir/rule
+
+# Convenience name for target.
+quad_image: image_testing/CMakeFiles/quad_image.dir/rule
+.PHONY : quad_image
+
+# clean rule for target.
+image_testing/CMakeFiles/quad_image.dir/clean:
+	$(MAKE) -f image_testing/CMakeFiles/quad_image.dir/build.make image_testing/CMakeFiles/quad_image.dir/clean
+.PHONY : image_testing/CMakeFiles/quad_image.dir/clean
+
+# clean rule for target.
+clean: image_testing/CMakeFiles/quad_image.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target image_testing/CMakeFiles/rect_finder.dir
 
 # All Build rule for target.
 image_testing/CMakeFiles/rect_finder.dir/all:
 	$(MAKE) -f image_testing/CMakeFiles/rect_finder.dir/build.make image_testing/CMakeFiles/rect_finder.dir/depend
 	$(MAKE) -f image_testing/CMakeFiles/rect_finder.dir/build.make image_testing/CMakeFiles/rect_finder.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  22
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  23
 	@echo "Built target rect_finder"
 .PHONY : image_testing/CMakeFiles/rect_finder.dir/all
 
