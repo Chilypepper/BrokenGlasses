@@ -276,6 +276,20 @@ green_finder/fast:
 .PHONY : green_finder/fast
 
 # Convenience name for target.
+image_testing/CMakeFiles/horizon_line.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/horizon_line.dir/rule
+.PHONY : image_testing/CMakeFiles/horizon_line.dir/rule
+
+# Convenience name for target.
+horizon_line: image_testing/CMakeFiles/horizon_line.dir/rule
+.PHONY : horizon_line
+
+# fast build rule for target.
+horizon_line/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/horizon_line.dir/build.make image_testing/CMakeFiles/horizon_line.dir/build
+.PHONY : horizon_line/fast
+
+# Convenience name for target.
 image_testing/CMakeFiles/hsv_converter.dir/rule:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/hsv_converter.dir/rule
 .PHONY : image_testing/CMakeFiles/hsv_converter.dir/rule
@@ -647,6 +661,30 @@ src/draw_gui.cpp.s:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/draw_gui.dir/build.make image_testing/CMakeFiles/draw_gui.dir/src/draw_gui.cpp.s
 .PHONY : src/draw_gui.cpp.s
 
+src/horizonLine.o: src/horizonLine.cpp.o
+.PHONY : src/horizonLine.o
+
+# target to build an object file
+src/horizonLine.cpp.o:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/horizon_line.dir/build.make image_testing/CMakeFiles/horizon_line.dir/src/horizonLine.cpp.o
+.PHONY : src/horizonLine.cpp.o
+
+src/horizonLine.i: src/horizonLine.cpp.i
+.PHONY : src/horizonLine.i
+
+# target to preprocess a source file
+src/horizonLine.cpp.i:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/horizon_line.dir/build.make image_testing/CMakeFiles/horizon_line.dir/src/horizonLine.cpp.i
+.PHONY : src/horizonLine.cpp.i
+
+src/horizonLine.s: src/horizonLine.cpp.s
+.PHONY : src/horizonLine.s
+
+# target to generate assembly for a file
+src/horizonLine.cpp.s:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/horizon_line.dir/build.make image_testing/CMakeFiles/horizon_line.dir/src/horizonLine.cpp.s
+.PHONY : src/horizonLine.cpp.s
+
 src/hsv_converter.o: src/hsv_converter.cpp.o
 .PHONY : src/hsv_converter.o
 
@@ -807,6 +845,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... green_finder"
+	@echo "... horizon_line"
 	@echo "... hsv_converter"
 	@echo "... image_converter"
 	@echo "... image_flipper"
@@ -846,6 +885,9 @@ help:
 	@echo "... src/draw_gui.o"
 	@echo "... src/draw_gui.i"
 	@echo "... src/draw_gui.s"
+	@echo "... src/horizonLine.o"
+	@echo "... src/horizonLine.i"
+	@echo "... src/horizonLine.s"
 	@echo "... src/hsv_converter.o"
 	@echo "... src/hsv_converter.i"
 	@echo "... src/hsv_converter.s"

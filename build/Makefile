@@ -566,6 +566,19 @@ green_finder/fast:
 .PHONY : green_finder/fast
 
 #=============================================================================
+# Target rules for targets named horizon_line
+
+# Build rule for target.
+horizon_line: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 horizon_line
+.PHONY : horizon_line
+
+# fast build rule for target.
+horizon_line/fast:
+	$(MAKE) -f image_testing/CMakeFiles/horizon_line.dir/build.make image_testing/CMakeFiles/horizon_line.dir/build
+.PHONY : horizon_line/fast
+
+#=============================================================================
 # Target rules for targets named hsv_converter
 
 # Build rule for target.
@@ -844,6 +857,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... green_finder"
+	@echo "... horizon_line"
 	@echo "... hsv_converter"
 	@echo "... image_converter"
 	@echo "... image_flipper"

@@ -15,6 +15,7 @@
 /home/peter/brokenGlasses/build/image_testing/CMakeFiles/green_finder.dir
 /home/peter/brokenGlasses/build/gtest/CMakeFiles/gtest.dir
 /home/peter/brokenGlasses/build/gtest/CMakeFiles/gtest_main.dir
+/home/peter/brokenGlasses/build/image_testing/CMakeFiles/horizon_line.dir
 /home/peter/brokenGlasses/build/image_testing/CMakeFiles/hsv_converter.dir
 /home/peter/brokenGlasses/build/image_testing/CMakeFiles/image_converter.dir
 /home/peter/brokenGlasses/build/image_testing/CMakeFiles/image_flipper.dir

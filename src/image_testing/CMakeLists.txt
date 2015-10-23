@@ -26,6 +26,10 @@ add_executable(image_flipper src/image_flipper.cpp)
 add_executable(colorSpaces src/colorspaces.cpp)
 add_executable(draw_gui src/draw_gui.cpp)
 add_executable(quad_image src/quad_image.cpp)
+add_executable(horizon_line src/horizonLine.cpp)
+
+
+target_link_libraries(horizon_line ${catkin_LIBRARIES} ${OpenCV_LIBS} ${OpenCV_LIBRARIES} ${Eigen_LIBRARIES} ${QT_LIBRARIES} ${ROS_LIBRARIES} ${catkin_LIBRARIES})
 
 target_link_libraries(quad_image ${catkin_LIBRARIES} ${OpenCV_LIBS} ${OpenCV_LIBRARIES} ${Eigen_LIBRARIES} ${QT_LIBRARIES} ${ROS_LIBRARIES} ${catkin_LIBRARIES})
 
