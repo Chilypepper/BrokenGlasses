@@ -27,6 +27,8 @@ geometry_msgs/Vector3.h
 /home/peter/brokenGlasses/src/image_testing/src/geometry_msgs/Vector3.h
 std_msgs/Float32.h
 /home/peter/brokenGlasses/src/image_testing/src/std_msgs/Float32.h
+math.h
+-
 
 /opt/ros/jade/include/XmlRpcDecl.h
 ros/macros.h

@@ -8,6 +8,7 @@
 #include <ctime>
 #include "geometry_msgs/Vector3.h"
 #include "std_msgs/Float32.h"
+#include <math.h>
 
 using namespace cv;
 using namespace std;
@@ -24,6 +25,8 @@ class ImageConverter
     image_transport::Publisher image_pub;
     ros::Subscriber imu_sub;
     ros::Subscriber pitch_sub;
+    ros::Subscriber roll_sub;
+
 
 public:
     ImageConverter()
@@ -34,6 +37,7 @@ public:
         image_pub = it.advertise("/camera/horizon_line", 1);
         imu_sub = nh.subscribe("eulerAngles",1,&ImageConverter::imuCB,this);
         pitch_sub = nh.subscribe("pitchInput",1,&ImageConverter::pitchCB,this);
+        roll_sub = nh.subscribe("rollInput",1,&ImageConverter::rollCB,this);
     }
 
     ~ImageConverter()
@@ -46,6 +50,9 @@ public:
     }
     void pitchCB(const std_msgs::Float32& pitched){
         pitch = pitched.data;
+    }
+    void rollCB(const std_msgs::Float32& rolled){
+        roll = rolled.data;
     }
     void imageCb(const sensor_msgs::ImageConstPtr& msg)
     {
@@ -61,11 +68,26 @@ public:
         }
         //code assumes FOV of 30 degrees above or below center and that msg is in degrees.
         Mat play = cv_ptr->image;
-        float midY = -1 * (pitch / 30.0) * (play.rows/2);
+        float midY = (pitch / 30.0) * (play.rows/2);
         midY += play.rows/2;
         Point centerOfLine = Point(play.cols/2,midY);
-        line(play,Point(0,midY),Point(play.cols,midY),Scalar(255,0,0),5);
+        line(play,Point(0,midY),Point(play.cols,midY),Scalar(0,0,255),3);
+        putText(play,"Horizon Line",Point(150,midY-15),3,.8,Scalar(0,0,255));
 
+        //roll assumes 0 is normal, clockwise roll is > 0
+        Point rightPt;
+        Point leftPt;
+        rightPt.x = 2000 * cos(roll);
+        rightPt.y = 2000 * sin(roll);
+
+        leftPt.x = -1 * rightPt.x;
+        leftPt.y = rightPt.y;
+
+
+
+        line(play,Point(play.cols/2,midY),rightPt,Scalar(0,255,255),3);
+        line(play,Point(play.cols/2,midY),leftPt,Scalar(0,255,255),3);
+        ROS_INFO("%f",leftPt.y);
 
         image_pub.publish(cv_ptr->toImageMsg());
     }
