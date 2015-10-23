@@ -7,6 +7,7 @@
 #include <iostream>
 #include <ctime>
 #include "geometry_msgs/Vector3.h"
+#include "std_msgs/Float32.h"
 
 using namespace cv;
 using namespace std;
@@ -22,6 +23,7 @@ class ImageConverter
     image_transport::Subscriber image_sub;
     image_transport::Publisher image_pub;
     ros::Subscriber imu_sub;
+    ros::Subscriber pitch_sub;
 
 public:
     ImageConverter()
@@ -31,6 +33,7 @@ public:
                                  &ImageConverter::imageCb, this);
         image_pub = it.advertise("/camera/horizon_line", 1);
         imu_sub = nh.subscribe("eulerAngles",1,&ImageConverter::imuCB,this);
+        pitch_sub = nh.subscribe("pitchInput",1,&ImageConverter::pitchCB,this);
     }
 
     ~ImageConverter()
@@ -40,6 +43,9 @@ public:
         pitch = angleSet.y;
         roll = angleSet.z;
         compass = angleSet.x;
+    }
+    void pitchCB(const std_msgs::Float32& pitched){
+        pitch = pitched.data;
     }
     void imageCb(const sensor_msgs::ImageConstPtr& msg)
     {
@@ -55,9 +61,11 @@ public:
         }
         //code assumes FOV of 30 degrees above or below center and that msg is in degrees.
         Mat play = cv_ptr->image;
-        float midY = (pitch / 30.0) + play.rows;
+        float midY = -1 * (pitch / 30.0) * (play.rows/2);
+        midY += play.rows/2;
         Point centerOfLine = Point(play.cols/2,midY);
-        
+        line(play,Point(0,midY),Point(play.cols,midY),Scalar(255,0,0),5);
+
 
         image_pub.publish(cv_ptr->toImageMsg());
     }

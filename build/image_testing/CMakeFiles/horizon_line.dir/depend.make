@@ -73,5 +73,6 @@ image_testing/CMakeFiles/horizon_line.dir/src/horizonLine.cpp.o: /opt/ros/jade/i
 image_testing/CMakeFiles/horizon_line.dir/src/horizonLine.cpp.o: /opt/ros/jade/include/sensor_msgs/Image.h
 image_testing/CMakeFiles/horizon_line.dir/src/horizonLine.cpp.o: /opt/ros/jade/include/sensor_msgs/RegionOfInterest.h
 image_testing/CMakeFiles/horizon_line.dir/src/horizonLine.cpp.o: /opt/ros/jade/include/sensor_msgs/image_encodings.h
+image_testing/CMakeFiles/horizon_line.dir/src/horizonLine.cpp.o: /opt/ros/jade/include/std_msgs/Float32.h
 image_testing/CMakeFiles/horizon_line.dir/src/horizonLine.cpp.o: /opt/ros/jade/include/std_msgs/Header.h
 

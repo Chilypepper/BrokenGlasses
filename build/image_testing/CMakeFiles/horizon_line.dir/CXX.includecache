@@ -25,6 +25,8 @@ ctime
 -
 geometry_msgs/Vector3.h
 /home/peter/brokenGlasses/src/image_testing/src/geometry_msgs/Vector3.h
+std_msgs/Float32.h
+/home/peter/brokenGlasses/src/image_testing/src/std_msgs/Float32.h
 
 /opt/ros/jade/include/XmlRpcDecl.h
 ros/macros.h
@@ -824,6 +826,22 @@ ros/message_operations.h
 stdexcept
 -
 string
+-
+
+/opt/ros/jade/include/std_msgs/Float32.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
 -
 
 /opt/ros/jade/include/std_msgs/Header.h

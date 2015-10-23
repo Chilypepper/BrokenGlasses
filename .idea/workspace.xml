@@ -12,26 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38672e1e-26e2-4867-bc1e-c93864e44309" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/image_testing/src/horizonLine.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output.avi" afterPath="$PROJECT_DIR$/output.avi" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/image_testing/CMakeLists.txt" afterPath="$PROJECT_DIR$/src/image_testing/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/Makefile" afterPath="$PROJECT_DIR$/build/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/Makefile" afterPath="$PROJECT_DIR$/build/image_testing/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/hsv_converter.dir/progress.make" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/hsv_converter.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/image_converter.dir/progress.make" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/image_converter.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/image_flipper.dir/progress.make" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/image_flipper.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/orange_finder.dir/progress.make" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/orange_finder.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/quad_image.dir/progress.make" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/quad_image.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/rect_finder.dir/progress.make" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/rect_finder.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/point_message/CMakeFiles/point_message_generate_messages_cpp.dir/progress.make" afterPath="$PROJECT_DIR$/build/point_message/CMakeFiles/point_message_generate_messages_cpp.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/point_message/CMakeFiles/point_message_generate_messages_eus.dir/progress.make" afterPath="$PROJECT_DIR$/build/point_message/CMakeFiles/point_message_generate_messages_eus.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/point_message/CMakeFiles/point_message_generate_messages_lisp.dir/progress.make" afterPath="$PROJECT_DIR$/build/point_message/CMakeFiles/point_message_generate_messages_lisp.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/point_message/CMakeFiles/point_message_generate_messages_py.dir/progress.make" afterPath="$PROJECT_DIR$/build/point_message/CMakeFiles/point_message_generate_messages_py.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/horizon_line.dir/src/horizonLine.cpp.o" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/horizon_line.dir/src/horizonLine.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devel/lib/image_testing/horizon_line" afterPath="$PROJECT_DIR$/devel/lib/image_testing/horizon_line" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/horizon_line.dir/CXX.includecache" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/horizon_line.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/horizon_line.dir/depend.internal" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/horizon_line.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/horizon_line.dir/depend.make" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/horizon_line.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/image_testing/src/horizonLine.cpp" afterPath="$PROJECT_DIR$/src/image_testing/src/horizonLine.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="brokenGlasses.iws" />
@@ -96,8 +82,8 @@
       <file leaf-file-name="horizonLine.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/image_testing/src/horizonLine.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.81471">
-              <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.76379067">
+              <caret line="63" column="26" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -804,8 +790,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/image_testing/src/horizonLine.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.81471">
-          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.76379067">
+          <caret line="63" column="26" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
           <folding />
         </state>
       </provider>
