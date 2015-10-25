@@ -1,8 +1,8 @@
-prefix=/home/peter/brokenGlasses/install
+prefix=/home/quinn/brokenGlasses/install
 
 Name: point_message
 Description: Description of point_message
 Version: 0.0.0
-Cflags: -I/home/peter/brokenGlasses/install/include
-Libs: -L/home/peter/brokenGlasses/install/lib 
+Cflags: -I/home/quinn/brokenGlasses/install/include
+Libs: -L/home/quinn/brokenGlasses/install/lib 
 Requires: message_runtime

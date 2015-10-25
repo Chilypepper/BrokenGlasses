@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peter/brokenGlasses/src
+CMAKE_SOURCE_DIR = /home/quinn/brokenGlasses/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peter/brokenGlasses/build
+CMAKE_BINARY_DIR = /home/quinn/brokenGlasses/build
 
 # Utility rule file for point_message_gencpp.
 
@@ -56,10 +56,10 @@ point_message/CMakeFiles/point_message_gencpp.dir/build: point_message_gencpp
 .PHONY : point_message/CMakeFiles/point_message_gencpp.dir/build
 
 point_message/CMakeFiles/point_message_gencpp.dir/clean:
-	cd /home/peter/brokenGlasses/build/point_message && $(CMAKE_COMMAND) -P CMakeFiles/point_message_gencpp.dir/cmake_clean.cmake
+	cd /home/quinn/brokenGlasses/build/point_message && $(CMAKE_COMMAND) -P CMakeFiles/point_message_gencpp.dir/cmake_clean.cmake
 .PHONY : point_message/CMakeFiles/point_message_gencpp.dir/clean
 
 point_message/CMakeFiles/point_message_gencpp.dir/depend:
-	cd /home/peter/brokenGlasses/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peter/brokenGlasses/src /home/peter/brokenGlasses/src/point_message /home/peter/brokenGlasses/build /home/peter/brokenGlasses/build/point_message /home/peter/brokenGlasses/build/point_message/CMakeFiles/point_message_gencpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/quinn/brokenGlasses/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/quinn/brokenGlasses/src /home/quinn/brokenGlasses/src/point_message /home/quinn/brokenGlasses/build /home/quinn/brokenGlasses/build/point_message /home/quinn/brokenGlasses/build/point_message/CMakeFiles/point_message_gencpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : point_message/CMakeFiles/point_message_gencpp.dir/depend
 

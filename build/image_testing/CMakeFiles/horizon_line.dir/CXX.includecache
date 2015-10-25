@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/peter/brokenGlasses/src/image_testing/src/horizonLine.cpp
+/home/quinn/brokenGlasses/src/image_testing/src/horizonLine.cpp
 ros/ros.h
 -
 image_transport/image_transport.h
@@ -24,9 +24,9 @@ iostream
 ctime
 -
 geometry_msgs/Vector3.h
-/home/peter/brokenGlasses/src/image_testing/src/geometry_msgs/Vector3.h
+/home/quinn/brokenGlasses/src/image_testing/src/geometry_msgs/Vector3.h
 std_msgs/Float32.h
-/home/peter/brokenGlasses/src/image_testing/src/std_msgs/Float32.h
+/home/quinn/brokenGlasses/src/image_testing/src/std_msgs/Float32.h
 math.h
 -
 

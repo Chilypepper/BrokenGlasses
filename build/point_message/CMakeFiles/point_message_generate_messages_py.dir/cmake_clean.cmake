@@ -1,8 +1,8 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/point_message_generate_messages_py"
-  "/home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg/_pointMsg.py"
-  "/home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg/_statsMsg.py"
-  "/home/peter/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg/__init__.py"
+  "/home/quinn/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg/_statsMsg.py"
+  "/home/quinn/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg/_pointMsg.py"
+  "/home/quinn/brokenGlasses/devel/lib/python2.7/dist-packages/point_message/msg/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.

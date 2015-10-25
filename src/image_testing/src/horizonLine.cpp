@@ -10,6 +10,8 @@
 #include "std_msgs/Float32.h"
 #include <math.h>
 
+#define PI 3.14159
+
 using namespace cv;
 using namespace std;
 
@@ -77,17 +79,24 @@ public:
         //roll assumes 0 is normal, clockwise roll is > 0
         Point rightPt;
         Point leftPt;
-        rightPt.x = 2000 * cos(roll);
-        rightPt.y = 2000 * sin(roll);
+        
+        rightPt.y = midY;
+        rightPt.y -= 100 * sin(roll * (PI/180.0));
+        rightPt.x = play.cols / 2;
+        rightPt.x += 100 * cos(roll * (PI/180.0));
 
-        leftPt.x = -1 * rightPt.x;
-        leftPt.y = rightPt.y;
+        leftPt.y = midY;
+        leftPt.y += 100 * sin((roll)* (PI/180.0));
+        leftPt.x = play.cols / 2;
+        leftPt.x -= 100 * cos((roll) * (PI/180.0));
 
 
 
-        line(play,Point(play.cols/2,midY),rightPt,Scalar(0,255,255),3);
-        line(play,Point(play.cols/2,midY),leftPt,Scalar(0,255,255),3);
-        ROS_INFO("%f",leftPt.y);
+
+        line(play,leftPt,rightPt,Scalar(255,0,0),3);
+        //line(play,Point(play.cols/2,midY),leftPt,Scalar(255,0,255),3);
+        line(play,Point(play.cols/2 + 200,play.rows/2 + 200),Point(play.cols/2,midY),Scalar(0,255,255),2);
+        ROS_INFO("%3i",rightPt.y);
 
         image_pub.publish(cv_ptr->toImageMsg());
     }

@@ -1,8 +1,8 @@
-prefix=/home/peter/brokenGlasses/devel
+prefix=/home/quinn/brokenGlasses/devel
 
 Name: image_testing
 Description: Description of image_testing
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/peter/brokenGlasses/devel/lib 
+Libs: -L/home/quinn/brokenGlasses/devel/lib 
 Requires: 

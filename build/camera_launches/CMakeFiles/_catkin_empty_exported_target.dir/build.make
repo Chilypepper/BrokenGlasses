@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peter/brokenGlasses/src
+CMAKE_SOURCE_DIR = /home/quinn/brokenGlasses/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peter/brokenGlasses/build
+CMAKE_BINARY_DIR = /home/quinn/brokenGlasses/build
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -56,10 +56,10 @@ camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/build: _catkin_empt
 .PHONY : camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd /home/peter/brokenGlasses/build/camera_launches && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd /home/quinn/brokenGlasses/build/camera_launches && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/peter/brokenGlasses/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peter/brokenGlasses/src /home/peter/brokenGlasses/src/camera_launches /home/peter/brokenGlasses/build /home/peter/brokenGlasses/build/camera_launches /home/peter/brokenGlasses/build/camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/quinn/brokenGlasses/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/quinn/brokenGlasses/src /home/quinn/brokenGlasses/src/camera_launches /home/quinn/brokenGlasses/build /home/quinn/brokenGlasses/build/camera_launches /home/quinn/brokenGlasses/build/camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : camera_launches/CMakeFiles/_catkin_empty_exported_target.dir/depend
 
