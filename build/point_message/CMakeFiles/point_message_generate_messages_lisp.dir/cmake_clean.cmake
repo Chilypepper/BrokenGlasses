@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/point_message_generate_messages_lisp"
-  "/home/quinn/brokenGlasses/devel/share/common-lisp/ros/point_message/msg/statsMsg.lisp"
-  "/home/quinn/brokenGlasses/devel/share/common-lisp/ros/point_message/msg/pointMsg.lisp"
+  "/home/peter/brokenGlasses/devel/share/common-lisp/ros/point_message/msg/pointMsg.lisp"
+  "/home/peter/brokenGlasses/devel/share/common-lisp/ros/point_message/msg/statsMsg.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

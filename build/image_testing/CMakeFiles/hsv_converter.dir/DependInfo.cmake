@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/quinn/brokenGlasses/src/image_testing/src/hsv_converter.cpp" "/home/quinn/brokenGlasses/build/image_testing/CMakeFiles/hsv_converter.dir/src/hsv_converter.cpp.o"
+  "/home/peter/brokenGlasses/src/image_testing/src/hsv_converter.cpp" "/home/peter/brokenGlasses/build/image_testing/CMakeFiles/hsv_converter.dir/src/hsv_converter.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,8 +22,8 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/usr/include/opencv"
-  "/home/quinn/brokenGlasses/src/image_testing/include"
-  "/home/quinn/brokenGlasses/devel/include"
+  "/home/peter/brokenGlasses/src/image_testing/include"
+  "/home/peter/brokenGlasses/devel/include"
   "/opt/ros/jade/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

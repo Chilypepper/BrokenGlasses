@@ -1,8 +1,8 @@
-# Install script for directory: /home/quinn/brokenGlasses/src/camera_launches
+# Install script for directory: /home/peter/brokenGlasses/src/camera_launches
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/quinn/brokenGlasses/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/peter/brokenGlasses/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/quinn/brokenGlasses/build/camera_launches/catkin_generated/installspace/camera_launches.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/peter/brokenGlasses/build/camera_launches/catkin_generated/installspace/camera_launches.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_launches/cmake" TYPE FILE FILES
-    "/home/quinn/brokenGlasses/build/camera_launches/catkin_generated/installspace/camera_launchesConfig.cmake"
-    "/home/quinn/brokenGlasses/build/camera_launches/catkin_generated/installspace/camera_launchesConfig-version.cmake"
+    "/home/peter/brokenGlasses/build/camera_launches/catkin_generated/installspace/camera_launchesConfig.cmake"
+    "/home/peter/brokenGlasses/build/camera_launches/catkin_generated/installspace/camera_launchesConfig-version.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_launches" TYPE FILE FILES "/home/quinn/brokenGlasses/src/camera_launches/package.xml")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_launches" TYPE FILE FILES "/home/peter/brokenGlasses/src/camera_launches/package.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

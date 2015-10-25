@@ -1,8 +1,8 @@
-prefix=/home/quinn/brokenGlasses/install
+prefix=/home/peter/brokenGlasses/install
 
 Name: camera_launches
 Description: Description of camera_launches
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/quinn/brokenGlasses/install/lib 
+Libs: -L/home/peter/brokenGlasses/install/lib 
 Requires: 

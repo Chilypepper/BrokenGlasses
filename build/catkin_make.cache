@@ -1,2 +1,2 @@
 camera_launches:image_testing:point_message
--DCATKIN_DEVEL_PREFIX=/home/quinn/brokenGlasses/devel -DCMAKE_INSTALL_PREFIX=/home/quinn/brokenGlasses/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/peter/brokenGlasses/devel -DCMAKE_INSTALL_PREFIX=/home/peter/brokenGlasses/install -G Unix Makefiles

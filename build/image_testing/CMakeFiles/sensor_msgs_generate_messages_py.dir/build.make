@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/quinn/brokenGlasses/src
+CMAKE_SOURCE_DIR = /home/peter/brokenGlasses/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/quinn/brokenGlasses/build
+CMAKE_BINARY_DIR = /home/peter/brokenGlasses/build
 
 # Utility rule file for sensor_msgs_generate_messages_py.
 
@@ -56,10 +56,10 @@ image_testing/CMakeFiles/sensor_msgs_generate_messages_py.dir/build: sensor_msgs
 .PHONY : image_testing/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 
 image_testing/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
-	cd /home/quinn/brokenGlasses/build/image_testing && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/peter/brokenGlasses/build/image_testing && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : image_testing/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 
 image_testing/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend:
-	cd /home/quinn/brokenGlasses/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/quinn/brokenGlasses/src /home/quinn/brokenGlasses/src/image_testing /home/quinn/brokenGlasses/build /home/quinn/brokenGlasses/build/image_testing /home/quinn/brokenGlasses/build/image_testing/CMakeFiles/sensor_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/peter/brokenGlasses/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peter/brokenGlasses/src /home/peter/brokenGlasses/src/image_testing /home/peter/brokenGlasses/build /home/peter/brokenGlasses/build/image_testing /home/peter/brokenGlasses/build/image_testing/CMakeFiles/sensor_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : image_testing/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
 

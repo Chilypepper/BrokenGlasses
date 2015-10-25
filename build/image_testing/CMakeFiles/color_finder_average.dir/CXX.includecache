@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/quinn/brokenGlasses/src/image_testing/src/color_finder_average.cpp
+/home/peter/brokenGlasses/src/image_testing/src/color_finder_average.cpp
 ros/ros.h
 -
 image_transport/image_transport.h
