@@ -10,6 +10,7 @@
 #include "std_msgs/Float32.h"
 #include <math.h>
 #include "imu_3dm_gx4/FilterOutput.h"
+#include <Matrix3x3.h>
 #define PI 3.14159
 
 using namespace cv;
