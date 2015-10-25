@@ -53,8 +53,6 @@ math.h
 -
 imu_3dm_gx4/FilterOutput.h
 /home/peter/brokenGlasses/src/image_testing/src/imu_3dm_gx4/FilterOutput.h
-Matrix3x3.h
--
 
 /opt/ros/jade/include/XmlRpcDecl.h
 ros/macros.h

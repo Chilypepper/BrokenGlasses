@@ -10,7 +10,6 @@
 #include "std_msgs/Float32.h"
 #include <math.h>
 #include "imu_3dm_gx4/FilterOutput.h"
-#include <Matrix3x3.h>
 #define PI 3.14159
 
 using namespace cv;
@@ -74,7 +73,7 @@ public:
         }
         //code assumes FOV of 30 degrees above or below center and that msg is in degrees.
         Mat play = cv_ptr->image;
-        float midY = (pitch / 30.0) * (play.rows/2);
+        float midY = -1 * (pitch/(PI/6))*(play.rows/2);
         midY += play.rows/2;
         Point centerOfLine = Point(play.cols/2,midY);
         line(play,Point(0,midY),Point(play.cols,midY),Scalar(0,0,255),3);
@@ -85,14 +84,14 @@ public:
         Point leftPt;
         
         rightPt.y = midY;
-        rightPt.y -= 100 * sin(roll * (PI/180.0));
+        rightPt.y -= 100 * sin(roll);
         rightPt.x = play.cols / 2;
-        rightPt.x += 100 * cos(roll * (PI/180.0));
+        rightPt.x += 100 * cos(roll);
 
         leftPt.y = midY;
-        leftPt.y += 100 * sin((roll)* (PI/180.0));
+        leftPt.y += 100 * sin(roll);
         leftPt.x = play.cols / 2;
-        leftPt.x -= 100 * cos((roll) * (PI/180.0));
+        leftPt.x -= 100 * cos(roll);
 
         line(play,leftPt,rightPt,Scalar(255,0,0),3);
         //line(play,Point(play.cols/2,midY),leftPt,Scalar(255,0,255),3);
