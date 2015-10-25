@@ -9,7 +9,7 @@
 #include "geometry_msgs/Vector3.h"
 #include "std_msgs/Float32.h"
 #include <math.h>
-
+#include "imu_3dm_gx4/FilterOutput.h"
 #define PI 3.14159
 
 using namespace cv;
@@ -37,18 +37,21 @@ public:
         image_sub = it.subscribe("/camera/image_raw", 1,
                                  &ImageConverter::imageCb, this);
         image_pub = it.advertise("/camera/horizon_line", 1);
-        imu_sub = nh.subscribe("eulerAngles",1,&ImageConverter::imuCB,this);
         pitch_sub = nh.subscribe("pitchInput",1,&ImageConverter::pitchCB,this);
         roll_sub = nh.subscribe("rollInput",1,&ImageConverter::rollCB,this);
+        imu_sub = nh.subscribe<imu_3dm_gx4::FilterOutput>("/imu/filter", 1, &ImageConverter::imuCB, this);
     }
 
     ~ImageConverter()
     {}
-    void imuCB(const geometry_msgs::Vector3& angleSet){
-        //update values
-        pitch = angleSet.y;
-        roll = angleSet.z;
-        compass = angleSet.x;
+    void imuCB(const imu_3dm_gx4::FilterOutput::ConstPtr& filter){
+        float x,y,z,w;
+        x=filter->orientation.x;
+        y=filter->orientation.y;
+        z=filter->orientation.z;
+        w=filter->orientation.w;
+        pitch = asin(2*(y*w-x*z));
+        roll = atan((2*(x*w+y*z))/(x*x+y*y-z*z-w*w));
     }
     void pitchCB(const std_msgs::Float32& pitched){
         pitch = pitched.data;
@@ -90,14 +93,11 @@ public:
         leftPt.x = play.cols / 2;
         leftPt.x -= 100 * cos((roll) * (PI/180.0));
 
-
-
-
         line(play,leftPt,rightPt,Scalar(255,0,0),3);
         //line(play,Point(play.cols/2,midY),leftPt,Scalar(255,0,255),3);
         line(play,Point(play.cols/2 + 200,play.rows/2 + 200),Point(play.cols/2,midY),Scalar(0,255,255),2);
-        ROS_INFO("%3i",rightPt.y);
-
+        ROS_INFO("Pitch: %5f",pitch);
+        ROS_INFO("Roll: %5f",roll);
         image_pub.publish(cv_ptr->toImageMsg());
     }
 };

@@ -11,7 +11,37 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38672e1e-26e2-4867-bc1e-c93864e44309" name="Default" comment="" />
+    <list default="true" id="38672e1e-26e2-4867-bc1e-c93864e44309" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/point_message/msg/FilterOutput.msg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/horizon_line.dir/src/horizonLine.cpp.o" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/horizon_line.dir/src/horizonLine.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devel/lib/image_testing/horizon_line" afterPath="$PROJECT_DIR$/devel/lib/image_testing/horizon_line" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeCache.txt" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeError.log" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeError.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeRuleHashes.txt" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeRuleHashes.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CTestTestfile.cmake" afterPath="$PROJECT_DIR$/build/CTestTestfile.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/horizon_line.dir/CXX.includecache" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/horizon_line.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/Makefile" afterPath="$PROJECT_DIR$/build/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/catkin_make.cache" afterPath="$PROJECT_DIR$/build/catkin_make.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/cmake_install.cmake" afterPath="$PROJECT_DIR$/build/cmake_install.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/horizon_line.dir/depend.internal" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/horizon_line.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/horizon_line.dir/depend.make" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/horizon_line.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/image_testing/src/horizonLine.cpp" afterPath="$PROJECT_DIR$/src/image_testing/src/horizonLine.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devel/share/roseus/ros/point_message/manifest.l" afterPath="$PROJECT_DIR$/devel/share/roseus/ros/point_message/manifest.l" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/catkin_generated/order_packages.cmake" afterPath="$PROJECT_DIR$/build/catkin_generated/order_packages.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/orange_finder.dir/progress.make" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/orange_finder.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/quad_image.dir/progress.make" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/quad_image.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/image_testing/CMakeFiles/rect_finder.dir/progress.make" afterPath="$PROJECT_DIR$/build/image_testing/CMakeFiles/rect_finder.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/point_message/CMakeFiles/point_message_generate_messages_cpp.dir/progress.make" afterPath="$PROJECT_DIR$/build/point_message/CMakeFiles/point_message_generate_messages_cpp.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/point_message/CMakeFiles/point_message_generate_messages_eus.dir/progress.make" afterPath="$PROJECT_DIR$/build/point_message/CMakeFiles/point_message_generate_messages_eus.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/point_message/CMakeFiles/point_message_generate_messages_lisp.dir/progress.make" afterPath="$PROJECT_DIR$/build/point_message/CMakeFiles/point_message_generate_messages_lisp.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/point_message/CMakeFiles/point_message_generate_messages_py.dir/progress.make" afterPath="$PROJECT_DIR$/build/point_message/CMakeFiles/point_message_generate_messages_py.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="brokenGlasses.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,16 +61,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="colorspaces.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/image_testing/src/colorspaces.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="112" column="72" selection-start-line="112" selection-start-column="72" selection-end-line="112" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="cv_modder.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/image_testing/src/cv_modder.cpp">
           <provider selected="true" editor-type-id="text-editor">
@@ -65,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/src/image_testing/src/quad_image.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+              <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -74,8 +94,18 @@
       <file leaf-file-name="horizonLine.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/image_testing/src/horizonLine.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5162659">
-              <caret line="83" column="28" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
+            <state vertical-scroll-proportion="1.6446043">
+              <caret line="99" column="32" selection-start-line="99" selection-start-column="32" selection-end-line="99" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilterOutput.msg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/point_message/msg/FilterOutput.msg">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -159,6 +189,7 @@
         <option value="$PROJECT_DIR$/src/camera_launches/gui-circle-color.launch" />
         <option value="$PROJECT_DIR$/src/image_testing/src/quad_image.cpp" />
         <option value="$PROJECT_DIR$/src/image_testing/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/point_message/msg/FilterOutput.msg" />
         <option value="$PROJECT_DIR$/src/image_testing/src/horizonLine.cpp" />
       </list>
     </option>
@@ -173,7 +204,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
     <option name="y" value="52" />
-    <option name="width" value="897" />
+    <option name="width" value="887" />
     <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -228,6 +259,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="brokenGlasses" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="brokenGlasses" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="point_message" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="brokenGlasses" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="brokenGlasses" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="point_message" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msg" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -343,12 +414,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="52" width="897" height="1028" extended-state="4" />
+    <frame x="65" y="52" width="887" height="1028" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22408026" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22322436" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22827224" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2408377" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -381,14 +452,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/image_testing/src/colorspaces.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="112" column="72" selection-start-line="112" selection-start-column="72" selection-end-line="112" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/image_testing/src/circle_finder.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -755,14 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/image_testing/src/quad_image.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/image_testing/src/image_flipper.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -779,10 +834,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/point_message/msg/FilterOutput.msg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/image_testing/src/quad_image.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/image_testing/src/horizonLine.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5162659">
-          <caret line="83" column="28" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
+        <state vertical-scroll-proportion="1.6446043">
+          <caret line="99" column="32" selection-start-line="99" selection-start-column="32" selection-end-line="99" selection-end-column="32" />
           <folding />
         </state>
       </provider>
