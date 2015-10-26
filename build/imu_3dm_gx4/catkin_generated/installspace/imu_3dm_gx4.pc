@@ -1,0 +1,8 @@
+prefix=/home/peter/brokenGlasses/install
+
+Name: imu_3dm_gx4
+Description: Description of imu_3dm_gx4
+Version: 0.0.4
+Cflags: -I/home/peter/brokenGlasses/install/include
+Libs: -L/home/peter/brokenGlasses/install/lib 
+Requires: message_runtime geometry_msgs sensor_msgs

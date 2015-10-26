@@ -1,0 +1,8 @@
+prefix=/home/peter/brokenGlasses/devel
+
+Name: learn_imu
+Description: Description of learn_imu
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/peter/brokenGlasses/devel/lib 
+Requires: 
