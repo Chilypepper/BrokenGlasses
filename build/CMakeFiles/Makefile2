@@ -457,10 +457,10 @@ clean: point_message/CMakeFiles/point_message_gencpp.dir/clean
 # Target rules for target point_message/CMakeFiles/point_message_generate_messages.dir
 
 # All Build rule for target.
-point_message/CMakeFiles/point_message_generate_messages.dir/all: point_message/CMakeFiles/point_message_generate_messages_eus.dir/all
-point_message/CMakeFiles/point_message_generate_messages.dir/all: point_message/CMakeFiles/point_message_generate_messages_cpp.dir/all
-point_message/CMakeFiles/point_message_generate_messages.dir/all: point_message/CMakeFiles/point_message_generate_messages_py.dir/all
 point_message/CMakeFiles/point_message_generate_messages.dir/all: point_message/CMakeFiles/point_message_generate_messages_lisp.dir/all
+point_message/CMakeFiles/point_message_generate_messages.dir/all: point_message/CMakeFiles/point_message_generate_messages_cpp.dir/all
+point_message/CMakeFiles/point_message_generate_messages.dir/all: point_message/CMakeFiles/point_message_generate_messages_eus.dir/all
+point_message/CMakeFiles/point_message_generate_messages.dir/all: point_message/CMakeFiles/point_message_generate_messages_py.dir/all
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages.dir/build.make point_message/CMakeFiles/point_message_generate_messages.dir/depend
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages.dir/build.make point_message/CMakeFiles/point_message_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles 
@@ -495,8 +495,8 @@ clean: point_message/CMakeFiles/point_message_generate_messages.dir/clean
 # Target rules for target point_message/CMakeFiles/point_message_generate_messages_cpp.dir
 
 # All Build rule for target.
-point_message/CMakeFiles/point_message_generate_messages_cpp.dir/all: point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/all
 point_message/CMakeFiles/point_message_generate_messages_cpp.dir/all: point_message/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+point_message/CMakeFiles/point_message_generate_messages_cpp.dir/all: point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/all
 point_message/CMakeFiles/point_message_generate_messages_cpp.dir/all: point_message/CMakeFiles/_point_message_generate_messages_check_deps_pointMsg.dir/all
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages_cpp.dir/build.make point_message/CMakeFiles/point_message_generate_messages_cpp.dir/depend
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages_cpp.dir/build.make point_message/CMakeFiles/point_message_generate_messages_cpp.dir/build
@@ -561,8 +561,8 @@ clean: point_message/CMakeFiles/point_message_generate_messages_eus.dir/clean
 # Target rules for target point_message/CMakeFiles/point_message_generate_messages_lisp.dir
 
 # All Build rule for target.
-point_message/CMakeFiles/point_message_generate_messages_lisp.dir/all: point_message/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 point_message/CMakeFiles/point_message_generate_messages_lisp.dir/all: point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/all
+point_message/CMakeFiles/point_message_generate_messages_lisp.dir/all: point_message/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 point_message/CMakeFiles/point_message_generate_messages_lisp.dir/all: point_message/CMakeFiles/_point_message_generate_messages_check_deps_pointMsg.dir/all
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages_lisp.dir/build.make point_message/CMakeFiles/point_message_generate_messages_lisp.dir/depend
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages_lisp.dir/build.make point_message/CMakeFiles/point_message_generate_messages_lisp.dir/build
@@ -594,8 +594,8 @@ clean: point_message/CMakeFiles/point_message_generate_messages_lisp.dir/clean
 # Target rules for target point_message/CMakeFiles/point_message_generate_messages_py.dir
 
 # All Build rule for target.
-point_message/CMakeFiles/point_message_generate_messages_py.dir/all: point_message/CMakeFiles/std_msgs_generate_messages_py.dir/all
 point_message/CMakeFiles/point_message_generate_messages_py.dir/all: point_message/CMakeFiles/_point_message_generate_messages_check_deps_statsMsg.dir/all
+point_message/CMakeFiles/point_message_generate_messages_py.dir/all: point_message/CMakeFiles/std_msgs_generate_messages_py.dir/all
 point_message/CMakeFiles/point_message_generate_messages_py.dir/all: point_message/CMakeFiles/_point_message_generate_messages_check_deps_pointMsg.dir/all
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages_py.dir/build.make point_message/CMakeFiles/point_message_generate_messages_py.dir/depend
 	$(MAKE) -f point_message/CMakeFiles/point_message_generate_messages_py.dir/build.make point_message/CMakeFiles/point_message_generate_messages_py.dir/build
@@ -1810,540 +1810,540 @@ clean: image_testing/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory imu_3dm_gx4
+# Directory level rules for directory imu
 
 # Convenience name for "all" pass in the directory.
-imu_3dm_gx4/all: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all
-imu_3dm_gx4/all: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages.dir/all
-.PHONY : imu_3dm_gx4/all
+imu/all: imu/CMakeFiles/imu_3dm_gx4.dir/all
+imu/all: imu/CMakeFiles/imu_3dm_gx4_generate_messages.dir/all
+.PHONY : imu/all
 
 # Convenience name for "clean" pass in the directory.
-imu_3dm_gx4/clean: imu_3dm_gx4/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/clean
-imu_3dm_gx4/clean: imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/clean
-imu_3dm_gx4/clean: imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/clean
-imu_3dm_gx4/clean: imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/clean
-imu_3dm_gx4/clean: imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/clean
-imu_3dm_gx4/clean: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/clean
-imu_3dm_gx4/clean: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_gencpp.dir/clean
-imu_3dm_gx4/clean: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages.dir/clean
-imu_3dm_gx4/clean: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/clean
-imu_3dm_gx4/clean: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/clean
-imu_3dm_gx4/clean: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/clean
-imu_3dm_gx4/clean: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/clean
-imu_3dm_gx4/clean: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_geneus.dir/clean
-imu_3dm_gx4/clean: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genlisp.dir/clean
-imu_3dm_gx4/clean: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genpy.dir/clean
-.PHONY : imu_3dm_gx4/clean
+imu/clean: imu/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/clean
+imu/clean: imu/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/clean
+imu/clean: imu/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/clean
+imu/clean: imu/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/clean
+imu/clean: imu/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/clean
+imu/clean: imu/CMakeFiles/imu_3dm_gx4.dir/clean
+imu/clean: imu/CMakeFiles/imu_3dm_gx4_gencpp.dir/clean
+imu/clean: imu/CMakeFiles/imu_3dm_gx4_generate_messages.dir/clean
+imu/clean: imu/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/clean
+imu/clean: imu/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/clean
+imu/clean: imu/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/clean
+imu/clean: imu/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/clean
+imu/clean: imu/CMakeFiles/imu_3dm_gx4_geneus.dir/clean
+imu/clean: imu/CMakeFiles/imu_3dm_gx4_genlisp.dir/clean
+imu/clean: imu/CMakeFiles/imu_3dm_gx4_genpy.dir/clean
+.PHONY : imu/clean
 
 # Convenience name for "preinstall" pass in the directory.
-imu_3dm_gx4/preinstall:
-.PHONY : imu_3dm_gx4/preinstall
+imu/preinstall:
+.PHONY : imu/preinstall
 
 #=============================================================================
-# Target rules for target imu_3dm_gx4/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir
+# Target rules for target imu/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir
 
 # All Build rule for target.
-imu_3dm_gx4/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/all:
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/build.make imu_3dm_gx4/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/depend
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/build.make imu_3dm_gx4/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/build
+imu/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/all:
+	$(MAKE) -f imu/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/build.make imu/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/depend
+	$(MAKE) -f imu/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/build.make imu/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles 
 	@echo "Built target _imu_3dm_gx4_generate_messages_check_deps_FilterOutput"
-.PHONY : imu_3dm_gx4/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/all
+.PHONY : imu/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/all
 
 # Build rule for subdir invocation for target.
-imu_3dm_gx4/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/rule: cmake_check_build_system
+imu/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 imu_3dm_gx4/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
-.PHONY : imu_3dm_gx4/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/rule
+.PHONY : imu/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/rule
 
 # Convenience name for target.
-_imu_3dm_gx4_generate_messages_check_deps_FilterOutput: imu_3dm_gx4/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/rule
+_imu_3dm_gx4_generate_messages_check_deps_FilterOutput: imu/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/rule
 .PHONY : _imu_3dm_gx4_generate_messages_check_deps_FilterOutput
 
 # clean rule for target.
-imu_3dm_gx4/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/clean:
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/build.make imu_3dm_gx4/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/clean
-.PHONY : imu_3dm_gx4/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/clean
+imu/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/clean:
+	$(MAKE) -f imu/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/build.make imu/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/clean
+.PHONY : imu/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/clean
 
 # clean rule for target.
-clean: imu_3dm_gx4/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/clean
+clean: imu/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir
+# Target rules for target imu/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build.make imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build.make imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build
+imu/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f imu/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build.make imu/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f imu/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build.make imu/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles 
 	@echo "Built target diagnostic_msgs_generate_messages_cpp"
-.PHONY : imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/all
+.PHONY : imu/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+imu/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
-.PHONY : imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule
+.PHONY : imu/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-diagnostic_msgs_generate_messages_cpp: imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule
+diagnostic_msgs_generate_messages_cpp: imu/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule
 .PHONY : diagnostic_msgs_generate_messages_cpp
 
 # clean rule for target.
-imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build.make imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/clean
-.PHONY : imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/clean
+imu/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f imu/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build.make imu/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/clean
+.PHONY : imu/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/clean
+clean: imu/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir
+# Target rules for target imu/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build
+imu/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f imu/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make imu/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f imu/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make imu/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles 
 	@echo "Built target diagnostic_msgs_generate_messages_eus"
-.PHONY : imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/all
+.PHONY : imu/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+imu/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
-.PHONY : imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
+.PHONY : imu/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-diagnostic_msgs_generate_messages_eus: imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
+diagnostic_msgs_generate_messages_eus: imu/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
 .PHONY : diagnostic_msgs_generate_messages_eus
 
 # clean rule for target.
-imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/clean
-.PHONY : imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/clean
+imu/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f imu/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make imu/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/clean
+.PHONY : imu/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/clean
 
 # clean rule for target.
-clean: imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/clean
+clean: imu/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir
+# Target rules for target imu/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
+imu/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f imu/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make imu/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f imu/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make imu/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles 
 	@echo "Built target diagnostic_msgs_generate_messages_lisp"
-.PHONY : imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/all
+.PHONY : imu/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+imu/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
-.PHONY : imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
+.PHONY : imu/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-diagnostic_msgs_generate_messages_lisp: imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
+diagnostic_msgs_generate_messages_lisp: imu/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
 .PHONY : diagnostic_msgs_generate_messages_lisp
 
 # clean rule for target.
-imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/clean
-.PHONY : imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/clean
+imu/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f imu/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make imu/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/clean
+.PHONY : imu/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/clean
 
 # clean rule for target.
-clean: imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/clean
+clean: imu/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_py.dir
+# Target rules for target imu/CMakeFiles/diagnostic_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build
+imu/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f imu/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make imu/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f imu/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make imu/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles 
 	@echo "Built target diagnostic_msgs_generate_messages_py"
-.PHONY : imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/all
+.PHONY : imu/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+imu/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
-.PHONY : imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
+.PHONY : imu/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-diagnostic_msgs_generate_messages_py: imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
+diagnostic_msgs_generate_messages_py: imu/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
 .PHONY : diagnostic_msgs_generate_messages_py
 
 # clean rule for target.
-imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/clean
-.PHONY : imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/clean
+imu/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f imu/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make imu/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/clean
+.PHONY : imu/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/clean
 
 # clean rule for target.
-clean: imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/clean
+clean: imu/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir
+# Target rules for target imu/CMakeFiles/imu_3dm_gx4.dir
 
 # All Build rule for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: point_message/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: point_message/CMakeFiles/std_msgs_generate_messages_py.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: point_message/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: point_message/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/roscpp_generate_messages_eus.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/roscpp_generate_messages_py.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: imu_3dm_gx4/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/all
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/depend
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/build
+imu/CMakeFiles/imu_3dm_gx4.dir/all: point_message/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/roscpp_generate_messages_eus.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: point_message/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: point_message/CMakeFiles/std_msgs_generate_messages_py.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: point_message/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/roscpp_generate_messages_py.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: image_testing/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: imu/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: imu/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: imu/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: imu/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: imu/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: imu/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: imu/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/all
+imu/CMakeFiles/imu_3dm_gx4.dir/all: imu/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/all
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4.dir/build.make imu/CMakeFiles/imu_3dm_gx4.dir/depend
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4.dir/build.make imu/CMakeFiles/imu_3dm_gx4.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  12 13
 	@echo "Built target imu_3dm_gx4"
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all
+.PHONY : imu/CMakeFiles/imu_3dm_gx4.dir/all
 
 # Include target in all.
-all: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all
+all: imu/CMakeFiles/imu_3dm_gx4.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/rule: cmake_check_build_system
+imu/CMakeFiles/imu_3dm_gx4.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 8
-	$(MAKE) -f CMakeFiles/Makefile2 imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/imu_3dm_gx4.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/rule
+.PHONY : imu/CMakeFiles/imu_3dm_gx4.dir/rule
 
 # Convenience name for target.
-imu_3dm_gx4: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/rule
+imu_3dm_gx4: imu/CMakeFiles/imu_3dm_gx4.dir/rule
 .PHONY : imu_3dm_gx4
 
 # clean rule for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/clean:
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/clean
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/clean
+imu/CMakeFiles/imu_3dm_gx4.dir/clean:
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4.dir/build.make imu/CMakeFiles/imu_3dm_gx4.dir/clean
+.PHONY : imu/CMakeFiles/imu_3dm_gx4.dir/clean
 
 # clean rule for target.
-clean: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4.dir/clean
+clean: imu/CMakeFiles/imu_3dm_gx4.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_gencpp.dir
+# Target rules for target imu/CMakeFiles/imu_3dm_gx4_gencpp.dir
 
 # All Build rule for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_gencpp.dir/all: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/all
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_gencpp.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_gencpp.dir/depend
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_gencpp.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_gencpp.dir/build
+imu/CMakeFiles/imu_3dm_gx4_gencpp.dir/all: imu/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/all
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_gencpp.dir/build.make imu/CMakeFiles/imu_3dm_gx4_gencpp.dir/depend
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_gencpp.dir/build.make imu/CMakeFiles/imu_3dm_gx4_gencpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles 
 	@echo "Built target imu_3dm_gx4_gencpp"
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_gencpp.dir/all
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_gencpp.dir/all
 
 # Build rule for subdir invocation for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_gencpp.dir/rule: cmake_check_build_system
+imu/CMakeFiles/imu_3dm_gx4_gencpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_gencpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/imu_3dm_gx4_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_gencpp.dir/rule
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_gencpp.dir/rule
 
 # Convenience name for target.
-imu_3dm_gx4_gencpp: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_gencpp.dir/rule
+imu_3dm_gx4_gencpp: imu/CMakeFiles/imu_3dm_gx4_gencpp.dir/rule
 .PHONY : imu_3dm_gx4_gencpp
 
 # clean rule for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_gencpp.dir/clean:
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_gencpp.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_gencpp.dir/clean
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_gencpp.dir/clean
+imu/CMakeFiles/imu_3dm_gx4_gencpp.dir/clean:
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_gencpp.dir/build.make imu/CMakeFiles/imu_3dm_gx4_gencpp.dir/clean
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_gencpp.dir/clean
 
 # clean rule for target.
-clean: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_gencpp.dir/clean
+clean: imu/CMakeFiles/imu_3dm_gx4_gencpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages.dir
+# Target rules for target imu/CMakeFiles/imu_3dm_gx4_generate_messages.dir
 
 # All Build rule for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages.dir/all: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages.dir/all: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages.dir/all: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages.dir/all: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/all
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages.dir/depend
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages.dir/build
+imu/CMakeFiles/imu_3dm_gx4_generate_messages.dir/all: imu/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/all
+imu/CMakeFiles/imu_3dm_gx4_generate_messages.dir/all: imu/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/all
+imu/CMakeFiles/imu_3dm_gx4_generate_messages.dir/all: imu/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/all
+imu/CMakeFiles/imu_3dm_gx4_generate_messages.dir/all: imu/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/all
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_generate_messages.dir/build.make imu/CMakeFiles/imu_3dm_gx4_generate_messages.dir/depend
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_generate_messages.dir/build.make imu/CMakeFiles/imu_3dm_gx4_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles 
 	@echo "Built target imu_3dm_gx4_generate_messages"
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages.dir/all
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_generate_messages.dir/all
 
 # Include target in all.
-all: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages.dir/all
+all: imu/CMakeFiles/imu_3dm_gx4_generate_messages.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages.dir/rule: cmake_check_build_system
+imu/CMakeFiles/imu_3dm_gx4_generate_messages.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/imu_3dm_gx4_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages.dir/rule
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_generate_messages.dir/rule
 
 # Convenience name for target.
-imu_3dm_gx4_generate_messages: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages.dir/rule
+imu_3dm_gx4_generate_messages: imu/CMakeFiles/imu_3dm_gx4_generate_messages.dir/rule
 .PHONY : imu_3dm_gx4_generate_messages
 
 # clean rule for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages.dir/clean:
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages.dir/clean
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages.dir/clean
+imu/CMakeFiles/imu_3dm_gx4_generate_messages.dir/clean:
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_generate_messages.dir/build.make imu/CMakeFiles/imu_3dm_gx4_generate_messages.dir/clean
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_generate_messages.dir/clean
 
 # clean rule for target.
-clean: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages.dir/clean
+clean: imu/CMakeFiles/imu_3dm_gx4_generate_messages.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir
+# Target rules for target imu/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir
 
 # All Build rule for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/all: image_testing/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/all: imu_3dm_gx4/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/all
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/depend
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/build
+imu/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/all: image_testing/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+imu/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/all: imu/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/all
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/build.make imu/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/depend
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/build.make imu/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  14
 	@echo "Built target imu_3dm_gx4_generate_messages_cpp"
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/all
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/rule: cmake_check_build_system
+imu/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/rule
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-imu_3dm_gx4_generate_messages_cpp: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/rule
+imu_3dm_gx4_generate_messages_cpp: imu/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/rule
 .PHONY : imu_3dm_gx4_generate_messages_cpp
 
 # clean rule for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/clean:
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/clean
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/clean
+imu/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/clean:
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/build.make imu/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/clean
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/clean
+clean: imu/CMakeFiles/imu_3dm_gx4_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir
+# Target rules for target imu/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir
 
 # All Build rule for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/all: image_testing/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/all: imu_3dm_gx4/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/all
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/depend
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/build
+imu/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/all: image_testing/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+imu/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/all: imu/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/all
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/build.make imu/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/depend
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/build.make imu/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  15 16
 	@echo "Built target imu_3dm_gx4_generate_messages_eus"
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/all
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/rule: cmake_check_build_system
+imu/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/rule
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-imu_3dm_gx4_generate_messages_eus: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/rule
+imu_3dm_gx4_generate_messages_eus: imu/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/rule
 .PHONY : imu_3dm_gx4_generate_messages_eus
 
 # clean rule for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/clean:
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/clean
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/clean
+imu/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/clean:
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/build.make imu/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/clean
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/clean
 
 # clean rule for target.
-clean: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/clean
+clean: imu/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir
+# Target rules for target imu/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir
 
 # All Build rule for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/all: image_testing/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/all: imu_3dm_gx4/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/all
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/depend
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/build
+imu/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/all: image_testing/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+imu/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/all: imu/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/all
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/build.make imu/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/depend
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/build.make imu/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  17
 	@echo "Built target imu_3dm_gx4_generate_messages_lisp"
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/all
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/rule: cmake_check_build_system
+imu/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/rule
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-imu_3dm_gx4_generate_messages_lisp: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/rule
+imu_3dm_gx4_generate_messages_lisp: imu/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/rule
 .PHONY : imu_3dm_gx4_generate_messages_lisp
 
 # clean rule for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/clean:
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/clean
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/clean
+imu/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/clean:
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/build.make imu/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/clean
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/clean
 
 # clean rule for target.
-clean: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/clean
+clean: imu/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir
+# Target rules for target imu/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir
 
 # All Build rule for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/all: image_testing/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/all: imu_3dm_gx4/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/all
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/depend
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/build
+imu/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/all: image_testing/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+imu/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/all: imu/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir/all
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/build.make imu/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/depend
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/build.make imu/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles  18 19
 	@echo "Built target imu_3dm_gx4_generate_messages_py"
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/all
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/rule: cmake_check_build_system
+imu/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/rule
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/rule
 
 # Convenience name for target.
-imu_3dm_gx4_generate_messages_py: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/rule
+imu_3dm_gx4_generate_messages_py: imu/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/rule
 .PHONY : imu_3dm_gx4_generate_messages_py
 
 # clean rule for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/clean:
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/clean
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/clean
+imu/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/clean:
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/build.make imu/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/clean
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/clean
 
 # clean rule for target.
-clean: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/clean
+clean: imu/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_geneus.dir
+# Target rules for target imu/CMakeFiles/imu_3dm_gx4_geneus.dir
 
 # All Build rule for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_geneus.dir/all: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/all
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_geneus.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_geneus.dir/depend
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_geneus.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_geneus.dir/build
+imu/CMakeFiles/imu_3dm_gx4_geneus.dir/all: imu/CMakeFiles/imu_3dm_gx4_generate_messages_eus.dir/all
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_geneus.dir/build.make imu/CMakeFiles/imu_3dm_gx4_geneus.dir/depend
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_geneus.dir/build.make imu/CMakeFiles/imu_3dm_gx4_geneus.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles 
 	@echo "Built target imu_3dm_gx4_geneus"
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_geneus.dir/all
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_geneus.dir/all
 
 # Build rule for subdir invocation for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_geneus.dir/rule: cmake_check_build_system
+imu/CMakeFiles/imu_3dm_gx4_geneus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_geneus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/imu_3dm_gx4_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_geneus.dir/rule
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_geneus.dir/rule
 
 # Convenience name for target.
-imu_3dm_gx4_geneus: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_geneus.dir/rule
+imu_3dm_gx4_geneus: imu/CMakeFiles/imu_3dm_gx4_geneus.dir/rule
 .PHONY : imu_3dm_gx4_geneus
 
 # clean rule for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_geneus.dir/clean:
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_geneus.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_geneus.dir/clean
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_geneus.dir/clean
+imu/CMakeFiles/imu_3dm_gx4_geneus.dir/clean:
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_geneus.dir/build.make imu/CMakeFiles/imu_3dm_gx4_geneus.dir/clean
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_geneus.dir/clean
 
 # clean rule for target.
-clean: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_geneus.dir/clean
+clean: imu/CMakeFiles/imu_3dm_gx4_geneus.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genlisp.dir
+# Target rules for target imu/CMakeFiles/imu_3dm_gx4_genlisp.dir
 
 # All Build rule for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genlisp.dir/all: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/all
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genlisp.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genlisp.dir/depend
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genlisp.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genlisp.dir/build
+imu/CMakeFiles/imu_3dm_gx4_genlisp.dir/all: imu/CMakeFiles/imu_3dm_gx4_generate_messages_lisp.dir/all
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_genlisp.dir/build.make imu/CMakeFiles/imu_3dm_gx4_genlisp.dir/depend
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_genlisp.dir/build.make imu/CMakeFiles/imu_3dm_gx4_genlisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles 
 	@echo "Built target imu_3dm_gx4_genlisp"
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genlisp.dir/all
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_genlisp.dir/all
 
 # Build rule for subdir invocation for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genlisp.dir/rule: cmake_check_build_system
+imu/CMakeFiles/imu_3dm_gx4_genlisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genlisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/imu_3dm_gx4_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genlisp.dir/rule
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_genlisp.dir/rule
 
 # Convenience name for target.
-imu_3dm_gx4_genlisp: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genlisp.dir/rule
+imu_3dm_gx4_genlisp: imu/CMakeFiles/imu_3dm_gx4_genlisp.dir/rule
 .PHONY : imu_3dm_gx4_genlisp
 
 # clean rule for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genlisp.dir/clean:
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genlisp.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genlisp.dir/clean
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genlisp.dir/clean
+imu/CMakeFiles/imu_3dm_gx4_genlisp.dir/clean:
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_genlisp.dir/build.make imu/CMakeFiles/imu_3dm_gx4_genlisp.dir/clean
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_genlisp.dir/clean
 
 # clean rule for target.
-clean: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genlisp.dir/clean
+clean: imu/CMakeFiles/imu_3dm_gx4_genlisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genpy.dir
+# Target rules for target imu/CMakeFiles/imu_3dm_gx4_genpy.dir
 
 # All Build rule for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genpy.dir/all: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/all
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genpy.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genpy.dir/depend
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genpy.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genpy.dir/build
+imu/CMakeFiles/imu_3dm_gx4_genpy.dir/all: imu/CMakeFiles/imu_3dm_gx4_generate_messages_py.dir/all
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_genpy.dir/build.make imu/CMakeFiles/imu_3dm_gx4_genpy.dir/depend
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_genpy.dir/build.make imu/CMakeFiles/imu_3dm_gx4_genpy.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/brokenGlasses/build/CMakeFiles 
 	@echo "Built target imu_3dm_gx4_genpy"
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genpy.dir/all
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_genpy.dir/all
 
 # Build rule for subdir invocation for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genpy.dir/rule: cmake_check_build_system
+imu/CMakeFiles/imu_3dm_gx4_genpy.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genpy.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/imu_3dm_gx4_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/brokenGlasses/build/CMakeFiles 0
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genpy.dir/rule
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_genpy.dir/rule
 
 # Convenience name for target.
-imu_3dm_gx4_genpy: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genpy.dir/rule
+imu_3dm_gx4_genpy: imu/CMakeFiles/imu_3dm_gx4_genpy.dir/rule
 .PHONY : imu_3dm_gx4_genpy
 
 # clean rule for target.
-imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genpy.dir/clean:
-	$(MAKE) -f imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genpy.dir/build.make imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genpy.dir/clean
-.PHONY : imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genpy.dir/clean
+imu/CMakeFiles/imu_3dm_gx4_genpy.dir/clean:
+	$(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_genpy.dir/build.make imu/CMakeFiles/imu_3dm_gx4_genpy.dir/clean
+.PHONY : imu/CMakeFiles/imu_3dm_gx4_genpy.dir/clean
 
 # clean rule for target.
-clean: imu_3dm_gx4/CMakeFiles/imu_3dm_gx4_genpy.dir/clean
+clean: imu/CMakeFiles/imu_3dm_gx4_genpy.dir/clean
 .PHONY : clean
 
 #=============================================================================

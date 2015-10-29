@@ -357,13 +357,13 @@ image_testing_SOURCE_DIR:STATIC=/home/peter/brokenGlasses/src/image_testing
 image_transport_DIR:PATH=/opt/ros/jade/share/image_transport/cmake
 
 //Value Computed by CMake
-imu_3dm_gx4_BINARY_DIR:STATIC=/home/peter/brokenGlasses/build/imu_3dm_gx4
+imu_3dm_gx4_BINARY_DIR:STATIC=/home/peter/brokenGlasses/build/imu
 
 //The directory containing a CMake configuration file for imu_3dm_gx4.
 imu_3dm_gx4_DIR:PATH=/home/peter/brokenGlasses/devel/share/imu_3dm_gx4/cmake
 
 //Value Computed by CMake
-imu_3dm_gx4_SOURCE_DIR:STATIC=/home/peter/brokenGlasses/src/imu_3dm_gx4
+imu_3dm_gx4_SOURCE_DIR:STATIC=/home/peter/brokenGlasses/src/imu
 
 //Value Computed by CMake
 learn_imu_BINARY_DIR:STATIC=/home/peter/brokenGlasses/build/orientation

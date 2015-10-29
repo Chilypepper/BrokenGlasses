@@ -6,28 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/peter/brokenGlasses/devel/include/imu_3dm_gx4/FilterOutput.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-std_msgs/Header.h
--
-geometry_msgs/Quaternion.h
--
-geometry_msgs/Vector3.h
--
-
 /home/peter/brokenGlasses/src/image_testing/src/horizonLine.cpp
 ros/ros.h
 -
@@ -78,22 +56,6 @@ ros/static_assert.h
 opencv2/core/core.hpp
 -
 stdexcept
--
-
-/opt/ros/jade/include/geometry_msgs/Quaternion.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
 -
 
 /opt/ros/jade/include/geometry_msgs/Vector3.h

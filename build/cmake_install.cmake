@@ -120,7 +120,7 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   INCLUDE("/home/peter/brokenGlasses/build/camera_launches/cmake_install.cmake")
   INCLUDE("/home/peter/brokenGlasses/build/point_message/cmake_install.cmake")
   INCLUDE("/home/peter/brokenGlasses/build/image_testing/cmake_install.cmake")
-  INCLUDE("/home/peter/brokenGlasses/build/imu_3dm_gx4/cmake_install.cmake")
+  INCLUDE("/home/peter/brokenGlasses/build/imu/cmake_install.cmake")
   INCLUDE("/home/peter/brokenGlasses/build/orientation/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)

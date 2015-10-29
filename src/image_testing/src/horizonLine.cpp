@@ -76,7 +76,7 @@ public:
         float midY = -1 * (pitch/(PI/6))*(play.rows/2);
         midY += play.rows/2;
         Point centerOfLine = Point(play.cols/2,midY);
-        line(play,Point(0,midY),Point(play.cols,midY),Scalar(0,0,255),3);
+        //line(play,Point(0,midY),Point(play.cols,midY),Scalar(0,0,255),3);
         putText(play,"Horizon Line",Point(150,midY-15),3,.8,Scalar(0,0,255));
 
         //roll assumes 0 is normal, clockwise roll is > 0
@@ -93,7 +93,7 @@ public:
         leftPt.x = play.cols / 2;
         leftPt.x -= 100 * cos(roll);
 
-        line(play,leftPt,rightPt,Scalar(255,0,0),3);
+        line(play,leftPt,rightPt,Scalar(0,255,0),3);
         //line(play,Point(play.cols/2,midY),leftPt,Scalar(255,0,255),3);
         ROS_INFO("Pitch: %5f",pitch);
         ROS_INFO("Roll: %5f",roll);
