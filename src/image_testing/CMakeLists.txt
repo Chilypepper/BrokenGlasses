@@ -27,7 +27,9 @@ add_executable(colorSpaces src/colorspaces.cpp)
 add_executable(draw_gui src/draw_gui.cpp)
 add_executable(quad_image src/quad_image.cpp)
 add_executable(horizon_line src/horizonLine.cpp)
+add_executable(heading_predict src/heading_marker.cpp)
 
+target_link_libraries(heading_predict ${catkin_LIBRARIES} ${OpenCV_LIBS} ${OpenCV_LIBRARIES} ${Eigen_LIBRARIES} ${QT_LIBRARIES} ${ROS_LIBRARIES} ${catkin_LIBRARIES})
 
 target_link_libraries(horizon_line ${catkin_LIBRARIES} ${OpenCV_LIBS} ${OpenCV_LIBRARIES} ${Eigen_LIBRARIES} ${QT_LIBRARIES} ${ROS_LIBRARIES} ${catkin_LIBRARIES})
 

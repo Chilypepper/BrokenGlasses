@@ -276,6 +276,20 @@ green_finder/fast:
 .PHONY : green_finder/fast
 
 # Convenience name for target.
+image_testing/CMakeFiles/heading_predict.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/heading_predict.dir/rule
+.PHONY : image_testing/CMakeFiles/heading_predict.dir/rule
+
+# Convenience name for target.
+heading_predict: image_testing/CMakeFiles/heading_predict.dir/rule
+.PHONY : heading_predict
+
+# fast build rule for target.
+heading_predict/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/heading_predict.dir/build.make image_testing/CMakeFiles/heading_predict.dir/build
+.PHONY : heading_predict/fast
+
+# Convenience name for target.
 image_testing/CMakeFiles/horizon_line.dir/rule:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/horizon_line.dir/rule
 .PHONY : image_testing/CMakeFiles/horizon_line.dir/rule
@@ -661,6 +675,30 @@ src/draw_gui.cpp.s:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/draw_gui.dir/build.make image_testing/CMakeFiles/draw_gui.dir/src/draw_gui.cpp.s
 .PHONY : src/draw_gui.cpp.s
 
+src/heading_marker.o: src/heading_marker.cpp.o
+.PHONY : src/heading_marker.o
+
+# target to build an object file
+src/heading_marker.cpp.o:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/heading_predict.dir/build.make image_testing/CMakeFiles/heading_predict.dir/src/heading_marker.cpp.o
+.PHONY : src/heading_marker.cpp.o
+
+src/heading_marker.i: src/heading_marker.cpp.i
+.PHONY : src/heading_marker.i
+
+# target to preprocess a source file
+src/heading_marker.cpp.i:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/heading_predict.dir/build.make image_testing/CMakeFiles/heading_predict.dir/src/heading_marker.cpp.i
+.PHONY : src/heading_marker.cpp.i
+
+src/heading_marker.s: src/heading_marker.cpp.s
+.PHONY : src/heading_marker.s
+
+# target to generate assembly for a file
+src/heading_marker.cpp.s:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/heading_predict.dir/build.make image_testing/CMakeFiles/heading_predict.dir/src/heading_marker.cpp.s
+.PHONY : src/heading_marker.cpp.s
+
 src/horizonLine.o: src/horizonLine.cpp.o
 .PHONY : src/horizonLine.o
 
@@ -845,6 +883,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... green_finder"
+	@echo "... heading_predict"
 	@echo "... horizon_line"
 	@echo "... hsv_converter"
 	@echo "... image_converter"
@@ -885,6 +924,9 @@ help:
 	@echo "... src/draw_gui.o"
 	@echo "... src/draw_gui.i"
 	@echo "... src/draw_gui.s"
+	@echo "... src/heading_marker.o"
+	@echo "... src/heading_marker.i"
+	@echo "... src/heading_marker.s"
 	@echo "... src/horizonLine.o"
 	@echo "... src/horizonLine.i"
 	@echo "... src/horizonLine.s"

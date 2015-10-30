@@ -566,6 +566,19 @@ green_finder/fast:
 .PHONY : green_finder/fast
 
 #=============================================================================
+# Target rules for targets named heading_predict
+
+# Build rule for target.
+heading_predict: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 heading_predict
+.PHONY : heading_predict
+
+# fast build rule for target.
+heading_predict/fast:
+	$(MAKE) -f image_testing/CMakeFiles/heading_predict.dir/build.make image_testing/CMakeFiles/heading_predict.dir/build
+.PHONY : heading_predict/fast
+
+#=============================================================================
 # Target rules for targets named horizon_line
 
 # Build rule for target.
@@ -1273,6 +1286,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... green_finder"
+	@echo "... heading_predict"
 	@echo "... horizon_line"
 	@echo "... hsv_converter"
 	@echo "... image_converter"
