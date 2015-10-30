@@ -23,6 +23,8 @@ iostream
 -
 ctime
 -
+deque
+-
 
 /opt/ros/jade/include/XmlRpcDecl.h
 ros/macros.h

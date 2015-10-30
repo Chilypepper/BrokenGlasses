@@ -6,12 +6,14 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <iostream>
 #include <ctime>
+#include <deque>
+
 
 using namespace cv;
 using namespace std;
 
-vector<Point> path;
-Scalar purple = Scalar(143,20,232);
+deque<Point> path;
+Scalar purple = Scalar(0,0,255);
 
 class ImageConverter
 {
@@ -43,20 +45,20 @@ public:
             return;
         }
         Mat marker;
-        int pxCount;
+        int pxCount = 0;
         int redUpper = 165;
         int redLower = 10;
         int satUpper = 255;
         int satLower = 150;
         int valUpper = 255;
-        int valLower = 120;
+        int valLower = 80;
 
-        long long rowSum;
-        long long colSum;
+        int rowSum = 0;
+        int colSum = 0;
 
         Vec3b white(255,255,255);
         cvtColor(cv_ptr->image,marker,COLOR_BGR2HSV);
-        Mat blacknwhite = Mat::zeros(marker.rows,marker.cols,CV_64F);
+        Mat blacknwhite = Mat::zeros(marker.rows,marker.cols,CV_64FC3);
 
         bool display = true;
         for(int col = 0; col < blacknwhite.rows; col++) {
@@ -79,9 +81,7 @@ public:
                     if (saturation < satUpper && saturation > satLower) {
                         hasSat = true;
                         if (brightness < valUpper && brightness > valLower) {
-
                             hasVal = true;
-
                         }
                     }
                 }
@@ -95,22 +95,26 @@ public:
                 }
             }
         }
+        cvtColor(marker,marker,COLOR_HSV2BGR);
+
         if(pxCount > 2000) {
             int rowAvg = rowSum / pxCount;
             int colAvg = colSum / pxCount;
-            path.push_back(Point(rowAvg,colAvg));
+            if(path.size() > 30){
+                path.pop_back();
+            }
+            path.push_front(Point(rowAvg,colAvg));
         }
-        if(path.size() < 15) {
-            path.resize(15);
+        else if(path.size() > 0){
+            path.pop_back();
         }
         vector<Point>::iterator iter;
-        for(iter=path.begin() ; iter < path.end(); iter++) {
-            circle(blacknwhite,*iter,6,purple,-1);
+        for(int i = 0; i < path.size(); i++){
+            Point subject = path[i];
+            circle(marker,subject,6,purple,-1);
         }
-
-
-
-        cv_ptr->image = blacknwhite;
+        circle(marker,Point(0,0),6,purple,-1);
+        cv_ptr->image = marker;
         image_pub.publish(cv_ptr->toImageMsg());
     }
 };
