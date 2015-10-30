@@ -10,6 +10,9 @@
 using namespace cv;
 using namespace std;
 
+vector<Point> path;
+Scalar purple = Scalar(143,20,232);
+
 class ImageConverter
 {
     ros::NodeHandle nh;
@@ -39,8 +42,8 @@ public:
             ROS_ERROR("cv_bridge exception: %s", e.what());
             return;
         }
-
         Mat marker;
+        int pxCount;
         int redUpper = 165;
         int redLower = 10;
         int satUpper = 255;
@@ -48,6 +51,8 @@ public:
         int valUpper = 255;
         int valLower = 120;
 
+        long long rowSum;
+        long long colSum;
 
         Vec3b white(255,255,255);
         cvtColor(cv_ptr->image,marker,COLOR_BGR2HSV);
@@ -82,12 +87,29 @@ public:
                 }
                 //assumes all true
                 if (hasHue && hasSat && hasVal) {
-
+                    rowSum += row;
+                    colSum += col;
+                    pxCount++;
                     blacknwhite.at<Vec3b>(Point(row, col)) = white;
 
                 }
             }
         }
+        if(pxCount > 2000) {
+            int rowAvg = rowSum / pxCount;
+            int colAvg = colSum / pxCount;
+            path.push_back(Point(rowAvg,colAvg));
+        }
+        if(path.size() < 15) {
+            path.resize(15);
+        }
+        vector<Point>::iterator iter;
+        for(iter=path.begin() ; iter < path.end(); iter++) {
+            circle(blacknwhite,*iter,6,purple,-1);
+        }
+
+
+
         cv_ptr->image = blacknwhite;
         image_pub.publish(cv_ptr->toImageMsg());
     }
