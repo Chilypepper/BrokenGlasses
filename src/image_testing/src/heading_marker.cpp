@@ -22,7 +22,7 @@ public:
     {
         image_sub = it.subscribe("/camera/image_rect_color", 1,
                                  &ImageConverter::imageCb, this);
-        image_pub = it.advertise("/camera/output_video_flipped", 1);
+        image_pub = it.advertise("/camera/output_video_marker", 1);
     }
 
     ~ImageConverter()
@@ -40,51 +40,55 @@ public:
             return;
         }
 
-        Mat marker = cv_ptr->image;
+        Mat marker;
         int redUpper = 165;
         int redLower = 10;
-        int satUpper = 210;
+        int satUpper = 255;
         int satLower = 150;
-        int valUpper = 240;
-        int valLower = 150;
+        int valUpper = 255;
+        int valLower = 120;
 
-        bool hasHue = false;
-        bool hasSat = false;
-        bool hasVal = false;
-        Vec3b white = {255,255,255};
 
+        Vec3b white(255,255,255);
+        cvtColor(cv_ptr->image,marker,COLOR_BGR2HSV);
         Mat blacknwhite = Mat::zeros(marker.rows,marker.cols,CV_64F);
 
-        for(int row = 0; row < blacknwhite.rows; row++){
-            for(int col = 0; col < blacknwhite.cols; col++){
-                Vec3b hsvValues = marker.at<Vec3b>(Point(row,col));
+        bool display = true;
+        for(int col = 0; col < blacknwhite.rows; col++) {
+            for (int row = 0; row < blacknwhite.cols; row++) {
+                bool hasHue = false;
+                bool hasSat = false;
+                bool hasVal = false;
+                Vec3b hsvValues = marker.at<Vec3b>(Point(row, col));
+
                 int hue = hsvValues[0];
                 int saturation = hsvValues[1];
                 int brightness = hsvValues[2];
                 //red is special case given its hue values
-                if(hue > redUpper || hue < redLower){
+                if (((hue > redUpper) && hue < 179) || ((hue < redLower) && hue > 0)) {
+
                     /*
                      * checks HSV conditions and determines if all are true
                      */
                     hasHue = true;
-                    if(saturation < satUpper && saturation < satLower){
+                    if (saturation < satUpper && saturation > satLower) {
                         hasSat = true;
-                        if(brightness < valUpper && brightness > valLower){
+                        if (brightness < valUpper && brightness > valLower) {
+
                             hasVal = true;
+
                         }
                     }
                 }
                 //assumes all true
-                if(hasHue && hasSat && hasVal){
-                    blacknwhite
-                }
+                if (hasHue && hasSat && hasVal) {
 
+                    blacknwhite.at<Vec3b>(Point(row, col)) = white;
+
+                }
             }
         }
-
-
-
-
+        cv_ptr->image = blacknwhite;
         image_pub.publish(cv_ptr->toImageMsg());
     }
 };
