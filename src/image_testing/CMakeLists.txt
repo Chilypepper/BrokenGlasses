@@ -12,8 +12,7 @@ sensor_msgs
 point_message
 )
 
-catkin_package()
-include_directories(include ${catkin_INCLUDE_DIRS} ${OpenCV_INCLUDE_DIRS} ${Eigen_INCLUDE_DIRS} )
+add_library(RiptideVision /home/peter/riptideVision/RiptideVision.cpp /home/peter/riptideVision/RiptideVision.h)
 
 add_executable(image_converter src/image_converter.cpp)
 add_executable(green_finder src/cv_modder.cpp)
@@ -28,6 +27,12 @@ add_executable(draw_gui src/draw_gui.cpp)
 add_executable(quad_image src/quad_image.cpp)
 add_executable(horizon_line src/horizonLine.cpp)
 add_executable(heading_predict src/heading_marker.cpp)
+add_executable(line_follow src/line_follow.cpp)
+
+
+target_link_libraries(RiptideVision ${catkin_LIBRARIES} ${OpenCV_LIBS} ${OpenCV_LIBRARIES} ${Eigen_LIBRARIES} ${QT_LIBRARIES} ${ROS_LIBRARIES} ${catkin_LIBRARIES} ${RiptideVision_LIBRARIES})
+
+target_link_libraries(line_follow RiptideVision ${catkin_LIBRARIES} ${OpenCV_LIBS} ${OpenCV_LIBRARIES} ${Eigen_LIBRARIES} ${QT_LIBRARIES} ${ROS_LIBRARIES} ${catkin_LIBRARIES} ${RiptideVision_LIBRARIES})
 
 target_link_libraries(heading_predict ${catkin_LIBRARIES} ${OpenCV_LIBS} ${OpenCV_LIBRARIES} ${Eigen_LIBRARIES} ${QT_LIBRARIES} ${ROS_LIBRARIES} ${catkin_LIBRARIES})
 

@@ -1,3 +1,4 @@
+/home/peter/brokenGlasses/build/image_testing/CMakeFiles/RiptideVision.dir
 /home/peter/brokenGlasses/build/camera_launches/CMakeFiles/_catkin_empty_exported_target.dir
 /home/peter/brokenGlasses/build/imu/CMakeFiles/_imu_3dm_gx4_generate_messages_check_deps_FilterOutput.dir
 /home/peter/brokenGlasses/build/point_message/CMakeFiles/_point_message_generate_messages_check_deps_pointMsg.dir
@@ -12,6 +13,7 @@
 /home/peter/brokenGlasses/build/orientation/CMakeFiles/actionlib_msgs_generate_messages_py.dir
 /home/peter/brokenGlasses/build/image_testing/CMakeFiles/circle_finder.dir
 /home/peter/brokenGlasses/build/CMakeFiles/clean_test_results.dir
+/home/peter/brokenGlasses/build/CMakeFiles/clean_test_results_Project.dir
 /home/peter/brokenGlasses/build/image_testing/CMakeFiles/colorSpaces.dir
 /home/peter/brokenGlasses/build/image_testing/CMakeFiles/color_finder_average.dir
 /home/peter/brokenGlasses/build/imu/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir
@@ -43,6 +45,7 @@
 /home/peter/brokenGlasses/build/imu/CMakeFiles/imu_3dm_gx4_geneus.dir
 /home/peter/brokenGlasses/build/imu/CMakeFiles/imu_3dm_gx4_genlisp.dir
 /home/peter/brokenGlasses/build/imu/CMakeFiles/imu_3dm_gx4_genpy.dir
+/home/peter/brokenGlasses/build/image_testing/CMakeFiles/line_follow.dir
 /home/peter/brokenGlasses/build/image_testing/CMakeFiles/orange_finder.dir
 /home/peter/brokenGlasses/build/point_message/CMakeFiles/point_message_gencpp.dir
 /home/peter/brokenGlasses/build/point_message/CMakeFiles/point_message_generate_messages.dir

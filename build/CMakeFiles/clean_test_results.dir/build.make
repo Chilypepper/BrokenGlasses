@@ -46,7 +46,7 @@ CMAKE_BINARY_DIR = /home/peter/brokenGlasses/build
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/cmake -E remove_directory /home/peter/brokenGlasses/build/test_results
+	/usr/bin/python /opt/ros/jade/share/catkin/cmake/test/remove_test_results.py /home/peter/brokenGlasses/build/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make

@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/rect_finder.dir/src/rect_finder.cpp.o"
-  "/home/peter/brokenGlasses/devel/lib/image_testing/rect_finder.pdb"
-  "/home/peter/brokenGlasses/devel/lib/image_testing/rect_finder"
+  "rect_finder.pdb"
+  "rect_finder"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -150,6 +150,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+image_testing/CMakeFiles/RiptideVision.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/RiptideVision.dir/rule
+.PHONY : image_testing/CMakeFiles/RiptideVision.dir/rule
+
+# Convenience name for target.
+RiptideVision: image_testing/CMakeFiles/RiptideVision.dir/rule
+.PHONY : RiptideVision
+
+# fast build rule for target.
+RiptideVision/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/RiptideVision.dir/build.make image_testing/CMakeFiles/RiptideVision.dir/build
+.PHONY : RiptideVision/fast
+
+# Convenience name for target.
 image_testing/CMakeFiles/circle_finder.dir/rule:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/circle_finder.dir/rule
 .PHONY : image_testing/CMakeFiles/circle_finder.dir/rule
@@ -344,6 +358,20 @@ image_flipper: image_testing/CMakeFiles/image_flipper.dir/rule
 image_flipper/fast:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_flipper.dir/build.make image_testing/CMakeFiles/image_flipper.dir/build
 .PHONY : image_flipper/fast
+
+# Convenience name for target.
+image_testing/CMakeFiles/line_follow.dir/rule:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f CMakeFiles/Makefile2 image_testing/CMakeFiles/line_follow.dir/rule
+.PHONY : image_testing/CMakeFiles/line_follow.dir/rule
+
+# Convenience name for target.
+line_follow: image_testing/CMakeFiles/line_follow.dir/rule
+.PHONY : line_follow
+
+# fast build rule for target.
+line_follow/fast:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/line_follow.dir/build.make image_testing/CMakeFiles/line_follow.dir/build
+.PHONY : line_follow/fast
 
 # Convenience name for target.
 image_testing/CMakeFiles/orange_finder.dir/rule:
@@ -554,6 +582,30 @@ sensor_msgs_generate_messages_py: image_testing/CMakeFiles/sensor_msgs_generate_
 sensor_msgs_generate_messages_py/fast:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make image_testing/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
+
+home/peter/riptideVision/RiptideVision.o: home/peter/riptideVision/RiptideVision.cpp.o
+.PHONY : home/peter/riptideVision/RiptideVision.o
+
+# target to build an object file
+home/peter/riptideVision/RiptideVision.cpp.o:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/RiptideVision.dir/build.make image_testing/CMakeFiles/RiptideVision.dir/home/peter/riptideVision/RiptideVision.cpp.o
+.PHONY : home/peter/riptideVision/RiptideVision.cpp.o
+
+home/peter/riptideVision/RiptideVision.i: home/peter/riptideVision/RiptideVision.cpp.i
+.PHONY : home/peter/riptideVision/RiptideVision.i
+
+# target to preprocess a source file
+home/peter/riptideVision/RiptideVision.cpp.i:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/RiptideVision.dir/build.make image_testing/CMakeFiles/RiptideVision.dir/home/peter/riptideVision/RiptideVision.cpp.i
+.PHONY : home/peter/riptideVision/RiptideVision.cpp.i
+
+home/peter/riptideVision/RiptideVision.s: home/peter/riptideVision/RiptideVision.cpp.s
+.PHONY : home/peter/riptideVision/RiptideVision.s
+
+# target to generate assembly for a file
+home/peter/riptideVision/RiptideVision.cpp.s:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/RiptideVision.dir/build.make image_testing/CMakeFiles/RiptideVision.dir/home/peter/riptideVision/RiptideVision.cpp.s
+.PHONY : home/peter/riptideVision/RiptideVision.cpp.s
 
 src/circle_finder.o: src/circle_finder.cpp.o
 .PHONY : src/circle_finder.o
@@ -795,6 +847,30 @@ src/image_flipper.cpp.s:
 	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/image_flipper.dir/build.make image_testing/CMakeFiles/image_flipper.dir/src/image_flipper.cpp.s
 .PHONY : src/image_flipper.cpp.s
 
+src/line_follow.o: src/line_follow.cpp.o
+.PHONY : src/line_follow.o
+
+# target to build an object file
+src/line_follow.cpp.o:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/line_follow.dir/build.make image_testing/CMakeFiles/line_follow.dir/src/line_follow.cpp.o
+.PHONY : src/line_follow.cpp.o
+
+src/line_follow.i: src/line_follow.cpp.i
+.PHONY : src/line_follow.i
+
+# target to preprocess a source file
+src/line_follow.cpp.i:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/line_follow.dir/build.make image_testing/CMakeFiles/line_follow.dir/src/line_follow.cpp.i
+.PHONY : src/line_follow.cpp.i
+
+src/line_follow.s: src/line_follow.cpp.s
+.PHONY : src/line_follow.s
+
+# target to generate assembly for a file
+src/line_follow.cpp.s:
+	cd /home/peter/brokenGlasses/build && $(MAKE) -f image_testing/CMakeFiles/line_follow.dir/build.make image_testing/CMakeFiles/line_follow.dir/src/line_follow.cpp.s
+.PHONY : src/line_follow.cpp.s
+
 src/orange_finder.o: src/orange_finder.cpp.o
 .PHONY : src/orange_finder.o
 
@@ -873,6 +949,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... RiptideVision"
 	@echo "... circle_finder"
 	@echo "... colorSpaces"
 	@echo "... color_finder_average"
@@ -891,6 +968,7 @@ help:
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
+	@echo "... line_follow"
 	@echo "... list_install_components"
 	@echo "... orange_finder"
 	@echo "... quad_image"
@@ -909,6 +987,9 @@ help:
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... test"
+	@echo "... home/peter/riptideVision/RiptideVision.o"
+	@echo "... home/peter/riptideVision/RiptideVision.i"
+	@echo "... home/peter/riptideVision/RiptideVision.s"
 	@echo "... src/circle_finder.o"
 	@echo "... src/circle_finder.i"
 	@echo "... src/circle_finder.s"
@@ -939,6 +1020,9 @@ help:
 	@echo "... src/image_flipper.o"
 	@echo "... src/image_flipper.i"
 	@echo "... src/image_flipper.s"
+	@echo "... src/line_follow.o"
+	@echo "... src/line_follow.i"
+	@echo "... src/line_follow.s"
 	@echo "... src/orange_finder.o"
 	@echo "... src/orange_finder.i"
 	@echo "... src/orange_finder.s"

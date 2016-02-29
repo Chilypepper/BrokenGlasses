@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/orange_finder.dir/src/orange_finder.cpp.o"
-  "/home/peter/brokenGlasses/devel/lib/image_testing/orange_finder.pdb"
-  "/home/peter/brokenGlasses/devel/lib/image_testing/orange_finder"
+  "orange_finder.pdb"
+  "orange_finder"
 )
 
 # Per-language clean rules from dependency scanning.

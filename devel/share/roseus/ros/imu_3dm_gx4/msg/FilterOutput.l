@@ -16,10 +16,13 @@
   (ros::roseus-add-msgs "std_msgs"))
 
 
+(intern "*STATUS_INVALID*" (find-package "IMU_3DM_GX4::FILTEROUTPUT"))
 (shadow '*STATUS_INVALID* (find-package "IMU_3DM_GX4::FILTEROUTPUT"))
 (defconstant imu_3dm_gx4::FilterOutput::*STATUS_INVALID* 0)
+(intern "*STATUS_VALID*" (find-package "IMU_3DM_GX4::FILTEROUTPUT"))
 (shadow '*STATUS_VALID* (find-package "IMU_3DM_GX4::FILTEROUTPUT"))
 (defconstant imu_3dm_gx4::FilterOutput::*STATUS_VALID* 1)
+(intern "*STATUS_VALID_REFERENCED*" (find-package "IMU_3DM_GX4::FILTEROUTPUT"))
 (shadow '*STATUS_VALID_REFERENCED* (find-package "IMU_3DM_GX4::FILTEROUTPUT"))
 (defconstant imu_3dm_gx4::FilterOutput::*STATUS_VALID_REFERENCED* 2)
 (defclass imu_3dm_gx4::FilterOutput

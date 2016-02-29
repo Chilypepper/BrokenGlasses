@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/heading_predict.dir/src/heading_marker.cpp.o"
-  "/home/peter/brokenGlasses/devel/lib/image_testing/heading_predict.pdb"
-  "/home/peter/brokenGlasses/devel/lib/image_testing/heading_predict"
+  "heading_predict.pdb"
+  "heading_predict"
 )
 
 # Per-language clean rules from dependency scanning.

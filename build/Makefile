@@ -163,6 +163,19 @@ clean_test_results/fast:
 .PHONY : clean_test_results/fast
 
 #=============================================================================
+# Target rules for targets named clean_test_results_Project
+
+# Build rule for target.
+clean_test_results_Project: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results_Project
+.PHONY : clean_test_results_Project
+
+# fast build rule for target.
+clean_test_results_Project/fast:
+	$(MAKE) -f CMakeFiles/clean_test_results_Project.dir/build.make CMakeFiles/clean_test_results_Project.dir/build
+.PHONY : clean_test_results_Project/fast
+
+#=============================================================================
 # Target rules for targets named download_extra_data
 
 # Build rule for target.
@@ -449,6 +462,19 @@ std_msgs_generate_messages_py/fast:
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named RiptideVision
+
+# Build rule for target.
+RiptideVision: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 RiptideVision
+.PHONY : RiptideVision
+
+# fast build rule for target.
+RiptideVision/fast:
+	$(MAKE) -f image_testing/CMakeFiles/RiptideVision.dir/build.make image_testing/CMakeFiles/RiptideVision.dir/build
+.PHONY : RiptideVision/fast
+
+#=============================================================================
 # Target rules for targets named circle_finder
 
 # Build rule for target.
@@ -629,6 +655,19 @@ image_flipper: cmake_check_build_system
 image_flipper/fast:
 	$(MAKE) -f image_testing/CMakeFiles/image_flipper.dir/build.make image_testing/CMakeFiles/image_flipper.dir/build
 .PHONY : image_flipper/fast
+
+#=============================================================================
+# Target rules for targets named line_follow
+
+# Build rule for target.
+line_follow: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 line_follow
+.PHONY : line_follow
+
+# fast build rule for target.
+line_follow/fast:
+	$(MAKE) -f image_testing/CMakeFiles/line_follow.dir/build.make image_testing/CMakeFiles/line_follow.dir/build
+.PHONY : line_follow/fast
 
 #=============================================================================
 # Target rules for targets named orange_finder
@@ -1248,6 +1287,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... clean_test_results"
+	@echo "... clean_test_results_Project"
 	@echo "... download_extra_data"
 	@echo "... doxygen"
 	@echo "... edit_cache"
@@ -1277,6 +1317,7 @@ help:
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... RiptideVision"
 	@echo "... circle_finder"
 	@echo "... colorSpaces"
 	@echo "... color_finder_average"
@@ -1291,6 +1332,7 @@ help:
 	@echo "... hsv_converter"
 	@echo "... image_converter"
 	@echo "... image_flipper"
+	@echo "... line_follow"
 	@echo "... orange_finder"
 	@echo "... quad_image"
 	@echo "... rect_finder"

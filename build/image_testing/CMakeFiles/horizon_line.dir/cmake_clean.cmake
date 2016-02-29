@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/horizon_line.dir/src/horizonLine.cpp.o"
-  "/home/peter/brokenGlasses/devel/lib/image_testing/horizon_line.pdb"
-  "/home/peter/brokenGlasses/devel/lib/image_testing/horizon_line"
+  "horizon_line.pdb"
+  "horizon_line"
 )
 
 # Per-language clean rules from dependency scanning.

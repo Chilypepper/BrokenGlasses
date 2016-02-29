@@ -89,6 +89,7 @@ orientation/CMakeFiles/quaternion.dir/src/quaternion.cpp.o: /opt/ros/jade/includ
 orientation/CMakeFiles/quaternion.dir/src/quaternion.cpp.o: /opt/ros/jade/include/tf2/buffer_core.h
 orientation/CMakeFiles/quaternion.dir/src/quaternion.cpp.o: /opt/ros/jade/include/tf2/convert.h
 orientation/CMakeFiles/quaternion.dir/src/quaternion.cpp.o: /opt/ros/jade/include/tf2/exceptions.h
+orientation/CMakeFiles/quaternion.dir/src/quaternion.cpp.o: /opt/ros/jade/include/tf2/impl/convert.h
 orientation/CMakeFiles/quaternion.dir/src/quaternion.cpp.o: /opt/ros/jade/include/tf2/transform_datatypes.h
 orientation/CMakeFiles/quaternion.dir/src/quaternion.cpp.o: /opt/ros/jade/include/tf2/transform_storage.h
 orientation/CMakeFiles/quaternion.dir/src/quaternion.cpp.o: /opt/ros/jade/include/tf2_msgs/FrameGraph.h
