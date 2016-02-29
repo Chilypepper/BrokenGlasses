@@ -159,7 +159,7 @@ public:
             //ROS_INFO("%3i",search_region2.rows);
             HoughCircles(search_region2, circles, CV_HOUGH_GRADIENT, 2.10, 1, 200, 80, 30, 0);
             //ROS_INFO("%s","Fails past circle");
-            ROS_INFO("%3i",circles.size());
+            //ROS_INFO("%3i",circles.size());
 
 
         }
