@@ -1,8 +1,0 @@
-prefix=/home/peter/brokenGlasses/devel
-
-Name: camera_launches
-Description: Description of camera_launches
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/peter/brokenGlasses/devel/lib 
-Requires: 

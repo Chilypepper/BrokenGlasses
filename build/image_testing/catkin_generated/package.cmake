@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "image_testing")
-set(image_testing_MAINTAINER "peter <peter@todo.todo>")
-set(image_testing_DEPRECATED "")
-set(image_testing_VERSION "0.0.0")
-set(image_testing_BUILD_DEPENDS "point_message" "boost" "point_message" "RiptideVision" "libopencv-dev" "python" "python-opencv" "rosconsole" "sensor_msgs" "roscpp")
-set(image_testing_RUN_DEPENDS "point_message" "RiptideVision" "catkin" "boost" "libopencv-dev" "python" "python-opencv" "rosconsole" "sensor_msgs")
-set(image_testing_BUILDTOOL_DEPENDS "catkin")

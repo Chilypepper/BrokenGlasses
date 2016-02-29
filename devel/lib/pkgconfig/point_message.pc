@@ -1,8 +1,0 @@
-prefix=/home/peter/brokenGlasses/devel
-
-Name: point_message
-Description: Description of point_message
-Version: 0.0.0
-Cflags: -I/home/peter/brokenGlasses/devel/include
-Libs: -L/home/peter/brokenGlasses/devel/lib 
-Requires: message_runtime

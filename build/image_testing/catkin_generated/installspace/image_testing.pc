@@ -1,8 +1,0 @@
-prefix=/home/peter/brokenGlasses/install
-
-Name: image_testing
-Description: Description of image_testing
-Version: 0.0.0
-Cflags: -I/usr/include
-Libs: -L/home/peter/brokenGlasses/install/lib -lRiptideVision
-Requires: 
