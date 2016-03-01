@@ -82,12 +82,13 @@ public:
         colors.push_back(vLow);
         colors.push_back(vUp);
 
-
-
         Mat image = cv_ptr->image;
 
         Mat image_raw_hsv;
         Mat seperated = RiptideVision::seperateColors(image, colors);
+
+        RiptideVision::colorPoint k;
+        RiptideVision::colorAverage(image,colors,k);
 
         cv_ptr->image = seperated;
         image_pub.publish(cv_ptr->toImageMsg());

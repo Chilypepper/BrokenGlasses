@@ -27,24 +27,27 @@ Mat RiptideVision::seperateColors(Mat src, vector<int> colors)
   return imgThreshold;
 }
 
-void RiptideVision::colorAverage(Mat src, vector<int> colors, colorPoint averagePoint){
+void RiptideVision::colorAverage(Mat src, vector<int> colors, colorPoint &averagePoint){
   Mat M = seperateColors(src,colors);
   averagePoint.x = 0;
   averagePoint.y = 0;
 
-  long long iSum = 0;
-  long long jSum = 0;
+  long long int iSum = 0;
+  long long int jSum = 0;
   int count = 0;
 
-  for(int i = 0; i < M.rows; i++){
-    const double* Mi = M.ptr<double>(i);
-    for(int j = 0; j < M.cols; j++)
-      if(Mi[j] > 0){
-      iSum += i;
-      jSum += j;
-      count++;
+  for(int i = 0; i < M.cols;i += 2){
+    for(int j = 0; j < M.rows;j += 2){
+      //cout << i << " " << j << endl;
+      if(M.at<uchar>(i,j) > 0){
+        iSum += i;
+        jSum += j;
+        count++;
+      }
     }
   }
+  averagePoint.x = jSum / count;
+  averagePoint.y = iSum / count;
 }
 
 
