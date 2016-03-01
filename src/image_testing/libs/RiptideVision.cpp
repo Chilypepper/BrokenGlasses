@@ -42,12 +42,8 @@ void RiptideVision::colorAverage(Mat src, vector<int> colors, colorPoint &averag
 
   for(int i = 0; i < M.cols - 1; i++){
     for(int j = 0; j < M.rows - 1; j++){
-      //cout << i << " " << j << endl;
-      //Vec3b data = M.at<uchar>(Point(i,j));
-      //cout << (int)M.at<Vec3b>(Point(i,j))[0] << endl;
       if(M.at<uchar>(j,i) > 0){
         iSum += i;
-        //cout << count<< endl;
         jSum += j;
         count++;
       }
@@ -70,7 +66,6 @@ void RiptideVision::orientation(Mat src, vector<int> colors, colorPoint averageP
   //**Top half
   for(int i = 0; i < M.cols; i += 2){
     for(int j = 0; j < averagePoint.y; j += 2){
-      //cout << i << " " << j << endl;
       if(M.at<uchar>(j,i) > 0){
         iSumTop += i;
         jSumTop += j;
@@ -86,7 +81,6 @@ void RiptideVision::orientation(Mat src, vector<int> colors, colorPoint averageP
   //** Bottom half
   for(int i = 0; i < M.cols - 1; i++){
     for(int j = averagePoint.y; j < M.rows - 1; j++){
-      //cout << i << " " << j << endl;
       if(M.at<uchar>(j,i) > 0){
         iSumBot += i;
         jSumBot += j;
