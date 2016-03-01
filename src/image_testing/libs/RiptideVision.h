@@ -3,8 +3,8 @@ class RiptideVision{
 
 	public:
 		struct colorPoint{
-			int x;
-			int y;
+			long long int x;
+			long long int y;
 		};
 		struct linePoint{
 		  colorPoint top;
