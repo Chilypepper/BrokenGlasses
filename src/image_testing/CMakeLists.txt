@@ -12,7 +12,7 @@ sensor_msgs
 point_message
 )
 
-add_library(RiptideVision /home/peter/riptideVision/RiptideVision.cpp /home/peter/riptideVision/RiptideVision.h)
+add_library(RiptideVision /home/peter/brokenGlasses/src/image_testing/libs/RiptideVision.cpp /home/peter/brokenGlasses/src/image_testing/libs/RiptideVision.h)
 
 add_executable(image_converter src/image_converter.cpp)
 add_executable(green_finder src/cv_modder.cpp)
@@ -31,9 +31,7 @@ add_executable(line_follow src/line_follow.cpp)
 
 add_dependencies(circle_finder point_message_generate_messages_cpp)
 
-target_link_libraries(RiptideVision ${catkin_LIBRARIES} ${OpenCV_LIBS} ${OpenCV_LIBRARIES} ${Eigen_LIBRARIES} ${QT_LIBRARIES} ${ROS_LIBRARIES} ${catkin_LIBRARIES} ${RiptideVision_LIBRARIES})
-
-target_link_libraries(line_follow RiptideVision ${catkin_LIBRARIES} ${OpenCV_LIBS} ${OpenCV_LIBRARIES} ${Eigen_LIBRARIES} ${QT_LIBRARIES} ${ROS_LIBRARIES} ${catkin_LIBRARIES} ${RiptideVision_LIBRARIES})
+target_link_libraries(line_follow RiptideVision ${catkin_LIBRARIES} ${OpenCV_LIBS} ${OpenCV_LIBRARIES} ${Eigen_LIBRARIES} ${QT_LIBRARIES} ${ROS_LIBRARIES} ${catkin_LIBRARIES})
 
 target_link_libraries(heading_predict ${catkin_LIBRARIES} ${OpenCV_LIBS} ${OpenCV_LIBRARIES} ${Eigen_LIBRARIES} ${QT_LIBRARIES} ${ROS_LIBRARIES} ${catkin_LIBRARIES})
 
