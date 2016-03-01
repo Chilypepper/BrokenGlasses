@@ -1,6 +1,12 @@
 
 class RiptideVision{
-public:
-	static cv::Mat seperateColors(cv::Mat src, std::vector<int> colors);
+
+	public:
+		struct colorPoint{
+			int x;
+			int y;
+		};
+		static cv::Mat seperateColors(cv::Mat, std::vector<int>);
+		static void colorAverage(cv::Mat, std::vector<int>, colorPoint);
 };
 
