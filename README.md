@@ -18,13 +18,15 @@ A first attempt at vision processing using ROS and the OpenCV library.
 
 ** Both cameras not working at the same time?
 
-$ subl /etc/defalt/grub
+$ subl /etc/default/grub
 
 change GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
 
 to
 
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash usbcore.usbfs_memory_mb=1000"
+
+Be sure to sudo update-grub afterwards
 
 **Answer to the superuser issue
 
