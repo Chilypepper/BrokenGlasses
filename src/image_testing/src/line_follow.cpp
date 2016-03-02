@@ -89,6 +89,9 @@ public:
 
         RiptideVision::colorPoint k;
         RiptideVision::colorAverage(image,colors,k);
+       
+        RiptideVision::linePoint q;
+        RiptideVision::orientation(image,colors,k, q);
 
         cv_ptr->image = seperated;
         image_pub.publish(cv_ptr->toImageMsg());
