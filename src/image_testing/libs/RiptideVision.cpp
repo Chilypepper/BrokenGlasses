@@ -16,6 +16,7 @@ struct linePoint{
 Mat RiptideVision::seperateColors(Mat src, vector<int> colors)
 {
   Mat input = src.clone();
+  GaussianBlur(input,input,Size(21,21),0);
   Mat imageHSV;
   Mat imgThreshold;
 
