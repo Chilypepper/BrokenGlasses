@@ -87,7 +87,7 @@ public:
         Mat image_raw_hsv;
         Mat seperated = RiptideVision::seperateColors(image, colors);
 
-        RiptideVision::colorPoint k;
+        Point k;
         RiptideVision::colorAverage(image,colors,k);
        
         RiptideVision::linePoint q;

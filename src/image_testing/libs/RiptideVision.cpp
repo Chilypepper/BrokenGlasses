@@ -4,13 +4,9 @@
 using namespace cv;
 using namespace std;
 
-struct colorPoint{
-  long long int x;
-  long long int y;
-};
 struct linePoint{
-  colorPoint top;
-  colorPoint bot;
+  Point top;
+  Point bot;
 };
 
 Mat RiptideVision::seperateColors(Mat src, vector<int> colors)
@@ -32,7 +28,7 @@ Mat RiptideVision::seperateColors(Mat src, vector<int> colors)
   return imgThreshold;
 }
 
-void RiptideVision::colorAverage(Mat src, vector<int> colors, colorPoint &averagePoint){
+void RiptideVision::colorAverage(Mat src, vector<int> colors, Point &averagePoint){
   Mat M = seperateColors(src,colors);
   averagePoint.x = 0;
   averagePoint.y = 0;
@@ -53,7 +49,7 @@ void RiptideVision::colorAverage(Mat src, vector<int> colors, colorPoint &averag
   averagePoint.x = iSum / count;
   averagePoint.y = jSum / count;
 }
-void RiptideVision::orientation(Mat src, vector<int> colors, colorPoint averagePoint, linePoint &pair){
+void RiptideVision::orientation(Mat src, vector<int> colors, Point averagePoint, linePoint &pair){
   Mat M = seperateColors(src,colors); 
 
   long long int iSumTop = 0;
