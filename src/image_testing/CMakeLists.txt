@@ -29,8 +29,6 @@ add_executable(horizon_line src/horizonLine.cpp)
 add_executable(heading_predict src/heading_marker.cpp)
 add_executable(line_follow src/line_follow.cpp)
 
-add_dependencies(circle_finder point_message_generate_messages_cpp)
-
 target_link_libraries(line_follow RiptideVision ${catkin_LIBRARIES} ${OpenCV_LIBS} ${OpenCV_LIBRARIES} ${Eigen_LIBRARIES} ${QT_LIBRARIES} ${ROS_LIBRARIES} ${catkin_LIBRARIES})
 
 target_link_libraries(heading_predict ${catkin_LIBRARIES} ${OpenCV_LIBS} ${OpenCV_LIBRARIES} ${Eigen_LIBRARIES} ${QT_LIBRARIES} ${ROS_LIBRARIES} ${catkin_LIBRARIES})

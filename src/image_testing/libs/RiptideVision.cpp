@@ -4,17 +4,11 @@
 using namespace cv;
 using namespace std;
 
-struct linePoint{
-  Point top;
-  Point bot;
-};
 
-Mat RiptideVision::seperateColors(Mat src, vector<int> colors)
-{
+void RiptideVision::seperateColors(Mat src, vector<int> colors, Mat &imgThreshold){
   Mat input = src.clone();
   GaussianBlur(input,input,Size(21,21),0);
   Mat imageHSV;
-  Mat imgThreshold;
 
   cvtColor( input, imageHSV, COLOR_BGR2HSV );
 
@@ -22,14 +16,13 @@ Mat RiptideVision::seperateColors(Mat src, vector<int> colors)
     case 0:
         inRange(imageHSV, Scalar(colors[0], colors[2], colors[4]), Scalar(colors[1], colors[3], colors[5]), imgThreshold);
     break;
-
   }
-  //Add red secondary threshhold
-  return imgThreshold;
+  cvtColor(imgThreshold,imgThreshold,CV_GRAY2BGR);
 }
 
 void RiptideVision::colorAverage(Mat src, vector<int> colors, Point &averagePoint){
-  Mat M = seperateColors(src,colors);
+  Mat M;
+  seperateColors(src,colors, M);
   averagePoint.x = 0;
   averagePoint.y = 0;
 
@@ -50,7 +43,8 @@ void RiptideVision::colorAverage(Mat src, vector<int> colors, Point &averagePoin
   averagePoint.y = jSum / count;
 }
 void RiptideVision::orientation(Mat src, vector<int> colors, Point averagePoint, linePoint &pair){
-  Mat M = seperateColors(src,colors); 
+  Mat M;
+  seperateColors(src,colors, M);
 
   long long int iSumTop = 0;
   long long int jSumTop = 0;
@@ -87,7 +81,18 @@ void RiptideVision::orientation(Mat src, vector<int> colors, Point averagePoint,
   }
   pair.bot.x = iSumBot / count;
   pair.bot.y = jSumBot / count;
+}
 
+void RiptideVision::buoyTask(Mat src, buoyInfo feedback,Mat &drawing){
+  Point red;
+  colorAverage(src,REDS,red);
+  Point green;
+  colorAverage(src,GREENS,green);
+  Point yellow;
+  colorAverage(src,YELLOWS,yellow);
+  circle(drawing,red,3,PINK,-1);
+  circle(drawing,green,3,PINK,-1);
+  circle(drawing,yellow,3,PINK,-1);
 }
 
 int main(){

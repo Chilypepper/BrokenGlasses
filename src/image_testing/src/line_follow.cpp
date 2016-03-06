@@ -22,11 +22,6 @@ using namespace std;
 Mat src; Mat src_gray, canny_output;
 int thresh = 100;
 int max_thresh = 255;
-RNG rng(12345);
-vector<vector<Point> > contours;
-vector<Vec4i> hierarchy;
-vector<int> colors(6);
-
 
 //0 to 180 for opencv
 int hLow = 0 / 2;
@@ -59,7 +54,6 @@ public:
         image_pub = it.advertise("/camera/line_follower", 1);
 
     }
-
     ~ImageConverter()
     {}
     void imageCb(const sensor_msgs::ImageConstPtr& msg)
@@ -74,26 +68,25 @@ public:
             ROS_ERROR("cv_bridge exception: %s", e.what());
             return;
         }
-        colors.clear();
-        colors.push_back(hLow);
-        colors.push_back(hUp);
-        colors.push_back(sLow);
-        colors.push_back(sUp);
-        colors.push_back(vLow);
-        colors.push_back(vUp);
 
+        ROS_INFO("%s","Here");
         Mat image = cv_ptr->image;
 
-        Mat image_raw_hsv;
-        Mat seperated = RiptideVision::seperateColors(image, colors);
-
+        Mat M;
+        RiptideVision::seperateColors(image, REDS, M);
+        /*
         Point k;
-        RiptideVision::colorAverage(image,colors,k);
-       
+        RiptideVision::colorAverage(image,REDS,k);
+        
+        RiptideVision::buoyInfo z;
+        z.redB = true;
         RiptideVision::linePoint q;
         RiptideVision::orientation(image,colors,k, q);
+		*/
 
-        cv_ptr->image = seperated;
+        ROS_INFO("%s","Published");
+        
+        cv_ptr->image = M;
         image_pub.publish(cv_ptr->toImageMsg());
 
     }
@@ -101,7 +94,7 @@ public:
 
 int main(int argc, char** argv)
 {
-    ros::init(argc, argv, "image_converter");
+    ros::init(argc, argv, "line_follower");
     ImageConverter ic;
     ros::spin();
     return 0;
