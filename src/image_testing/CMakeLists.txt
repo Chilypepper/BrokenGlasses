@@ -28,6 +28,9 @@ add_executable(quad_image src/quad_image.cpp)
 add_executable(horizon_line src/horizonLine.cpp)
 add_executable(heading_predict src/heading_marker.cpp)
 add_executable(line_follow src/line_follow.cpp)
+add_executable(parampicker src/parampicker.cpp)
+
+target_link_libraries(parampicker ${catkin_LIBRARIES} ${OpenCV_LIBS} ${OpenCV_LIBRARIES} ${Eigen_LIBRARIES} ${QT_LIBRARIES} ${ROS_LIBRARIES} ${catkin_LIBRARIES})
 
 target_link_libraries(line_follow RiptideVision ${catkin_LIBRARIES} ${OpenCV_LIBS} ${OpenCV_LIBRARIES} ${Eigen_LIBRARIES} ${QT_LIBRARIES} ${ROS_LIBRARIES} ${catkin_LIBRARIES})
 
