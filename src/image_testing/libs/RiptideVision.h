@@ -8,6 +8,9 @@ const std::vector<int> GREENS (greensArr, greensArr + sizeof(greensArr) / sizeof
 const int yellowsArr[] = {25,35,50,255,80,255,0};
 const std::vector<int> YELLOWS (yellowsArr, yellowsArr + sizeof(yellowsArr) / sizeof(int));
 
+const int blaze_orange_arr[] = {5,34,30,150,150,255};
+const std::vector<int> BLAZE_ORANGE (blaze_orange_arr, blaze_orange_arr + sizeof(blaze_orange_arr) / sizeof(int));
+
 const cv::Scalar PINK = cv::Scalar(255,0,255);
 class RiptideVision{
 
