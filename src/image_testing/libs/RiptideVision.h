@@ -28,5 +28,6 @@ class RiptideVision{
 		static void colorAverage(cv::Mat, std::vector<int>, cv::Point&);
 		static void orientation(cv::Mat, std::vector<int>, cv::Point, linePoint&);
 		static void buoyTask(cv::Mat, buoyInfo,cv::Mat&);
+		static void orientationv2(cv::Mat, std::vector<int>, linePoint&, cv::Mat&);
 };
 
