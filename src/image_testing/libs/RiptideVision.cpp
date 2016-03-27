@@ -91,7 +91,7 @@ void RiptideVision::orientationv2(Mat src, vector<int> colors, linePoint& orient
   cvtColor(seperated,seperated,COLOR_BGR2GRAY);
   findContours(seperated,contours,0,1);
 
-  int MAX_CONT;
+  int MAX_CONT = -1;
   float area = 0;
   for(int i = 0; i < contours.size(); i++){
     float area2 = contourArea(contours[i]);
@@ -101,23 +101,25 @@ void RiptideVision::orientationv2(Mat src, vector<int> colors, linePoint& orient
     }
   }
   vector<Point> minContours;
-  double epsilon = 0.1 * arcLength(contours[MAX_CONT],true);
-  approxPolyDP(contours[MAX_CONT], minContours, epsilon,true);
 
-  if(drawing.data){
+  if(MAX_CONT >= 0){
+      double epsilon = 0.1 * arcLength(contours[MAX_CONT],true);
+      approxPolyDP(contours[MAX_CONT], minContours, epsilon,true);
+      if(drawing.data){
+        Mat wContours;
+        seperateColors(src,colors, wContours);
 
-    Mat wContours;
-    seperateColors(src,colors, wContours);
-
-    for(int j = 0; j < contours[MAX_CONT].size(); j++){
-      circle(wContours,contours[MAX_CONT][j],2,Scalar(0,0,255));
-    } 
-    for(int j = 0; j < minContours.size(); j++){
-      circle(wContours,minContours[j],5,Scalar(255,0,255));
+        for(int j = 0; j < contours[MAX_CONT].size(); j++){
+          circle(wContours,contours[MAX_CONT][j],2,Scalar(0,0,255));
+        } 
+        for(int j = 0; j < minContours.size(); j++){
+          circle(wContours,minContours[j],5,Scalar(255,0,255));
+        }
+        line(wContours,minContours[0],minContours[1],Scalar(255,0,255),2);
+        drawing = wContours;
     }
-    line(wContours,minContours[0],minContours[1],Scalar(255,0,255),2);
-    drawing = wContours;
   }
+
   if(minContours.size() == 2){
     orientation.top = minContours[0];
     orientation.bot = minContours[1];

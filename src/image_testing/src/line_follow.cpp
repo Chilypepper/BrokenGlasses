@@ -49,9 +49,9 @@ public:
     ImageConverter()
     : it(nh)
     {
-        image_sub = it.subscribe("/camera/image_raw", 1,
+        image_sub = it.subscribe("/stereo/left/image_raw", 1,
             &ImageConverter::imageCb, this);
-        image_pub = it.advertise("/camera/line_follower", 1);
+        image_pub = it.advertise("/img/line_follower", 1);
 
     }
     ~ImageConverter()
@@ -69,22 +69,28 @@ public:
             return;
         }
 
-        ROS_INFO("%s","Here");
+       // ROS_INFO("%s","Here");
         Mat image = cv_ptr->image;
 
         Mat M;
-        RiptideVision::seperateColors(image, REDS, M);
-        /*
-        Point k;
-        RiptideVision::colorAverage(image,REDS,k);
-        
-        RiptideVision::buoyInfo z;
-        z.redB = true;
-        RiptideVision::linePoint q;
-        RiptideVision::orientation(image,colors,k, q);
-		*/
+        Point q;
+        RiptideVision::linePoint q2;
+        RiptideVision::linePoint q3;
 
-        ROS_INFO("%s","Published");
+        RiptideVision::colorAverage(image,YELLOWS,q);
+
+
+        RiptideVision::seperateColors(image,YELLOWS,M);
+        
+
+        RiptideVision::orientation(image,YELLOWS,q,q3);
+        RiptideVision::orientationv2(image,YELLOWS,q2, M);
+
+        line(M,q3.top,q3.bot,Scalar(255,255,0),2);
+
+		//
+
+        //ROS_INFO("%s","Published");
         
         cv_ptr->image = M;
         image_pub.publish(cv_ptr->toImageMsg());
