@@ -125,6 +125,44 @@ void RiptideVision::orientationv2(Mat src, vector<int> colors, linePoint& orient
     orientation.bot = minContours[1];
   }
 }
+void RiptideVision::orientationv3(Mat src, vector<int> colors, linePoint& orientation, Mat& drawing){
+  Mat seperated;
+  seperateColors(src,colors, seperated);
+  vector<vector<Point> > contours;
+  Mat wContours = src.clone();
+
+  cvtColor(seperated,seperated,COLOR_BGR2GRAY);
+  findContours(seperated,contours,0,1);
+
+  int MAX_CONT = -1;
+  float area = 0;
+  for(int i = 0; i < contours.size(); i++){
+    float area2 = contourArea(contours[i]);
+    if(area2 > area){
+      MAX_CONT = i;
+      area  = area2;
+    }
+  }
+  if(MAX_CONT >= 0){
+      double epsilon = 0.1 * arcLength(contours[MAX_CONT],true);
+
+      Vec4f bfline;
+      fitLine(contours[MAX_CONT], bfline, CV_DIST_L2,0, 0.01, 0.01);
+
+      if(drawing.data){
+        Mat wContours;
+        seperateColors(src,colors, wContours);
+
+        for(int j = 0; j < contours[MAX_CONT].size(); j++){
+          circle(wContours,contours[MAX_CONT][j],2,Scalar(0,0,255));
+        }
+        circle(wContours,Point(bfline[0],bfline[1]),2,PINK);
+        circle(wContours,Point(bfline[2],bfline[3]),2,PINK);
+        line(wContours,Point(bfline[2],bfline[3]),Point(bfline[2]+bfline[0]*50,bfline[3]+bfline[1]*50),Scalar(255,0,255));
+        drawing = wContours;
+    }
+  }
+}
 
 void RiptideVision::buoyTask(Mat src, buoyInfo feedback,Mat &drawing){
   Point red;

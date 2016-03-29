@@ -49,7 +49,7 @@ public:
     ImageConverter()
     : it(nh)
     {
-        image_sub = it.subscribe("/stereo/left/image_raw", 1,
+        image_sub = it.subscribe("/stereo/left/image_rect_color/compressed", 1,
             &ImageConverter::imageCb, this);
         image_pub = it.advertise("/img/line_follower", 1);
 
@@ -83,8 +83,8 @@ public:
         RiptideVision::seperateColors(image,YELLOWS,M);
         
 
-        RiptideVision::orientation(image,YELLOWS,q,q3);
-        RiptideVision::orientationv2(image,YELLOWS,q2, M);
+        //RiptideVision::orientation(image,YELLOWS,q,q3);
+        RiptideVision::orientationv3(image,YELLOWS,q2, M);
 
         line(M,q3.top,q3.bot,Scalar(255,255,0),2);
 
