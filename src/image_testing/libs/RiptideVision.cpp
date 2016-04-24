@@ -1,5 +1,5 @@
 #include <opencv2/imgproc/imgproc.hpp>
-#include </home/peter/brokenGlasses/src/image_testing/libs/RiptideVision.h>
+#include </home/peter/brokenglasses/src/image_testing/libs/RiptideVision.h>
 
 using namespace cv;
 using namespace std;

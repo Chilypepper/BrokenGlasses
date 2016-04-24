@@ -12,7 +12,7 @@ sensor_msgs
 point_message
 )
 
-add_library(RiptideVision /home/peter/brokenGlasses/src/image_testing/libs/RiptideVision.cpp /home/peter/brokenGlasses/src/image_testing/libs/RiptideVision.h)
+add_library(RiptideVision ~/brokenglasses/src/image_testing/libs/RiptideVision.cpp ~/brokenglasses/src/image_testing/libs/RiptideVision.h)
 
 #add_executable(image_converter src/image_converter.cpp)
 #add_executable(green_finder src/cv_modder.cpp)

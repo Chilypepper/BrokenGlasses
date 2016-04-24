@@ -9,8 +9,7 @@
 #include "geometry_msgs/Vector3.h"
 #include "std_msgs/Float32.h"
 #include <math.h>
-#include "imu_3dm_gx4/FilterOutput.h"
-#include </home/peter/brokenGlasses/src/image_testing/libs/RiptideVision.h>
+#include </home/peter/brokenglasses/src/image_testing/libs/RiptideVision.h>
 //#include <RiptideVision.h>
 #include <vector>
 

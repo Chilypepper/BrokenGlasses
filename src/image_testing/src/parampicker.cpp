@@ -10,8 +10,7 @@
 #include "geometry_msgs/Vector3.h"
 #include "std_msgs/Float32.h"
 #include <math.h>
-#include "imu_3dm_gx4/FilterOutput.h"
-#include </home/peter/brokenGlasses/src/image_testing/libs/RiptideVision.h>
+#include </home/peter/brokenglasses/src/image_testing/libs/RiptideVision.h>
 //#include <RiptideVision.h>
 #include <vector>
 
@@ -87,8 +86,8 @@ public:
             prefilter_size = 5 + rand() % 200;
             speckle_size = rand() % 97;
             speckle_range = rand() % 31;
-            texture_threshold = rand() % 97;
-            uniqueness_ratio = rand() % 20;
+            texture_threshold = rand() % 20;
+            uniqueness_ratio = rand() % 5;
 
             nh.setParam("/stereo/stereo_image_proc/correlation_window_size", correlation_window_size);
             nh.setParam("/stereo/stereo_image_proc/disparity_range", disparity_range);
